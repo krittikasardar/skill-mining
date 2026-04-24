@@ -1,0 +1,3316 @@
+{
+  "schema_version": "1.1",
+  "username": "ines",
+  "preprocessed_at": "2026-04-24T14:22:21.112393+00:00",
+  "source_file": "C:\\Users\\I764176\\Documents\\University\\Semester 3\\LLM and Agents\\skill-mining\\data\\raw\\ines.json",
+  "historical_analysis": {
+    "commits_by_year": {
+      "2015": 8,
+      "2016": 14,
+      "2017": 17,
+      "2018": 30,
+      "2019": 32,
+      "2020": 6,
+      "2021": 5,
+      "2023": 10,
+      "2024": 6
+    },
+    "languages_by_year": {
+      "2015": [
+        {
+          "language": "JavaScript",
+          "bytes": 2639,
+          "pct": 100.0
+        }
+      ],
+      "2016": [
+        {
+          "language": "HTML",
+          "bytes": 26483,
+          "pct": 68.3
+        },
+        {
+          "language": "CSS",
+          "bytes": 12000,
+          "pct": 30.9
+        },
+        {
+          "language": "JavaScript",
+          "bytes": 305,
+          "pct": 0.8
+        }
+      ],
+      "2017": [
+        {
+          "language": "JavaScript",
+          "bytes": 7676,
+          "pct": 63.3
+        },
+        {
+          "language": "HTML",
+          "bytes": 2264,
+          "pct": 18.7
+        },
+        {
+          "language": "CSS",
+          "bytes": 2195,
+          "pct": 18.1
+        }
+      ],
+      "2018": [
+        {
+          "language": "Python",
+          "bytes": 8718,
+          "pct": 62.2
+        },
+        {
+          "language": "Shell",
+          "bytes": 4723,
+          "pct": 33.7
+        },
+        {
+          "language": "JavaScript",
+          "bytes": 570,
+          "pct": 4.1
+        }
+      ],
+      "2019": [
+        {
+          "language": "Python",
+          "bytes": 225798,
+          "pct": 54.4
+        },
+        {
+          "language": "CSS",
+          "bytes": 84189,
+          "pct": 20.3
+        },
+        {
+          "language": "JavaScript",
+          "bytes": 60027,
+          "pct": 14.5
+        },
+        {
+          "language": "R",
+          "bytes": 41627,
+          "pct": 10.0
+        },
+        {
+          "language": "HTML",
+          "bytes": 3701,
+          "pct": 0.9
+        }
+      ],
+      "2020": [
+        {
+          "language": "CSS",
+          "bytes": 74779,
+          "pct": 60.8
+        },
+        {
+          "language": "JavaScript",
+          "bytes": 47160,
+          "pct": 38.3
+        },
+        {
+          "language": "Python",
+          "bytes": 1084,
+          "pct": 0.9
+        }
+      ],
+      "2021": [
+        {
+          "language": "JavaScript",
+          "bytes": 7226,
+          "pct": 45.5
+        },
+        {
+          "language": "HTML",
+          "bytes": 6709,
+          "pct": 42.2
+        },
+        {
+          "language": "CSS",
+          "bytes": 1961,
+          "pct": 12.3
+        }
+      ],
+      "2022": [
+        {
+          "language": "Python",
+          "bytes": 3939,
+          "pct": 100.0
+        }
+      ],
+      "2023": [
+        {
+          "language": "CSS",
+          "bytes": 75724,
+          "pct": 46.3
+        },
+        {
+          "language": "JavaScript",
+          "bytes": 72779,
+          "pct": 44.5
+        },
+        {
+          "language": "Python",
+          "bytes": 11624,
+          "pct": 7.1
+        },
+        {
+          "language": "R",
+          "bytes": 2203,
+          "pct": 1.3
+        },
+        {
+          "language": "HTML",
+          "bytes": 1232,
+          "pct": 0.8
+        }
+      ],
+      "2024": [
+        {
+          "language": "Python",
+          "bytes": 13466,
+          "pct": 100.0
+        }
+      ]
+    },
+    "activity_trend": "declining",
+    "peak_activity_year": 2019,
+    "tech_evolution": [
+      {
+        "period": "early (2015–2018)",
+        "dominant_languages": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Python",
+          "Shell"
+        ]
+      },
+      {
+        "period": "recent (2021–2024)",
+        "dominant_languages": [
+          "JavaScript",
+          "CSS",
+          "Python",
+          "HTML",
+          "R"
+        ]
+      },
+      {
+        "new_languages": [
+          "R"
+        ],
+        "dropped_languages": [
+          "Shell"
+        ]
+      }
+    ]
+  },
+  "chunks": [
+    {
+      "chunk_id": "ev_0001_c00",
+      "evidence_id": "ev_0001",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "profile",
+      "source": "profile:ines",
+      "content": "Digital native and software developer working on AI, Machine Learning & NLP. Founder @explosion, developing spaCy & Prodigy.\n\n(Portrait: Sarah Andersen)",
+      "metadata": {
+        "field": "bio",
+        "login": "ines",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0002_c00",
+      "evidence_id": "ev_0002",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "profile",
+      "source": "profile:ines",
+      "content": "Works at / affiliated with: Founder @explosion",
+      "metadata": {
+        "field": "company",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0003_c00",
+      "evidence_id": "ev_0003",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/termynal",
+      "content": "⬛️ Lightweight and modern terminal animations using async/await",
+      "metadata": {
+        "repo": "ines/termynal",
+        "field": "description",
+        "language": "JavaScript",
+        "stars": 1807,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0004_c00",
+      "evidence_id": "ev_0004",
+      "chunk_index": 0,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/termynal",
+      "content": "# termynal.js: A lightweight and modern animated terminal window\n\nTyping animations are nothing new and Termynal isn't particularly revolutionary. I wrote it because I needed a modern and lightweight version with minimal JavaScript and without messy, nested `setTimeout` calls. Most of the existing libraries rely on JavaScript for both the rendering, styling and animation, or even require jQuery. This is inconvenient, especially if you're using the animation as part of your software's documentation. If a user has JavaScript disabled, they will only see a blank window.\n\nTermynal uses **`async` and `await`**, which is now [supported](http://caniuse.com/#feat=async-functions) pretty much across all major browsers. Termynal lets you write all input and output in **plain HTML**, and all styling in **plain CSS**. Non-JS users will still see the **complete code**, just no animation. The width and height of the terminal window is read off the original container. This means you won't have to worry about sizing or layout reflows. Termynal also comes with a **flexible HTML API**, so you can use it without having to write a single line of JavaScript yourself.\n\n![termynal](https://user-images.githubusercontent.com/13643239/26935530-7f4e1152-4c6c-11e7-9e1a-06df36d4f9c9.gif)\n\n![termynal2](https://user-images.githubusercontent.com/13643239/26937306-4d851274-4c71-11e7-94cc-015d30a92e53.gif)\n\n## Examples",
+      "metadata": {
+        "repo": "ines/termynal",
+        "field": "readme_excerpt",
+        "topics": [
+          "javascript",
+          "javascript-library",
+          "animation",
+          "css",
+          "html-api",
+          "terminal"
+        ],
+        "chunk_index": 0,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0004_c01",
+      "evidence_id": "ev_0004",
+      "chunk_index": 1,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/termynal",
+      "content": "e1a-06df36d4f9c9.gif)\n\n![termynal2](https://user-images.githubusercontent.com/13643239/26937306-4d851274-4c71-11e7-94cc-015d30a92e53.gif)\n\n## Examples\n\n* **Simple example:** [CodePen demo](https://codepen.io/ines/full/MoaRYM/), [`example.html`](example.html)\n* **Custom example:** [CodePen demo](https://codepen.io/ines/pen/mwegrX), [`example2.html`](example2.html)\n\n## Usage\n\nFirst, you need to create a container. Each container should have a unique class or ID that tells Termynal where to find the lines to animate. Terminal will find the lines via their `data-ty` attribute and will then animate their text content. Apart from that, it won't mess with your markup – so you're free to add additional styling and attributes.\n\n```html\n\npip install spaCy\n \n Successfully installed spacy\n\n```\n\nWhen you include [`termynal.js`](termynal.js), you can specify the container(s) as the `data-termynal-container` attribute. To initialise Termynal for more than one container, simply add the selectors separated by a `|`, for example `#termynal1|#termynal2`.\n\n```html\n\n```\n\nYou also need to include the stylesheet, [`termynal.css`](termynal.css) in your site's ``:\n\n```html\n\n```\n\nThat's it!\n\n### Customising Termynal\n\nOn each container, you can specify a number of settings as data attributes, and overwrite the animation delay after a line on each individual element.\n\n```html\n\npip install spacy\n Installing spaCy...\n\n```",
+      "metadata": {
+        "repo": "ines/termynal",
+        "field": "readme_excerpt",
+        "topics": [
+          "javascript",
+          "javascript-library",
+          "animation",
+          "css",
+          "html-api",
+          "terminal"
+        ],
+        "chunk_index": 1,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0004_c02",
+      "evidence_id": "ev_0004",
+      "chunk_index": 2,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/termynal",
+      "content": "s as data attributes, and overwrite the animation delay after a line on each individual element.\n\n```html\n\npip install spacy\n Installing spaCy...\n\n```\n\nIf you don't want to use the HTML API, you can also initialise Termynal in JavaScript. The constructor takes two arguments: the query selector of the container, and an optional object of settings.\n\n```javascript\nvar termynal = new Termynal('#termynal', { startDelay: 600 })\n```\n\nThe following settings are available:\n\n| Name | Type | Default | Description |\n| --- | --- | --- | --- |\n| `prefix` | string | `ty` | Prefix to use for data attributes. |\n| `startDelay` | number | `600` | Delay before animation, in ms. |\n| `typeDelay` | number | `90` | Delay between each typed character, in ms. |\n| `lineDelay` | number | `1500` | Delay between each line, in ms. |\n| `progressLength` | number | `40` | Number of characters displayed as progress bar. |\n| `progressChar` | string | `'█'` | Character to use for progress bar. |\n| `cursor` | string | `'▋'` | Character to use for cursor. |\n| `noInit` | boolean | `false` | Don't init … [truncated]",
+      "metadata": {
+        "repo": "ines/termynal",
+        "field": "readme_excerpt",
+        "topics": [
+          "javascript",
+          "javascript-library",
+          "animation",
+          "css",
+          "html-api",
+          "terminal"
+        ],
+        "chunk_index": 2,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0005_c00",
+      "evidence_id": "ev_0005",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/termynal",
+      "content": "Technologies/tools mentioned in README: api, java, javascript, python",
+      "metadata": {
+        "repo": "ines/termynal",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0006_c00",
+      "evidence_id": "ev_0006",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/termynal",
+      "content": "Languages used: JavaScript (45.5%), HTML (42.2%), CSS (12.3%)",
+      "metadata": {
+        "repo": "ines/termynal",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0007_c00",
+      "evidence_id": "ev_0007",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/termynal",
+      "content": "Repository topics: javascript, javascript-library, animation, css, html-api, terminal",
+      "metadata": {
+        "repo": "ines/termynal",
+        "field": "topics",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0008_c00",
+      "evidence_id": "ev_0008",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/termynal",
+      "content": "User is the owner of ines/termynal.",
+      "metadata": {
+        "repo": "ines/termynal",
+        "is_owner": true,
+        "stars": 1807,
+        "forks": 118,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0009_c00",
+      "evidence_id": "ev_0009",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/termynal",
+      "content": "Owner of repo with 1807 stars",
+      "metadata": {
+        "repo": "ines/termynal",
+        "stars": 1807,
+        "forks": 118,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0010_c00",
+      "evidence_id": "ev_0010",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/termynal",
+      "content": "Repo forked 118 times by others",
+      "metadata": {
+        "repo": "ines/termynal",
+        "stars": 1807,
+        "forks": 118,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0011_c00",
+      "evidence_id": "ev_0011",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/termynal",
+      "content": "Active issue tracker with 15 open issues",
+      "metadata": {
+        "repo": "ines/termynal",
+        "stars": 1807,
+        "forks": 118,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0012_c00",
+      "evidence_id": "ev_0012",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/termynal",
+      "content": "Commit (2017-06-08T15:46:14+00:00): :sparkles: Initial commit",
+      "metadata": {
+        "repo": "ines/termynal",
+        "sha": "061df1d91d",
+        "date": "2017-06-08T15:46:14+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0013_c00",
+      "evidence_id": "ev_0013",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/termynal",
+      "content": "Commit (2018-10-27T15:54:12+00:00): Merge pull request #6 from patmigliaccio/dynamic-loading-feature",
+      "metadata": {
+        "repo": "ines/termynal",
+        "sha": "39389bf5a3",
+        "date": "2018-10-27T15:54:12+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0014_c00",
+      "evidence_id": "ev_0014",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/course-starter-r",
+      "content": "👩‍🏫🇷 Starter repo for building interactive R courses",
+      "metadata": {
+        "repo": "ines/course-starter-r",
+        "field": "description",
+        "language": "CSS",
+        "stars": 341,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0015_c00",
+      "evidence_id": "ev_0015",
+      "chunk_index": 0,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:ines/course-starter-r",
+      "content": "# Online course starter: R\n\nThis is a starter repo based on the\n[course framework](https://github.com/ines/spacy-course) I developed for my\n[spaCy course](https://course.spacy.io). The front-end is powered by\n[Gatsby](http://gatsbyjs.org/) and [Reveal.js](https://revealjs.com) and the\nback-end code execution uses [Binder](https://mybinder.org) 💖\n\n_This repo could use some better code examples. Also, if you have experience\nwith R, feel free to suggest improvements to the\n[test logic and template](#adding-tests). It all works as expected, but there\nmight be ways to make it more elegant._\n\n[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ines/courser-starter-r)\n\n[![](https://user-images.githubusercontent.com/13643239/56341448-68fe9380-61b5-11e9-816f-5c71ae71b94f.png)](https://course-starter-r.netlify.com)\n\n## ✅ Quickstart\n\n1. [Import](https://github.com/new/import) this repo, install it and make sure\n the app is running locally.\n2. Customize the [`meta.json`](meta.json) and\n [`binder/install.R`](binder/install.R).\n3. Build a [Binder](https://mybinder.org) from the `binder` branch of this repo.\n4. Add content (chapters, exercises and slides) and optionally add separate\n content license.\n5. Customize the UI theme in [`theme.sass`](theme.sass) and update images in\n [`static`](static) as needed.\n6. Deploy the app, e.g. to [Netlify](https://netlify.com).\n\n### Running the app",
+      "metadata": {
+        "repo": "ines/course-starter-r",
+        "field": "readme_excerpt",
+        "topics": [
+          "r",
+          "rstats",
+          "rstudio",
+          "online-course",
+          "gatsby",
+          "gatsbyjs",
+          "jupyter",
+          "binder"
+        ],
+        "chunk_index": 0,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0015_c01",
+      "evidence_id": "ev_0015",
+      "chunk_index": 1,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:ines/course-starter-r",
+      "content": "sass`](theme.sass) and update images in\n [`static`](static) as needed.\n6. Deploy the app, e.g. to [Netlify](https://netlify.com).\n\n### Running the app\n\nTo start the local development server, install [Gatsby](https://gatsbyjs.org)\nand then all other dependencies. This should serve up the app on\n`localhost:8000`.\n\n```bash\nnpm install -g gatsby-cli # Install Gatsby globally\nnpm install # Install dependencies\nnpm run dev # Run the development server\n```\n\n## 💡Introduction\n\n> This section was contributed by [@laderast](https://github.com/laderast).\n> Thanks! ✨\n\n### How does this repo work?\n\nThe course repository works with two components: Gatsby (front-end), and Binder\n(back-end). We'll go over both of these to understand how it works as a whole.\n\n### What is Gatsby?\n\n[Gatsby](https://www.gatsbyjs.org/) is a JavaScript/react.js based web page\nbuilding framework, like Hugo, or Jekyll. The nice thing about it being\nJavaScript is that JavaScript widgets that you build are tightly integrated.\n\nYou can think of Gatsby as being the client side of the lesson framework. All\ncode, solutions, tests, and chapter.md files are handled by Gatsby.\n\n### What is Binder?",
+      "metadata": {
+        "repo": "ines/course-starter-r",
+        "field": "readme_excerpt",
+        "topics": [
+          "r",
+          "rstats",
+          "rstudio",
+          "online-course",
+          "gatsby",
+          "gatsbyjs",
+          "jupyter",
+          "binder"
+        ],
+        "chunk_index": 1,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0015_c02",
+      "evidence_id": "ev_0015",
+      "chunk_index": 2,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:ines/course-starter-r",
+      "content": "Gatsby as being the client side of the lesson framework. All\ncode, solutions, tests, and chapter.md files are handled by Gatsby.\n\n### What is Binder?\n\n[Binder](https://gke.mybinder.org/) is a way of building Docker containers from\nrepositories that can be launched on a remote server/cluster (such as\nmybinder.org). This Docker container can be based on a Dockerfile, or R image.\nThe thing about Binder is that the containers are ephemeral - if they're not\nused, they're deleted off the Binder servers. The main applications of Binder\nare:\n\n1. Reproducible Research (shareable notebooks) and\n2. Education (shareable notebooks)\n\nYou can think of Binder as being the server side of the lesson framework. It\nneeds the instructions on how to build the docker container (which is in the\n`binder/` folder), and the data you want to use for the lessons (in the `data/`\nfolder).\n\nThe only thing you need to get started with R and Binder is a repo that has a\n`runtime.txt` file, or a Dockerfile. The rest, such as datafiles, are optional,\nbut are usually contained in a Binder repository.\n\n### How does Gatsby work with Binder?\n\n![code-execution](https://user-images.githubusercontent.com/3315629/60834090-b49d5980-a174-11e9-9d69-966084ba97b9.png)",
+      "metadata": {
+        "repo": "ines/course-starter-r",
+        "field": "readme_excerpt",
+        "topics": [
+          "r",
+          "rstats",
+          "rstudio",
+          "online-course",
+          "gatsby",
+          "gatsbyjs",
+          "jupyter",
+          "binder"
+        ],
+        "chunk_index": 2,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0015_c03",
+      "evidence_id": "ev_0015",
+      "chunk_index": 3,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:ines/course-starter-r",
+      "content": "does Gatsby work with Binder?\n\n![code-execution](https://user-images.githubusercontent.com/3315629/60834090-b49d5980-a174-11e9-9d69-966084ba97b9.png)\n\nInes was super clever and designed a JavaScript plugin for Gatsby called\n[Juniper](https://github.com/ines/juniper) to handle communication to and from\nthe Binder container using Jupyter kernels. That's how code gets executed on the\nBinder container, and how code output (such as terminal messages, images, etc)\nare received from the Binder container.\n\n## Branches of this repo\n … [truncated]",
+      "metadata": {
+        "repo": "ines/course-starter-r",
+        "field": "readme_excerpt",
+        "topics": [
+          "r",
+          "rstats",
+          "rstudio",
+          "online-course",
+          "gatsby",
+          "gatsbyjs",
+          "jupyter",
+          "binder"
+        ],
+        "chunk_index": 3,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0016_c00",
+      "evidence_id": "ev_0016",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/course-starter-r",
+      "content": "Technologies/tools mentioned in README: cli, docker, express, framework, go, java, javascript, react, rest",
+      "metadata": {
+        "repo": "ines/course-starter-r",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0017_c00",
+      "evidence_id": "ev_0017",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/course-starter-r",
+      "content": "Languages used: CSS (60.7%), JavaScript (38.1%), R (1.3%)",
+      "metadata": {
+        "repo": "ines/course-starter-r",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0018_c00",
+      "evidence_id": "ev_0018",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/course-starter-r",
+      "content": "Repository topics: r, rstats, rstudio, online-course, gatsby, gatsbyjs, jupyter, binder",
+      "metadata": {
+        "repo": "ines/course-starter-r",
+        "field": "topics",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0019_c00",
+      "evidence_id": "ev_0019",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/course-starter-r",
+      "content": "User is the owner of ines/course-starter-r.",
+      "metadata": {
+        "repo": "ines/course-starter-r",
+        "is_owner": true,
+        "stars": 341,
+        "forks": 83,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0020_c00",
+      "evidence_id": "ev_0020",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/course-starter-r",
+      "content": "Owner of repo with 341 stars",
+      "metadata": {
+        "repo": "ines/course-starter-r",
+        "stars": 341,
+        "forks": 83,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0021_c00",
+      "evidence_id": "ev_0021",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/course-starter-r",
+      "content": "Repo forked 83 times by others",
+      "metadata": {
+        "repo": "ines/course-starter-r",
+        "stars": 341,
+        "forks": 83,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0022_c00",
+      "evidence_id": "ev_0022",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/course-starter-r",
+      "content": "Active issue tracker with 23 open issues",
+      "metadata": {
+        "repo": "ines/course-starter-r",
+        "stars": 341,
+        "forks": 83,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0023_c00",
+      "evidence_id": "ev_0023",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/course-starter-r",
+      "content": "Commit (2019-04-18T10:05:43+00:00): Initial commit",
+      "metadata": {
+        "repo": "ines/course-starter-r",
+        "sha": "99ece817f2",
+        "date": "2019-04-18T10:05:43+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0024_c00",
+      "evidence_id": "ev_0024",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/course-starter-r",
+      "content": "Commit (2019-07-11T11:21:15+00:00): Merge pull request #5 from laderast/master",
+      "metadata": {
+        "repo": "ines/course-starter-r",
+        "sha": "ea90e8525d",
+        "date": "2019-07-11T11:21:15+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0025_c00",
+      "evidence_id": "ev_0025",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/course-starter-python",
+      "content": "👩‍🏫🐍 Starter repo for building interactive Python courses",
+      "metadata": {
+        "repo": "ines/course-starter-python",
+        "field": "description",
+        "language": "CSS",
+        "stars": 510,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0026_c00",
+      "evidence_id": "ev_0026",
+      "chunk_index": 0,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/course-starter-python",
+      "content": "# Online course starter: Python\n\nThis is a starter repo based on the\n[course framework](https://github.com/ines/spacy-course) I developed for my\n[spaCy course](https://course.spacy.io). The front-end is powered by\n[Gatsby](http://gatsbyjs.org/) and [Reveal.js](https://revealjs.com) and the\nback-end code execution uses [Binder](https://mybinder.org) 💖\n\n[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ines/courser-starter-python)\n\n[![](https://user-images.githubusercontent.com/13643239/56341448-68fe9380-61b5-11e9-816f-5c71ae71b94f.png)](https://course-starter-python.netlify.com)\n\n## 📖 Documentation\n\nThanks to [@hfboyce](https://github.com/hfboyce) for contributing a super detailed guide on getting started with this course framework, adding exercises, slides and other content, and customizing the design. It also comes with a Dockerfile that takes care of the dependencies for you.\n\n[➡️ **Read the documentation here**](https://ines.github.io/course-starter-python/)\n\n## ✅ Quickstart",
+      "metadata": {
+        "repo": "ines/course-starter-python",
+        "field": "readme_excerpt",
+        "topics": [
+          "python",
+          "online-course",
+          "gatsby",
+          "gatsbyjs",
+          "jupyter",
+          "binder"
+        ],
+        "chunk_index": 0,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0026_c01",
+      "evidence_id": "ev_0026",
+      "chunk_index": 1,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/course-starter-python",
+      "content": "ile that takes care of the dependencies for you.\n\n[➡️ **Read the documentation here**](https://ines.github.io/course-starter-python/)\n\n## ✅ Quickstart\n\n1. [Import](https://github.com/new/import) this repo, install it and make sure\n the app is running locally.\n2. Customize the [`meta.json`](meta.json) and\n [`binder/requirements.txt`](binder/requirements.txt).\n3. Build a [Binder](https://mybinder.org) from the `binder` branch of this repo.\n4. Add content (chapters, exercises and slides) and optionally add separate\n content license.\n5. Customize the UI theme in [`theme.sass`](theme.sass) and update images in\n [`static`](static) as needed.\n6. Deploy the app, e.g. to [Netlify](https://netlify.com).\n\n### Running the app\n\nTo start the local development server, install [Gatsby](https://gatsbyjs.org)\nand then all other dependencies. This should serve up the app on\n`localhost:8000`.\n\n```bash\nnpm install -g gatsby-cli # Install Gatsby globally\nnpm install # Install dependencies\nnpm run dev # Run the development server\n```\n\n## 🎨 Customization\n\nThe app separates its source and content – so you usually shouldn't have to dig\ninto the JavaScript source to change things. The following points of\ncustomization are available:",
+      "metadata": {
+        "repo": "ines/course-starter-python",
+        "field": "readme_excerpt",
+        "topics": [
+          "python",
+          "online-course",
+          "gatsby",
+          "gatsbyjs",
+          "jupyter",
+          "binder"
+        ],
+        "chunk_index": 1,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0026_c02",
+      "evidence_id": "ev_0026",
+      "chunk_index": 2,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/course-starter-python",
+      "content": "e and content – so you usually shouldn't have to dig\ninto the JavaScript source to change things. The following points of\ncustomization are available:\n\n| Location | Description |\n| ------------------------- | ------------------------------------------------------ |\n| `meta.json` | General config settings, title, description etc. |\n| `theme.sass` | Color theme. |\n| `binder/requirements.txt` | Python requirements to install. |\n| `chapters` | The chapters, one Markdown file per chapter. |\n| `slides` | The slides, one Markdown file per slide deck. |\n| `static` | Static assets like images, will be copied to the root. |\n\n### `meta.json`\n\nThe following meta settings are available. **Note that you have to re-start\nGatsby to see the changes if you're editing it while the server is running.**\n\n| Setting | Description |\n| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |\n| `courseId` | Unique ID of the course. Will be used when saving completed exercises to the browser's local storage. |\n| `title` | The title of the course. |\n| `slogan` | Course slogan, displayed in the page title on … [truncated]",
+      "metadata": {
+        "repo": "ines/course-starter-python",
+        "field": "readme_excerpt",
+        "topics": [
+          "python",
+          "online-course",
+          "gatsby",
+          "gatsbyjs",
+          "jupyter",
+          "binder"
+        ],
+        "chunk_index": 2,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0027_c00",
+      "evidence_id": "ev_0027",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/course-starter-python",
+      "content": "Technologies/tools mentioned in README: cli, docker, framework, go, java, javascript, python",
+      "metadata": {
+        "repo": "ines/course-starter-python",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0028_c00",
+      "evidence_id": "ev_0028",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/course-starter-python",
+      "content": "Languages used: CSS (60.8%), JavaScript (38.3%), Python (0.9%)",
+      "metadata": {
+        "repo": "ines/course-starter-python",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0029_c00",
+      "evidence_id": "ev_0029",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/course-starter-python",
+      "content": "Repository topics: python, online-course, gatsby, gatsbyjs, jupyter, binder",
+      "metadata": {
+        "repo": "ines/course-starter-python",
+        "field": "topics",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0030_c00",
+      "evidence_id": "ev_0030",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/course-starter-python",
+      "content": "User is the owner of ines/course-starter-python.",
+      "metadata": {
+        "repo": "ines/course-starter-python",
+        "is_owner": true,
+        "stars": 510,
+        "forks": 116,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0031_c00",
+      "evidence_id": "ev_0031",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/course-starter-python",
+      "content": "Owner of repo with 510 stars",
+      "metadata": {
+        "repo": "ines/course-starter-python",
+        "stars": 510,
+        "forks": 116,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0032_c00",
+      "evidence_id": "ev_0032",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/course-starter-python",
+      "content": "Repo forked 116 times by others",
+      "metadata": {
+        "repo": "ines/course-starter-python",
+        "stars": 510,
+        "forks": 116,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0033_c00",
+      "evidence_id": "ev_0033",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/course-starter-python",
+      "content": "Active issue tracker with 19 open issues",
+      "metadata": {
+        "repo": "ines/course-starter-python",
+        "stars": 510,
+        "forks": 116,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0034_c00",
+      "evidence_id": "ev_0034",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/course-starter-python",
+      "content": "Commit (2019-04-18T06:35:56+00:00): Initial commit",
+      "metadata": {
+        "repo": "ines/course-starter-python",
+        "sha": "cbcea32731",
+        "date": "2019-04-18T06:35:56+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0035_c00",
+      "evidence_id": "ev_0035",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/course-starter-python",
+      "content": "Commit (2020-03-03T11:34:01+00:00): Delete README.md",
+      "metadata": {
+        "repo": "ines/course-starter-python",
+        "sha": "66a071e2ba",
+        "date": "2020-03-03T11:34:01+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0036_c00",
+      "evidence_id": "ev_0036",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-js",
+      "content": "🎀 JavaScript API for spaCy with Python REST API",
+      "metadata": {
+        "repo": "ines/spacy-js",
+        "field": "description",
+        "language": "JavaScript",
+        "stars": 201,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0037_c00",
+      "evidence_id": "ev_0037",
+      "chunk_index": 0,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/spacy-js",
+      "content": "# spaCy JS\n\nJavaScript interface for accessing linguistic annotations provided by\n[spaCy](https://spacy.io). This project is mostly experimental and was\ndeveloped for fun to play around with different ways of mimicking spaCy's\nPython API.\n\nThe results will still be computed in Python and made available via a REST API.\nThe JavaScript API resembles spaCy's Python API as closely as possible (with\na few exceptions, as the values are all pre-computed and it's tricky to express\ncomplex recursive relationships).\n\n```javascript\nconst spacy = require('spacy');\n\n(async function() {\n const nlp = spacy.load('en_core_web_sm');\n const doc = await nlp('This is a text about Facebook.');\n for (let ent of doc.ents) {\n console.log(ent.text, ent.label);\n }\n for (let token of doc) {\n console.log(token.text, token.pos, token.head.text);\n }\n})();\n```\n\n## ⌛️ Installation\n\n### Installing the JavaScript library\n\nYou can install the JavaScript package via npm:\n\n```bash\nnpm install spacy\n```\n\n### Setting up the Python server\n\nFirst, clone this repo and install the requirements. If you've installed the\npackage via npm, you can also use the `api/server.py` and `requirements.txt` in\nyour `./node_modules/spacy` directory. It's recommended to use a virtual\nenvironment.\n\n```bash\npip install -r requirements.txt\n```\n\nYou can then run the REST API. By default, this will serve the API via\n`0.0.0.0:8080`:\n\n```bash\npython api/server.py\n```",
+      "metadata": {
+        "repo": "ines/spacy-js",
+        "field": "readme_excerpt",
+        "topics": [
+          "spacy",
+          "nlp",
+          "natural-language-processing",
+          "python",
+          "rest-api",
+          "javascript"
+        ],
+        "chunk_index": 0,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0037_c01",
+      "evidence_id": "ev_0037",
+      "chunk_index": 1,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/spacy-js",
+      "content": "tall -r requirements.txt\n```\n\nYou can then run the REST API. By default, this will serve the API via\n`0.0.0.0:8080`:\n\n```bash\npython api/server.py\n```\n\nIf you like, you can install more [models](https://spacy.io/models) and specify\na comma-separated list of models to load as the first argument when you run\nthe server. All models need to be installed in the same environment.\n\n```bash\npython api/server.py en_core_web_sm,de_core_news_sm\n```\n\n| Argument | Type | Description | Default |\n| --- | --- | --- | --- |\n| `models` | positional (str) | Comma-separated list of models to load and make available. | `en_core_web_sm` |\n| `--host`, `-ho` | option (str) | Host to serve the API. | `0.0.0.0` |\n| `--port`, `-p` | option (int) | Port to server the API. | `8080` |\n\n## 🎛 API\n\n### `spacy.load`\n\n\"Load\" a spaCy model. This method mostly exists for consistency with the Python\nAPI. It sets up the REST API and `nlp` object, but doesn't actually load\nanything, since the models are already available via the REST API.\n\n```javascript\nconst nlp = spacy.load('en_core_web_sm');\n```\n\n| Argument | Type | Description |\n| --- | --- | --- |\n| `model` | String | Name of model to load, e.g. `'en_core_web_sm'`. Needs to be available via the REST API. |\n| `api` | String | Alternative URL of REST API. Defaults to `http://0.0.0.0:8080`. |\n| **RETURNS** | [`Language`](src/language.js) | The `nlp` object. |\n\n### `nlp` async",
+      "metadata": {
+        "repo": "ines/spacy-js",
+        "field": "readme_excerpt",
+        "topics": [
+          "spacy",
+          "nlp",
+          "natural-language-processing",
+          "python",
+          "rest-api",
+          "javascript"
+        ],
+        "chunk_index": 1,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0037_c02",
+      "evidence_id": "ev_0037",
+      "chunk_index": 2,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/spacy-js",
+      "content": "Alternative URL of REST API. Defaults to `http://0.0.0.0:8080`. |\n| **RETURNS** | [`Language`](src/language.js) | The `nlp` object. |\n\n### `nlp` async\n\nThe `nlp` object created by `spacy.load` can be called on a string of text\nand makes a request to the REST API. The easiest way to use it is to wrap the\ncall in an `async` function and use `await`:\n\n```javascript\nasync function() {\n const nlp = spacy.load('en_core_web_sm');\n const doc = await nlp('This is a text.');\n}\n```\n\n| Argument | Type | Description |\n| --- | --- | --- |\n| `text` | String | The text to process. |\n| **RETURNS** | [`Doc`](src/tokens.js) | The processed `Doc`. |\n\n### `Doc`\n\nJust like [in the original API](https://spacy.io/api/doc), the `Doc` object can\nbe constructed with an array of `words` and `spaces`. It also takes an\na … [truncated]",
+      "metadata": {
+        "repo": "ines/spacy-js",
+        "field": "readme_excerpt",
+        "topics": [
+          "spacy",
+          "nlp",
+          "natural-language-processing",
+          "python",
+          "rest-api",
+          "javascript"
+        ],
+        "chunk_index": 2,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0038_c00",
+      "evidence_id": "ev_0038",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-js",
+      "content": "Technologies/tools mentioned in README: api, express, go, java, javascript, library, python, rest, testing",
+      "metadata": {
+        "repo": "ines/spacy-js",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0039_c00",
+      "evidence_id": "ev_0039",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-js",
+      "content": "Languages used: JavaScript (80.7%), Python (19.3%)",
+      "metadata": {
+        "repo": "ines/spacy-js",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0040_c00",
+      "evidence_id": "ev_0040",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-js",
+      "content": "Repository topics: spacy, nlp, natural-language-processing, python, rest-api, javascript",
+      "metadata": {
+        "repo": "ines/spacy-js",
+        "field": "topics",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0041_c00",
+      "evidence_id": "ev_0041",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/spacy-js",
+      "content": "User is the owner of ines/spacy-js.",
+      "metadata": {
+        "repo": "ines/spacy-js",
+        "is_owner": true,
+        "stars": 201,
+        "forks": 23,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0042_c00",
+      "evidence_id": "ev_0042",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/spacy-js",
+      "content": "Owner of repo with 201 stars",
+      "metadata": {
+        "repo": "ines/spacy-js",
+        "stars": 201,
+        "forks": 23,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0043_c00",
+      "evidence_id": "ev_0043",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/spacy-js",
+      "content": "Repo forked 23 times by others",
+      "metadata": {
+        "repo": "ines/spacy-js",
+        "stars": 201,
+        "forks": 23,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0044_c00",
+      "evidence_id": "ev_0044",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/spacy-js",
+      "content": "Active issue tracker with 27 open issues",
+      "metadata": {
+        "repo": "ines/spacy-js",
+        "stars": 201,
+        "forks": 23,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0045_c00",
+      "evidence_id": "ev_0045",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-js",
+      "content": "Commit (2018-10-25T12:06:48+00:00): Initial commit",
+      "metadata": {
+        "repo": "ines/spacy-js",
+        "sha": "b27de0a6c6",
+        "date": "2018-10-25T12:06:48+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0046_c00",
+      "evidence_id": "ev_0046",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-js",
+      "content": "Commit (2019-03-22T17:17:21+00:00): Update for v2.1",
+      "metadata": {
+        "repo": "ines/spacy-js",
+        "sha": "03818f3e2e",
+        "date": "2019-03-22T17:17:21+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0047_c00",
+      "evidence_id": "ev_0047",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/juniper",
+      "content": "🍇 Edit and execute code snippets in the browser using Jupyter kernels",
+      "metadata": {
+        "repo": "ines/juniper",
+        "field": "description",
+        "language": "JavaScript",
+        "stars": 224,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0048_c00",
+      "evidence_id": "ev_0048",
+      "chunk_index": 0,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:ines/juniper",
+      "content": "# Juniper: Edit and execute code snippets in the browser using Jupyter kernels\n\nJuniper is a lightweight JavaScript library for adding interactive, editable\nand runnable code snippets to any website. It uses\n[JupyterLab](https://github.com/jupyterlab/jupyterlab) components and\n[Binder](https://mybinder.org) (or your own self-hosted version of\n[BinderHub](https://github.com/jupyterhub/binderhub)) to launch Python, R or\nJulia environments based on a GitHub repository and an auto-built\nJupyter-enabled Docker image.\n\nThis project was heavily inspired by [Min RK](https://github.com/minrk)'s\n[Thebelab](https://github.com/minrk/thebelab) package – thanks for the great\nwork on this. It was also instrumental in helping me understand how JupyterLab\nworks under the hood. Also thanks to [Binder](https://mybinder.org) for making\ntheir great service available and allowing such a smooth integration.\n\n![juniper](https://user-images.githubusercontent.com/13643239/39436623-c367b108-4c9e-11e8-8749-08f4f162a7f1.gif)\n\n## Quickstart\n\nTo add interactive code widgets to your site, you'll need a GitHub repository\nwith a `requirements.txt` listing the packages you want to install in the\nenvironment. Using the repository, you can build a Docker image on\n[Binder](https://mybinder.org), which will provide the Jupyter kernels.\nWhen a user connects to the code widget, Binder will start up a Docker\ncontainer for them.",
+      "metadata": {
+        "repo": "ines/juniper",
+        "field": "readme_excerpt",
+        "topics": [
+          "jupyter",
+          "jupyter-notebook",
+          "jupyterlab",
+          "binder",
+          "binderhub",
+          "python",
+          "ipython",
+          "javascript-library",
+          "widget"
+        ],
+        "chunk_index": 0,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0048_c01",
+      "evidence_id": "ev_0048",
+      "chunk_index": 1,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:ines/juniper",
+      "content": "ps://mybinder.org), which will provide the Jupyter kernels.\nWhen a user connects to the code widget, Binder will start up a Docker\ncontainer for them.\n\nYou'll also need to include [`juniper.min.js`](dist/juniper.min.js), add a\n`data-executable` attribute to elements containing code and initialise the\nmodule. See [the list of options](#options) for a full overview of the available\nsettings.\n\n```html\nprint('Hello world!')\n```\n\n```javascript\nnew Juniper({\n repo: 'username/repo'\n})\n```\n\n### Setting up the environment\n\nThe `requirements.txt` can either live in the repository root, or in a\nsubdirectory `binder`. It can include PyPi packages with version identifiers, as\nwell as URLs to installable packages. This lets us install both spaCy *and* the\nsmall English model via [its direct link](https://spacy.io/usage/models#download-pip):\n\n```txt\nspacy>=2.0.11,\n \n Your website\n \n \n- \n+ \n print('hello world!')\n … [truncated]",
+      "metadata": {
+        "repo": "ines/juniper",
+        "field": "readme_excerpt",
+        "topics": [
+          "jupyter",
+          "jupyter-notebook",
+          "jupyterlab",
+          "binder",
+          "binderhub",
+          "python",
+          "ipython",
+          "javascript-library",
+          "widget"
+        ],
+        "chunk_index": 1,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0049_c00",
+      "evidence_id": "ev_0049",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/juniper",
+      "content": "Technologies/tools mentioned in README: api, cli, docker, java, javascript, library, python",
+      "metadata": {
+        "repo": "ines/juniper",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0050_c00",
+      "evidence_id": "ev_0050",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/juniper",
+      "content": "Languages used: JavaScript (49.8%), CSS (36.4%), HTML (13.8%)",
+      "metadata": {
+        "repo": "ines/juniper",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0051_c00",
+      "evidence_id": "ev_0051",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/juniper",
+      "content": "Repository topics: jupyter, jupyter-notebook, jupyterlab, binder, binderhub, python, ipython, javascript-library, widget",
+      "metadata": {
+        "repo": "ines/juniper",
+        "field": "topics",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0052_c00",
+      "evidence_id": "ev_0052",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/juniper",
+      "content": "User is the owner of ines/juniper.",
+      "metadata": {
+        "repo": "ines/juniper",
+        "is_owner": true,
+        "stars": 224,
+        "forks": 35,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0053_c00",
+      "evidence_id": "ev_0053",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/juniper",
+      "content": "Owner of repo with 224 stars",
+      "metadata": {
+        "repo": "ines/juniper",
+        "stars": 224,
+        "forks": 35,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0054_c00",
+      "evidence_id": "ev_0054",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/juniper",
+      "content": "Repo forked 35 times by others",
+      "metadata": {
+        "repo": "ines/juniper",
+        "stars": 224,
+        "forks": 35,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0055_c00",
+      "evidence_id": "ev_0055",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/juniper",
+      "content": "Commit (2018-04-30T18:46:29+00:00): ✨ Initial commit",
+      "metadata": {
+        "repo": "ines/juniper",
+        "sha": "ed349d3884",
+        "date": "2018-04-30T18:46:29+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0056_c00",
+      "evidence_id": "ev_0056",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/juniper",
+      "content": "Commit (2019-04-10T14:57:17+00:00): Update dependencies",
+      "metadata": {
+        "repo": "ines/juniper",
+        "sha": "1dc8ed20f9",
+        "date": "2019-04-10T14:57:17+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0057_c00",
+      "evidence_id": "ev_0057",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/console-dot-emoji",
+      "content": ":pizza: Custom Console Logging with Emoji",
+      "metadata": {
+        "repo": "ines/console-dot-emoji",
+        "field": "description",
+        "language": "JavaScript",
+        "stars": 251,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0058_c00",
+      "evidence_id": "ev_0058",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/console-dot-emoji",
+      "content": "# Custom Console Logging with Emoji\n\nDebugging JavaScript can be painful and often means spending hours looking at boring console logs. Inspired by [console.frog](http://tholman.com/console-dot-frog/) by Tim Holman, I made my own console logger &mdash; but with customizable commands and emojis. Logging to the console is finally fun again, thanks to `console.beer` :beer: and `console.unicorn` 🦄.\n\n[Go here](https://ines.io/blog/custom-console-logging-emoji) to read the blog post and see it in action.\n\n![Preview](https://ines.io/blog/img/emoji-console_preview.jpg)\n\n# Example\n\nSimply include `console.emoji.js` in your project or copy/past/adapt the code.\n\n```javascript\n// Logging to the console\nconsole.unicorn(\"So magical!\");\n\n// Output\n🦄 So magical!\n```\n\n# License\n\nPublished under the MIT license.\nInspired by and adapted from [console.frog](https://github.com/tholman/console-dot-frog) by [Tim Holman](http://tholman.com).",
+      "metadata": {
+        "repo": "ines/console-dot-emoji",
+        "field": "readme_excerpt",
+        "topics": [
+          "javascript",
+          "emoji",
+          "javascript-console"
+        ],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0059_c00",
+      "evidence_id": "ev_0059",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/console-dot-emoji",
+      "content": "Technologies/tools mentioned in README: go, java, javascript",
+      "metadata": {
+        "repo": "ines/console-dot-emoji",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0060_c00",
+      "evidence_id": "ev_0060",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/console-dot-emoji",
+      "content": "Languages used: JavaScript (100.0%)",
+      "metadata": {
+        "repo": "ines/console-dot-emoji",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0061_c00",
+      "evidence_id": "ev_0061",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/console-dot-emoji",
+      "content": "Repository topics: javascript, emoji, javascript-console",
+      "metadata": {
+        "repo": "ines/console-dot-emoji",
+        "field": "topics",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0062_c00",
+      "evidence_id": "ev_0062",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/console-dot-emoji",
+      "content": "User is the owner of ines/console-dot-emoji.",
+      "metadata": {
+        "repo": "ines/console-dot-emoji",
+        "is_owner": true,
+        "stars": 251,
+        "forks": 12,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0063_c00",
+      "evidence_id": "ev_0063",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/console-dot-emoji",
+      "content": "Owner of repo with 251 stars",
+      "metadata": {
+        "repo": "ines/console-dot-emoji",
+        "stars": 251,
+        "forks": 12,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0064_c00",
+      "evidence_id": "ev_0064",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/console-dot-emoji",
+      "content": "Repo forked 12 times by others",
+      "metadata": {
+        "repo": "ines/console-dot-emoji",
+        "stars": 251,
+        "forks": 12,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0065_c00",
+      "evidence_id": "ev_0065",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/console-dot-emoji",
+      "content": "Sustained contributions over 2+ years (2016–2018)",
+      "metadata": {
+        "repo": "ines/console-dot-emoji",
+        "stars": 251,
+        "forks": 12,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0066_c00",
+      "evidence_id": "ev_0066",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/console-dot-emoji",
+      "content": "Commit (2016-06-20T16:48:29+00:00): Initial commit",
+      "metadata": {
+        "repo": "ines/console-dot-emoji",
+        "sha": "5e52debc17",
+        "date": "2016-06-20T16:48:29+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0067_c00",
+      "evidence_id": "ev_0067",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/console-dot-emoji",
+      "content": "Commit (2018-02-01T08:33:45+00:00): Merge pull request #3 from bfred-it/patch-1",
+      "metadata": {
+        "repo": "ines/console-dot-emoji",
+        "sha": "ce2a8420af",
+        "date": "2018-02-01T08:33:45+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0068_c00",
+      "evidence_id": "ev_0068",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-streamlit-demo",
+      "content": "Languages used: Python (100.0%)",
+      "metadata": {
+        "repo": "ines/spacy-streamlit-demo",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0069_c00",
+      "evidence_id": "ev_0069",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/spacy-streamlit-demo",
+      "content": "User is the owner of ines/spacy-streamlit-demo.",
+      "metadata": {
+        "repo": "ines/spacy-streamlit-demo",
+        "is_owner": true,
+        "stars": 19,
+        "forks": 30,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0070_c00",
+      "evidence_id": "ev_0070",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/spacy-streamlit-demo",
+      "content": "Owner of repo with 19 stars",
+      "metadata": {
+        "repo": "ines/spacy-streamlit-demo",
+        "stars": 19,
+        "forks": 30,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0071_c00",
+      "evidence_id": "ev_0071",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/spacy-streamlit-demo",
+      "content": "Repo forked 30 times by others",
+      "metadata": {
+        "repo": "ines/spacy-streamlit-demo",
+        "stars": 19,
+        "forks": 30,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0072_c00",
+      "evidence_id": "ev_0072",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-streamlit-demo",
+      "content": "Commit (2020-09-24T12:47:26+00:00): Initial commit",
+      "metadata": {
+        "repo": "ines/spacy-streamlit-demo",
+        "sha": "a95dc988d8",
+        "date": "2020-09-24T12:47:26+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0073_c00",
+      "evidence_id": "ev_0073",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-streamlit-demo",
+      "content": "Commit (2021-02-02T02:17:28+00:00): Try with fewer models",
+      "metadata": {
+        "repo": "ines/spacy-streamlit-demo",
+        "sha": "0d5752517d",
+        "date": "2021-02-02T02:17:28+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0074_c00",
+      "evidence_id": "ev_0074",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-graphql",
+      "content": "🤹‍♀️ Query spaCy's linguistic annotations using GraphQL",
+      "metadata": {
+        "repo": "ines/spacy-graphql",
+        "field": "description",
+        "language": "Python",
+        "stars": 86,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0075_c00",
+      "evidence_id": "ev_0075",
+      "chunk_index": 0,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/spacy-graphql",
+      "content": "# spacy-graphql\n\nA very simple and experimental app that lets you query [spaCy](https://spacy.io)'s linguistic annotations using [GraphQL](https://graphql.org). It's my first ever experiment with GraphQL, so it's probably not as elegant as it could be.\n\nThe API currently supports most [token attributes](https://spacy.io/api/token#attributes), named entities, sentences and text categories (if available as `doc.cats`, i.e. if you added a text classifier to a model). The `meta` field will return the model meta data. Models are only loaded once and kept in memory.\n\nIt currently doesn't do anything particularly clever, so regardless of your query, the full model pipeline will always be applied, even if you only need the token texts. Similarly, if you only request entities, the document will still be tagged and parsed.\n\n## Installation & Usage\n\nTo try it out, clone this repo and install the dependencies. By default, the [`en_core_web_sm` model](https://spacy.io/models/en#en_core_web_sm) will be preinstalled. Note that the API requires **Python 3.5 or higher**.\n\n```bash\ngit clone https://github.com/ines/spacy-graphql\ncd spacy-graphql\npip install -r requirements.txt\n# optional: install more spaCy models\n```\n\nExecuting the [`app.py`](app.py) will start the server:\n\n```bash\npython app.py\n```\n\nYou can use the `SPACY_HOST` and `SPACY_PORT` environment variables to change the host and port. By default, the API is served on [`localhost:8080`](http://localhost:8080).",
+      "metadata": {
+        "repo": "ines/spacy-graphql",
+        "field": "readme_excerpt",
+        "topics": [
+          "spacy",
+          "graphql",
+          "flask",
+          "flask-api",
+          "python",
+          "nlp",
+          "natural-language-processing"
+        ],
+        "chunk_index": 0,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0075_c01",
+      "evidence_id": "ev_0075",
+      "chunk_index": 1,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/spacy-graphql",
+      "content": "_HOST` and `SPACY_PORT` environment variables to change the host and port. By default, the API is served on [`localhost:8080`](http://localhost:8080).\n\nIf you navigate to the URL in your browser, you can explore the API interactively using [GraphiQL](https://github.com/graphql/graphiql). It also shows the complete documentation for the available fields.\n\n![GraphiQL](https://user-images.githubusercontent.com/13643239/43527763-9dd554c0-95a7-11e8-9c73-c60f6f546d7f.png)\n\n### Example query\n\nBoth the `text` and `model` argument are required. The value of `model` is passed to `spacy.load`, so you'll be able to load any model that's installed in the same environment out-of-the-box.\n\n```graphql\n{\n nlp(text: \"Zuckerberg is the CEO of Facebook.\", model: \"en_core_web_sm\") {\n meta {\n lang\n description\n }\n doc {\n text\n tokens {\n text\n pos_\n }\n ents {\n text\n label_\n }\n }\n }\n}\n```\n\n### Example Response",
+      "metadata": {
+        "repo": "ines/spacy-graphql",
+        "field": "readme_excerpt",
+        "topics": [
+          "spacy",
+          "graphql",
+          "flask",
+          "flask-api",
+          "python",
+          "nlp",
+          "natural-language-processing"
+        ],
+        "chunk_index": 1,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0075_c02",
+      "evidence_id": "ev_0075",
+      "chunk_index": 2,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/spacy-graphql",
+      "content": "el: \"en_core_web_sm\") {\n meta {\n lang\n description\n }\n doc {\n text\n tokens {\n text\n pos_\n }\n ents {\n text\n label_\n }\n }\n }\n}\n```\n\n### Example Response\n\n```json\n{\n \"data\": {\n \"nlp\": {\n \"meta\": {\n \"lang\": \"en\",\n \"description\": \"English multi-task CNN trained on OntoNotes, with GloVe vectors trained on Common Crawl. Assigns word vectors, context-specific token vectors, POS tags, dependency parse and named entities.\"\n },\n \"doc\": {\n \"text\": \"Zuckerberg is the CEO of Facebook.\",\n \"tokens\": [\n {\n \"text\": \"Zuckerberg\",\n \"pos_\": \"PROPN\"\n },\n {\n \"text\": \"is\",\n \"pos_\": \"VERB\"\n },\n {\n \"text\": \"the\",\n \"pos_\": \"DET\"\n },\n {\n \"text\": \"CEO\",\n \"pos_\": \"NOUN\"\n },\n {\n \"text\": \"of\",\n \"pos_\": \"ADP\"\n },\n {\n \"text\": \"Facebook\",\n \"pos_\": \"PROPN\"\n },\n {\n \"text\": \".\",\n \"pos_\": \"PUNCT\"\n }\n ],\n \"ents\": [\n {\n \"text\": \"Zuckerberg\",\n \"label_\": \"PERSON\"\n },\n {\n \"text\": \"Facebook\",\n \"label_\": \"ORG\"\n }\n ]\n }\n }\n }\n}\n```",
+      "metadata": {
+        "repo": "ines/spacy-graphql",
+        "field": "readme_excerpt",
+        "topics": [
+          "spacy",
+          "graphql",
+          "flask",
+          "flask-api",
+          "python",
+          "nlp",
+          "natural-language-processing"
+        ],
+        "chunk_index": 2,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0076_c00",
+      "evidence_id": "ev_0076",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-graphql",
+      "content": "Technologies/tools mentioned in README: api, go, graphql, python",
+      "metadata": {
+        "repo": "ines/spacy-graphql",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0077_c00",
+      "evidence_id": "ev_0077",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-graphql",
+      "content": "Languages used: Python (100.0%)",
+      "metadata": {
+        "repo": "ines/spacy-graphql",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0078_c00",
+      "evidence_id": "ev_0078",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-graphql",
+      "content": "Repository topics: spacy, graphql, flask, flask-api, python, nlp, natural-language-processing",
+      "metadata": {
+        "repo": "ines/spacy-graphql",
+        "field": "topics",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0079_c00",
+      "evidence_id": "ev_0079",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/spacy-graphql",
+      "content": "User is the owner of ines/spacy-graphql.",
+      "metadata": {
+        "repo": "ines/spacy-graphql",
+        "is_owner": true,
+        "stars": 86,
+        "forks": 9,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0080_c00",
+      "evidence_id": "ev_0080",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/spacy-graphql",
+      "content": "Owner of repo with 86 stars",
+      "metadata": {
+        "repo": "ines/spacy-graphql",
+        "stars": 86,
+        "forks": 9,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0081_c00",
+      "evidence_id": "ev_0081",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/spacy-graphql",
+      "content": "Repo forked 9 times by others",
+      "metadata": {
+        "repo": "ines/spacy-graphql",
+        "stars": 86,
+        "forks": 9,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0082_c00",
+      "evidence_id": "ev_0082",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-graphql",
+      "content": "Commit (2018-08-01T14:50:09+00:00): ✨ Initial commit",
+      "metadata": {
+        "repo": "ines/spacy-graphql",
+        "sha": "a71b51c668",
+        "date": "2018-08-01T14:50:09+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0083_c00",
+      "evidence_id": "ev_0083",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pretty-harp-jade-skeleton",
+      "content": ":skull: Harp & Jade/Pug skeleton theme for a personal blog",
+      "metadata": {
+        "repo": "ines/pretty-harp-jade-skeleton",
+        "field": "description",
+        "language": "HTML",
+        "stars": 13,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0084_c00",
+      "evidence_id": "ev_0084",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pretty-harp-jade-skeleton",
+      "content": "# Pretty Harp & Jade Skeleton Template\nAn incredibly simple skeleton template for [Harp](http://harpjs.com) using the [Jade / Pug](http://jade-lang.com/) templating language to get you started. It's not meant to be a perfectly complete blog theme but rather a starting point if you want to experiment with static website generators and [build your own template](https://ines.io/blog/the-ultimate-guide-static-websites-harp-jade).\n\n*This template was originally developed for [The Ultimate Guide to Static Websites with Harp & Jade](https://ines.io/blog/the-ultimate-guide-static-websites-harp-jade).*\n\n![Preview of Skeleton Template](https://ines.io/blog/img/harp-jade_skeleton.jpg)",
+      "metadata": {
+        "repo": "ines/pretty-harp-jade-skeleton",
+        "field": "readme_excerpt",
+        "topics": [
+          "skeleton-template",
+          "harp",
+          "jade",
+          "pug",
+          "harpjs"
+        ],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0085_c00",
+      "evidence_id": "ev_0085",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pretty-harp-jade-skeleton",
+      "content": "Languages used: HTML (61.0%), CSS (38.1%), JavaScript (0.9%)",
+      "metadata": {
+        "repo": "ines/pretty-harp-jade-skeleton",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0086_c00",
+      "evidence_id": "ev_0086",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pretty-harp-jade-skeleton",
+      "content": "Repository topics: skeleton-template, harp, jade, pug, harpjs",
+      "metadata": {
+        "repo": "ines/pretty-harp-jade-skeleton",
+        "field": "topics",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0087_c00",
+      "evidence_id": "ev_0087",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/pretty-harp-jade-skeleton",
+      "content": "User is the owner of ines/pretty-harp-jade-skeleton.",
+      "metadata": {
+        "repo": "ines/pretty-harp-jade-skeleton",
+        "is_owner": true,
+        "stars": 13,
+        "forks": 6,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0088_c00",
+      "evidence_id": "ev_0088",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/pretty-harp-jade-skeleton",
+      "content": "Owner of repo with 13 stars",
+      "metadata": {
+        "repo": "ines/pretty-harp-jade-skeleton",
+        "stars": 13,
+        "forks": 6,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0089_c00",
+      "evidence_id": "ev_0089",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/pretty-harp-jade-skeleton",
+      "content": "Repo forked 6 times by others",
+      "metadata": {
+        "repo": "ines/pretty-harp-jade-skeleton",
+        "stars": 13,
+        "forks": 6,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0090_c00",
+      "evidence_id": "ev_0090",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pretty-harp-jade-skeleton",
+      "content": "Commit (2016-05-25T20:33:38+00:00): Add files",
+      "metadata": {
+        "repo": "ines/pretty-harp-jade-skeleton",
+        "sha": "465f8a2e20",
+        "date": "2016-05-25T20:33:38+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0091_c00",
+      "evidence_id": "ev_0091",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pretty-harp-jade-skeleton",
+      "content": "Commit (2016-09-23T21:01:15+00:00): Correct typo (fixes #1)",
+      "metadata": {
+        "repo": "ines/pretty-harp-jade-skeleton",
+        "sha": "8ad6a51b3b",
+        "date": "2016-09-23T21:01:15+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0092_c00",
+      "evidence_id": "ev_0092",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pretty-jekyll-skeleton",
+      "content": ":skull: Jekyll skeleton theme for a personal blog",
+      "metadata": {
+        "repo": "ines/pretty-jekyll-skeleton",
+        "field": "description",
+        "language": "HTML",
+        "stars": 12,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0093_c00",
+      "evidence_id": "ev_0093",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pretty-jekyll-skeleton",
+      "content": "# Pretty Jekyll Skeleton Template\nAn incredibly simple skeleton template for [Jekyll](http://jekyllrb.com/) to get you started. It's not meant to be a perfectly complete blog theme but rather a starting point if you want to experiment with static website generators and [build your own template](https://ines.io/blog/the-ultimate-guide-static-websites-jekyll).\n\n*This template was originally developed for [The ultimate guide to static websites with Jekyll](https://ines.io/blog/the-ultimate-guide-static-websites-jekyll).*\n\n![Preview of Pretty Jekyll Skeleton Template](https://ines.io/blog/img/jekyll_skeleton.jpg)",
+      "metadata": {
+        "repo": "ines/pretty-jekyll-skeleton",
+        "field": "readme_excerpt",
+        "topics": [
+          "jekyll",
+          "skeleton-template",
+          "jekyll-theme"
+        ],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0094_c00",
+      "evidence_id": "ev_0094",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pretty-jekyll-skeleton",
+      "content": "Languages used: HTML (83.0%), CSS (16.4%), JavaScript (0.5%)",
+      "metadata": {
+        "repo": "ines/pretty-jekyll-skeleton",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0095_c00",
+      "evidence_id": "ev_0095",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pretty-jekyll-skeleton",
+      "content": "Repository topics: jekyll, skeleton-template, jekyll-theme",
+      "metadata": {
+        "repo": "ines/pretty-jekyll-skeleton",
+        "field": "topics",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0096_c00",
+      "evidence_id": "ev_0096",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/pretty-jekyll-skeleton",
+      "content": "User is the owner of ines/pretty-jekyll-skeleton.",
+      "metadata": {
+        "repo": "ines/pretty-jekyll-skeleton",
+        "is_owner": true,
+        "stars": 12,
+        "forks": 5,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0097_c00",
+      "evidence_id": "ev_0097",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/pretty-jekyll-skeleton",
+      "content": "Owner of repo with 12 stars",
+      "metadata": {
+        "repo": "ines/pretty-jekyll-skeleton",
+        "stars": 12,
+        "forks": 5,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0098_c00",
+      "evidence_id": "ev_0098",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/pretty-jekyll-skeleton",
+      "content": "Repo forked 5 times by others",
+      "metadata": {
+        "repo": "ines/pretty-jekyll-skeleton",
+        "stars": 12,
+        "forks": 5,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0099_c00",
+      "evidence_id": "ev_0099",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pretty-jekyll-skeleton",
+      "content": "Commit (2015-11-11T18:27:33+00:00): Add theme files",
+      "metadata": {
+        "repo": "ines/pretty-jekyll-skeleton",
+        "sha": "1086a542fa",
+        "date": "2015-11-11T18:27:33+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0100_c00",
+      "evidence_id": "ev_0100",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pretty-jekyll-skeleton",
+      "content": "Commit (2016-05-26T12:22:42+00:00): Update links to https",
+      "metadata": {
+        "repo": "ines/pretty-jekyll-skeleton",
+        "sha": "53cc13d1aa",
+        "date": "2016-05-26T12:22:42+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0101_c00",
+      "evidence_id": "ev_0101",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/quickstart",
+      "content": "🎯 A micro-form for user-specific installation instructions",
+      "metadata": {
+        "repo": "ines/quickstart",
+        "field": "description",
+        "language": "JavaScript",
+        "stars": 67,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0102_c00",
+      "evidence_id": "ev_0102",
+      "chunk_index": 0,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:ines/quickstart",
+      "content": "# quickstart.js: A micro-form for user-specific installation instructions\n\nIf you're publishing open-source software, you're probably familiar with this\nscenario: You want to make it easy for your users to download, install and\nuse your library across operating systems and platforms, so you upload it to\na variety of package managers and provide detailed instructions and documentation.\n\nBut each package manager has its own, specific download command – sometimes even\ntwo. If you want to use a virtual environment, you need to add a few commands to\nthe top. But wait, the activation command in Windows looks different. And if\nyou're on Python 3, it's actually called `venv`, not `virtualenv`. And after\ninstallation, there's other stuff to set up and install. How? Well...\n\n![It depends...](https://cloud.githubusercontent.com/assets/13643239/26151827/c2de05d6-3b04-11e7-8ea0-67087b177d10.gif)",
+      "metadata": {
+        "repo": "ines/quickstart",
+        "field": "readme_excerpt",
+        "topics": [
+          "javascript",
+          "css",
+          "documentation",
+          "docs",
+          "javascript-library"
+        ],
+        "chunk_index": 0,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0102_c01",
+      "evidence_id": "ev_0102",
+      "chunk_index": 1,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:ines/quickstart",
+      "content": "up and install. How? Well...\n\n![It depends...](https://cloud.githubusercontent.com/assets/13643239/26151827/c2de05d6-3b04-11e7-8ea0-67087b177d10.gif)\n\nThe problem with linear installations docs is that they easily become verbose.\nYou want to make sure to cover every platform and setup, while at the same\ntime, keeping it simple for beginners or users who just want to install your\nsoftware, and not sift through lengthy explanations that are not actually\nrelevant to them. This ended up becoming an annoying issue for us at\n[spaCy](https://spacy.io), so I built [`quickstart.js`](quickstart.js). It's\n[super lightweight](https://raw.githubusercontent.com/ines/quickstart/master/quickstart.min.js), easy to customise and will even build\nthe form for you – if you want it to.\n\n**Quickstart was inspired by [PyTorch](http://pytorch.org)'s \"Getting started\"\nwidget. Its filtering functionality is based on a simple CSS rule, similar\nto [Jets.js](https://jets.js.org). This makes it fast and allows complex\nfiltering rules with only one minimal DOM modification.** For more info on\nthis, see the [How it works](#how-it-works) section.\n\n## Examples\n\nYou can see Quickstart in action on [spaCy's installation docs](https://spacy.io/docs/usage).\nFor a code example you can modify, see the [`example.html`](example.html) or\ncheck out [this demo on CodePen](https://codepen.io/ines/pen/OmobKq).",
+      "metadata": {
+        "repo": "ines/quickstart",
+        "field": "readme_excerpt",
+        "topics": [
+          "javascript",
+          "css",
+          "documentation",
+          "docs",
+          "javascript-library"
+        ],
+        "chunk_index": 1,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0102_c02",
+      "evidence_id": "ev_0102",
+      "chunk_index": 2,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:ines/quickstart",
+      "content": "e).\nFor a code example you can modify, see the [`example.html`](example.html) or\ncheck out [this demo on CodePen](https://codepen.io/ines/pen/OmobKq).\n\n![Screenshot](https://cloud.githubusercontent.com/assets/13643239/26161117/4891b0e2-3b23-11e7-9a9d-965dd50f58e9.jpg)\n\n> ⚠️ **Important note:** Because Quickstart relies on JavaScript, I strongly\n> recommend to only use it **in addition to existing installation docs**, not\n> to provide new information that's not available elsewhere. Otherwise, users\n> who don't have JavaScript enabled won't be able to access your docs.\n> Quickstart will make sure its container is visible, so you can safely set it\n> to `display: none` in your CSS or HTML. This will hide it if JavaScript is\n> disabled.\n\n## Usage\n\nQuickstart can take care of rendering the widget and the markup required for the\nform and options – all you have to do is **include the script and stylesheet**:\n\n```html\n -->\n\n-->\n\n```\n\nOptions are defined as a **simple array**. Each group and option needs to have a\nunique `id` and a `title`, which will be displayed in the form. To allow multiple\nselections in a group, set `multiple: true`. To mark an option as checked by\ndefault, add `checked: true`.",
+      "metadata": {
+        "repo": "ines/quickstart",
+        "field": "readme_excerpt",
+        "topics": [
+          "javascript",
+          "css",
+          "documentation",
+          "docs",
+          "javascript-library"
+        ],
+        "chunk_index": 2,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0102_c03",
+      "evidence_id": "ev_0102",
+      "chunk_index": 3,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:ines/quickstart",
+      "content": "be displayed in the form. To allow multiple\nselections in a group, set `multiple: true`. To mark an option as checked by\ndefault, add `checked: true`.\n\n```javascript\nconst groups = [\n {\n id: \"os\",\n title: \"Operating system\",\n options: [\n { id: \"mac\", title: \"macOS / OSX\", checked: true },\n { id: \"windows\", title: \"Windows\" },\n { id: \"linux\", title: \"Linux\" }\n ]\n },\n {\n id: \"python\",\n title: \"Python version\",\n options: [\n { id: 2, title: \"2.x\" },\n { id: 3, title: \"3.x\", checked: true }\n ]\n },\n {\n id: \"config\",\n title: \"Configuration\",\n multiple: true,\n options: [\n { id: \"venv\", title: \"virtualenv\" }\n ]\n }\n]\n```\n\nYou also need to set up a container to tell … [truncated]",
+      "metadata": {
+        "repo": "ines/quickstart",
+        "field": "readme_excerpt",
+        "topics": [
+          "javascript",
+          "css",
+          "documentation",
+          "docs",
+          "javascript-library"
+        ],
+        "chunk_index": 3,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0103_c00",
+      "evidence_id": "ev_0103",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/quickstart",
+      "content": "Technologies/tools mentioned in README: cli, cloud, express, java, javascript, library, python, pytorch, rust",
+      "metadata": {
+        "repo": "ines/quickstart",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0104_c00",
+      "evidence_id": "ev_0104",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/quickstart",
+      "content": "Languages used: JavaScript (63.3%), HTML (18.7%), CSS (18.1%)",
+      "metadata": {
+        "repo": "ines/quickstart",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0105_c00",
+      "evidence_id": "ev_0105",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/quickstart",
+      "content": "Repository topics: javascript, css, documentation, docs, javascript-library",
+      "metadata": {
+        "repo": "ines/quickstart",
+        "field": "topics",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0106_c00",
+      "evidence_id": "ev_0106",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/quickstart",
+      "content": "User is the owner of ines/quickstart.",
+      "metadata": {
+        "repo": "ines/quickstart",
+        "is_owner": true,
+        "stars": 67,
+        "forks": 2,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0107_c00",
+      "evidence_id": "ev_0107",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:ines/quickstart",
+      "content": "Owner of repo with 67 stars",
+      "metadata": {
+        "repo": "ines/quickstart",
+        "stars": 67,
+        "forks": 2,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0108_c00",
+      "evidence_id": "ev_0108",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/quickstart",
+      "content": "Commit (2017-05-17T15:21:55+00:00): :sparkles: Initial commit",
+      "metadata": {
+        "repo": "ines/quickstart",
+        "sha": "60cbfe8d3e",
+        "date": "2017-05-17T15:21:55+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0109_c00",
+      "evidence_id": "ev_0109",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/quickstart",
+      "content": "Commit (2017-05-18T17:21:55+00:00): Update README.md",
+      "metadata": {
+        "repo": "ines/quickstart",
+        "sha": "7db8bb0b32",
+        "date": "2017-05-18T17:21:55+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0110_c00",
+      "evidence_id": "ev_0110",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/shitty-cat-petting-robot",
+      "content": "🐱 Shitty cat petting robot for Raspberry Pi",
+      "metadata": {
+        "repo": "ines/shitty-cat-petting-robot",
+        "field": "description",
+        "language": "Python",
+        "stars": 6,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0111_c00",
+      "evidence_id": "ev_0111",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/shitty-cat-petting-robot",
+      "content": "# 🐱 Shitty Cat Petting Robot\n\nThis robot is not fit for purpose at all and guaranteed to make your cats run away in horror. But it was a lot of fun to build.\n\n[**📖 Read the blog post for details**](https://ines.io/blog/raspberry-pi-python-cats/)\n\n[Live demo](https://user-images.githubusercontent.com/13643239/235302389-06b4f3f1-7a61-422f-8335-bc7ab9ef0105.webm)\n\n## Hardware used\n\n- [Raspberry Pi 3](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/)\n- [Waveshare 16376 Robot Arm for Pi](https://www.welectron.com/Waveshare-16376-Robot-Arm-for-Pi-EU) \n\n## Running the app\n\n```bash\npip install -r requirements.txt\nuvicorn server.app:app --reload\n```",
+      "metadata": {
+        "repo": "ines/shitty-cat-petting-robot",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0112_c00",
+      "evidence_id": "ev_0112",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/shitty-cat-petting-robot",
+      "content": "Technologies/tools mentioned in README: python",
+      "metadata": {
+        "repo": "ines/shitty-cat-petting-robot",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0113_c00",
+      "evidence_id": "ev_0113",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/shitty-cat-petting-robot",
+      "content": "Languages used: Python (59.9%), JavaScript (14.0%), CSS (13.2%), HTML (12.9%)",
+      "metadata": {
+        "repo": "ines/shitty-cat-petting-robot",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0114_c00",
+      "evidence_id": "ev_0114",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/shitty-cat-petting-robot",
+      "content": "User is the owner of ines/shitty-cat-petting-robot.",
+      "metadata": {
+        "repo": "ines/shitty-cat-petting-robot",
+        "is_owner": true,
+        "stars": 6,
+        "forks": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0115_c00",
+      "evidence_id": "ev_0115",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/shitty-cat-petting-robot",
+      "content": "Commit (2023-04-27T07:59:17+00:00): Initial commit",
+      "metadata": {
+        "repo": "ines/shitty-cat-petting-robot",
+        "sha": "4135cd7433",
+        "date": "2023-04-27T07:59:17+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0116_c00",
+      "evidence_id": "ev_0116",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/shitty-cat-petting-robot",
+      "content": "Commit (2023-05-02T11:05:58+00:00): Update README.md",
+      "metadata": {
+        "repo": "ines/shitty-cat-petting-robot",
+        "sha": "749b350238",
+        "date": "2023-05-02T11:05:58+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0117_c00",
+      "evidence_id": "ev_0117",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/scheidify",
+      "content": ":muscle: The browser extension for more everyday life badassery",
+      "metadata": {
+        "repo": "ines/scheidify",
+        "field": "description",
+        "language": "JavaScript",
+        "stars": 3,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0118_c00",
+      "evidence_id": "ev_0118",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/scheidify",
+      "content": "# Scheidify\nThe internet can be frustrating and full of bullshit. Scheidify is a little [browser extension for Chrome](https://chrome.google.com/webstore/detail/scheidify/noehlhgcfmnllodacehfablpkegjdkho) that can help make the internet a better place. It adds a little button to your toolbar that lets you \"scheidify\" any website instantly by replacing images with empowering and fun graphics and gifs celebrating badassery and vaginas.\n\nWriting an extension for Chrome is surprisingly easy – and you can do it, too! **[Go here for the tutorial](http://ines.io/blog/browser-extension-for-more-everyday-life-badassery)**. I'll explain how Scheidify was built and how you can make your own badass browser extension.\n\n*Originally developed for the relaunch of [Scheidé Revoltée](http://scheiderevoltee.com).*\n \n![Preview of Scheidify](http://ines.io/content/scheidify_screenshot.jpg)",
+      "metadata": {
+        "repo": "ines/scheidify",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0119_c00",
+      "evidence_id": "ev_0119",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/scheidify",
+      "content": "Technologies/tools mentioned in README: go, rust",
+      "metadata": {
+        "repo": "ines/scheidify",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0120_c00",
+      "evidence_id": "ev_0120",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/scheidify",
+      "content": "Languages used: JavaScript (100.0%)",
+      "metadata": {
+        "repo": "ines/scheidify",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0121_c00",
+      "evidence_id": "ev_0121",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/scheidify",
+      "content": "User is the owner of ines/scheidify.",
+      "metadata": {
+        "repo": "ines/scheidify",
+        "is_owner": true,
+        "stars": 3,
+        "forks": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0122_c00",
+      "evidence_id": "ev_0122",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/scheidify",
+      "content": "Commit (2015-12-17T13:54:07+00:00): Add extension files",
+      "metadata": {
+        "repo": "ines/scheidify",
+        "sha": "612ca279d5",
+        "date": "2015-12-17T13:54:07+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0123_c00",
+      "evidence_id": "ev_0123",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/scheidify",
+      "content": "Commit (2015-12-17T14:28:05+00:00): Create README.md",
+      "metadata": {
+        "repo": "ines/scheidify",
+        "sha": "37aab448f4",
+        "date": "2015-12-17T14:28:05+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0124_c00",
+      "evidence_id": "ev_0124",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/die-aerzte",
+      "content": "🎸 Fun little hobby projects around one of my favourite German bands, Die Ärzte",
+      "metadata": {
+        "repo": "ines/die-aerzte",
+        "field": "description",
+        "language": "Python",
+        "stars": 1,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0125_c00",
+      "evidence_id": "ev_0125",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/die-aerzte",
+      "content": "Fun little hobby projects around one of my favourite German bands, [Die Ärzte](https://en.wikipedia.org/wiki/Die_%C3%84rzte).\n\n- [🎸 **Konzert-Statistik**](konzert-statistik): Generate stats about all concerts you've been to and songs you've seen live, powered by [setlist.fm](https://setlist.fm).",
+      "metadata": {
+        "repo": "ines/die-aerzte",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0126_c00",
+      "evidence_id": "ev_0126",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/die-aerzte",
+      "content": "Languages used: Python (100.0%)",
+      "metadata": {
+        "repo": "ines/die-aerzte",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0127_c00",
+      "evidence_id": "ev_0127",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/die-aerzte",
+      "content": "User is the owner of ines/die-aerzte.",
+      "metadata": {
+        "repo": "ines/die-aerzte",
+        "is_owner": true,
+        "stars": 1,
+        "forks": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0128_c00",
+      "evidence_id": "ev_0128",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/die-aerzte",
+      "content": "Commit (2024-09-03T07:42:34+00:00): Initial commit",
+      "metadata": {
+        "repo": "ines/die-aerzte",
+        "sha": "d68a809a25",
+        "date": "2024-09-03T07:42:34+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0129_c00",
+      "evidence_id": "ev_0129",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/die-aerzte",
+      "content": "Commit (2024-09-05T07:14:23+00:00): Add band-agnostic version",
+      "metadata": {
+        "repo": "ines/die-aerzte",
+        "sha": "31afa9b951",
+        "date": "2024-09-05T07:14:23+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0130_c00",
+      "evidence_id": "ev_0130",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/RBootcamp",
+      "content": "New version of the RBootcamp using Ines Montani's format",
+      "metadata": {
+        "repo": "ines/RBootcamp",
+        "field": "description",
+        "language": "CSS",
+        "stars": 2,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0131_c00",
+      "evidence_id": "ev_0131",
+      "chunk_index": 0,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/RBootcamp",
+      "content": "# RBootcamp\n\nThe R-Bootcamp is meant to be a gentle and gradual introduction to manipulating and visualizing data in R using the tidyverse suite of packages. Basic programming concepts in R (functions, databases, and control structures) are also covered. Topics covered include:\n\n1. The magic of ggplot2.\n2. More ggplot2 using factors.\n3. Basic Data Manipulation using dplyr.\n4. Tidy Data: Why and How using tidyr.\n5. Simple Statistics using broom.\n\nIt is currently available at http://r-bootcamp.netlify.com\n\n## Ines' starter course notes are below for reference\n\nThis is a starter repo based on the\n[course framework](https://github.com/ines/spacy-course) I developed for my\n[spaCy course](https://course.spacy.io). The front-end is powered by\n[Gatsby](http://gatsbyjs.org/) and [Reveal.js](https://revealjs.com) and the\nback-end code execution uses [Binder](https://mybinder.org) 💖\n\n_This repo could use some better code examples. Also, if you have experience\nwith R, feel free to suggest improvements to the\n[test logic and template](#adding-tests). It all works as expected, but there\nmight be ways to make it more elegant._\n\n[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ines/courser-starter-r)\n\n[![](https://user-images.githubusercontent.com/13643239/56341448-68fe9380-61b5-11e9-816f-5c71ae71b94f.png)](https://course-starter-r.netlify.com)\n\n## ✅ Quickstart",
+      "metadata": {
+        "repo": "ines/RBootcamp",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0131_c01",
+      "evidence_id": "ev_0131",
+      "chunk_index": 1,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/RBootcamp",
+      "content": "/user-images.githubusercontent.com/13643239/56341448-68fe9380-61b5-11e9-816f-5c71ae71b94f.png)](https://course-starter-r.netlify.com)\n\n## ✅ Quickstart\n\n1. [Import](https://github.com/new/import) this repo, install it and make sure\n the app is running locally.\n2. Customize the [`meta.json`](meta.json) and\n [`binder/install.R`](binder/install.R).\n3. Build a [Binder](https://mybinder.org) from the `binder` branch of this repo.\n4. Add content (chapters, exercises and slides) and optionally add separate\n content license.\n5. Customize the UI theme in [`theme.sass`](theme.sass) and update images in\n [`static`](static) as needed.\n6. Deploy the app, e.g. to [Netlify](https://netlify.com).\n\n### Running the app\n\nTo start the local development server, install [Gatsby](https://gatsbyjs.org)\nand then all other dependencies. This should serve up the app on\n`localhost:8000`.\n\n```bash\nnpm install -g gatsby-cli # Install Gatsby globally\nnpm install # Install dependencies\nnpm run dev # Run the development server\n```\n\n## 🎨 Customization\n\nThe app separates its source and content – so you usually shouldn't have to dig\ninto the JavaScript source to change things. The following points of\ncustomization are available:",
+      "metadata": {
+        "repo": "ines/RBootcamp",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0131_c02",
+      "evidence_id": "ev_0131",
+      "chunk_index": 2,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/RBootcamp",
+      "content": "e and content – so you usually shouldn't have to dig\ninto the JavaScript source to change things. The following points of\ncustomization are available:\n\n| Location | Description |\n| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |\n| `meta.json` | General config settings, title, description etc. |\n| `theme.sass` | Color theme. |\n| `binder/install.R` | Packages to install. |\n| `binder/runtime.txt` | YYYY-MM-DD snapshot at MRAN that will be used for installing libraries. [See here](https://github.com/binder-examples/r) for details. |\n| `chapters` | The chapters, one Markdown file per chapter. |\n| `slides` | The slides, one Markdown file per slide deck. |\n| `static` | Static assets like images, will be copied to the root. … [truncated]",
+      "metadata": {
+        "repo": "ines/RBootcamp",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 2,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0132_c00",
+      "evidence_id": "ev_0132",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/RBootcamp",
+      "content": "Technologies/tools mentioned in README: cli, express, framework, go, java, javascript",
+      "metadata": {
+        "repo": "ines/RBootcamp",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0133_c00",
+      "evidence_id": "ev_0133",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/RBootcamp",
+      "content": "Languages used: CSS (45.7%), JavaScript (28.7%), R (25.6%)",
+      "metadata": {
+        "repo": "ines/RBootcamp",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0134_c00",
+      "evidence_id": "ev_0134",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/RBootcamp",
+      "content": "User forked ines/RBootcamp from laderast/RBootcamp, indicating contributor role.",
+      "metadata": {
+        "repo": "ines/RBootcamp",
+        "is_owner": false,
+        "forked_from": "laderast/RBootcamp",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0135_c00",
+      "evidence_id": "ev_0135",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/RBootcamp",
+      "content": "Commit (2019-04-18T10:05:43+00:00): Initial commit",
+      "metadata": {
+        "repo": "ines/RBootcamp",
+        "sha": "99ece817f2",
+        "date": "2019-04-18T10:05:43+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0136_c00",
+      "evidence_id": "ev_0136",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/RBootcamp",
+      "content": "Commit (2019-04-23T16:40:09+00:00): Update seo.js",
+      "metadata": {
+        "repo": "ines/RBootcamp",
+        "sha": "0668911648",
+        "date": "2019-04-23T16:40:09+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0137_c00",
+      "evidence_id": "ev_0137",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pySBD",
+      "content": "🐍💯pySBD (Python Sentence Boundary Disambiguation) is a rule-based sentence boundary detection that works out-of-the-box.",
+      "metadata": {
+        "repo": "ines/pySBD",
+        "field": "description",
+        "language": null,
+        "stars": 4,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0138_c00",
+      "evidence_id": "ev_0138",
+      "chunk_index": 0,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:ines/pySBD",
+      "content": "# pySBD: Python Sentence Boundary Disambiguation (SBD)\n\npySBD - python Sentence Boundary Disambiguation (SBD) - is a rule-based sentence boundary detection module that works out-of-the-box.\n\nThis project is a direct port of ruby gem - [Pragmatic Segmenter](https://github.com/diasks2/pragmatic_segmenter) which provides rule-based sentence boundary detection.\n\n## Install\n\n**Python**\n\npip install pysbd\n\n## Usage\n\n- Currently pySBD supports only English language. Support for more languages will be released soon.\n\n```python\nimport pysbd\ntext = \"My name is Jonas E. Smith. Please turn to p. 55.\"\nseg = pysbd.Segmenter(language=\"en\", clean=False)\nprint(seg.segment(text))\n# ['My name is Jonas E. Smith.', 'Please turn to p. 55.']\n```\n\n- Use `pysbd` as a [spaCy](https://spacy.io/usage/processing-pipelines) pipeline component. (recommended)Please refer to example [pysbd\\_as\\_spacy\\_component.py](https://github.com/nipunsadvilkar/pySBD/blob/master/examples/pysbd_as_spacy_component.py)\n\n## Contributing\n\nIf you find a text that is incorrectly segmented using pySBD, please submit an issue.\n\n1. Fork it ( https://github.com/nipunsadvilkar/pySBD/fork )\n2. Create your feature branch (`git checkout -b my-new-feature`)\n3. Commit your changes (`git commit -am 'Add some feature'`)\n4. Push to the branch (`git push origin my-new-feature`)\n5. Create a new Pull Request\n\n## Credit",
+      "metadata": {
+        "repo": "ines/pySBD",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0138_c01",
+      "evidence_id": "ev_0138",
+      "chunk_index": 1,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:ines/pySBD",
+      "content": "it your changes (`git commit -am 'Add some feature'`)\n4. Push to the branch (`git push origin my-new-feature`)\n5. Create a new Pull Request\n\n## Credit\n\nThis project wouldn't be possible without the great work done by [Pragmatic Segmenter](https://github.com/diasks2/pragmatic_segmenter) team.",
+      "metadata": {
+        "repo": "ines/pySBD",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0139_c00",
+      "evidence_id": "ev_0139",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pySBD",
+      "content": "Technologies/tools mentioned in README: python, ruby",
+      "metadata": {
+        "repo": "ines/pySBD",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0140_c00",
+      "evidence_id": "ev_0140",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/pySBD",
+      "content": "Languages used: Python (100.0%)",
+      "metadata": {
+        "repo": "ines/pySBD",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0141_c00",
+      "evidence_id": "ev_0141",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/pySBD",
+      "content": "User forked ines/pySBD from nipunsadvilkar/pySBD, indicating contributor role.",
+      "metadata": {
+        "repo": "ines/pySBD",
+        "is_owner": false,
+        "forked_from": "nipunsadvilkar/pySBD",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0142_c00",
+      "evidence_id": "ev_0142",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/DaCy",
+      "content": "A repository for Training the Danish Processing pipeline for the Danish Spacy",
+      "metadata": {
+        "repo": "ines/DaCy",
+        "field": "description",
+        "language": null,
+        "stars": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0143_c00",
+      "evidence_id": "ev_0143",
+      "chunk_index": 0,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:ines/DaCy",
+      "content": "DaCy: A SpaCy NLP Pipeline for Danish\n\nDaCy is a Danish preprocessing pipeline trained in SpaCy. At the time of writing it has achieved State-of-the-Art performance on all Benchmark tasks for Danish. This repository contains code for reproducing DaCy. To download the models use the DaNLP package (request pending), SpaCy ([request pending](https://github.com/explosion/spaCy/issues/7221)) or downloading the project directly [here](https://filesender.deic.dk/?s=download&token=b993e12c-0a75-880a-86d5-53d2c70b201c).\n\n## Reproduction\nthe folder `DaCy` contains a SpaCy project which will allow for a reproduction of the results. This folder also includes the evaluation metrics on DaNE.\n\n## Usage\n\nTo load in the project using the direct download simple place the downloaded \"packages\" folder in your directory load the model using SpaCy:\n\n```python\nimport spacy\nspacy.load(\"packages/da_dacy_large_tft-0.0.0\")\n```\n\n## Performance and Training\n\nThe following table show the performance on DaNE when compared to other models. Highest scores are highlighted with **bold** and second highest is underlined\n\nWant to learn more about how the model was trained, check out this [blog post](https://www.kennethenevoldsen.com/post/new-fast-and-efficient-state-of-the-art-in-danish-nlp/).\n\n## Issues and Usage Q&A",
+      "metadata": {
+        "repo": "ines/DaCy",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0143_c01",
+      "evidence_id": "ev_0143",
+      "chunk_index": 1,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:ines/DaCy",
+      "content": "d, check out this [blog post](https://www.kennethenevoldsen.com/post/new-fast-and-efficient-state-of-the-art-in-danish-nlp/).\n\n## Issues and Usage Q&A\n\nTo ask questions, report issues or request features 🤔 , please use the [GitHub Issue Tracker](https://github.com/KennethEnevoldsen/DaCy/issues). Question related to SpaCy is referred to the SpaCy GitHub or forum.\n\n### Acknowledgements\nThis is really an acknowledgement of great open-source software and contributors. This wouldn't have been possible with the work by the SpaCy team which developed an integrated the software. Huggingface for developing Transformers and making model sharing convenient. BotXO for training and sharing the Danish BERT model and Malte Bertelsen for making it easily available. DaNLP has made it extremely easy to get access to Danish resources to train on and even supplied some of the tagged data themselves and does a great job of actually developing these datasets.\n\n### References\n\nIf you use this library in your research, please kindly cite:\n\n```bibtex\n@inproceedings{enevoldsen2020dacy,\n title={DaCy: A SpaCy NLP Pipeline for Danish},\n author={Enevoldsen, Kenneth},\n year={2021}\n}\n```\n\n## LICENSE\n\nDaCy is released under the Apache License, Version 2.0. See the `LICENSE` file for more details.",
+      "metadata": {
+        "repo": "ines/DaCy",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0144_c00",
+      "evidence_id": "ev_0144",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/DaCy",
+      "content": "Technologies/tools mentioned in README: library, python, transformer",
+      "metadata": {
+        "repo": "ines/DaCy",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0145_c00",
+      "evidence_id": "ev_0145",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/DaCy",
+      "content": "Languages used: Python (100.0%)",
+      "metadata": {
+        "repo": "ines/DaCy",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0146_c00",
+      "evidence_id": "ev_0146",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/DaCy",
+      "content": "User forked ines/DaCy from centre-for-humanities-computing/DaCy, indicating contributor role.",
+      "metadata": {
+        "repo": "ines/DaCy",
+        "is_owner": false,
+        "forked_from": "centre-for-humanities-computing/DaCy",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0147_c00",
+      "evidence_id": "ev_0147",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-feedstock",
+      "content": "A conda-smithy repository for spacy.",
+      "metadata": {
+        "repo": "ines/spacy-feedstock",
+        "field": "description",
+        "language": "Shell",
+        "stars": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0148_c00",
+      "evidence_id": "ev_0148",
+      "chunk_index": 0,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/spacy-feedstock",
+      "content": "About spacy\n===========\n\nHome: https://spacy.io/\n\nPackage license: MIT\n\nFeedstock license: BSD 3-Clause\n\nSummary: Industrial-strength Natural Language Processing\n\nspaCy is a library for advanced natural language processing in Python and\nCython.\n\nCurrent build status\n====================\n\nCurrent release info\n====================\n\n| Name | Downloads | Version | Platforms |\n| --- | --- | --- | --- |\n\nInstalling spacy\n================\n\nInstalling `spacy` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:\n\n```\nconda config --add channels conda-forge\n```\n\nOnce the `conda-forge` channel has been enabled, `spacy` can be installed with:\n\n```\nconda install spacy\n```\n\nIt is possible to list all of the versions of `spacy` available on your platform with:\n\n```\nconda search spacy --channel conda-forge\n```\n\nAbout conda-forge\n=================\n\nconda-forge is a community-led conda channel of installable packages.\nIn order to provide high-quality builds, the process has been automated into the\nconda-forge GitHub organization. The conda-forge organization contains one repository\nfor each of the installable packages. Such a repository is known as a *feedstock*.",
+      "metadata": {
+        "repo": "ines/spacy-feedstock",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0148_c01",
+      "evidence_id": "ev_0148",
+      "chunk_index": 1,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/spacy-feedstock",
+      "content": "organization. The conda-forge organization contains one repository\nfor each of the installable packages. Such a repository is known as a *feedstock*.\n\nA feedstock is made up of a conda recipe (the instructions on what and how to build\nthe package) and the necessary configurations for automatic building using freely\navailable continuous integration services. Thanks to the awesome service provided by\n[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)\nand [TravisCI](https://travis-ci.org/) it is possible to build and upload installable\npackages to the [conda-forge](https://anaconda.org/conda-forge)\n[Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.\n\nTo manage the continuous integration and simplify feedstock maintenance\n[conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.\nUsing the ``conda-forge.yml`` within this repository, it is possible to re-render all of\nthis feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.\n\nFor more information please check the [conda-forge documentation](https://conda-forge.org/docs/).\n\nTerminology\n===========\n\n**feedstock** - the conda recipe (raw material), supporting scripts and CI configuration.\n\n**conda-smithy** - the tool which helps orchestrate the feedstock.\n Its primary use is in the construction of the CI ``.yml`` files\n and simplify the management of *many* feedstocks.",
+      "metadata": {
+        "repo": "ines/spacy-feedstock",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0148_c02",
+      "evidence_id": "ev_0148",
+      "chunk_index": 2,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:ines/spacy-feedstock",
+      "content": "h helps orchestrate the feedstock.\n Its primary use is in the construction of the CI ``.yml`` files\n and simplify the management of *many* feedstocks.\n\n**conda-forge** - the place where the feedstock and smithy live and work to\n produce the finished article (built conda distributions)\n\nUpdating spacy-feedstock\n========================\n\nIf you would like to improve the spacy recipe or build a new\npackage version, please fork this repository and submit a PR. Upon submission,\nyour changes will be run on the appropriate platforms to give the reviewer an\nopportunity to confirm that the changes result in a successful build. Once\nmerged, … [truncated]",
+      "metadata": {
+        "repo": "ines/spacy-feedstock",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 2,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0149_c00",
+      "evidence_id": "ev_0149",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-feedstock",
+      "content": "Technologies/tools mentioned in README: cloud, library, python",
+      "metadata": {
+        "repo": "ines/spacy-feedstock",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0150_c00",
+      "evidence_id": "ev_0150",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-feedstock",
+      "content": "Languages used: Shell (96.9%), Python (3.1%)",
+      "metadata": {
+        "repo": "ines/spacy-feedstock",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0151_c00",
+      "evidence_id": "ev_0151",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/spacy-feedstock",
+      "content": "User forked ines/spacy-feedstock from conda-forge/spacy-feedstock, indicating contributor role.",
+      "metadata": {
+        "repo": "ines/spacy-feedstock",
+        "is_owner": false,
+        "forked_from": "conda-forge/spacy-feedstock",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0152_c00",
+      "evidence_id": "ev_0152",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-feedstock",
+      "content": "Commit (2017-07-22T17:58:15+00:00): Merge pull request #14 from honnibal/master",
+      "metadata": {
+        "repo": "ines/spacy-feedstock",
+        "sha": "349c7a5558",
+        "date": "2017-07-22T17:58:15+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0153_c00",
+      "evidence_id": "ev_0153",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/spacy-feedstock",
+      "content": "Commit (2018-11-27T01:20:18+00:00): Bump build number",
+      "metadata": {
+        "repo": "ines/spacy-feedstock",
+        "sha": "1ada396df9",
+        "date": "2018-11-27T01:20:18+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0154_c00",
+      "evidence_id": "ev_0154",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/awesome-pyladies-blogs",
+      "content": "👩‍💻 Repository with Awesome PyLadies' blogs",
+      "metadata": {
+        "repo": "ines/awesome-pyladies-blogs",
+        "field": "description",
+        "language": "R",
+        "stars": 1,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0155_c00",
+      "evidence_id": "ev_0155",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/awesome-pyladies-blogs",
+      "content": "# Awesome PyLadies’ Blogs\n\n## What Is This Repository About?\n\nIt provides a curated list of awesome blogs by PyLadies and also seeks\nto collect information to further promote blog posts by awesome\n[PyLadies on Mastodon](https://botsin.space/@pyladies_bot) 🤖\n\nTo contribute to the list, please see the\n[contributing](CONTRIBUTING.md) guidelines ✨\n\n## List of Blogs\n\nCreated by accessing the json files in [blogs/](blogs/).\n\n### List of Blogs as Tiles\n\n| | | |\n|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|\n| Corrie Bartelheimer | Cosima Meyer | Ellen Schwartau |\n| Emily Riederer | Ines Montani | Isabel Zimmerman |\n| Jennifer HY Lin | <img width=\"100\" alt=\"Image of Jessica Greene\" src=\"https://miro.medium.com/v2/resize:fill:96:96/1*vp3 … [truncated]",
+      "metadata": {
+        "repo": "ines/awesome-pyladies-blogs",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0156_c00",
+      "evidence_id": "ev_0156",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/awesome-pyladies-blogs",
+      "content": "Technologies/tools mentioned in README: aws, go",
+      "metadata": {
+        "repo": "ines/awesome-pyladies-blogs",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0157_c00",
+      "evidence_id": "ev_0157",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/awesome-pyladies-blogs",
+      "content": "Languages used: R (100.0%)",
+      "metadata": {
+        "repo": "ines/awesome-pyladies-blogs",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0158_c00",
+      "evidence_id": "ev_0158",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:ines/awesome-pyladies-blogs",
+      "content": "User forked ines/awesome-pyladies-blogs from cosimameyer/awesome-pyladies-blogs, indicating contributor role.",
+      "metadata": {
+        "repo": "ines/awesome-pyladies-blogs",
+        "is_owner": false,
+        "forked_from": "cosimameyer/awesome-pyladies-blogs",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0159_c00",
+      "evidence_id": "ev_0159",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/awesome-pyladies-blogs",
+      "content": "Commit (2023-05-03T16:53:46+00:00): Create ines.io.json (#27)",
+      "metadata": {
+        "repo": "ines/awesome-pyladies-blogs",
+        "sha": "f13b7a9eed",
+        "date": "2023-05-03T16:53:46+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0160_c00",
+      "evidence_id": "ev_0160",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:ines/awesome-pyladies-blogs",
+      "content": "Commit (2023-05-04T08:57:24+00:00): Fix typo in ines.io.json",
+      "metadata": {
+        "repo": "ines/awesome-pyladies-blogs",
+        "sha": "db997b48d7",
+        "date": "2023-05-04T08:57:24+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    }
+  ],
+  "stats": {
+    "original_evidence_count": 160,
+    "items_dropped": 0,
+    "chunks_produced": 181,
+    "avg_chunk_length_chars": 274
+  }
+}

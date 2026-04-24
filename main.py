@@ -287,6 +287,47 @@ def collect(
     console.print(f"[bold green]Run log    → {log_path}[/bold green]")
 
 
+@app.command()
+def preprocess(
+    username: Optional[str] = typer.Option(None, "--username", "-u", help="Preprocess a single user's raw JSON"),
+    all_users: bool = typer.Option(False, "--all", "-a", help="Preprocess all raw JSON files in data/raw/"),
+    chunk_size: int = typer.Option(1500, "--chunk-size", help="Max characters per chunk (default 1500)"),
+):
+    """Clean, chunk, and run historical analysis on collected raw JSON data."""
+    from preprocessor.pipeline import preprocess as _preprocess, preprocess_all, PREPROCESSED_DIR
+
+    if not username and not all_users:
+        typer.echo("ERROR: Provide --username or --all.", err=True)
+        raise typer.Exit(1)
+
+    if all_users:
+        console.print(f"[bold cyan]Preprocessing all users in {config.RAW_DIR}[/bold cyan]")
+        results = preprocess_all(chunk_max_chars=chunk_size)
+        console.print(f"\n[bold green]OK Preprocessed {len(results)} users -> {PREPROCESSED_DIR}[/bold green]")
+    else:
+        raw_path = config.RAW_DIR / f"{username}.json"
+        if not raw_path.exists():
+            typer.echo(f"ERROR: No raw JSON for '{username}' at {raw_path}", err=True)
+            raise typer.Exit(1)
+        doc = _preprocess(raw_path, chunk_max_chars=chunk_size)
+        stats = doc["stats"]
+        hist = doc["historical_analysis"]
+        console.print(f"\n[bold green]OK Preprocessed: {username}[/bold green]")
+        console.print(
+            f"  Evidence items : {stats['original_evidence_count']} -> "
+            f"{stats['chunks_produced']} chunks ({stats['items_dropped']} dropped)"
+        )
+        console.print(f"  Avg chunk size : {stats['avg_chunk_length_chars']} chars")
+        console.print(f"  Activity trend : {hist['activity_trend']}")
+        if hist.get("peak_activity_year"):
+            console.print(f"  Peak year      : {hist['peak_activity_year']}")
+        for ev in hist.get("tech_evolution", []):
+            if "period" in ev:
+                console.print(
+                    f"  Tech ({ev['period']}): {', '.join(ev['dominant_languages'])}"
+                )
+
+
 @app.command(name="rate-limit")
 def rate_limit_cmd():
     """Inspect the current GitHub API rate limit."""

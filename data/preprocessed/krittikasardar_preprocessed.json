@@ -1,0 +1,579 @@
+{
+  "schema_version": "1.1",
+  "username": "krittikasardar",
+  "preprocessed_at": "2026-04-24T14:22:21.167517+00:00",
+  "source_file": "C:\\Users\\I764176\\Documents\\University\\Semester 3\\LLM and Agents\\skill-mining\\data\\raw\\krittikasardar.json",
+  "historical_analysis": {
+    "commits_by_year": {
+      "2021": 2,
+      "2022": 1,
+      "2025": 16,
+      "2026": 6
+    },
+    "languages_by_year": {
+      "2021": [
+        {
+          "language": "Jupyter Notebook",
+          "bytes": 579829,
+          "pct": 100.0
+        }
+      ],
+      "2025": [
+        {
+          "language": "Jupyter Notebook",
+          "bytes": 1977623,
+          "pct": 100.0
+        }
+      ]
+    },
+    "activity_trend": "growing",
+    "peak_activity_year": 2025,
+    "tech_evolution": [
+      {
+        "period": "early (2021–2021)",
+        "dominant_languages": [
+          "Jupyter Notebook"
+        ]
+      },
+      {
+        "period": "recent (2025–2025)",
+        "dominant_languages": [
+          "Jupyter Notebook"
+        ]
+      }
+    ]
+  },
+  "chunks": [
+    {
+      "chunk_id": "ev_0001_c00",
+      "evidence_id": "ev_0001",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "A prototype capable of predicting and translating live sign language gestures into English using the LSTM neural networks, MediaPipe Holistic, OpenCV & Python.",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "description",
+        "language": "Jupyter Notebook",
+        "stars": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0002_c00",
+      "evidence_id": "ev_0002",
+      "chunk_index": 0,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "# Sign Language Recognition using Deep Learning and Computer Vision\n\nReal-time vision-based Sign Language Recognition system designed to assist individuals with hearing and speech impairments by translating hand gestures into readable text. This project aims to promote accessibility and inclusivity by bridging communication gaps.\n\n# Project Overview\n\nThe system recognizes six basic sign gestures:\n\n1. Hello\n\n2. How are you\n\n3. Im sorry\n\n4. Thank you\n\n5. I love you\n\n6. Goodbye\n\nWe used deep learning techniques with Long Short-Term Memory (LSTM) networks and MediaPipe Holistic keypoint detection to achieve accurate gesture recognition in real-time.\n\n# Problem Statement\n\nIndividuals with hearing or speech impairments often rely on sign language, which is not universally understood. This project addresses the need for a reliable, real-time sign language recognition system that can interpret gestures and output readable text without requiring human interpreters.\n\n# Tools & Technologies\n\n- Python\n\n- OpenCV (cv2)\n\n- MediaPipe Holistic\n\n- TensorFlow & Keras\n\n- NumPy, Sci-kit Learn, Matplotlib\n\n# Methodology\n\n1. Keypoint Detection with MediaPipe Holistic\n\n- Extracted body, face, and hand landmarks (540+ points)\n\n2. Dataset Creation\n\n- Captured 30 videos per gesture (30 frames each)\n\n- Converted sequences into TensorFlow-compatible format\n\n3. Data Preprocessing & Labeling\n\n- Split into training and testing sets\n\n- One-hot encoding of gesture labels\n\n4. Model Architecture",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0002_c01",
+      "evidence_id": "ev_0002",
+      "chunk_index": 1,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "mpatible format\n\n3. Data Preprocessing & Labeling\n\n- Split into training and testing sets\n\n- One-hot encoding of gesture labels\n\n4. Model Architecture\n\n- 3 LSTM layers\n\n- 2 Dense layers with ReLU activation\n\n- Final Dense layer with Softmax activation\n\n- Trained using Adam optimizer & categorical crossentropy\n\n5. Model Evaluation\n\n- Achieved categorical accuracy of ~79% during training\n\n- Evaluated with Confusion Matrix and Accuracy Score\n\n6. Real-time Testing\n\n- Integrated OpenCV and MediaPipe for live gesture detection and text output\n\n# Contributors\n\n- Krittika Sardar\n\n- Anjali Sinha\n\n- Bobby Baidya\n\nSupervised by Dr. Soham Sarkar",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0003_c00",
+      "evidence_id": "ev_0003",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Technologies/tools mentioned in README: api, deep learning, go, numpy, python, tensorflow, testing",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0004_c00",
+      "evidence_id": "ev_0004",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Languages used: Jupyter Notebook (100.0%)",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0005_c00",
+      "evidence_id": "ev_0005",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "User is the owner of krittikasardar/Sign-Language-Recognition-using-Deep-Learning.",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0006_c00",
+      "evidence_id": "ev_0006",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Sustained contributions over 3+ years (2022–2025)",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "stars": 0,
+        "forks": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0007_c00",
+      "evidence_id": "ev_0007",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Commit (2022-07-03T16:16:45+00:00): Add files via upload",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "sha": "4f8b8d3877",
+        "date": "2022-07-03T16:16:45+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0008_c00",
+      "evidence_id": "ev_0008",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Commit (2025-11-10T12:00:31+00:00): Add files via upload",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "sha": "2f02a761f2",
+        "date": "2025-11-10T12:00:31+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0009_c00",
+      "evidence_id": "ev_0009",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Sentiment analysis on the Amazon Fine Food Reviews dataset using traditional ML, LSTM, and transformer-based models. This project compares TF-IDF and Word2Vec vectorizations with various class balancing techniques to evaluate model performance on multi-class sentiment classification tasks.",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "description",
+        "language": "Jupyter Notebook",
+        "stars": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0010_c00",
+      "evidence_id": "ev_0010",
+      "chunk_index": 0,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "# Sentiment-Analysis-on-Amazon-Fine-Food-Reviews\n\nThe uploaded code includes model implementations and feature engineering workflows based on both TF-IDF and Word2Vec representations.\n\n# Project Overview\n\nThis project performs sentiment analysis on the Amazon Fine Food Reviews dataset using a combination of traditional machine learning, deep learning, and transformer-based models. The objective is to classify reviews as Positive, Neutral, or Negative, leveraging various NLP techniques and web mining methods to analyze large-scale consumer feedback.\n\n# Dataset\n\n- Source: [Kaggle - Amazon Fine Food Reviews](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews/data)\n\n- Size: ~568,000 reviews spanning over 10 years\n\n- Features used: Review Text, Summary, and Score\n\n# Sentiment Mapping:\n\n- Positive (Score > 3)\n\n- Neutral (Score = 3)\n\n- Negative (Score < 3)\n\n# Preprocessing Steps\n\n- Removed null values and duplicates\n\n- Cleaned HTML tags and punctuations\n\n- Stopwords filtered with negations preserved\n\n- Handled class imbalance using sampling techniques\n\n- Data split into 80:20 train-test sets\n\n# Feature Engineering\n\n- TF-IDF\n\n- Word2Vec embeddings\n\n# Models Implemented\n\n- Logistic Regression (baseline)\n\n- Naive Bayes\n\n- Random Forest\n\n- Support Vector Machines (SVM)\n\n- LSTM (deep learning)\n\n- Transformer Models: BERT, RoBERTa, DistilBERT\n\n# Key Findings\n\nDistilBERT delivered the best overall performance, especially on positive and neutral sentiments.",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0010_c01",
+      "evidence_id": "ev_0010",
+      "chunk_index": 1,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "r Models: BERT, RoBERTa, DistilBERT\n\n# Key Findings\n\nDistilBERT delivered the best overall performance, especially on positive and neutral sentiments.\n\nTF-IDF worked best with traditional models, while LSTM and transformers benefitted from dense embeddings.\n\nClass balancing significantly impacted model performance.\n\n# Future Scope\n\n- Explore ensemble models\n\n- Advanced fine-tuning of transformer models\n\n- Experiment with sentiment lexicons\n\n# Contributors\n\n- Sushma Kulkarni\n\n- Krittika Sardar\n\n- Mansi Sawant\n\n- Nishit Suthar\n\n- Eljes Basha",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0011_c00",
+      "evidence_id": "ev_0011",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Technologies/tools mentioned in README: deep learning, machine learning, rest, transformer",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0012_c00",
+      "evidence_id": "ev_0012",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Languages used: Jupyter Notebook (100.0%)",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0013_c00",
+      "evidence_id": "ev_0013",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "User is the owner of krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews.",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0014_c00",
+      "evidence_id": "ev_0014",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Commit (2025-07-21T14:07:38+00:00): Initial commit",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "sha": "3cbe5e08a2",
+        "date": "2025-07-21T14:07:38+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0015_c00",
+      "evidence_id": "ev_0015",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Commit (2025-07-21T21:11:01+00:00): Delete BERT.ipynb",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "sha": "8ccbbb77de",
+        "date": "2025-07-21T21:11:01+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0016_c00",
+      "evidence_id": "ev_0016",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Predicted the time by which the entire population of India will be vaccinated, primarily based on Data Analysis using Python.",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "field": "description",
+        "language": "Jupyter Notebook",
+        "stars": 1,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0017_c00",
+      "evidence_id": "ev_0017",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Languages used: Jupyter Notebook (100.0%)",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0018_c00",
+      "evidence_id": "ev_0018",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "User is the owner of krittikasardar/Covid-19-Vaccine-Time-Analysis-.",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "is_owner": true,
+        "stars": 1,
+        "forks": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0019_c00",
+      "evidence_id": "ev_0019",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Commit (2021-07-28T19:22:50+00:00): Add files via upload",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "sha": "d761c41674",
+        "date": "2021-07-28T19:22:50+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0020_c00",
+      "evidence_id": "ev_0020",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/git-practice",
+      "content": "# Student Tracker Project\n\nThis project tracks students and their courses.\nThis project is for Git practice.",
+      "metadata": {
+        "repo": "krittikasardar/git-practice",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0021_c00",
+      "evidence_id": "ev_0021",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:krittikasardar/git-practice",
+      "content": "User is the owner of krittikasardar/git-practice.",
+      "metadata": {
+        "repo": "krittikasardar/git-practice",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0022_c00",
+      "evidence_id": "ev_0022",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/git-practice",
+      "content": "Commit (2026-02-24T13:59:54+00:00): Initial commit with students list and README",
+      "metadata": {
+        "repo": "krittikasardar/git-practice",
+        "sha": "4c8e3b57ec",
+        "date": "2026-02-24T13:59:54+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0023_c00",
+      "evidence_id": "ev_0023",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/git-practice",
+      "content": "Commit (2026-02-24T14:39:14+00:00): Updated README",
+      "metadata": {
+        "repo": "krittikasardar/git-practice",
+        "sha": "bc877c5397",
+        "date": "2026-02-24T14:39:14+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0024_c00",
+      "evidence_id": "ev_0024",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/git-practice-2",
+      "content": "# git-practice-2\n\nThis repository is intended for practicing Git commands and workflows. Use this project to experiment with version control, branching, merging, and other Git features.\n\n## Getting Started\n\n1. **Clone the repository:**\n ```sh\n git clone \n ```\n2. **Navigate to the project directory:**\n ```sh\n cd git-practice-2\n ```\n3. **Start practicing Git commands!**\n\n## Common Git Commands\n\n- `git status` Check the status of your working directory and staging area.\n- `git add ` Stage changes for commit.\n- `git commit -m \"message\"` Commit staged changes with a message.\n- `git branch` List, create, or delete branches.\n- `git checkout ` Switch branches.\n- `git merge ` Merge a branch into your current branch.\n- `git pull` Fetch and merge changes from the remote repository.\n- `git push` Push your commits to the remote repository.\n\n## License\n\nThis project is for educational purposes only.\n\nThis repo is cloned and edited locally. Hey, this is Kritz. I'm learning Git.",
+      "metadata": {
+        "repo": "krittikasardar/git-practice-2",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0025_c00",
+      "evidence_id": "ev_0025",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:krittikasardar/git-practice-2",
+      "content": "User is the owner of krittikasardar/git-practice-2.",
+      "metadata": {
+        "repo": "krittikasardar/git-practice-2",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0026_c00",
+      "evidence_id": "ev_0026",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/git-practice-2",
+      "content": "Commit (2026-02-24T14:51:02+00:00): Added README file",
+      "metadata": {
+        "repo": "krittikasardar/git-practice-2",
+        "sha": "0f5cdc9c9b",
+        "date": "2026-02-24T14:51:02+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0027_c00",
+      "evidence_id": "ev_0027",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/git-practice-2",
+      "content": "Commit (2026-02-24T15:02:28+00:00): Updated README",
+      "metadata": {
+        "repo": "krittikasardar/git-practice-2",
+        "sha": "e99dc0e4dd",
+        "date": "2026-02-24T15:02:28+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0028_c00",
+      "evidence_id": "ev_0028",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "Languages used: Jupyter Notebook (100.0%)",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0029_c00",
+      "evidence_id": "ev_0029",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "User is the owner of krittikasardar/Handwritten-Digit-Recognition.",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0030_c00",
+      "evidence_id": "ev_0030",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "Commit (2021-09-02T06:06:08+00:00): Add files via upload",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "sha": "56bf3b35e1",
+        "date": "2021-09-02T06:06:08+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    }
+  ],
+  "stats": {
+    "original_evidence_count": 30,
+    "items_dropped": 0,
+    "chunks_produced": 32,
+    "avg_chunk_length_chars": 224
+  }
+}
