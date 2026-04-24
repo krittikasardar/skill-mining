@@ -6,9 +6,11 @@ karpathy
 tiangolo
 nayafia
 hnarayanan
-dlsys-course
-explosion
+dlsys-course #non-individual profile
+explosion #non-individual profile
 honnibal
 ines
 ryanmcdermott
 jakubroztocil
+chiphuyen
+justmarkham
