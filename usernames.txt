@@ -1,11 +1,6 @@
 # Sample GitHub usernames for the Skill Mining experiment
-# Add or replace usernames here — one per line
+# Add or replace usernames here - one per line
 # Lines starting with # are ignored
 
-hnarayanan
-dlsys-course
-explosion
-honnibal
-ines
-ryanmcdermott
-jakubroztocil
+chiphuyen
+justmarkham

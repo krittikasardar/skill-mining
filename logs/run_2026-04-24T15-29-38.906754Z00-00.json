@@ -1,0 +1,37 @@
+{
+  "run_id": "2026-04-24T15-29-38.906754Z00-00",
+  "started_at": "2026-04-24T15:29:38.906754+00:00",
+  "usernames": [
+    "# Sample GitHub usernames for the Skill Mining experiment",
+    "# Add or replace usernames here - one per line",
+    "# Lines starting with # are ignored",
+    "chiphuyen",
+    "justmarkham"
+  ],
+  "results": [
+    {
+      "username": "# Sample GitHub usernames for the Skill Mining experiment",
+      "status": "error",
+      "error": "404 {\"message\": \"Not Found\", \"documentation_url\": \"https://docs.github.com/rest\", \"status\": \"404\"}"
+    },
+    {
+      "username": "# Add or replace usernames here - one per line",
+      "status": "error",
+      "error": "404 {\"message\": \"Not Found\", \"documentation_url\": \"https://docs.github.com/rest\", \"status\": \"404\"}"
+    },
+    {
+      "username": "# Lines starting with # are ignored",
+      "status": "error",
+      "error": "404 {\"message\": \"Not Found\", \"documentation_url\": \"https://docs.github.com/rest\", \"status\": \"404\"}"
+    },
+    {
+      "username": "chiphuyen",
+      "status": "success"
+    },
+    {
+      "username": "justmarkham",
+      "status": "success"
+    }
+  ],
+  "finished_at": "2026-04-24T15:47:07.618937+00:00"
+}

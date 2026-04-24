@@ -1,8 +1,3 @@
 username,name,location,followers,public_repos,first_active_year,last_active_year,activity_span_years,total_stars_received,owned_repo_count,forked_repo_count,top_languages,top_topics,total_repos_collected
-hnarayanan,Harish Narayanan,London,346,78,2009,2026,17,3107,35,15,HTML|Jupyter Notebook|Perl|JavaScript|Python,educational|mechanics|simulation|website|django,50
-dlsys-course,,,41,7,2017,2022,5,1038,6,1,Python|Jupyter Notebook|C++|Ruby|HTML,computation-graph|deep-learning|autodiff|tutorial|course,7
-explosion,Explosion,"Berlin, Germany",1464,78,2014,2026,12,55935,48,2,C|Python|Jupyter Notebook|MDX|Cython,spacy|nlp|natural-language-processing|machine-learning|python,50
-honnibal,Matthew Honnibal,Berlin,1982,60,2015,2026,11,430,16,34,C++|Jupyter Notebook|C|Python|Makefile,,50
-ines,Ines Montani,"Berlin, Germany",4024,19,2015,2024,9,3548,14,5,Python|CSS|JavaScript|R|HTML,javascript|python|javascript-library|jupyter|binder,19
-ryanmcdermott,Ryan McDermott,Bay Area,4501,51,2013,2026,13,98100,50,0,JavaScript|Vim Script|C++|Vim Snippet|TypeScript,javascript|algorithms|python|docker|principles,50
-jakubroztocil,⚠️ New username,,12,0,,,,,,,,,
+chiphuyen,Chip Huyen,San Francisco,22774,30,2016,2025,9,55845,14,16,Jupyter Notebook|Python|C++|HTML|Scala,machine-learning|python|data-science|nlp|natural-language-processing,30
+justmarkham,Kevin Markham,"Asheville, NC, USA",8616,40,2014,2026,12,14399,25,15,Python|Jupyter Notebook|Roff|C++|R,python|data-science|pandas|jupyter-notebook|tutorial,40

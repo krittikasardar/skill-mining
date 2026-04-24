@@ -1,0 +1,285 @@
+{
+  "username": "chiphuyen",
+  "profile": {
+    "login": "chiphuyen",
+    "name": "Chip Huyen",
+    "bio": "AI x stuff",
+    "company": null,
+    "location": "San Francisco",
+    "followers": 22774,
+    "public_repos": 30,
+    "created_at": "2015-04-17T17:20:11+00:00"
+  },
+  "aggregate_signals": {
+    "top_languages": [
+      {
+        "language": "Jupyter Notebook",
+        "bytes": 140913199,
+        "pct": 67.5
+      },
+      {
+        "language": "Python",
+        "bytes": 33236380,
+        "pct": 15.9
+      },
+      {
+        "language": "C++",
+        "bytes": 21592837,
+        "pct": 10.3
+      },
+      {
+        "language": "HTML",
+        "bytes": 6813553,
+        "pct": 3.3
+      },
+      {
+        "language": "Scala",
+        "bytes": 1848052,
+        "pct": 0.9
+      },
+      {
+        "language": "TypeScript",
+        "bytes": 811276,
+        "pct": 0.4
+      },
+      {
+        "language": "Java",
+        "bytes": 803759,
+        "pct": 0.4
+      },
+      {
+        "language": "Shell",
+        "bytes": 613251,
+        "pct": 0.3
+      },
+      {
+        "language": "C",
+        "bytes": 473908,
+        "pct": 0.2
+      },
+      {
+        "language": "Rust",
+        "bytes": 372886,
+        "pct": 0.2
+      }
+    ],
+    "top_topics": [
+      "machine-learning",
+      "python",
+      "data-science",
+      "nlp",
+      "natural-language-processing",
+      "tensorflow",
+      "deep-learning",
+      "tutorial",
+      "chatbot",
+      "stanford",
+      "course-materials",
+      "machine-learning-production",
+      "mlops",
+      "script",
+      "arxiv",
+      "summarization",
+      "research-tool",
+      "agent",
+      "ai",
+      "analytics"
+    ],
+    "total_stars_received": 55845,
+    "total_forks_received": 11373,
+    "total_repos_collected": 30,
+    "owned_repo_count": 14,
+    "forked_repo_count": 16,
+    "active_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "first_active_year": 2016,
+    "last_active_year": 2025,
+    "activity_span_years": 9,
+    "recent_activity_summary": {
+      "repos_pushed_last_2_years": 5,
+      "repo_names": [
+        "chiphuyen/ml-interviews-book",
+        "chiphuyen/dmls-book",
+        "chiphuyen/aie-book",
+        "chiphuyen/sniffly",
+        "chiphuyen/chiphuyen"
+      ]
+    },
+    "historical_activity_summary": {
+      "repos_4_plus_years_old": 16,
+      "repo_names": [
+        "chiphuyen/stanford-tensorflow-tutorials",
+        "chiphuyen/coding-exercises",
+        "chiphuyen/lazynlp",
+        "chiphuyen/python-is-cool",
+        "chiphuyen/tf-oreilly",
+        "chiphuyen/metaflow-transformers-tutorials",
+        "chiphuyen/requests-for-research",
+        "chiphuyen/tensorflow",
+        "chiphuyen/OpenSeq2Seq",
+        "chiphuyen/Milano"
+      ]
+    }
+  },
+  "top_repos": [
+    {
+      "full_name": "chiphuyen/ml-interviews-book",
+      "language": "HTML",
+      "stars": 4608,
+      "forks": 667,
+      "relevance_score": 0.8915,
+      "topics": []
+    },
+    {
+      "full_name": "chiphuyen/dmls-book",
+      "language": null,
+      "stars": 4700,
+      "forks": 932,
+      "relevance_score": 0.8913,
+      "topics": []
+    },
+    {
+      "full_name": "chiphuyen/stanford-tensorflow-tutorials",
+      "language": "Python",
+      "stars": 10382,
+      "forks": 4260,
+      "relevance_score": 0.8561,
+      "topics": [
+        "tensorflow",
+        "deep-learning",
+        "tutorial",
+        "nlp",
+        "natural-language-processing",
+        "chatbot",
+        "machine-learning",
+        "stanford",
+        "course-materials",
+        "python"
+      ]
+    },
+    {
+      "full_name": "chiphuyen/machine-learning-systems-design",
+      "language": "HTML",
+      "stars": 10347,
+      "forks": 1605,
+      "relevance_score": 0.8332,
+      "topics": [
+        "data-science",
+        "machine-learning-production",
+        "mlops"
+      ]
+    },
+    {
+      "full_name": "chiphuyen/aie-book",
+      "language": "Jupyter Notebook",
+      "stars": 15323,
+      "forks": 2201,
+      "relevance_score": 0.8278,
+      "topics": []
+    },
+    {
+      "full_name": "chiphuyen/sotawhat",
+      "language": "Python",
+      "stars": 1403,
+      "forks": 189,
+      "relevance_score": 0.8231,
+      "topics": [
+        "script",
+        "python",
+        "arxiv",
+        "summarization",
+        "research-tool"
+      ]
+    },
+    {
+      "full_name": "chiphuyen/sniffly",
+      "language": "Python",
+      "stars": 1220,
+      "forks": 110,
+      "relevance_score": 0.8226,
+      "topics": [
+        "agent",
+        "ai",
+        "analytics",
+        "coding"
+      ]
+    },
+    {
+      "full_name": "chiphuyen/just-pandas-things",
+      "language": "Jupyter Notebook",
+      "stars": 996,
+      "forks": 132,
+      "relevance_score": 0.8219,
+      "topics": [
+        "pandas",
+        "data-science",
+        "python",
+        "pandas-tutorial",
+        "pandas-dataframe",
+        "machine-learning"
+      ]
+    },
+    {
+      "full_name": "chiphuyen/coding-exercises",
+      "language": "Python",
+      "stars": 516,
+      "forks": 200,
+      "relevance_score": 0.7832,
+      "topics": [
+        "coding-challenge",
+        "coding-interviews",
+        "coding-exercises",
+        "training-materials"
+      ]
+    },
+    {
+      "full_name": "chiphuyen/lazynlp",
+      "language": "Python",
+      "stars": 2255,
+      "forks": 322,
+      "relevance_score": 0.7777,
+      "topics": [
+        "artificial-intelligence",
+        "natural-language-processing",
+        "nlp",
+        "text-mining",
+        "language-model",
+        "python",
+        "open",
+        "data-science"
+      ]
+    }
+  ],
+  "collection_metadata": {
+    "username": "chiphuyen",
+    "collected_at": "2026-04-24T15:33:36.886263+00:00",
+    "elapsed_seconds": 237.0,
+    "total_repos": 30,
+    "total_evidence_items": 226,
+    "rate_limit_snapshot": {
+      "core": {
+        "limit": 5000,
+        "remaining": 4934,
+        "reset": "2026-04-24T16:13:18+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "reset": "2026-04-24T15:32:59+00:00"
+      },
+      "checked_at": "2026-04-24T15:33:36.877479+00:00"
+    },
+    "collector_version": "1.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained — none are discarded — to preserve historical evidence."
+  }
+}

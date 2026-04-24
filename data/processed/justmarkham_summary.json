@@ -1,0 +1,288 @@
+{
+  "username": "justmarkham",
+  "profile": {
+    "login": "justmarkham",
+    "name": "Kevin Markham",
+    "bio": "Founder of Data School",
+    "company": "Data School",
+    "location": "Asheville, NC, USA",
+    "followers": 8616,
+    "public_repos": 40,
+    "created_at": "2014-01-26T22:29:01+00:00"
+  },
+  "aggregate_signals": {
+    "top_languages": [
+      {
+        "language": "Python",
+        "bytes": 10386977,
+        "pct": 50.2
+      },
+      {
+        "language": "Jupyter Notebook",
+        "bytes": 9299635,
+        "pct": 45.0
+      },
+      {
+        "language": "Roff",
+        "bytes": 636126,
+        "pct": 3.1
+      },
+      {
+        "language": "C++",
+        "bytes": 146835,
+        "pct": 0.7
+      },
+      {
+        "language": "R",
+        "bytes": 50002,
+        "pct": 0.2
+      },
+      {
+        "language": "C",
+        "bytes": 41025,
+        "pct": 0.2
+      },
+      {
+        "language": "Shell",
+        "bytes": 39331,
+        "pct": 0.2
+      },
+      {
+        "language": "CSS",
+        "bytes": 25034,
+        "pct": 0.1
+      },
+      {
+        "language": "HTML",
+        "bytes": 22639,
+        "pct": 0.1
+      },
+      {
+        "language": "Handlebars",
+        "bytes": 21095,
+        "pct": 0.1
+      }
+    ],
+    "top_topics": [
+      "python",
+      "data-science",
+      "pandas",
+      "jupyter-notebook",
+      "tutorial",
+      "machine-learning",
+      "scikit-learn",
+      "data-analysis",
+      "web-scraping",
+      "data-cleaning",
+      "course",
+      "linear-regression",
+      "logistic-regression",
+      "model-evaluation",
+      "naive-bayes",
+      "natural-language-processing",
+      "decision-trees",
+      "ensemble-learning",
+      "clustering",
+      "regular-expressions"
+    ],
+    "total_stars_received": 14399,
+    "total_forks_received": 10100,
+    "total_repos_collected": 40,
+    "owned_repo_count": 25,
+    "forked_repo_count": 15,
+    "active_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "first_active_year": 2014,
+    "last_active_year": 2026,
+    "activity_span_years": 12,
+    "recent_activity_summary": {
+      "repos_pushed_last_2_years": 4,
+      "repo_names": [
+        "justmarkham/DAT8",
+        "justmarkham/python-reference",
+        "justmarkham/DAT7",
+        "justmarkham/mlbook-website"
+      ]
+    },
+    "historical_activity_summary": {
+      "repos_4_plus_years_old": 29,
+      "repo_names": [
+        "justmarkham/DAT4",
+        "justmarkham/DAT3",
+        "justmarkham/pycon-2016-tutorial",
+        "justmarkham/pycon-2019-tutorial",
+        "justmarkham/pycon-2018-tutorial",
+        "justmarkham/trump-lies",
+        "justmarkham/dplyr-tutorial",
+        "justmarkham/kaggle-allstate",
+        "justmarkham/pydata-dc-2016-tutorial",
+        "justmarkham/python-data-analysis-workshop"
+      ]
+    }
+  },
+  "top_repos": [
+    {
+      "full_name": "justmarkham/DAT8",
+      "language": "Jupyter Notebook",
+      "stars": 1623,
+      "forks": 1055,
+      "relevance_score": 0.9208,
+      "topics": [
+        "data-science",
+        "machine-learning",
+        "scikit-learn",
+        "data-analysis",
+        "pandas",
+        "jupyter-notebook",
+        "python",
+        "course",
+        "linear-regression",
+        "logistic-regression",
+        "model-evaluation",
+        "naive-bayes",
+        "natural-language-processing",
+        "decision-trees",
+        "ensemble-learning",
+        "clustering",
+        "regular-expressions",
+        "web-scraping",
+        "data-visualization",
+        "data-cleaning"
+      ]
+    },
+    {
+      "full_name": "justmarkham/pandas-videos",
+      "language": "Jupyter Notebook",
+      "stars": 2251,
+      "forks": 1934,
+      "relevance_score": 0.891,
+      "topics": [
+        "data-science",
+        "jupyter-notebook",
+        "python",
+        "pandas",
+        "tutorial",
+        "data-analysis",
+        "data-cleaning"
+      ]
+    },
+    {
+      "full_name": "justmarkham/scikit-learn-videos",
+      "language": "Jupyter Notebook",
+      "stars": 3787,
+      "forks": 2536,
+      "relevance_score": 0.889,
+      "topics": [
+        "scikit-learn",
+        "machine-learning",
+        "data-science",
+        "jupyter-notebook",
+        "tutorial",
+        "python"
+      ]
+    },
+    {
+      "full_name": "justmarkham/python-reference",
+      "language": "Jupyter Notebook",
+      "stars": 713,
+      "forks": 412,
+      "relevance_score": 0.8805,
+      "topics": [
+        "python",
+        "reference",
+        "script",
+        "jupyter-notebook",
+        "quick-reference"
+      ]
+    },
+    {
+      "full_name": "justmarkham/DAT7",
+      "language": "Jupyter Notebook",
+      "stars": 234,
+      "forks": 197,
+      "relevance_score": 0.8684,
+      "topics": []
+    },
+    {
+      "full_name": "justmarkham/DAT4",
+      "language": "Jupyter Notebook",
+      "stars": 800,
+      "forks": 661,
+      "relevance_score": 0.8664,
+      "topics": []
+    },
+    {
+      "full_name": "justmarkham/DAT3",
+      "language": "Roff",
+      "stars": 660,
+      "forks": 373,
+      "relevance_score": 0.8527,
+      "topics": []
+    },
+    {
+      "full_name": "justmarkham/pycon-2016-tutorial",
+      "language": "Jupyter Notebook",
+      "stars": 447,
+      "forks": 431,
+      "relevance_score": 0.824,
+      "topics": []
+    },
+    {
+      "full_name": "justmarkham/DAT5",
+      "language": "Jupyter Notebook",
+      "stars": 185,
+      "forks": 202,
+      "relevance_score": 0.8234,
+      "topics": []
+    },
+    {
+      "full_name": "justmarkham/scikit-learn-tips",
+      "language": "Jupyter Notebook",
+      "stars": 1742,
+      "forks": 437,
+      "relevance_score": 0.8052,
+      "topics": [
+        "scikit-learn",
+        "machine-learning",
+        "python",
+        "data-science",
+        "data-school"
+      ]
+    }
+  ],
+  "collection_metadata": {
+    "username": "justmarkham",
+    "collected_at": "2026-04-24T15:47:07.590648+00:00",
+    "elapsed_seconds": 810.7,
+    "total_repos": 40,
+    "total_evidence_items": 307,
+    "rate_limit_snapshot": {
+      "core": {
+        "limit": 5000,
+        "remaining": 4876,
+        "reset": "2026-04-24T16:13:18+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "reset": "2026-04-24T15:46:30+00:00"
+      },
+      "checked_at": "2026-04-24T15:47:07.590648+00:00"
+    },
+    "collector_version": "1.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained — none are discarded — to preserve historical evidence."
+  }
+}
