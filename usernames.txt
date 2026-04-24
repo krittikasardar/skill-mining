@@ -2,6 +2,9 @@
 # Add or replace usernames here — one per line
 # Lines starting with # are ignored
 
+karpathy
+tiangolo
+nayafia
 hnarayanan
 dlsys-course
 explosion
