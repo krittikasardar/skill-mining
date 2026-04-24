@@ -1,0 +1,276 @@
+{
+  "username": "ines",
+  "profile": {
+    "login": "ines",
+    "name": "Ines Montani",
+    "bio": "Digital native and software developer working on AI, Machine Learning & NLP. Founder @explosion, developing spaCy & Prodigy.\r\n\r\n(Portrait: Sarah Andersen)",
+    "company": "Founder @explosion ",
+    "location": "Berlin, Germany",
+    "followers": 4024,
+    "public_repos": 19,
+    "created_at": "2015-08-04T13:15:33+00:00"
+  },
+  "aggregate_signals": {
+    "top_languages": [
+      {
+        "language": "Python",
+        "bytes": 264629,
+        "pct": 33.0
+      },
+      {
+        "language": "CSS",
+        "bytes": 250848,
+        "pct": 31.2
+      },
+      {
+        "language": "JavaScript",
+        "bytes": 198382,
+        "pct": 24.7
+      },
+      {
+        "language": "R",
+        "bytes": 43830,
+        "pct": 5.5
+      },
+      {
+        "language": "HTML",
+        "bytes": 40389,
+        "pct": 5.0
+      },
+      {
+        "language": "Shell",
+        "bytes": 4723,
+        "pct": 0.6
+      }
+    ],
+    "top_topics": [
+      "javascript",
+      "python",
+      "javascript-library",
+      "jupyter",
+      "binder",
+      "css",
+      "online-course",
+      "gatsby",
+      "gatsbyjs",
+      "spacy",
+      "nlp",
+      "natural-language-processing",
+      "skeleton-template",
+      "animation",
+      "html-api",
+      "terminal",
+      "r",
+      "rstats",
+      "rstudio",
+      "rest-api"
+    ],
+    "total_stars_received": 3548,
+    "total_forks_received": 441,
+    "total_repos_collected": 19,
+    "owned_repo_count": 14,
+    "forked_repo_count": 5,
+    "active_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "first_active_year": 2015,
+    "last_active_year": 2024,
+    "activity_span_years": 9,
+    "recent_activity_summary": {
+      "repos_pushed_last_2_years": 1,
+      "repo_names": [
+        "ines/die-aerzte"
+      ]
+    },
+    "historical_activity_summary": {
+      "repos_4_plus_years_old": 13,
+      "repo_names": [
+        "ines/termynal",
+        "ines/course-starter-python",
+        "ines/juniper",
+        "ines/console-dot-emoji",
+        "ines/spacy-streamlit-demo",
+        "ines/spacy-graphql",
+        "ines/pretty-harp-jade-skeleton",
+        "ines/pretty-jekyll-skeleton",
+        "ines/quickstart",
+        "ines/scheidify"
+      ]
+    }
+  },
+  "top_repos": [
+    {
+      "full_name": "ines/termynal",
+      "language": "JavaScript",
+      "stars": 1807,
+      "forks": 118,
+      "relevance_score": 0.7938,
+      "topics": [
+        "javascript",
+        "javascript-library",
+        "animation",
+        "css",
+        "html-api",
+        "terminal"
+      ]
+    },
+    {
+      "full_name": "ines/course-starter-r",
+      "language": "CSS",
+      "stars": 341,
+      "forks": 83,
+      "relevance_score": 0.7722,
+      "topics": [
+        "r",
+        "rstats",
+        "rstudio",
+        "online-course",
+        "gatsby",
+        "gatsbyjs",
+        "jupyter",
+        "binder"
+      ]
+    },
+    {
+      "full_name": "ines/course-starter-python",
+      "language": "CSS",
+      "stars": 510,
+      "forks": 116,
+      "relevance_score": 0.7614,
+      "topics": [
+        "python",
+        "online-course",
+        "gatsby",
+        "gatsbyjs",
+        "jupyter",
+        "binder"
+      ]
+    },
+    {
+      "full_name": "ines/spacy-js",
+      "language": "JavaScript",
+      "stars": 201,
+      "forks": 23,
+      "relevance_score": 0.7072,
+      "topics": [
+        "spacy",
+        "nlp",
+        "natural-language-processing",
+        "python",
+        "rest-api",
+        "javascript"
+      ]
+    },
+    {
+      "full_name": "ines/juniper",
+      "language": "JavaScript",
+      "stars": 224,
+      "forks": 35,
+      "relevance_score": 0.6784,
+      "topics": [
+        "jupyter",
+        "jupyter-notebook",
+        "jupyterlab",
+        "binder",
+        "binderhub",
+        "python",
+        "ipython",
+        "javascript-library",
+        "widget"
+      ]
+    },
+    {
+      "full_name": "ines/console-dot-emoji",
+      "language": "JavaScript",
+      "stars": 251,
+      "forks": 12,
+      "relevance_score": 0.6185,
+      "topics": [
+        "javascript",
+        "emoji",
+        "javascript-console"
+      ]
+    },
+    {
+      "full_name": "ines/spacy-streamlit-demo",
+      "language": "Python",
+      "stars": 19,
+      "forks": 30,
+      "relevance_score": 0.56,
+      "topics": []
+    },
+    {
+      "full_name": "ines/spacy-graphql",
+      "language": "Python",
+      "stars": 86,
+      "forks": 9,
+      "relevance_score": 0.5523,
+      "topics": [
+        "spacy",
+        "graphql",
+        "flask",
+        "flask-api",
+        "python",
+        "nlp",
+        "natural-language-processing"
+      ]
+    },
+    {
+      "full_name": "ines/pretty-harp-jade-skeleton",
+      "language": "HTML",
+      "stars": 13,
+      "forks": 6,
+      "relevance_score": 0.5483,
+      "topics": [
+        "skeleton-template",
+        "harp",
+        "jade",
+        "pug",
+        "harpjs"
+      ]
+    },
+    {
+      "full_name": "ines/pretty-jekyll-skeleton",
+      "language": "HTML",
+      "stars": 12,
+      "forks": 5,
+      "relevance_score": 0.5263,
+      "topics": [
+        "jekyll",
+        "skeleton-template",
+        "jekyll-theme"
+      ]
+    }
+  ],
+  "collection_metadata": {
+    "username": "ines",
+    "collected_at": "2026-04-24T12:14:11.054549+00:00",
+    "elapsed_seconds": 184.3,
+    "total_repos": 19,
+    "total_evidence_items": 160,
+    "rate_limit_snapshot": {
+      "core": {
+        "limit": 5000,
+        "remaining": 4950,
+        "reset": "2026-04-24T13:08:47+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "reset": "2026-04-24T12:13:35+00:00"
+      },
+      "checked_at": "2026-04-24T12:14:11.054549+00:00"
+    },
+    "collector_version": "1.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained — none are discarded — to preserve historical evidence."
+  }
+}

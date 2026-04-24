@@ -1,0 +1,1240 @@
+{
+  "schema_version": "1.0",
+  "profile": {
+    "login": "dlsys-course",
+    "name": null,
+    "bio": null,
+    "company": null,
+    "blog": "",
+    "location": null,
+    "email": null,
+    "twitter_username": null,
+    "followers": 41,
+    "following": 0,
+    "public_repos": 7,
+    "public_gists": 0,
+    "created_at": "2017-03-08T17:27:18+00:00",
+    "updated_at": "2026-04-24T11:55:25+00:00",
+    "avatar_url": "https://avatars.githubusercontent.com/u/26283031?v=4",
+    "html_url": "https://github.com/dlsys-course",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "repositories": [
+    {
+      "repository_metadata": {
+        "name": "assignment1-2018",
+        "full_name": "dlsys-course/assignment1-2018",
+        "description": "Assignment 1: automatic differentiation",
+        "html_url": "https://github.com/dlsys-course/assignment1-2018",
+        "homepage": "",
+        "language": "Python",
+        "stargazers_count": 476,
+        "forks_count": 148,
+        "watchers_count": 476,
+        "open_issues_count": 1,
+        "size": 97,
+        "default_branch": "master",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2017-04-06T02:09:28+00:00",
+        "updated_at": "2026-03-18T01:09:05+00:00",
+        "pushed_at": "2019-07-02T14:42:28+00:00",
+        "license": null,
+        "topics": [
+          "autodiff",
+          "computation-graph"
+        ]
+      },
+      "relevance_score": 0.7586,
+      "skill_evidence": {
+        "primary_language": "Python",
+        "languages_used": [
+          "Python"
+        ],
+        "language_breakdown": {
+          "Python": {
+            "bytes": 18826,
+            "pct": 100.0
+          }
+        },
+        "topics": [
+          "autodiff",
+          "computation-graph"
+        ],
+        "readme_keywords": [
+          "api",
+          "express",
+          "go",
+          "machine learning",
+          "numpy",
+          "python",
+          "rest",
+          "scala",
+          "tensorflow"
+        ],
+        "commit_count_sampled": 0,
+        "commit_years_covered": []
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 476,
+        "forks_received": 148
+      },
+      "leadership_evidence": {
+        "signals": [
+          "Owner of repo with 476 stars",
+          "Repo forked 148 times by others"
+        ],
+        "commit_year_span": {}
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# Assignment 1: Reverse-mode Automatic Differentiation\n\nIn this assignment, we would implement reverse-mode auto-diff.\n\nOur code should be able to construct simple expressions, e.g. y=x1*x2+x1,\nand evaluate their outputs as well as their gradients (or adjoints), e.g. y, dy/dx1 and dy/dx2.\n\nThere are many ways to implement auto-diff, as explained in the slides for Lecture 4.\nFor this assignment, we use the approach of a computation graph and an explicit construction of gradient (adjoint) nodes, similar to what MXNet and Tensorflow do.\n\nKey concepts and data structures that we would need to implement are\n- Computation graph and Node\n- Operator, e.g. Add, MatMul, Placeholder, Oneslike\n- Construction of gradient nodes given forward graph\n- Executor\n\n## Overview of Module API and Data Structures\n\nHere we use a simple example to illustrate the API and data structures of the autodiff module.\n\nSuppose our expression is y=x1*x2+x1, we first define our variables x1 and x2 symbolically,\n\n```python\nimport autodiff as ad\n\nx1 = ad.Variable(name = \"x1\")\nx2 = ad.Variable(name = \"x2\")\n```\nThen, you can define the symoblic expression for y,\n\n```python\ny = x1 * x2 + x1\n```\nNow, the computation graph looks like this,\n\n![1st graph](https://github.com/dlsys-course/assignment1/blob/master/img/hwk1_graph1.png)\n\nHere, each node is associated with an operator object (we only need a singleton instance for each operator since it is used in an immutable way).\n- Node x1 and x2 are associated with Placeholder Op.\n- Node (x1*x2) is associated with MulOp, and y with AddOp.\n\nWith this computation graph, we can evaluate the value of y given any values of x1 and x2: simply walk the graph in a topological order, and for each node, use its associated operator to compute an output value given input values. The evaluation is done in Executor.run method.\n\n```python\nexecutor = ad.Executor([y])\ny_val = executor.run(feed_dict = {x1 : x1_val, x2 : x2_val})\n```\n\nIf we want to evaluate the gradients of y with respect to x1 and x2, as we would often do for loss function wrt parameters in usual machine learning training steps, we need to construct the gradient nodes, grad_x1 and grad_x2.\n\n```python\ngrad_x1, grad_x2 = ad.gradients(y, [x1, x2])\n```\n\nAccording to the reverse-mode autodiff algorithm described in the lecture, we create a gradient node for each node in the existing graph and return those that user are interested in evaluating.\n\nWe do this in a reverse topological order, e.g., y, (x1+x2), x1, x2, as shown in the figures below\n\n![2nd graph](https://github.com/dlsys-course/assignment1/blob/master/img/hwk1_graph2.png)\n![3rd graph](https://github.com/dlsys-course/assignment1/blob/master/img/hwk1_graph3.png)\n\nOnce we construct the gradients node, and have references to them, we can evaluate the gradients using Executor as before,\n```python\nexecutor = ad.Executor([y, grad_x1, grad_x2])\ny_val, grad_x1_val, grad_x2_val = executor.run(feed_dict = {x1 : x1_val, x2 : x2_val})\n```\ngrad_x1_val, grad_x2_val now contain the values of dy/dx1 and dy/dx2.\n\n### Special notes here:\n- For simplicity, our implementation expect all variables to have numpy.ndarray data type. See tests feed_dict usage.\n- When taking derivative of dy/dx, even though y can be a vector, we are implicitly assuming that we are taking derivative of the reduce_sum(y) wrt x. This is the common case for machine learning applications as loss function is scalar or the reduce sum of vectors. Our code skeletion takes care of this by initializing the dy as ones_like(y) in Executor.gradients method.\n\n## What you need to do?\nUnderstand the code skeleton and tests. Fill in implementation wherever marked \"\"\"TODO: Your code here\"\"\".\n\n## Tests cases\nWe have 10 tests in autodiff_test.py. We would grade you based on those tests.\n\nRun all tests with\n```bash\n# sudo pip install nose\nnosetests -v autodiff_test.py\n```\n\n### Bonus points\nOnce your code can clear all tests, your autodiff module is almost ready to train a logistic regre … [truncated]",
+        "commit_samples": [],
+        "description": "Assignment 1: automatic differentiation"
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "dlsys-course.github.io",
+        "full_name": "dlsys-course/dlsys-course.github.io",
+        "description": "Deep learning system course",
+        "html_url": "https://github.com/dlsys-course/dlsys-course.github.io",
+        "homepage": "http://dlsys.cs.washington.edu/",
+        "language": "Jupyter Notebook",
+        "stargazers_count": 215,
+        "forks_count": 32,
+        "watchers_count": 215,
+        "open_issues_count": 0,
+        "size": 63121,
+        "default_branch": "master",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2017-03-08T17:29:23+00:00",
+        "updated_at": "2026-01-03T22:30:06+00:00",
+        "pushed_at": "2018-12-26T23:55:45+00:00",
+        "license": null,
+        "topics": [
+          "deep-learning",
+          "tutorial",
+          "course"
+        ]
+      },
+      "relevance_score": 0.7292,
+      "skill_evidence": {
+        "primary_language": "Jupyter Notebook",
+        "languages_used": [
+          "Jupyter Notebook",
+          "Ruby",
+          "HTML",
+          "CSS",
+          "Shell"
+        ],
+        "language_breakdown": {
+          "Jupyter Notebook": {
+            "bytes": 51527,
+            "pct": 73.7
+          },
+          "Ruby": {
+            "bytes": 11717,
+            "pct": 16.8
+          },
+          "HTML": {
+            "bytes": 5062,
+            "pct": 7.2
+          },
+          "CSS": {
+            "bytes": 1585,
+            "pct": 2.3
+          },
+          "Shell": {
+            "bytes": 46,
+            "pct": 0.1
+          }
+        },
+        "topics": [
+          "deep-learning",
+          "tutorial",
+          "course"
+        ],
+        "readme_keywords": [],
+        "commit_count_sampled": 0,
+        "commit_years_covered": []
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": true,
+        "stars_received": 215,
+        "forks_received": 32
+      },
+      "leadership_evidence": {
+        "signals": [
+          "Owner of repo with 215 stars",
+          "Repo forked 32 times by others"
+        ],
+        "commit_year_span": {}
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# Course Homepage",
+        "commit_samples": [],
+        "description": "Deep learning system course"
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "assignment2-2018",
+        "full_name": "dlsys-course/assignment2-2018",
+        "description": "(Spring 2018) Assignment 2: Graph Executor with TVM",
+        "html_url": "https://github.com/dlsys-course/assignment2-2018",
+        "homepage": "http://dlsys.cs.washington.edu/",
+        "language": "Python",
+        "stargazers_count": 125,
+        "forks_count": 51,
+        "watchers_count": 125,
+        "open_issues_count": 0,
+        "size": 15836,
+        "default_branch": "master",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2018-04-24T05:20:40+00:00",
+        "updated_at": "2026-03-23T09:19:35+00:00",
+        "pushed_at": "2018-04-24T05:22:59+00:00",
+        "license": null,
+        "topics": []
+      },
+      "relevance_score": 0.7025,
+      "skill_evidence": {
+        "primary_language": "Python",
+        "languages_used": [
+          "Python"
+        ],
+        "language_breakdown": {
+          "Python": {
+            "bytes": 53937,
+            "pct": 100.0
+          }
+        },
+        "topics": [],
+        "readme_keywords": [
+          "api",
+          "deep learning",
+          "go",
+          "neural",
+          "numpy",
+          "python",
+          "rest",
+          "testing"
+        ],
+        "commit_count_sampled": 0,
+        "commit_years_covered": []
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 125,
+        "forks_received": 51
+      },
+      "leadership_evidence": {
+        "signals": [
+          "Owner of repo with 125 stars",
+          "Repo forked 51 times by others"
+        ],
+        "commit_year_span": {}
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# Assignment 2: Graph Executor with TVM\n\nIn [Assignment 1](https://github.com/dlsys-course/assignment1), we implemented the User API layer (computation graph and autodiff) of the deep learning system stack. In this assignment, we will go down the stack, and implement a simple version of the rest of the stack.\n\n![Image of Deep Learning Software Stack](https://github.com/tqchen/dl-system/blob/master/tvm_executor/dl_stack.png)\n\nWe need to implement a computation graph executor that can manage memory for users and execute the forward and backward passes. We also need to implement deep learning kernels using a compiler-based approach through [TVM](http://tvmlang.org/).\n\nIn the end, we would have implemented a simple version of the entire deep learning system stack. Our code should be able to construct a simple MLP model using computation graph API implemented in Assignment 1, and train and test the model using operators generated by TVM. \n\nKey concepts and data structures that we would need to implement are\n\n- Shape inference on computation graph given input shapes.\n- Executor memory management for computation graph.\n- TVM kernel implementations of common kernels, e.g. Relu, MatMul, Softmax.\n\n## Overview of Module\n- python/dlsys/autodiff.py: Implements computation graph, autodiff, executor.\n- python/dlsys/tvm_op.py: Implementation of kernels using TVM.\n\n- test/test_tvm_op.py: test suite for all tvm ops.\n- test/mnist_dlsys.py: training loop for MLP. \n\n## What you need to do?\nUnderstand the code skeleton and tests. Fill in implementation wherever marked `\"\"\"TODO: Your code here\"\"\"`.\n\nThere are only two files with TODOs for you.\n- python/dlsys/autodiff.py\n- python/dlsys/tvm_op.py\n\nIn autodiff.py, you need to implement shape inference and memory management (make sure your executor reuse memory across training iterations) for the executor.\n\nIn tvm_op.py, you need to implement kernels using TVM, and you need to come up with an optimized schedule for matrix multiply kernel that achieves at least 10x speedup compared to default schedule (see more details below). \n\nThe available primitives can be found at [TVM scheduling primitives](http://docs.tvmlang.org/tutorials/language/schedule_primitives.html).\n\n## Tests cases\nThere are 12 tests in tests/test_tvm_op.py. We would grade your TVM kernel implementations based on 10 of those tests. \n\nWe would also grade your implementation of shape inference and memory management based on tests/mnist_dlsys.py.\n\nWe would grade your optimized matrix multiply kernel by checking if there is a ~10x reduction in per-epoch running time.\n\nCompile\n```bash\nexport PYTHONPATH=\"${PYTHONPATH}:/path/to/assignment2/python\"\n```\n\nRun all tests with\n```bash\n# sudo pip install nose\nnosetests -v tests/test_tvm_op.py\n```\n\nRun neural nets training and testing with\n```bash\n# see cmd options with \n# python tests/mnist_dlsys.py -h\n\n# run logistic regression on numpy\npython tests/mnist_dlsys.py -l -m logreg\n# run MLP on numpy\npython tests/mnist_dlsys.py -l -m mlp\n```\n\nIf your implementation is correct, you would see\n- generally decreasing loss value with epochs\n- your dev set accuracy for logreg about 92% and MLP about 97% for mnist using the default parameters \n\nIf you use default TVM schedules for all kernels, MLP training would be noticeably slower than logistic regression because the matrix multiple kernel with default schedule is highly unoptimized. To get full score on this assignment, you need to optimize the matrix multiple kernel using a combination of techniques such as blocking, vectorization, loop permutations and others mentioned in lecture.\n\nReferences for optimizing TVM kernels:\n- [Lecture 6](http://dlsys.cs.washington.edu/pdf/lecture6.pdf)\n- [TVM tutorials](http://docs.tvmlang.org/tutorials/index.html)\n\nWith default schedules, you may see some numbers like\n```bash\nqiao$ python tests/mnist_dlsys.py -l -m mlp\n=== Build 3-layer MLP model...\nLoading data...\nStart training loop...\nepoch 0\nloss = 0.567862; Time taken this … [truncated]",
+        "commit_samples": [],
+        "description": "(Spring 2018) Assignment 2: Graph Executor with TVM"
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "assignment2-2017",
+        "full_name": "dlsys-course/assignment2-2017",
+        "description": "(Spring 2017) Assignment 2: GPU Executor",
+        "html_url": "https://github.com/dlsys-course/assignment2-2017",
+        "homepage": "http://dlsys.cs.washington.edu/",
+        "language": "Python",
+        "stargazers_count": 63,
+        "forks_count": 44,
+        "watchers_count": 63,
+        "open_issues_count": 0,
+        "size": 30,
+        "default_branch": "master",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2017-04-26T02:46:16+00:00",
+        "updated_at": "2025-08-23T21:17:57+00:00",
+        "pushed_at": "2017-04-27T00:20:15+00:00",
+        "license": null,
+        "topics": [
+          "gpu-kernels",
+          "computation-graph",
+          "deep-learning",
+          "neural-nets",
+          "gpu-executor"
+        ]
+      },
+      "relevance_score": 0.6222,
+      "skill_evidence": {
+        "primary_language": "Python",
+        "languages_used": [
+          "Python",
+          "C++",
+          "Cuda",
+          "C",
+          "Makefile"
+        ],
+        "language_breakdown": {
+          "Python": {
+            "bytes": 56553,
+            "pct": 69.2
+          },
+          "C++": {
+            "bytes": 18380,
+            "pct": 22.5
+          },
+          "Cuda": {
+            "bytes": 4614,
+            "pct": 5.6
+          },
+          "C": {
+            "bytes": 1195,
+            "pct": 1.5
+          },
+          "Makefile": {
+            "bytes": 1015,
+            "pct": 1.2
+          }
+        },
+        "topics": [
+          "gpu-kernels",
+          "computation-graph",
+          "deep-learning",
+          "neural-nets",
+          "gpu-executor"
+        ],
+        "readme_keywords": [
+          "api",
+          "aws",
+          "library",
+          "neural",
+          "numpy",
+          "python",
+          "testing"
+        ],
+        "commit_count_sampled": 0,
+        "commit_years_covered": []
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 63,
+        "forks_received": 44
+      },
+      "leadership_evidence": {
+        "signals": [
+          "Owner of repo with 63 stars",
+          "Repo forked 44 times by others"
+        ],
+        "commit_year_span": {}
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# Assignment 2: GPU Graph Executor\n\nIn this assignment, we would implement a GPU graph executor that can train simple neural nets such as multilayer perceptron models.\n\nOur code should be able to construct a simple MLP model using computation graph API implemented in Assignment 1, and train and test the model using either numpy or GPU. If you implement everything correctly, you would see nice speedup in training neural nets with GPU executor compared to numpy executor, as expected.\n\nKey concepts and data structures that we would need to implement are\n- Shape inference on computation graph given input shapes.\n- GPU executor memory management for computation graph.\n- GPU kernel implementations of common kernels, e.g. Relu, MatMul, Softmax.\n\n## Overview of Module\n- python/dlsys/autodiff.py: Implements computation graph, autodiff, GPU/Numpy Executor.\n- python/dlsys/gpu_op.py: Exposes Python function to call GPU kernels via ctypes.\n- python/dlsys/ndarray.py: Exposes Python GPU array API.\n\n- src/dlarray.h: header for GPU array.\n- src/c_runtime_api.h: C API header for GPU array and GPU kernels.\n- src/gpu_op.cu: cuda implementation of kernels \n\n## What you need to do?\nUnderstand the code skeleton and tests. Fill in implementation wherever marked `\"\"\"TODO: Your code here\"\"\"`.\n\nThere are only two files with TODOs for you.\n- python/dlsys/autodiff.py\n- src/gpu_op.cu\n\n### Special note\nDo not change Makefile to use cuDNN for GPU kernels.\n\n## Environment setup\n- If you don't have a GPU machine, you can use AWS GPU instance. AWS setup instructions see [lab1](https://github.com/dlsys-course/lab1).\n- Otherwise, you need to install CUDA toolkit ([instructions](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/)) on your own machine, and set the environment variables.\n  ```bash\n  export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH\n  export PATH=/usr/local/cuda/bin:$PATH\n  ```\n\n## Tests cases\nWe have 12 tests in tests/test_gpu_op.py. We would grade your GPU kernel implementations based on those tests. We would also grade your implementation of shape inference and memory management based on tests/mnist_dlsys.py.\n\nCompile\n```bash\nexport PYTHONPATH=\"${PYTHONPATH}:/path/to/assignment2/python\"\nmake\n```\n\nRun all tests with\n```bash\n# sudo pip install nose\nnosetests -v tests/test_gpu_op.py\n```\n\nRun neural nets training and testing with\n```bash\n# see cmd options with \n# python tests/mnist_dlsys.py -h\n\n# run logistic regression on numpy\npython tests/mnist_dlsys.py -l -m logreg -c numpy\n# run logistic regression on gpu\npython tests/mnist_dlsys.py -l -m logreg -c gpu\n# run MLP on numpy\npython tests/mnist_dlsys.py -l -m mlp -c numpy\n# run MLP on gpu\npython tests/mnist_dlsys.py -l -m mlp -c gpu\n\n```\n\nIf your implementation is correct, you would see\n- generally decreasing loss value with epochs, similar loss value decrease for numpy and GPU execution\n- your dev set accuracy for logreg about 92% and MLP about 97% for mnist using the parameters we provided in mnist_dlsys.py\n- GPU execution being noticeably faster than numpy. However, if you do not reuse memory across executor.runs, your GPU execution would incur overhead in memory allocation.\n\nProfile GPU execution with\n```bash\nnvprof python tests/mnist_dlsys.py -l -m mlp -c gpu\n```\n\nIf GPU memory management is done right, e.g. reuse GPU memory across each executor.run, your cudaMalloc \"Calls\" should not increase with number of training epochs (set with -e option).\n```bash\n# Run 10 epochs\nnvprof python tests/mnist_dlsys.py -l -m mlp -c gpu -e 10\n#==2263== API calls:\n#Time(%)      Time     Calls       Avg       Min       Max  Name\n# 10.19%  218.65ms        64  3.4164ms  8.5130us  213.90ms  cudaMalloc\n\n# Run 30 epochs\nnvprof python tests/mnist_dlsys.py -l -m mlp -c gpu -e 30\n#==4333== API calls:\n#Time(%)      Time     Calls       Avg       Min       Max  Name\n#  5.80%  340.74ms        64  5.3240ms  15.877us  333.80ms  cudaMalloc\n```\n\n### Grading rubrics\n- test_gpu_op.test_array_set ... 1 pt\n- test_ … [truncated]",
+        "commit_samples": [],
+        "description": "(Spring 2017) Assignment 2: GPU Executor"
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "examples",
+        "full_name": "dlsys-course/examples",
+        "description": "Example codes appears in lectures",
+        "html_url": "https://github.com/dlsys-course/examples",
+        "homepage": null,
+        "language": "Cuda",
+        "stargazers_count": 22,
+        "forks_count": 5,
+        "watchers_count": 22,
+        "open_issues_count": 0,
+        "size": 6,
+        "default_branch": "master",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2017-04-04T17:08:33+00:00",
+        "updated_at": "2026-02-06T07:59:18+00:00",
+        "pushed_at": "2022-01-11T18:51:39+00:00",
+        "license": "MIT License",
+        "topics": []
+      },
+      "relevance_score": 0.5231,
+      "skill_evidence": {
+        "primary_language": "Cuda",
+        "languages_used": [
+          "Cuda",
+          "Python"
+        ],
+        "language_breakdown": {
+          "Cuda": {
+            "bytes": 2675,
+            "pct": 59.8
+          },
+          "Python": {
+            "bytes": 1800,
+            "pct": 40.2
+          }
+        },
+        "topics": [],
+        "readme_keywords": [],
+        "commit_count_sampled": 0,
+        "commit_years_covered": []
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 22,
+        "forks_received": 5
+      },
+      "leadership_evidence": {
+        "signals": [
+          "Owner of repo with 22 stars",
+          "Repo forked 5 times by others"
+        ],
+        "commit_year_span": {}
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# DLSys Examples\nThis repo contains example code that appeared in the lecture slides.",
+        "commit_samples": [],
+        "description": "Example codes appears in lectures"
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "lab1",
+        "full_name": "dlsys-course/lab1",
+        "description": null,
+        "html_url": "https://github.com/dlsys-course/lab1",
+        "homepage": null,
+        "language": "Jupyter Notebook",
+        "stargazers_count": 15,
+        "forks_count": 0,
+        "watchers_count": 15,
+        "open_issues_count": 0,
+        "size": 173,
+        "default_branch": "master",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2017-03-29T21:34:33+00:00",
+        "updated_at": "2025-02-23T04:48:55+00:00",
+        "pushed_at": "2018-03-28T06:32:09+00:00",
+        "license": null,
+        "topics": []
+      },
+      "relevance_score": 0.4476,
+      "skill_evidence": {
+        "primary_language": "Jupyter Notebook",
+        "languages_used": [
+          "Jupyter Notebook",
+          "Python",
+          "HTML"
+        ],
+        "language_breakdown": {
+          "Jupyter Notebook": {
+            "bytes": 70748,
+            "pct": 91.4
+          },
+          "Python": {
+            "bytes": 4011,
+            "pct": 5.2
+          },
+          "HTML": {
+            "bytes": 2615,
+            "pct": 3.4
+          }
+        },
+        "topics": [],
+        "readme_keywords": [
+          "aws",
+          "cli",
+          "deep learning",
+          "go",
+          "python"
+        ],
+        "commit_count_sampled": 0,
+        "commit_years_covered": []
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 15,
+        "forks_received": 0
+      },
+      "leadership_evidence": {
+        "signals": [
+          "Owner of repo with 15 stars"
+        ],
+        "commit_year_span": {}
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# Deep Learning System Lab1 Notebooks\n\nThis repo contains various notebooks that introduces basic usages and training\nof deep learning models and applying pretrained state-of-the-art models.\n\n## How to use\n\nThe python notebooks are written in [Jupyter](http://jupyter.org/).\n\n### Setup\n- We can run and modify these notebooks if both [mxnet](http://mxnet.io/get_started/index.html#setup-and-installation) and [jupyter](http://jupyter.org/) are\n  installed. Here is an [example script](https://gist.github.com/mli/b64322f446b2043e3350ddcbfa5957be) to install all these packages on Ubuntu.\n\n- Intructions to setup on AWS instances to run the notebooks:\n\n  1.  Create an AWS account, and apply the student credit from [AWS Education](https://aws.amazon.com/education/awseducate).\n\n  2.  Launch a g2.2xlarge or p2.2xlarge instance. The [AMI Ids](https://aws.amazon.com/marketplace/pp/B01M0AXXQB) that you can use:\n\n      | AWS Region Name       | Region      | AMI Id         |\n      |-----------------------|-------------|----------------|\n      | US West (Oregon)      | us-west-2   | `ami-dfb13ebf` |\n      | US East (N. Virginia) | us-east-1   | `ami-e7c96af1` |\n      | EU (Ireland)          | eu-west-1   | `ami-6e5d6808` |\n\n      Remember to open the TCP port 22 and 8888 in the security group. You can modify the security group after you create the instance.\n      Find the Instances page at the EC2 Dashboard, and click the security group of the instance you created, which is at the last column.\n      In the Inbound tab, add the SSH rule and customized TCP Rule with port 8888 from anywhere.\n      ![Inbound rules](./inbound_rules.png)\n\n  3.  Once launch is succeed, setup the following variable with proper value\n\n      ```bash\n       export HOSTNAME=ec2-107-22-159-132.compute-1.amazonaws.com\n       export PERM=~/Downloads/my.pem\n      ```\n\n  4. Now we should be able to ssh to the machine by\n\n      ```bash\n       chmod 400 $PERM\n       ssh -i $PERM -L 8888:localhost:8888 ec2-user@HOSTNAME\n      ```\n\n      Here we forward the EC2 machine's 8888 port into localhost.\n\n  5. Clone this repo on the EC2 machine and run jupyter\n\n      ```bash\n       sudo yum install -y graphviz\n       git clone https://github.com/dlsys-course/lab1.git\n       cd lab1\n       jupyter notebook\n      ```\n\n  6. Wait until jupyter creates the notebook and copy the URL it outputs to your brower.\n   The URL should look like:\n   http://localhost:8888/?token=5b870699ac133c42c56400de91f66256b89ab211ee38c7e0",
+        "commit_samples": [],
+        "description": ""
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "tinyflow",
+        "full_name": "dlsys-course/tinyflow",
+        "description": "Tutorial code on how to build your own Deep Learning System in 2k Lines",
+        "html_url": "https://github.com/dlsys-course/tinyflow",
+        "homepage": "",
+        "language": "C++",
+        "stargazers_count": 122,
+        "forks_count": 25,
+        "watchers_count": 122,
+        "open_issues_count": 0,
+        "size": 91,
+        "default_branch": "master",
+        "fork": true,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2017-04-03T23:07:14+00:00",
+        "updated_at": "2026-03-05T07:28:31+00:00",
+        "pushed_at": "2017-04-11T17:37:29+00:00",
+        "license": "Apache License 2.0",
+        "topics": []
+      },
+      "relevance_score": 0.4357,
+      "skill_evidence": {
+        "primary_language": "C++",
+        "languages_used": [
+          "C++",
+          "Python",
+          "Makefile",
+          "C"
+        ],
+        "language_breakdown": {
+          "C++": {
+            "bytes": 84585,
+            "pct": 72.5
+          },
+          "Python": {
+            "bytes": 28692,
+            "pct": 24.6
+          },
+          "Makefile": {
+            "bytes": 2283,
+            "pct": 2.0
+          },
+          "C": {
+            "bytes": 1049,
+            "pct": 0.9
+          }
+        },
+        "topics": [],
+        "readme_keywords": [
+          "api",
+          "c++",
+          "deep learning",
+          "framework",
+          "go",
+          "python",
+          "tensorflow"
+        ],
+        "commit_count_sampled": 0,
+        "commit_years_covered": []
+      },
+      "role_evidence": {
+        "is_owner": false,
+        "is_fork": true,
+        "forked_from": "tqchen/tinyflow",
+        "has_wiki": true,
+        "has_issues": false,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 122,
+        "forks_received": 25
+      },
+      "leadership_evidence": {
+        "signals": [],
+        "commit_year_span": {}
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# TinyFlow: Build Your Own DL System in 2K Lines\n\nTinyFlow is  \"example code\" for [NNVM](https://github.com/dmlc/nnvm/).\n\nIt demonstrates how can we build a clean, minimum and powerful computational\ngraph based deep learning system with same API as TensorFlow.\nThe operator code are implemented with [Torch7](https://github.com/torch/torch7) to reduce the effort to write operators while still demonstrating the concepts of the system (and Embedding Lua in C++ is kinda of fun:).\n\nTinyFlow is a real deep learning system that can run on GPU and CPUs.\nTo support the examples, it takes.\n- 927 lines code for operators\n- 734 lines of code for execution runtime\n- 71 lines of code for API glue\n- 233 lines of code for front-end\n\nNote that more code in operators can easily be added to make it as\nfeature complete as most existing deep learning systems.\n\n## What is it for\nAs explained in the goal of [NNVM](https://github.com/dmlc/nnvm/),\nit is important to make modular and reusable components for to enable us to build\ncustomized learning system easily.\n\n- Course Material for teaching DL system. TinyFlow can be used to teach student the concepts in deep learning systems.\n  - e.g. design homeworks on implementing symbolic differentiation, memory allocation, operator fusion.\n- Experiment bed for learning system researchers. TinyFlow allows easy addition with new system features with\n  the modular design being portable to other system that reuses NNVM.\n- Showcase of intermediate representation usecase. It demonstrates how intermediate representation like NNVM to be able to\n  target multiple front-ends(TF, MXNet) and backends(Torch7, MXNet) with common set of optimizations.\n- Test bed on common reusable modules for DL system. TinyFlow, together with other systems(e.g. MXNet) can be used as testbed on the\n  common reusable modules in deep learning to encourage front-end, optimization module and backends\n  that are shared across frameworks.\n- Just for fun :)\n\nWe believe the Unix Philosophy can building learning system more fun and everyone can be able to build\nand understand learning system better.\n\n## The Design\n- The graph construction API is automatically reused from NNVM\n- We choose Torch7 as the default operator execution backend.\n  - So TinyFlow can also be called \"TorchFlow\" since it is literally TensorFlow on top of Torch:)\n  - This allows us to quickly implement the operators and focus code on the system part.\n- We intentionally choose to avoid using [MXNet](https://github.com/dmlc/mxnet) as front or backend,\n  since MXNet already uses NNVM as intermediate layer, and it would be more fun to try something different.\n\nAlthough it is minimum. TinyFlow still comes with many advanced design concepts in Deep Learning system.\n- Automatic differentiation.\n- Shape/type inference.\n- Static memory allocation for graph for memory efficient training/inference.\n\nThe operator implementation is easy Thanks to Torch7. More fun demonstrations will be added to the project.\n\n## Dependencies\nMost of TinyFlow's code is self-contained.\n- TinyFlow depend on Torch7 for operator supports with minimum code.\n  - We use a lightweight lua bridge code from dmlc-core/dmlc/lua.h\n- NNVM is used for graph representation and optimizations\n\n## Build\n- Install Torch7\n  - For OSX User, please install Torch with Lua 5.1 instead of LuaJIT,\n    i.e. ```TORCH_LUA_VERSION=LUA51 ./install.sh```\n- Set up environment variable ```TORCH_HOME``` to root of torch\n- Type ```make```\n- Setup python path to include tinyflow and nnvm\n```bash\nexport PYTHONPATH=${PYTHONPATH}:/path/to/tinyflow/python:/path/to/tinyflow/nnvm/python\n```\n- Try example program ```python example/mnist_softmax.py```\n\n## Enable Fusion in TinyFlow\n- Build NNVM with Fusion: uncomment fusion plugin part in config.mk, then `make`\n- Build TinyFlow: enable `USE_FUSION` in Makefile, then `make`\n- Try Example program `example/mnist_lenet.py`, change the config of session from `tf.Session(config='gpu')` to `tf.Session(config='gpu f … [truncated]",
+        "commit_samples": [],
+        "description": "Tutorial code on how to build your own Deep Learning System in 2k Lines"
+      }
+    }
+  ],
+  "aggregate_signals": {
+    "top_languages": [
+      {
+        "language": "Python",
+        "bytes": 163819,
+        "pct": 38.7
+      },
+      {
+        "language": "Jupyter Notebook",
+        "bytes": 122275,
+        "pct": 28.9
+      },
+      {
+        "language": "C++",
+        "bytes": 102965,
+        "pct": 24.3
+      },
+      {
+        "language": "Ruby",
+        "bytes": 11717,
+        "pct": 2.8
+      },
+      {
+        "language": "HTML",
+        "bytes": 7677,
+        "pct": 1.8
+      },
+      {
+        "language": "Cuda",
+        "bytes": 7289,
+        "pct": 1.7
+      },
+      {
+        "language": "Makefile",
+        "bytes": 3298,
+        "pct": 0.8
+      },
+      {
+        "language": "C",
+        "bytes": 2244,
+        "pct": 0.5
+      },
+      {
+        "language": "CSS",
+        "bytes": 1585,
+        "pct": 0.4
+      },
+      {
+        "language": "Shell",
+        "bytes": 46,
+        "pct": 0.0
+      }
+    ],
+    "top_topics": [
+      "computation-graph",
+      "deep-learning",
+      "autodiff",
+      "tutorial",
+      "course",
+      "gpu-kernels",
+      "neural-nets",
+      "gpu-executor"
+    ],
+    "total_stars_received": 1038,
+    "total_forks_received": 305,
+    "total_repos_collected": 7,
+    "owned_repo_count": 6,
+    "forked_repo_count": 1,
+    "active_years": [
+      2017,
+      2018,
+      2019,
+      2022
+    ],
+    "first_active_year": 2017,
+    "last_active_year": 2022,
+    "activity_span_years": 5,
+    "recent_activity_summary": {
+      "repos_pushed_last_2_years": 0,
+      "repo_names": []
+    },
+    "historical_activity_summary": {
+      "repos_4_plus_years_old": 7,
+      "repo_names": [
+        "dlsys-course/assignment1-2018",
+        "dlsys-course/dlsys-course.github.io",
+        "dlsys-course/assignment2-2018",
+        "dlsys-course/assignment2-2017",
+        "dlsys-course/examples",
+        "dlsys-course/lab1",
+        "dlsys-course/tinyflow"
+      ]
+    }
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "ev_0001",
+      "type": "skill",
+      "source": "repo:dlsys-course/assignment1-2018",
+      "content": "Assignment 1: automatic differentiation",
+      "metadata": {
+        "repo": "dlsys-course/assignment1-2018",
+        "field": "description",
+        "language": "Python",
+        "stars": 476
+      }
+    },
+    {
+      "evidence_id": "ev_0002",
+      "type": "skill",
+      "source": "repo:dlsys-course/assignment1-2018",
+      "content": "# Assignment 1: Reverse-mode Automatic Differentiation\n\nIn this assignment, we would implement reverse-mode auto-diff.\n\nOur code should be able to construct simple expressions, e.g. y=x1*x2+x1,\nand evaluate their outputs as well as their gradients (or adjoints), e.g. y, dy/dx1 and dy/dx2.\n\nThere are many ways to implement auto-diff, as explained in the slides for Lecture 4.\nFor this assignment, we use the approach of a computation graph and an explicit construction of gradient (adjoint) nodes, similar to what MXNet and Tensorflow do.\n\nKey concepts and data structures that we would need to implement are\n- Computation graph and Node\n- Operator, e.g. Add, MatMul, Placeholder, Oneslike\n- Construction of gradient nodes given forward graph\n- Executor\n\n## Overview of Module API and Data Structures\n\nHere we use a simple example to illustrate the API and data structures of the autodiff module.\n\nSuppose our expression is y=x1*x2+x1, we first define our variables x1 and x2 symbolically,\n\n```python\nimport autodiff as ad\n\nx1 = ad.Variable(name = \"x1\")\nx2 = ad.Variable(name = \"x2\")\n```\nThen, you can define the symoblic expression for y,\n\n```python\ny = x1 * x2 + x1\n```\nNow, the computation graph looks like this,\n\n![1st graph](https://github.com/dlsys-course/assignment1/blob/master/img/hwk1_graph1.png)\n\nHere, each node is associated with an operator object (we only need a singleton instance for each operator since it is used in an immutable way).\n- Node x1 and x2 are associated with Placeholder Op.\n- Node (x1*x2) is associated with MulOp, and y with AddOp.\n\nWith this computation graph, we can evaluate the value of y given any values of x1 and x2: simply walk the graph in a topological order, and for each node, use its associated operator to compute an output value given input values. The evaluation is done in Executor.run method.\n\n```python\nexecutor = ad.Executor([y])\ny_val = executor.run(feed_dict = {x1 : x1_val, x2 : x2_val})\n```\n\nIf we want to evaluate the gradients of y with respect to x1 and x2, as we would often do for loss function wrt parameters in usual machine learning training steps, we need to construct the gradient nodes, grad_x1 and grad_x2.\n\n```python\ngrad_x1, grad_x2 = ad.gradients(y, [x1, x2])\n```\n\nAccording to the reverse-mode autodiff algorithm described in the lecture, we create a gradient node for each node in the existing graph and return those that user are interested in evaluating.\n\nWe do this in a reverse topological order, e.g., y, (x1+x2), x1, x2, as shown in the figures below\n\n![2nd graph](https://github.com/dlsys-course/assignment1/blob/master/img/hwk1_graph2.png)\n![3rd graph](https://github.com/dlsys-course/assignment1/blob/master/img/hwk1_graph3.png)\n\nOnce we construct the gradients node, and have references to them, we can evaluate the gradients using Executor as before,\n```python\nexecutor = ad.Executor([y, grad_x1, grad_x2])\ny_val, grad_x1_val, grad_x2_val = executor.run(feed_dict = {x1 : x1_val, x2 : x2_val})\n```\ngrad_x1_val, grad_x2_val now contain the values of dy/dx1 and dy/dx2.\n\n### Special notes here:\n- For simplicity, our implementation expect all variables to have numpy.ndarray data type. See tests feed_dict usage.\n- When taking derivative of dy/dx, even though y can be a vector, we are implicitly assuming that we are taking derivative of the reduce_sum(y) wrt x. This is the common case for machine learning applications as loss function is scalar or the reduce sum of vectors. Our code skeletion takes care of this by initializing the dy as ones_like(y) in Executor.gradients method.\n\n## What you need to do?\nUnderstand the code skeleton and tests. Fill in implementation wherever marked \"\"\"TODO: Your code here\"\"\".\n\n## Tests cases\nWe have 10 tests in autodiff_test.py. We would grade you based on those tests.\n\nRun all tests with\n```bash\n# sudo pip install nose\nnosetests -v autodiff_test.py\n```\n\n### Bonus points\nOnce your code can clear all tests, your autodiff module is almost ready to train a logistic regre … [truncated]",
+      "metadata": {
+        "repo": "dlsys-course/assignment1-2018",
+        "field": "readme_excerpt",
+        "topics": [
+          "autodiff",
+          "computation-graph"
+        ]
+      }
+    },
+    {
+      "evidence_id": "ev_0003",
+      "type": "skill",
+      "source": "repo:dlsys-course/assignment1-2018",
+      "content": "Technologies/tools mentioned in README: api, express, go, machine learning, numpy, python, rest, scala, tensorflow",
+      "metadata": {
+        "repo": "dlsys-course/assignment1-2018",
+        "field": "readme_keywords"
+      }
+    },
+    {
+      "evidence_id": "ev_0004",
+      "type": "skill",
+      "source": "repo:dlsys-course/assignment1-2018",
+      "content": "Languages used: Python (100.0%)",
+      "metadata": {
+        "repo": "dlsys-course/assignment1-2018",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0005",
+      "type": "skill",
+      "source": "repo:dlsys-course/assignment1-2018",
+      "content": "Repository topics: autodiff, computation-graph",
+      "metadata": {
+        "repo": "dlsys-course/assignment1-2018",
+        "field": "topics"
+      }
+    },
+    {
+      "evidence_id": "ev_0006",
+      "type": "role",
+      "source": "repo:dlsys-course/assignment1-2018",
+      "content": "User is the owner of dlsys-course/assignment1-2018.",
+      "metadata": {
+        "repo": "dlsys-course/assignment1-2018",
+        "is_owner": true,
+        "stars": 476,
+        "forks": 148
+      }
+    },
+    {
+      "evidence_id": "ev_0007",
+      "type": "leadership",
+      "source": "repo:dlsys-course/assignment1-2018",
+      "content": "Owner of repo with 476 stars",
+      "metadata": {
+        "repo": "dlsys-course/assignment1-2018",
+        "stars": 476,
+        "forks": 148
+      }
+    },
+    {
+      "evidence_id": "ev_0008",
+      "type": "leadership",
+      "source": "repo:dlsys-course/assignment1-2018",
+      "content": "Repo forked 148 times by others",
+      "metadata": {
+        "repo": "dlsys-course/assignment1-2018",
+        "stars": 476,
+        "forks": 148
+      }
+    },
+    {
+      "evidence_id": "ev_0009",
+      "type": "skill",
+      "source": "repo:dlsys-course/dlsys-course.github.io",
+      "content": "Deep learning system course",
+      "metadata": {
+        "repo": "dlsys-course/dlsys-course.github.io",
+        "field": "description",
+        "language": "Jupyter Notebook",
+        "stars": 215
+      }
+    },
+    {
+      "evidence_id": "ev_0010",
+      "type": "skill",
+      "source": "repo:dlsys-course/dlsys-course.github.io",
+      "content": "# Course Homepage",
+      "metadata": {
+        "repo": "dlsys-course/dlsys-course.github.io",
+        "field": "readme_excerpt",
+        "topics": [
+          "deep-learning",
+          "tutorial",
+          "course"
+        ]
+      }
+    },
+    {
+      "evidence_id": "ev_0011",
+      "type": "skill",
+      "source": "repo:dlsys-course/dlsys-course.github.io",
+      "content": "Languages used: Jupyter Notebook (73.7%), Ruby (16.8%), HTML (7.2%), CSS (2.3%), Shell (0.1%)",
+      "metadata": {
+        "repo": "dlsys-course/dlsys-course.github.io",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0012",
+      "type": "skill",
+      "source": "repo:dlsys-course/dlsys-course.github.io",
+      "content": "Repository topics: deep-learning, tutorial, course",
+      "metadata": {
+        "repo": "dlsys-course/dlsys-course.github.io",
+        "field": "topics"
+      }
+    },
+    {
+      "evidence_id": "ev_0013",
+      "type": "role",
+      "source": "repo:dlsys-course/dlsys-course.github.io",
+      "content": "User is the owner of dlsys-course/dlsys-course.github.io.",
+      "metadata": {
+        "repo": "dlsys-course/dlsys-course.github.io",
+        "is_owner": true,
+        "stars": 215,
+        "forks": 32
+      }
+    },
+    {
+      "evidence_id": "ev_0014",
+      "type": "leadership",
+      "source": "repo:dlsys-course/dlsys-course.github.io",
+      "content": "Owner of repo with 215 stars",
+      "metadata": {
+        "repo": "dlsys-course/dlsys-course.github.io",
+        "stars": 215,
+        "forks": 32
+      }
+    },
+    {
+      "evidence_id": "ev_0015",
+      "type": "leadership",
+      "source": "repo:dlsys-course/dlsys-course.github.io",
+      "content": "Repo forked 32 times by others",
+      "metadata": {
+        "repo": "dlsys-course/dlsys-course.github.io",
+        "stars": 215,
+        "forks": 32
+      }
+    },
+    {
+      "evidence_id": "ev_0016",
+      "type": "skill",
+      "source": "repo:dlsys-course/assignment2-2018",
+      "content": "(Spring 2018) Assignment 2: Graph Executor with TVM",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2018",
+        "field": "description",
+        "language": "Python",
+        "stars": 125
+      }
+    },
+    {
+      "evidence_id": "ev_0017",
+      "type": "skill",
+      "source": "repo:dlsys-course/assignment2-2018",
+      "content": "# Assignment 2: Graph Executor with TVM\n\nIn [Assignment 1](https://github.com/dlsys-course/assignment1), we implemented the User API layer (computation graph and autodiff) of the deep learning system stack. In this assignment, we will go down the stack, and implement a simple version of the rest of the stack.\n\n![Image of Deep Learning Software Stack](https://github.com/tqchen/dl-system/blob/master/tvm_executor/dl_stack.png)\n\nWe need to implement a computation graph executor that can manage memory for users and execute the forward and backward passes. We also need to implement deep learning kernels using a compiler-based approach through [TVM](http://tvmlang.org/).\n\nIn the end, we would have implemented a simple version of the entire deep learning system stack. Our code should be able to construct a simple MLP model using computation graph API implemented in Assignment 1, and train and test the model using operators generated by TVM. \n\nKey concepts and data structures that we would need to implement are\n\n- Shape inference on computation graph given input shapes.\n- Executor memory management for computation graph.\n- TVM kernel implementations of common kernels, e.g. Relu, MatMul, Softmax.\n\n## Overview of Module\n- python/dlsys/autodiff.py: Implements computation graph, autodiff, executor.\n- python/dlsys/tvm_op.py: Implementation of kernels using TVM.\n\n- test/test_tvm_op.py: test suite for all tvm ops.\n- test/mnist_dlsys.py: training loop for MLP. \n\n## What you need to do?\nUnderstand the code skeleton and tests. Fill in implementation wherever marked `\"\"\"TODO: Your code here\"\"\"`.\n\nThere are only two files with TODOs for you.\n- python/dlsys/autodiff.py\n- python/dlsys/tvm_op.py\n\nIn autodiff.py, you need to implement shape inference and memory management (make sure your executor reuse memory across training iterations) for the executor.\n\nIn tvm_op.py, you need to implement kernels using TVM, and you need to come up with an optimized schedule for matrix multiply kernel that achieves at least 10x speedup compared to default schedule (see more details below). \n\nThe available primitives can be found at [TVM scheduling primitives](http://docs.tvmlang.org/tutorials/language/schedule_primitives.html).\n\n## Tests cases\nThere are 12 tests in tests/test_tvm_op.py. We would grade your TVM kernel implementations based on 10 of those tests. \n\nWe would also grade your implementation of shape inference and memory management based on tests/mnist_dlsys.py.\n\nWe would grade your optimized matrix multiply kernel by checking if there is a ~10x reduction in per-epoch running time.\n\nCompile\n```bash\nexport PYTHONPATH=\"${PYTHONPATH}:/path/to/assignment2/python\"\n```\n\nRun all tests with\n```bash\n# sudo pip install nose\nnosetests -v tests/test_tvm_op.py\n```\n\nRun neural nets training and testing with\n```bash\n# see cmd options with \n# python tests/mnist_dlsys.py -h\n\n# run logistic regression on numpy\npython tests/mnist_dlsys.py -l -m logreg\n# run MLP on numpy\npython tests/mnist_dlsys.py -l -m mlp\n```\n\nIf your implementation is correct, you would see\n- generally decreasing loss value with epochs\n- your dev set accuracy for logreg about 92% and MLP about 97% for mnist using the default parameters \n\nIf you use default TVM schedules for all kernels, MLP training would be noticeably slower than logistic regression because the matrix multiple kernel with default schedule is highly unoptimized. To get full score on this assignment, you need to optimize the matrix multiple kernel using a combination of techniques such as blocking, vectorization, loop permutations and others mentioned in lecture.\n\nReferences for optimizing TVM kernels:\n- [Lecture 6](http://dlsys.cs.washington.edu/pdf/lecture6.pdf)\n- [TVM tutorials](http://docs.tvmlang.org/tutorials/index.html)\n\nWith default schedules, you may see some numbers like\n```bash\nqiao$ python tests/mnist_dlsys.py -l -m mlp\n=== Build 3-layer MLP model...\nLoading data...\nStart training loop...\nepoch 0\nloss = 0.567862; Time taken this … [truncated]",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2018",
+        "field": "readme_excerpt",
+        "topics": []
+      }
+    },
+    {
+      "evidence_id": "ev_0018",
+      "type": "skill",
+      "source": "repo:dlsys-course/assignment2-2018",
+      "content": "Technologies/tools mentioned in README: api, deep learning, go, neural, numpy, python, rest, testing",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2018",
+        "field": "readme_keywords"
+      }
+    },
+    {
+      "evidence_id": "ev_0019",
+      "type": "skill",
+      "source": "repo:dlsys-course/assignment2-2018",
+      "content": "Languages used: Python (100.0%)",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2018",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0020",
+      "type": "role",
+      "source": "repo:dlsys-course/assignment2-2018",
+      "content": "User is the owner of dlsys-course/assignment2-2018.",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2018",
+        "is_owner": true,
+        "stars": 125,
+        "forks": 51
+      }
+    },
+    {
+      "evidence_id": "ev_0021",
+      "type": "leadership",
+      "source": "repo:dlsys-course/assignment2-2018",
+      "content": "Owner of repo with 125 stars",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2018",
+        "stars": 125,
+        "forks": 51
+      }
+    },
+    {
+      "evidence_id": "ev_0022",
+      "type": "leadership",
+      "source": "repo:dlsys-course/assignment2-2018",
+      "content": "Repo forked 51 times by others",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2018",
+        "stars": 125,
+        "forks": 51
+      }
+    },
+    {
+      "evidence_id": "ev_0023",
+      "type": "skill",
+      "source": "repo:dlsys-course/assignment2-2017",
+      "content": "(Spring 2017) Assignment 2: GPU Executor",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2017",
+        "field": "description",
+        "language": "Python",
+        "stars": 63
+      }
+    },
+    {
+      "evidence_id": "ev_0024",
+      "type": "skill",
+      "source": "repo:dlsys-course/assignment2-2017",
+      "content": "# Assignment 2: GPU Graph Executor\n\nIn this assignment, we would implement a GPU graph executor that can train simple neural nets such as multilayer perceptron models.\n\nOur code should be able to construct a simple MLP model using computation graph API implemented in Assignment 1, and train and test the model using either numpy or GPU. If you implement everything correctly, you would see nice speedup in training neural nets with GPU executor compared to numpy executor, as expected.\n\nKey concepts and data structures that we would need to implement are\n- Shape inference on computation graph given input shapes.\n- GPU executor memory management for computation graph.\n- GPU kernel implementations of common kernels, e.g. Relu, MatMul, Softmax.\n\n## Overview of Module\n- python/dlsys/autodiff.py: Implements computation graph, autodiff, GPU/Numpy Executor.\n- python/dlsys/gpu_op.py: Exposes Python function to call GPU kernels via ctypes.\n- python/dlsys/ndarray.py: Exposes Python GPU array API.\n\n- src/dlarray.h: header for GPU array.\n- src/c_runtime_api.h: C API header for GPU array and GPU kernels.\n- src/gpu_op.cu: cuda implementation of kernels \n\n## What you need to do?\nUnderstand the code skeleton and tests. Fill in implementation wherever marked `\"\"\"TODO: Your code here\"\"\"`.\n\nThere are only two files with TODOs for you.\n- python/dlsys/autodiff.py\n- src/gpu_op.cu\n\n### Special note\nDo not change Makefile to use cuDNN for GPU kernels.\n\n## Environment setup\n- If you don't have a GPU machine, you can use AWS GPU instance. AWS setup instructions see [lab1](https://github.com/dlsys-course/lab1).\n- Otherwise, you need to install CUDA toolkit ([instructions](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/)) on your own machine, and set the environment variables.\n  ```bash\n  export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH\n  export PATH=/usr/local/cuda/bin:$PATH\n  ```\n\n## Tests cases\nWe have 12 tests in tests/test_gpu_op.py. We would grade your GPU kernel implementations based on those tests. We would also grade your implementation of shape inference and memory management based on tests/mnist_dlsys.py.\n\nCompile\n```bash\nexport PYTHONPATH=\"${PYTHONPATH}:/path/to/assignment2/python\"\nmake\n```\n\nRun all tests with\n```bash\n# sudo pip install nose\nnosetests -v tests/test_gpu_op.py\n```\n\nRun neural nets training and testing with\n```bash\n# see cmd options with \n# python tests/mnist_dlsys.py -h\n\n# run logistic regression on numpy\npython tests/mnist_dlsys.py -l -m logreg -c numpy\n# run logistic regression on gpu\npython tests/mnist_dlsys.py -l -m logreg -c gpu\n# run MLP on numpy\npython tests/mnist_dlsys.py -l -m mlp -c numpy\n# run MLP on gpu\npython tests/mnist_dlsys.py -l -m mlp -c gpu\n\n```\n\nIf your implementation is correct, you would see\n- generally decreasing loss value with epochs, similar loss value decrease for numpy and GPU execution\n- your dev set accuracy for logreg about 92% and MLP about 97% for mnist using the parameters we provided in mnist_dlsys.py\n- GPU execution being noticeably faster than numpy. However, if you do not reuse memory across executor.runs, your GPU execution would incur overhead in memory allocation.\n\nProfile GPU execution with\n```bash\nnvprof python tests/mnist_dlsys.py -l -m mlp -c gpu\n```\n\nIf GPU memory management is done right, e.g. reuse GPU memory across each executor.run, your cudaMalloc \"Calls\" should not increase with number of training epochs (set with -e option).\n```bash\n# Run 10 epochs\nnvprof python tests/mnist_dlsys.py -l -m mlp -c gpu -e 10\n#==2263== API calls:\n#Time(%)      Time     Calls       Avg       Min       Max  Name\n# 10.19%  218.65ms        64  3.4164ms  8.5130us  213.90ms  cudaMalloc\n\n# Run 30 epochs\nnvprof python tests/mnist_dlsys.py -l -m mlp -c gpu -e 30\n#==4333== API calls:\n#Time(%)      Time     Calls       Avg       Min       Max  Name\n#  5.80%  340.74ms        64  5.3240ms  15.877us  333.80ms  cudaMalloc\n```\n\n### Grading rubrics\n- test_gpu_op.test_array_set ... 1 pt\n- test_ … [truncated]",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2017",
+        "field": "readme_excerpt",
+        "topics": [
+          "gpu-kernels",
+          "computation-graph",
+          "deep-learning",
+          "neural-nets",
+          "gpu-executor"
+        ]
+      }
+    },
+    {
+      "evidence_id": "ev_0025",
+      "type": "skill",
+      "source": "repo:dlsys-course/assignment2-2017",
+      "content": "Technologies/tools mentioned in README: api, aws, library, neural, numpy, python, testing",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2017",
+        "field": "readme_keywords"
+      }
+    },
+    {
+      "evidence_id": "ev_0026",
+      "type": "skill",
+      "source": "repo:dlsys-course/assignment2-2017",
+      "content": "Languages used: Python (69.2%), C++ (22.5%), Cuda (5.6%), C (1.5%), Makefile (1.2%)",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2017",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0027",
+      "type": "skill",
+      "source": "repo:dlsys-course/assignment2-2017",
+      "content": "Repository topics: gpu-kernels, computation-graph, deep-learning, neural-nets, gpu-executor",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2017",
+        "field": "topics"
+      }
+    },
+    {
+      "evidence_id": "ev_0028",
+      "type": "role",
+      "source": "repo:dlsys-course/assignment2-2017",
+      "content": "User is the owner of dlsys-course/assignment2-2017.",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2017",
+        "is_owner": true,
+        "stars": 63,
+        "forks": 44
+      }
+    },
+    {
+      "evidence_id": "ev_0029",
+      "type": "leadership",
+      "source": "repo:dlsys-course/assignment2-2017",
+      "content": "Owner of repo with 63 stars",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2017",
+        "stars": 63,
+        "forks": 44
+      }
+    },
+    {
+      "evidence_id": "ev_0030",
+      "type": "leadership",
+      "source": "repo:dlsys-course/assignment2-2017",
+      "content": "Repo forked 44 times by others",
+      "metadata": {
+        "repo": "dlsys-course/assignment2-2017",
+        "stars": 63,
+        "forks": 44
+      }
+    },
+    {
+      "evidence_id": "ev_0031",
+      "type": "skill",
+      "source": "repo:dlsys-course/examples",
+      "content": "Example codes appears in lectures",
+      "metadata": {
+        "repo": "dlsys-course/examples",
+        "field": "description",
+        "language": "Cuda",
+        "stars": 22
+      }
+    },
+    {
+      "evidence_id": "ev_0032",
+      "type": "skill",
+      "source": "repo:dlsys-course/examples",
+      "content": "# DLSys Examples\nThis repo contains example code that appeared in the lecture slides.",
+      "metadata": {
+        "repo": "dlsys-course/examples",
+        "field": "readme_excerpt",
+        "topics": []
+      }
+    },
+    {
+      "evidence_id": "ev_0033",
+      "type": "skill",
+      "source": "repo:dlsys-course/examples",
+      "content": "Languages used: Cuda (59.8%), Python (40.2%)",
+      "metadata": {
+        "repo": "dlsys-course/examples",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0034",
+      "type": "role",
+      "source": "repo:dlsys-course/examples",
+      "content": "User is the owner of dlsys-course/examples.",
+      "metadata": {
+        "repo": "dlsys-course/examples",
+        "is_owner": true,
+        "stars": 22,
+        "forks": 5
+      }
+    },
+    {
+      "evidence_id": "ev_0035",
+      "type": "leadership",
+      "source": "repo:dlsys-course/examples",
+      "content": "Owner of repo with 22 stars",
+      "metadata": {
+        "repo": "dlsys-course/examples",
+        "stars": 22,
+        "forks": 5
+      }
+    },
+    {
+      "evidence_id": "ev_0036",
+      "type": "leadership",
+      "source": "repo:dlsys-course/examples",
+      "content": "Repo forked 5 times by others",
+      "metadata": {
+        "repo": "dlsys-course/examples",
+        "stars": 22,
+        "forks": 5
+      }
+    },
+    {
+      "evidence_id": "ev_0037",
+      "type": "skill",
+      "source": "repo:dlsys-course/lab1",
+      "content": "# Deep Learning System Lab1 Notebooks\n\nThis repo contains various notebooks that introduces basic usages and training\nof deep learning models and applying pretrained state-of-the-art models.\n\n## How to use\n\nThe python notebooks are written in [Jupyter](http://jupyter.org/).\n\n### Setup\n- We can run and modify these notebooks if both [mxnet](http://mxnet.io/get_started/index.html#setup-and-installation) and [jupyter](http://jupyter.org/) are\n  installed. Here is an [example script](https://gist.github.com/mli/b64322f446b2043e3350ddcbfa5957be) to install all these packages on Ubuntu.\n\n- Intructions to setup on AWS instances to run the notebooks:\n\n  1.  Create an AWS account, and apply the student credit from [AWS Education](https://aws.amazon.com/education/awseducate).\n\n  2.  Launch a g2.2xlarge or p2.2xlarge instance. The [AMI Ids](https://aws.amazon.com/marketplace/pp/B01M0AXXQB) that you can use:\n\n      | AWS Region Name       | Region      | AMI Id         |\n      |-----------------------|-------------|----------------|\n      | US West (Oregon)      | us-west-2   | `ami-dfb13ebf` |\n      | US East (N. Virginia) | us-east-1   | `ami-e7c96af1` |\n      | EU (Ireland)          | eu-west-1   | `ami-6e5d6808` |\n\n      Remember to open the TCP port 22 and 8888 in the security group. You can modify the security group after you create the instance.\n      Find the Instances page at the EC2 Dashboard, and click the security group of the instance you created, which is at the last column.\n      In the Inbound tab, add the SSH rule and customized TCP Rule with port 8888 from anywhere.\n      ![Inbound rules](./inbound_rules.png)\n\n  3.  Once launch is succeed, setup the following variable with proper value\n\n      ```bash\n       export HOSTNAME=ec2-107-22-159-132.compute-1.amazonaws.com\n       export PERM=~/Downloads/my.pem\n      ```\n\n  4. Now we should be able to ssh to the machine by\n\n      ```bash\n       chmod 400 $PERM\n       ssh -i $PERM -L 8888:localhost:8888 ec2-user@HOSTNAME\n      ```\n\n      Here we forward the EC2 machine's 8888 port into localhost.\n\n  5. Clone this repo on the EC2 machine and run jupyter\n\n      ```bash\n       sudo yum install -y graphviz\n       git clone https://github.com/dlsys-course/lab1.git\n       cd lab1\n       jupyter notebook\n      ```\n\n  6. Wait until jupyter creates the notebook and copy the URL it outputs to your brower.\n   The URL should look like:\n   http://localhost:8888/?token=5b870699ac133c42c56400de91f66256b89ab211ee38c7e0",
+      "metadata": {
+        "repo": "dlsys-course/lab1",
+        "field": "readme_excerpt",
+        "topics": []
+      }
+    },
+    {
+      "evidence_id": "ev_0038",
+      "type": "skill",
+      "source": "repo:dlsys-course/lab1",
+      "content": "Technologies/tools mentioned in README: aws, cli, deep learning, go, python",
+      "metadata": {
+        "repo": "dlsys-course/lab1",
+        "field": "readme_keywords"
+      }
+    },
+    {
+      "evidence_id": "ev_0039",
+      "type": "skill",
+      "source": "repo:dlsys-course/lab1",
+      "content": "Languages used: Jupyter Notebook (91.4%), Python (5.2%), HTML (3.4%)",
+      "metadata": {
+        "repo": "dlsys-course/lab1",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0040",
+      "type": "role",
+      "source": "repo:dlsys-course/lab1",
+      "content": "User is the owner of dlsys-course/lab1.",
+      "metadata": {
+        "repo": "dlsys-course/lab1",
+        "is_owner": true,
+        "stars": 15,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0041",
+      "type": "leadership",
+      "source": "repo:dlsys-course/lab1",
+      "content": "Owner of repo with 15 stars",
+      "metadata": {
+        "repo": "dlsys-course/lab1",
+        "stars": 15,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0042",
+      "type": "skill",
+      "source": "repo:dlsys-course/tinyflow",
+      "content": "Tutorial code on how to build your own Deep Learning System in 2k Lines",
+      "metadata": {
+        "repo": "dlsys-course/tinyflow",
+        "field": "description",
+        "language": "C++",
+        "stars": 122
+      }
+    },
+    {
+      "evidence_id": "ev_0043",
+      "type": "skill",
+      "source": "repo:dlsys-course/tinyflow",
+      "content": "# TinyFlow: Build Your Own DL System in 2K Lines\n\nTinyFlow is  \"example code\" for [NNVM](https://github.com/dmlc/nnvm/).\n\nIt demonstrates how can we build a clean, minimum and powerful computational\ngraph based deep learning system with same API as TensorFlow.\nThe operator code are implemented with [Torch7](https://github.com/torch/torch7) to reduce the effort to write operators while still demonstrating the concepts of the system (and Embedding Lua in C++ is kinda of fun:).\n\nTinyFlow is a real deep learning system that can run on GPU and CPUs.\nTo support the examples, it takes.\n- 927 lines code for operators\n- 734 lines of code for execution runtime\n- 71 lines of code for API glue\n- 233 lines of code for front-end\n\nNote that more code in operators can easily be added to make it as\nfeature complete as most existing deep learning systems.\n\n## What is it for\nAs explained in the goal of [NNVM](https://github.com/dmlc/nnvm/),\nit is important to make modular and reusable components for to enable us to build\ncustomized learning system easily.\n\n- Course Material for teaching DL system. TinyFlow can be used to teach student the concepts in deep learning systems.\n  - e.g. design homeworks on implementing symbolic differentiation, memory allocation, operator fusion.\n- Experiment bed for learning system researchers. TinyFlow allows easy addition with new system features with\n  the modular design being portable to other system that reuses NNVM.\n- Showcase of intermediate representation usecase. It demonstrates how intermediate representation like NNVM to be able to\n  target multiple front-ends(TF, MXNet) and backends(Torch7, MXNet) with common set of optimizations.\n- Test bed on common reusable modules for DL system. TinyFlow, together with other systems(e.g. MXNet) can be used as testbed on the\n  common reusable modules in deep learning to encourage front-end, optimization module and backends\n  that are shared across frameworks.\n- Just for fun :)\n\nWe believe the Unix Philosophy can building learning system more fun and everyone can be able to build\nand understand learning system better.\n\n## The Design\n- The graph construction API is automatically reused from NNVM\n- We choose Torch7 as the default operator execution backend.\n  - So TinyFlow can also be called \"TorchFlow\" since it is literally TensorFlow on top of Torch:)\n  - This allows us to quickly implement the operators and focus code on the system part.\n- We intentionally choose to avoid using [MXNet](https://github.com/dmlc/mxnet) as front or backend,\n  since MXNet already uses NNVM as intermediate layer, and it would be more fun to try something different.\n\nAlthough it is minimum. TinyFlow still comes with many advanced design concepts in Deep Learning system.\n- Automatic differentiation.\n- Shape/type inference.\n- Static memory allocation for graph for memory efficient training/inference.\n\nThe operator implementation is easy Thanks to Torch7. More fun demonstrations will be added to the project.\n\n## Dependencies\nMost of TinyFlow's code is self-contained.\n- TinyFlow depend on Torch7 for operator supports with minimum code.\n  - We use a lightweight lua bridge code from dmlc-core/dmlc/lua.h\n- NNVM is used for graph representation and optimizations\n\n## Build\n- Install Torch7\n  - For OSX User, please install Torch with Lua 5.1 instead of LuaJIT,\n    i.e. ```TORCH_LUA_VERSION=LUA51 ./install.sh```\n- Set up environment variable ```TORCH_HOME``` to root of torch\n- Type ```make```\n- Setup python path to include tinyflow and nnvm\n```bash\nexport PYTHONPATH=${PYTHONPATH}:/path/to/tinyflow/python:/path/to/tinyflow/nnvm/python\n```\n- Try example program ```python example/mnist_softmax.py```\n\n## Enable Fusion in TinyFlow\n- Build NNVM with Fusion: uncomment fusion plugin part in config.mk, then `make`\n- Build TinyFlow: enable `USE_FUSION` in Makefile, then `make`\n- Try Example program `example/mnist_lenet.py`, change the config of session from `tf.Session(config='gpu')` to `tf.Session(config='gpu f … [truncated]",
+      "metadata": {
+        "repo": "dlsys-course/tinyflow",
+        "field": "readme_excerpt",
+        "topics": []
+      }
+    },
+    {
+      "evidence_id": "ev_0044",
+      "type": "skill",
+      "source": "repo:dlsys-course/tinyflow",
+      "content": "Technologies/tools mentioned in README: api, c++, deep learning, framework, go, python, tensorflow",
+      "metadata": {
+        "repo": "dlsys-course/tinyflow",
+        "field": "readme_keywords"
+      }
+    },
+    {
+      "evidence_id": "ev_0045",
+      "type": "skill",
+      "source": "repo:dlsys-course/tinyflow",
+      "content": "Languages used: C++ (72.5%), Python (24.6%), Makefile (2.0%), C (0.9%)",
+      "metadata": {
+        "repo": "dlsys-course/tinyflow",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0046",
+      "type": "role",
+      "source": "repo:dlsys-course/tinyflow",
+      "content": "User forked dlsys-course/tinyflow from tqchen/tinyflow, indicating contributor role.",
+      "metadata": {
+        "repo": "dlsys-course/tinyflow",
+        "is_owner": false,
+        "forked_from": "tqchen/tinyflow"
+      }
+    }
+  ],
+  "collection_metadata": {
+    "username": "dlsys-course",
+    "collected_at": "2026-04-24T11:57:50.787825+00:00",
+    "elapsed_seconds": 15.5,
+    "total_repos": 7,
+    "total_evidence_items": 46,
+    "rate_limit_snapshot": {
+      "core": {
+        "limit": 5000,
+        "remaining": 4832,
+        "reset": "2026-04-24T12:08:37+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "reset": "2026-04-24T11:57:15+00:00"
+      },
+      "checked_at": "2026-04-24T11:57:50.776879+00:00"
+    },
+    "collector_version": "1.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained — none are discarded — to preserve historical evidence."
+  }
+}

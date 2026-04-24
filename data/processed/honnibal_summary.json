@@ -1,0 +1,216 @@
+{
+  "username": "honnibal",
+  "profile": {
+    "login": "honnibal",
+    "name": "Matthew Honnibal",
+    "bio": "Computational linguist from Sydney and Berlin. Author of the spaCy NLP library.",
+    "company": "Founder @explosion ",
+    "location": "Berlin",
+    "followers": 1982,
+    "public_repos": 60,
+    "created_at": "2014-07-03T15:12:05+00:00"
+  },
+  "aggregate_signals": {
+    "top_languages": [
+      {
+        "language": "C++",
+        "bytes": 74279363,
+        "pct": 34.4
+      },
+      {
+        "language": "Jupyter Notebook",
+        "bytes": 68947900,
+        "pct": 32.0
+      },
+      {
+        "language": "C",
+        "bytes": 54074580,
+        "pct": 25.1
+      },
+      {
+        "language": "Python",
+        "bytes": 10598681,
+        "pct": 4.9
+      },
+      {
+        "language": "Makefile",
+        "bytes": 2135940,
+        "pct": 1.0
+      },
+      {
+        "language": "TeX",
+        "bytes": 2012082,
+        "pct": 0.9
+      },
+      {
+        "language": "Objective-C",
+        "bytes": 1165186,
+        "pct": 0.5
+      },
+      {
+        "language": "HTML",
+        "bytes": 957746,
+        "pct": 0.4
+      },
+      {
+        "language": "Shell",
+        "bytes": 769004,
+        "pct": 0.4
+      },
+      {
+        "language": "Java",
+        "bytes": 316509,
+        "pct": 0.1
+      }
+    ],
+    "top_topics": [],
+    "total_stars_received": 430,
+    "total_forks_received": 77,
+    "total_repos_collected": 50,
+    "owned_repo_count": 16,
+    "forked_repo_count": 34,
+    "active_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2026
+    ],
+    "first_active_year": 2015,
+    "last_active_year": 2026,
+    "activity_span_years": 11,
+    "recent_activity_summary": {
+      "repos_pushed_last_2_years": 3,
+      "repo_names": [
+        "honnibal/claude-skills",
+        "honnibal/dotfiles",
+        "honnibal/unredact"
+      ]
+    },
+    "historical_activity_summary": {
+      "repos_4_plus_years_old": 44,
+      "repo_names": [
+        "honnibal/spacy-pretrain-polyaxon",
+        "honnibal/text_classification",
+        "honnibal/dsr16_nlp",
+        "honnibal/py-clearnlp-converter",
+        "honnibal/cython-blis",
+        "honnibal/sputnik",
+        "honnibal/blaze-lib",
+        "honnibal/misc_examples",
+        "honnibal/legacy_thesis_code",
+        "honnibal/deutsch"
+      ]
+    }
+  },
+  "top_repos": [
+    {
+      "full_name": "honnibal/claude-skills",
+      "language": "Python",
+      "stars": 229,
+      "forks": 20,
+      "relevance_score": 0.6908,
+      "topics": []
+    },
+    {
+      "full_name": "honnibal/spacy-pretrain-polyaxon",
+      "language": "Python",
+      "stars": 65,
+      "forks": 8,
+      "relevance_score": 0.6145,
+      "topics": []
+    },
+    {
+      "full_name": "honnibal/text_classification",
+      "language": "Python",
+      "stars": 41,
+      "forks": 14,
+      "relevance_score": 0.5874,
+      "topics": []
+    },
+    {
+      "full_name": "honnibal/dsr16_nlp",
+      "language": "Python",
+      "stars": 41,
+      "forks": 9,
+      "relevance_score": 0.5722,
+      "topics": []
+    },
+    {
+      "full_name": "honnibal/py-clearnlp-converter",
+      "language": "Python",
+      "stars": 11,
+      "forks": 5,
+      "relevance_score": 0.5399,
+      "topics": []
+    },
+    {
+      "full_name": "honnibal/cython-blis",
+      "language": "C",
+      "stars": 7,
+      "forks": 4,
+      "relevance_score": 0.5203,
+      "topics": []
+    },
+    {
+      "full_name": "honnibal/dotfiles",
+      "language": "Vim Script",
+      "stars": 1,
+      "forks": 1,
+      "relevance_score": 0.5126,
+      "topics": []
+    },
+    {
+      "full_name": "honnibal/unredact",
+      "language": "Python",
+      "stars": 3,
+      "forks": 1,
+      "relevance_score": 0.4493,
+      "topics": []
+    },
+    {
+      "full_name": "honnibal/sputnik",
+      "language": "Python",
+      "stars": 1,
+      "forks": 6,
+      "relevance_score": 0.4454,
+      "topics": []
+    },
+    {
+      "full_name": "honnibal/blaze-lib",
+      "language": "C++",
+      "stars": 1,
+      "forks": 1,
+      "relevance_score": 0.4389,
+      "topics": []
+    }
+  ],
+  "collection_metadata": {
+    "username": "honnibal",
+    "collected_at": "2026-04-24T12:11:06.683116+00:00",
+    "elapsed_seconds": 696.3,
+    "total_repos": 50,
+    "total_evidence_items": 306,
+    "rate_limit_snapshot": {
+      "core": {
+        "limit": 5000,
+        "remaining": 4977,
+        "reset": "2026-04-24T13:08:47+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "reset": "2026-04-24T12:10:30+00:00"
+      },
+      "checked_at": "2026-04-24T12:11:06.681107+00:00"
+    },
+    "collector_version": "1.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained — none are discarded — to preserve historical evidence."
+  }
+}

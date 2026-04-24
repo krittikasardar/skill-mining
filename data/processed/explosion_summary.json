@@ -1,0 +1,377 @@
+{
+  "username": "explosion",
+  "profile": {
+    "login": "explosion",
+    "name": "Explosion",
+    "bio": "Software company specializing in developer tools and tailored solutions for AI and Natural Language Processing",
+    "company": null,
+    "location": "Berlin, Germany",
+    "followers": 1464,
+    "public_repos": 78,
+    "created_at": "2016-06-18T09:18:01+00:00"
+  },
+  "aggregate_signals": {
+    "top_languages": [
+      {
+        "language": "C",
+        "bytes": 26294029,
+        "pct": 58.6
+      },
+      {
+        "language": "Python",
+        "bytes": 9353475,
+        "pct": 20.9
+      },
+      {
+        "language": "Jupyter Notebook",
+        "bytes": 4647471,
+        "pct": 10.4
+      },
+      {
+        "language": "MDX",
+        "bytes": 2352009,
+        "pct": 5.2
+      },
+      {
+        "language": "Cython",
+        "bytes": 1036190,
+        "pct": 2.3
+      },
+      {
+        "language": "JavaScript",
+        "bytes": 336328,
+        "pct": 0.7
+      },
+      {
+        "language": "C++",
+        "bytes": 258676,
+        "pct": 0.6
+      },
+      {
+        "language": "Makefile",
+        "bytes": 117395,
+        "pct": 0.3
+      },
+      {
+        "language": "Sass",
+        "bytes": 109933,
+        "pct": 0.2
+      },
+      {
+        "language": "CSS",
+        "bytes": 73630,
+        "pct": 0.2
+      }
+    ],
+    "top_topics": [
+      "spacy",
+      "nlp",
+      "natural-language-processing",
+      "machine-learning",
+      "python",
+      "cython",
+      "named-entity-recognition",
+      "text-classification",
+      "spacy-pipeline",
+      "data-science",
+      "artificial-intelligence",
+      "pytorch",
+      "spacy-extension",
+      "openai",
+      "word-vectors",
+      "prodigy",
+      "falcon",
+      "ai",
+      "neural-network",
+      "neural-networks"
+    ],
+    "total_stars_received": 55935,
+    "total_forks_received": 7883,
+    "total_repos_collected": 50,
+    "owned_repo_count": 48,
+    "forked_repo_count": 2,
+    "active_years": [
+      2014,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "first_active_year": 2014,
+    "last_active_year": 2026,
+    "activity_span_years": 12,
+    "recent_activity_summary": {
+      "repos_pushed_last_2_years": 36,
+      "repo_names": [
+        "explosion/spaCy",
+        "explosion/thinc",
+        "explosion/spacy-models",
+        "explosion/sense2vec",
+        "explosion/spacy-transformers",
+        "explosion/spacy-course",
+        "explosion/projects",
+        "explosion/spacy-llm",
+        "explosion/prodigy-recipes",
+        "explosion/cython-blis"
+      ]
+    },
+    "historical_activity_summary": {
+      "repos_4_plus_years_old": 4,
+      "repo_names": [
+        "explosion/spacy-notebooks",
+        "explosion/displacy",
+        "explosion/displacy-ent",
+        "explosion/healthsea"
+      ]
+    }
+  },
+  "top_repos": [
+    {
+      "full_name": "explosion/spaCy",
+      "language": "Python",
+      "stars": 33502,
+      "forks": 4676,
+      "relevance_score": 0.9963,
+      "topics": [
+        "natural-language-processing",
+        "data-science",
+        "machine-learning",
+        "python",
+        "cython",
+        "nlp",
+        "artificial-intelligence",
+        "ai",
+        "spacy",
+        "nlp-library",
+        "neural-network",
+        "neural-networks",
+        "deep-learning",
+        "named-entity-recognition",
+        "entity-linking",
+        "text-classification",
+        "tokenization"
+      ]
+    },
+    {
+      "full_name": "explosion/thinc",
+      "language": "Python",
+      "stars": 2891,
+      "forks": 294,
+      "relevance_score": 0.9822,
+      "topics": [
+        "machine-learning",
+        "deep-learning",
+        "artificial-intelligence",
+        "ai",
+        "python",
+        "nlp",
+        "natural-language-processing",
+        "spacy",
+        "machine-learning-library",
+        "type-checking",
+        "functional-programming",
+        "pytorch",
+        "tensorflow",
+        "mxnet",
+        "jax"
+      ]
+    },
+    {
+      "full_name": "explosion/spacy-models",
+      "language": "Python",
+      "stars": 1860,
+      "forks": 315,
+      "relevance_score": 0.9682,
+      "topics": [
+        "spacy",
+        "nlp",
+        "natural-language-processing",
+        "machine-learning",
+        "models",
+        "machine-learning-models",
+        "statistical-models",
+        "spacy-models"
+      ]
+    },
+    {
+      "full_name": "explosion/sense2vec",
+      "language": "Python",
+      "stars": 1673,
+      "forks": 238,
+      "relevance_score": 0.9617,
+      "topics": [
+        "spacy",
+        "nlp",
+        "natural-language-processing",
+        "word2vec",
+        "python",
+        "sense2vec",
+        "gensim",
+        "gensim-word2vec",
+        "machine-learning"
+      ]
+    },
+    {
+      "full_name": "explosion/spacy-transformers",
+      "language": "Python",
+      "stars": 1406,
+      "forks": 176,
+      "relevance_score": 0.9245,
+      "topics": [
+        "spacy",
+        "spacy-pipeline",
+        "spacy-extension",
+        "nlp",
+        "natural-language-processing",
+        "natural-language-understanding",
+        "pytorch",
+        "bert",
+        "google",
+        "pytorch-model",
+        "openai",
+        "language-model",
+        "machine-learning",
+        "huggingface",
+        "transfer-learning",
+        "xlnet",
+        "gpt-2"
+      ]
+    },
+    {
+      "full_name": "explosion/spacy-course",
+      "language": "Python",
+      "stars": 2417,
+      "forks": 376,
+      "relevance_score": 0.9032,
+      "topics": [
+        "spacy",
+        "nlp",
+        "natural-language-processing",
+        "online-course",
+        "course",
+        "gatsby",
+        "gatsbyjs",
+        "jupyter",
+        "binder",
+        "machine-learning",
+        "named-entity-recognition",
+        "dependency-parsing",
+        "part-of-speech-tagging",
+        "word-vectors"
+      ]
+    },
+    {
+      "full_name": "explosion/projects",
+      "language": "Python",
+      "stars": 1427,
+      "forks": 473,
+      "relevance_score": 0.8937,
+      "topics": [
+        "nlp",
+        "natural-language-processing",
+        "datasets",
+        "annotations",
+        "spacy",
+        "prodigy"
+      ]
+    },
+    {
+      "full_name": "explosion/spacy-llm",
+      "language": "Python",
+      "stars": 1383,
+      "forks": 105,
+      "relevance_score": 0.8727,
+      "topics": [
+        "large-language-models",
+        "llm",
+        "openai",
+        "spacy",
+        "dolly",
+        "gpt-3",
+        "gpt-4",
+        "machine-learning",
+        "named-entity-recognition",
+        "natural-language-processing",
+        "nlp",
+        "text-classification",
+        "prompt-engineering",
+        "anthropic",
+        "claude",
+        "cohere",
+        "falcon",
+        "llama"
+      ]
+    },
+    {
+      "full_name": "explosion/prodigy-recipes",
+      "language": "Jupyter Notebook",
+      "stars": 507,
+      "forks": 113,
+      "relevance_score": 0.8594,
+      "topics": [
+        "artificial-intelligence",
+        "machine-learning",
+        "data-science",
+        "annotation",
+        "annotation-tool",
+        "data-annotation",
+        "machine-teaching",
+        "labeling-tool",
+        "computer-vision",
+        "spacy",
+        "natural-language-processing",
+        "nlp",
+        "prodigy",
+        "active-learning"
+      ]
+    },
+    {
+      "full_name": "explosion/cython-blis",
+      "language": "C",
+      "stars": 237,
+      "forks": 44,
+      "relevance_score": 0.8572,
+      "topics": [
+        "cython",
+        "blis",
+        "blas",
+        "blas-libraries",
+        "openblas",
+        "linear-algebra",
+        "matrix-multiplication",
+        "numpy",
+        "neural-networks",
+        "neural-network"
+      ]
+    }
+  ],
+  "collection_metadata": {
+    "username": "explosion",
+    "collected_at": "2026-04-24T11:59:30.248560+00:00",
+    "elapsed_seconds": 99.4,
+    "total_repos": 50,
+    "total_evidence_items": 381,
+    "rate_limit_snapshot": {
+      "core": {
+        "limit": 5000,
+        "remaining": 4777,
+        "reset": "2026-04-24T12:08:37+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "reset": "2026-04-24T11:58:54+00:00"
+      },
+      "checked_at": "2026-04-24T11:59:30.248560+00:00"
+    },
+    "collector_version": "1.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained — none are discarded — to preserve historical evidence."
+  }
+}

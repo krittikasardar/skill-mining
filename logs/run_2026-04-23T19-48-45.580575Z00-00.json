@@ -1,0 +1,15 @@
+{
+  "run_id": "2026-04-23T19-48-45.580575Z00-00",
+  "started_at": "2026-04-23T19:48:45.580575+00:00",
+  "usernames": [
+    "torvalds"
+  ],
+  "results": [
+    {
+      "username": "torvalds",
+      "status": "error",
+      "error": "'RateLimitOverview' object has no attribute 'core'"
+    }
+  ],
+  "finished_at": "2026-04-23T19:48:57.357070+00:00"
+}

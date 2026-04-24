@@ -1,0 +1,237 @@
+{
+  "username": "karpathy",
+  "profile": {
+    "login": "karpathy",
+    "name": "Andrej",
+    "bio": "I like to train Deep Neural Nets on large datasets.",
+    "company": null,
+    "location": "Stanford",
+    "followers": 174287,
+    "public_repos": 63,
+    "created_at": "2010-04-10T17:55:32+00:00"
+  },
+  "aggregate_signals": {
+    "top_languages": [
+      {
+        "language": "Python",
+        "bytes": 69363577,
+        "pct": 48.2
+      },
+      {
+        "language": "HTML",
+        "bytes": 43892433,
+        "pct": 30.5
+      },
+      {
+        "language": "C",
+        "bytes": 22752315,
+        "pct": 15.8
+      },
+      {
+        "language": "Jupyter Notebook",
+        "bytes": 4127833,
+        "pct": 2.9
+      },
+      {
+        "language": "Cuda",
+        "bytes": 830385,
+        "pct": 0.6
+      },
+      {
+        "language": "C++",
+        "bytes": 681592,
+        "pct": 0.5
+      },
+      {
+        "language": "Lua",
+        "bytes": 581195,
+        "pct": 0.4
+      },
+      {
+        "language": "JavaScript",
+        "bytes": 541558,
+        "pct": 0.4
+      },
+      {
+        "language": "M4",
+        "bytes": 270246,
+        "pct": 0.2
+      },
+      {
+        "language": "Makefile",
+        "bytes": 181163,
+        "pct": 0.1
+      }
+    ],
+    "top_topics": [
+      "arxiv",
+      "deep-learning",
+      "machine-learning",
+      "flask",
+      "bitcoin",
+      "cryptocurrency",
+      "crypto",
+      "elliptic-curves"
+    ],
+    "total_stars_received": 441557,
+    "total_forks_received": 65230,
+    "total_repos_collected": 63,
+    "owned_repo_count": 54,
+    "forked_repo_count": 9,
+    "active_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "first_active_year": 2011,
+    "last_active_year": 2026,
+    "activity_span_years": 15,
+    "recent_activity_summary": {
+      "repos_pushed_last_2_years": 21,
+      "repo_names": [
+        "karpathy/karpathy.github.io",
+        "karpathy/nanoGPT",
+        "karpathy/jobs",
+        "karpathy/nanochat",
+        "karpathy/minGPT",
+        "karpathy/autoresearch",
+        "karpathy/micrograd",
+        "karpathy/llm.c",
+        "karpathy/llm-council",
+        "karpathy/reader3"
+      ]
+    },
+    "historical_activity_summary": {
+      "repos_4_plus_years_old": 32,
+      "repo_names": [
+        "karpathy/ulogme",
+        "karpathy/neuraltalk",
+        "karpathy/arxiv-sanity-preserver",
+        "karpathy/reinforcejs",
+        "karpathy/neuraltalk2",
+        "karpathy/recurrentjs",
+        "karpathy/svmjs",
+        "karpathy/paper-notes",
+        "karpathy/cryptos",
+        "karpathy/tsnejs"
+      ]
+    }
+  },
+  "top_repos": [
+    {
+      "full_name": "karpathy/karpathy.github.io",
+      "language": "CSS",
+      "stars": 1334,
+      "forks": 285,
+      "relevance_score": 0.9925,
+      "topics": []
+    },
+    {
+      "full_name": "karpathy/char-rnn",
+      "language": "Lua",
+      "stars": 12030,
+      "forks": 2626,
+      "relevance_score": 0.9004,
+      "topics": []
+    },
+    {
+      "full_name": "karpathy/convnetjs",
+      "language": "JavaScript",
+      "stars": 11151,
+      "forks": 2073,
+      "relevance_score": 0.892,
+      "topics": []
+    },
+    {
+      "full_name": "karpathy/nanoGPT",
+      "language": "Python",
+      "stars": 57118,
+      "forks": 9790,
+      "relevance_score": 0.8753,
+      "topics": []
+    },
+    {
+      "full_name": "karpathy/jobs",
+      "language": "HTML",
+      "stars": 1522,
+      "forks": 319,
+      "relevance_score": 0.8699,
+      "topics": []
+    },
+    {
+      "full_name": "karpathy/nanochat",
+      "language": "Python",
+      "stars": 52433,
+      "forks": 6987,
+      "relevance_score": 0.8688,
+      "topics": []
+    },
+    {
+      "full_name": "karpathy/ulogme",
+      "language": "Python",
+      "stars": 1149,
+      "forks": 206,
+      "relevance_score": 0.8578,
+      "topics": []
+    },
+    {
+      "full_name": "karpathy/minGPT",
+      "language": "Python",
+      "stars": 24222,
+      "forks": 3218,
+      "relevance_score": 0.8574,
+      "topics": []
+    },
+    {
+      "full_name": "karpathy/autoresearch",
+      "language": "Python",
+      "stars": 76179,
+      "forks": 11103,
+      "relevance_score": 0.8539,
+      "topics": []
+    },
+    {
+      "full_name": "karpathy/neuraltalk",
+      "language": "Python",
+      "stars": 5487,
+      "forks": 1330,
+      "relevance_score": 0.8523,
+      "topics": []
+    }
+  ],
+  "collection_metadata": {
+    "username": "karpathy",
+    "collected_at": "2026-04-24T10:40:19.447176+00:00",
+    "elapsed_seconds": 1219.9,
+    "total_repos": 63,
+    "total_evidence_items": 559,
+    "rate_limit_snapshot": {
+      "core": {
+        "limit": 5000,
+        "remaining": 4889,
+        "reset": "2026-04-24T11:06:37+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "reset": "2026-04-24T10:39:44+00:00"
+      },
+      "checked_at": "2026-04-24T10:40:19.444188+00:00"
+    },
+    "collector_version": "1.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained — none are discarded — to preserve historical evidence."
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "username": "krittikasardar",
+  "profile": {
+    "login": "krittikasardar",
+    "name": "Krittika",
+    "bio": null,
+    "company": null,
+    "location": null,
+    "followers": 0,
+    "public_repos": 6,
+    "created_at": "2020-01-14T17:08:39+00:00"
+  },
+  "aggregate_signals": {
+    "top_languages": [
+      {
+        "language": "Jupyter Notebook",
+        "bytes": 2557452,
+        "pct": 100.0
+      }
+    ],
+    "top_topics": [],
+    "total_stars_received": 1,
+    "total_forks_received": 0,
+    "total_repos_collected": 6,
+    "owned_repo_count": 6,
+    "forked_repo_count": 0,
+    "active_years": [
+      2021,
+      2022,
+      2025,
+      2026
+    ],
+    "first_active_year": 2021,
+    "last_active_year": 2026,
+    "activity_span_years": 5,
+    "recent_activity_summary": {
+      "repos_pushed_last_2_years": 4,
+      "repo_names": [
+        "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "krittikasardar/git-practice",
+        "krittikasardar/git-practice-2"
+      ]
+    },
+    "historical_activity_summary": {
+      "repos_4_plus_years_old": 2,
+      "repo_names": [
+        "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "krittikasardar/Handwritten-Digit-Recognition"
+      ]
+    }
+  },
+  "top_repos": [
+    {
+      "full_name": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "relevance_score": 0.4497,
+      "topics": []
+    },
+    {
+      "full_name": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "relevance_score": 0.3662,
+      "topics": []
+    },
+    {
+      "full_name": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "language": "Jupyter Notebook",
+      "stars": 1,
+      "forks": 0,
+      "relevance_score": 0.35,
+      "topics": []
+    },
+    {
+      "full_name": "krittikasardar/git-practice",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "relevance_score": 0.3483,
+      "topics": []
+    },
+    {
+      "full_name": "krittikasardar/git-practice-2",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "relevance_score": 0.3419,
+      "topics": []
+    },
+    {
+      "full_name": "krittikasardar/Handwritten-Digit-Recognition",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "relevance_score": 0.3135,
+      "topics": []
+    }
+  ],
+  "collection_metadata": {
+    "username": "krittikasardar",
+    "collected_at": "2026-04-24T09:14:57.404620+00:00",
+    "elapsed_seconds": 28.6,
+    "total_repos": 6,
+    "total_evidence_items": 30,
+    "rate_limit_snapshot": {
+      "core": {
+        "limit": 5000,
+        "remaining": 4983,
+        "reset": "2026-04-24T10:05:30+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "reset": "2026-04-24T09:14:22+00:00"
+      },
+      "checked_at": "2026-04-24T09:14:57.404620+00:00"
+    },
+    "collector_version": "1.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained — none are discarded — to preserve historical evidence."
+  }
+}

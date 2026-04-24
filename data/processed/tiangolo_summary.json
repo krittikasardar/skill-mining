@@ -1,0 +1,348 @@
+{
+  "username": "tiangolo",
+  "profile": {
+    "login": "tiangolo",
+    "name": "Sebastián Ramírez",
+    "bio": "Creator of FastAPI, Typer, SQLModel, Asyncer, etc. 🚀\r\nFrom 🇨🇴 in 🇩🇪. \r\nOpen Source, Python, APIs, AI. 🤖 Building FastAPI Cloud. ⚡️",
+    "company": "FastAPI Cloud",
+    "location": "Berlin, Germany",
+    "followers": 31115,
+    "public_repos": 47,
+    "created_at": "2012-01-12T22:37:04+00:00"
+  },
+  "aggregate_signals": {
+    "top_languages": [
+      {
+        "language": "Rust",
+        "bytes": 7529964,
+        "pct": 64.2
+      },
+      {
+        "language": "Python",
+        "bytes": 2955349,
+        "pct": 25.2
+      },
+      {
+        "language": "C++",
+        "bytes": 496477,
+        "pct": 4.2
+      },
+      {
+        "language": "TypeScript",
+        "bytes": 274366,
+        "pct": 2.3
+      },
+      {
+        "language": "JavaScript",
+        "bytes": 127586,
+        "pct": 1.1
+      },
+      {
+        "language": "Shell",
+        "bytes": 110397,
+        "pct": 0.9
+      },
+      {
+        "language": "Vue",
+        "bytes": 95181,
+        "pct": 0.8
+      },
+      {
+        "language": "Dockerfile",
+        "bytes": 63338,
+        "pct": 0.5
+      },
+      {
+        "language": "HTML",
+        "bytes": 46339,
+        "pct": 0.4
+      },
+      {
+        "language": "Mustache",
+        "bytes": 9286,
+        "pct": 0.1
+      }
+    ],
+    "top_topics": [
+      "docker",
+      "python",
+      "docker-image",
+      "dockerfile",
+      "web",
+      "flask",
+      "debian",
+      "traefik",
+      "letsencrypt",
+      "gunicorn",
+      "nginx",
+      "swagger",
+      "celery",
+      "jwt",
+      "cookiecutter",
+      "python3",
+      "vue",
+      "uwsgi",
+      "uvicorn",
+      "asgi"
+    ],
+    "total_stars_received": 15529,
+    "total_forks_received": 2864,
+    "total_repos_collected": 47,
+    "owned_repo_count": 37,
+    "forked_repo_count": 10,
+    "active_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "first_active_year": 2014,
+    "last_active_year": 2026,
+    "activity_span_years": 12,
+    "recent_activity_summary": {
+      "repos_pushed_last_2_years": 27,
+      "repo_names": [
+        "tiangolo/uwsgi-nginx-flask-docker",
+        "tiangolo/uwsgi-nginx-docker",
+        "tiangolo/nginx-rtmp-docker",
+        "tiangolo/dockerswarm.rocks",
+        "tiangolo/uvicorn-gunicorn-fastapi-docker",
+        "tiangolo/uvicorn-gunicorn-docker",
+        "tiangolo/pydantic-sqlalchemy",
+        "tiangolo/meinheld-gunicorn-flask-docker",
+        "tiangolo/blog-posts",
+        "tiangolo/meinheld-gunicorn-docker"
+      ]
+    },
+    "historical_activity_summary": {
+      "repos_4_plus_years_old": 8,
+      "repo_names": [
+        "tiangolo/babun-docker",
+        "tiangolo/angular-docker-multi-stage-example",
+        "tiangolo/anaconda_cluster_install",
+        "tiangolo/compose-to-rancher",
+        "tiangolo/ngx-http-client",
+        "tiangolo/wunderlist2csv",
+        "tiangolo/bitbucket_issues_to_redmine_csv",
+        "tiangolo/ansible-babun-bootstrap"
+      ]
+    }
+  },
+  "top_repos": [
+    {
+      "full_name": "tiangolo/uwsgi-nginx-flask-docker",
+      "language": "Python",
+      "stars": 3006,
+      "forks": 610,
+      "relevance_score": 0.9511,
+      "topics": [
+        "uwsgi-nginx",
+        "flask-application",
+        "docker-image",
+        "python-flask",
+        "docker-container",
+        "flask",
+        "dockerfile",
+        "uwsgi",
+        "nginx",
+        "nginx-server",
+        "python",
+        "flask-image",
+        "web",
+        "webapp",
+        "debian"
+      ]
+    },
+    {
+      "full_name": "tiangolo/uwsgi-nginx-docker",
+      "language": "Python",
+      "stars": 662,
+      "forks": 275,
+      "relevance_score": 0.9343,
+      "topics": [
+        "uwsgi-nginx",
+        "docker-image",
+        "python-application",
+        "uwsgi",
+        "nginx",
+        "python",
+        "web",
+        "web-app",
+        "webapp",
+        "server",
+        "web-server",
+        "dockerfile",
+        "docker",
+        "debian"
+      ]
+    },
+    {
+      "full_name": "tiangolo/nginx-rtmp-docker",
+      "language": "Dockerfile",
+      "stars": 1335,
+      "forks": 387,
+      "relevance_score": 0.9315,
+      "topics": [
+        "nginx-rtmp",
+        "obs-studio",
+        "stream",
+        "docker-image",
+        "multimedia",
+        "docker",
+        "dockerfile",
+        "vlc",
+        "video",
+        "live-multimedia",
+        "nginx",
+        "server",
+        "rtmp"
+      ]
+    },
+    {
+      "full_name": "tiangolo/dockerswarm.rocks",
+      "language": "Python",
+      "stars": 1149,
+      "forks": 124,
+      "relevance_score": 0.925,
+      "topics": [
+        "docker",
+        "docker-swarm",
+        "traefik",
+        "letsencrypt",
+        "https",
+        "linux"
+      ]
+    },
+    {
+      "full_name": "tiangolo/uvicorn-gunicorn-fastapi-docker",
+      "language": "Python",
+      "stars": 2912,
+      "forks": 341,
+      "relevance_score": 0.9197,
+      "topics": [
+        "uvicorn",
+        "gunicorn",
+        "asgi",
+        "web",
+        "python",
+        "async",
+        "docker",
+        "docker-image",
+        "websockets",
+        "json",
+        "swagger-ui",
+        "redoc",
+        "openapi",
+        "openapi3",
+        "pydantic",
+        "json-schema",
+        "python-types",
+        "fastapi"
+      ]
+    },
+    {
+      "full_name": "tiangolo/uvicorn-gunicorn-docker",
+      "language": "Python",
+      "stars": 642,
+      "forks": 251,
+      "relevance_score": 0.9097,
+      "topics": [
+        "uvicorn",
+        "gunicorn",
+        "asgi",
+        "web",
+        "python",
+        "async",
+        "asyncio",
+        "docker",
+        "docker-image",
+        "uvicorn-gunicorn",
+        "dockerfile",
+        "debian"
+      ]
+    },
+    {
+      "full_name": "tiangolo/pydantic-sqlalchemy",
+      "language": "Python",
+      "stars": 1404,
+      "forks": 73,
+      "relevance_score": 0.8499,
+      "topics": []
+    },
+    {
+      "full_name": "tiangolo/meinheld-gunicorn-flask-docker",
+      "language": "Python",
+      "stars": 483,
+      "forks": 59,
+      "relevance_score": 0.8291,
+      "topics": [
+        "gunicorn",
+        "web",
+        "python",
+        "docker",
+        "docker-image",
+        "dockerfile",
+        "http",
+        "flask",
+        "python-flask",
+        "debian"
+      ]
+    },
+    {
+      "full_name": "tiangolo/blog-posts",
+      "language": "Python",
+      "stars": 279,
+      "forks": 87,
+      "relevance_score": 0.8104,
+      "topics": []
+    },
+    {
+      "full_name": "tiangolo/meinheld-gunicorn-docker",
+      "language": "Python",
+      "stars": 167,
+      "forks": 57,
+      "relevance_score": 0.7884,
+      "topics": [
+        "gunicorn",
+        "web",
+        "python",
+        "docker",
+        "docker-image",
+        "dockerfile",
+        "http",
+        "debian"
+      ]
+    }
+  ],
+  "collection_metadata": {
+    "username": "tiangolo",
+    "collected_at": "2026-04-24T11:16:23.864856+00:00",
+    "elapsed_seconds": 1869.0,
+    "total_repos": 47,
+    "total_evidence_items": 440,
+    "rate_limit_snapshot": {
+      "core": {
+        "limit": 5000,
+        "remaining": 4975,
+        "reset": "2026-04-24T12:08:37+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "reset": "2026-04-24T11:15:48+00:00"
+      },
+      "checked_at": "2026-04-24T11:16:23.862818+00:00"
+    },
+    "collector_version": "1.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained — none are discarded — to preserve historical evidence."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "run_id": "2026-04-24T11-35-25.816943Z00-00",
+  "started_at": "2026-04-24T11:35:25.816943+00:00",
+  "usernames": [
+    "# Sample GitHub usernames for the Skill Mining experiment",
+    "# Add or replace usernames here — one per line",
+    "# Lines starting with # are ignored",
+    "hnarayanan",
+    "dlsys-course",
+    "explosion",
+    "honnibal",
+    "ines",
+    "ryanmcdermott",
+    "jakubroztocil"
+  ],
+  "results": [
+    {
+      "username": "# Sample GitHub usernames for the Skill Mining experiment",
+      "status": "error",
+      "error": "404 {\"message\": \"Not Found\", \"documentation_url\": \"https://docs.github.com/rest\", \"status\": \"404\"}"
+    },
+    {
+      "username": "# Add or replace usernames here — one per line",
+      "status": "error",
+      "error": "404 {\"message\": \"Not Found\", \"documentation_url\": \"https://docs.github.com/rest\", \"status\": \"404\"}"
+    },
+    {
+      "username": "# Lines starting with # are ignored",
+      "status": "error",
+      "error": "404 {\"message\": \"Not Found\", \"documentation_url\": \"https://docs.github.com/rest\", \"status\": \"404\"}"
+    },
+    {
+      "username": "hnarayanan",
+      "status": "success"
+    },
+    {
+      "username": "dlsys-course",
+      "status": "success"
+    },
+    {
+      "username": "explosion",
+      "status": "success"
+    },
+    {
+      "username": "honnibal",
+      "status": "success"
+    },
+    {
+      "username": "ines",
+      "status": "success"
+    },
+    {
+      "username": "ryanmcdermott",
+      "status": "success"
+    },
+    {
+      "username": "jakubroztocil",
+      "status": "success"
+    }
+  ],
+  "finished_at": "2026-04-24T12:26:22.330551+00:00"
+}

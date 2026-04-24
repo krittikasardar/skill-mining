@@ -1,0 +1,15 @@
+{
+  "run_id": "2026-04-24T09-16-56.468550Z00-00",
+  "started_at": "2026-04-24T09:16:56.468550+00:00",
+  "usernames": [
+    "kennethreitz"
+  ],
+  "results": [
+    {
+      "username": "kennethreitz",
+      "status": "error",
+      "error": "'charmap' codec can't encode character '\\u2192' in position 23093: character maps to <undefined>"
+    }
+  ],
+  "finished_at": "2026-04-24T10:09:31.241727+00:00"
+}

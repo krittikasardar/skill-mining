@@ -1,0 +1,37 @@
+{
+  "username": "jakubroztocil",
+  "profile": {
+    "login": "jakubroztocil",
+    "name": "New username",
+    "bio": "@jkbrzt ",
+    "company": null,
+    "location": null,
+    "followers": 12,
+    "public_repos": 0,
+    "created_at": "2015-07-03T01:15:03+00:00"
+  },
+  "aggregate_signals": {},
+  "top_repos": [],
+  "collection_metadata": {
+    "username": "jakubroztocil",
+    "collected_at": "2026-04-24T12:26:22.311491+00:00",
+    "elapsed_seconds": 1.4,
+    "total_repos": 0,
+    "total_evidence_items": 1,
+    "rate_limit_snapshot": {
+      "core": {
+        "limit": 5000,
+        "remaining": 4891,
+        "reset": "2026-04-24T13:08:47+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "reset": "2026-04-24T12:25:46+00:00"
+      },
+      "checked_at": "2026-04-24T12:26:22.307888+00:00"
+    },
+    "collector_version": "1.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained — none are discarded — to preserve historical evidence."
+  }
+}

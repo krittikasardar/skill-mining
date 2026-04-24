@@ -1,0 +1,280 @@
+{
+  "username": "hnarayanan",
+  "profile": {
+    "login": "hnarayanan",
+    "name": "Harish Narayanan",
+    "bio": "Ph.D. in Scientific Computing. Technical founder at @Edgefolio.",
+    "company": "@Edgefolio ",
+    "location": "London",
+    "followers": 346,
+    "public_repos": 78,
+    "created_at": "2011-03-10T07:40:22+00:00"
+  },
+  "aggregate_signals": {
+    "top_languages": [
+      {
+        "language": "HTML",
+        "bytes": 102298456,
+        "pct": 54.3
+      },
+      {
+        "language": "Jupyter Notebook",
+        "bytes": 56770084,
+        "pct": 30.2
+      },
+      {
+        "language": "Perl",
+        "bytes": 11342387,
+        "pct": 6.0
+      },
+      {
+        "language": "JavaScript",
+        "bytes": 7717404,
+        "pct": 4.1
+      },
+      {
+        "language": "Python",
+        "bytes": 2869546,
+        "pct": 1.5
+      },
+      {
+        "language": "PostScript",
+        "bytes": 2758277,
+        "pct": 1.5
+      },
+      {
+        "language": "C++",
+        "bytes": 1745864,
+        "pct": 0.9
+      },
+      {
+        "language": "Shell",
+        "bytes": 891712,
+        "pct": 0.5
+      },
+      {
+        "language": "TeX",
+        "bytes": 657591,
+        "pct": 0.3
+      },
+      {
+        "language": "CSS",
+        "bytes": 517607,
+        "pct": 0.3
+      }
+    ],
+    "top_topics": [
+      "educational",
+      "mechanics",
+      "simulation",
+      "website",
+      "django",
+      "python",
+      "applescript",
+      "bash",
+      "spotify",
+      "shell",
+      "utility",
+      "music",
+      "command-line",
+      "macos",
+      "scheme",
+      "convolutional-neural-networks",
+      "tutorial-code",
+      "talk",
+      "tensorflow",
+      "keras"
+    ],
+    "total_stars_received": 3107,
+    "total_forks_received": 464,
+    "total_repos_collected": 50,
+    "owned_repo_count": 35,
+    "forked_repo_count": 15,
+    "active_years": [
+      2009,
+      2010,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "first_active_year": 2009,
+    "last_active_year": 2026,
+    "activity_span_years": 17,
+    "recent_activity_summary": {
+      "repos_pushed_last_2_years": 16,
+      "repo_names": [
+        "hnarayanan/shpotify",
+        "hnarayanan/sicm",
+        "hnarayanan/harishnarayanan.org",
+        "hnarayanan/v5.harishnarayanan.org",
+        "hnarayanan/dotemacs",
+        "hnarayanan/v2.harishnarayanan.org",
+        "hnarayanan/v3.harishnarayanan.org",
+        "hnarayanan/v4.harishnarayanan.org",
+        "hnarayanan/pr-graph-generator",
+        "hnarayanan/v1.harishnarayanan.org"
+      ]
+    },
+    "historical_activity_summary": {
+      "repos_4_plus_years_old": 27,
+      "repo_names": [
+        "hnarayanan/CS231n",
+        "hnarayanan/artistic-style-transfer",
+        "hnarayanan/kubernetes-django",
+        "hnarayanan/stylist",
+        "hnarayanan/springer-books",
+        "hnarayanan/porous-flow",
+        "hnarayanan/femtable",
+        "hnarayanan/CS224n",
+        "hnarayanan/phd-dissertation",
+        "hnarayanan/deep-learning"
+      ]
+    }
+  },
+  "top_repos": [
+    {
+      "full_name": "hnarayanan/shpotify",
+      "language": "Shell",
+      "stars": 2049,
+      "forks": 149,
+      "relevance_score": 0.8832,
+      "topics": [
+        "applescript",
+        "bash",
+        "spotify",
+        "shell",
+        "utility",
+        "music",
+        "command-line",
+        "macos"
+      ]
+    },
+    {
+      "full_name": "hnarayanan/sicm",
+      "language": "TeX",
+      "stars": 129,
+      "forks": 22,
+      "relevance_score": 0.7883,
+      "topics": [
+        "mechanics",
+        "scheme",
+        "simulation",
+        "educational"
+      ]
+    },
+    {
+      "full_name": "hnarayanan/CS231n",
+      "language": "HTML",
+      "stars": 166,
+      "forks": 133,
+      "relevance_score": 0.7752,
+      "topics": []
+    },
+    {
+      "full_name": "hnarayanan/artistic-style-transfer",
+      "language": "Jupyter Notebook",
+      "stars": 354,
+      "forks": 77,
+      "relevance_score": 0.7666,
+      "topics": [
+        "convolutional-neural-networks",
+        "tutorial-code",
+        "talk",
+        "tensorflow",
+        "keras"
+      ]
+    },
+    {
+      "full_name": "hnarayanan/harishnarayanan.org",
+      "language": "HTML",
+      "stars": 28,
+      "forks": 6,
+      "relevance_score": 0.7348,
+      "topics": [
+        "website",
+        "hugo",
+        "ansible",
+        "personal"
+      ]
+    },
+    {
+      "full_name": "hnarayanan/kubernetes-django",
+      "language": "Python",
+      "stars": 152,
+      "forks": 35,
+      "relevance_score": 0.6635,
+      "topics": [
+        "django",
+        "kubernetes",
+        "tutorial",
+        "docker"
+      ]
+    },
+    {
+      "full_name": "hnarayanan/stylist",
+      "language": "Jupyter Notebook",
+      "stars": 62,
+      "forks": 9,
+      "relevance_score": 0.6377,
+      "topics": []
+    },
+    {
+      "full_name": "hnarayanan/springer-books",
+      "language": "HTML",
+      "stars": 75,
+      "forks": 7,
+      "relevance_score": 0.5656,
+      "topics": []
+    },
+    {
+      "full_name": "hnarayanan/porous-flow",
+      "language": "C++",
+      "stars": 28,
+      "forks": 8,
+      "relevance_score": 0.5638,
+      "topics": []
+    },
+    {
+      "full_name": "hnarayanan/v5.harishnarayanan.org",
+      "language": "HTML",
+      "stars": 1,
+      "forks": 0,
+      "relevance_score": 0.554,
+      "topics": []
+    }
+  ],
+  "collection_metadata": {
+    "username": "hnarayanan",
+    "collected_at": "2026-04-24T11:57:35.213886+00:00",
+    "elapsed_seconds": 1328.3,
+    "total_repos": 50,
+    "total_evidence_items": 344,
+    "rate_limit_snapshot": {
+      "core": {
+        "limit": 5000,
+        "remaining": 4843,
+        "reset": "2026-04-24T12:08:37+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "reset": "2026-04-24T11:56:59+00:00"
+      },
+      "checked_at": "2026-04-24T11:57:35.213886+00:00"
+    },
+    "collector_version": "1.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained — none are discarded — to preserve historical evidence."
+  }
+}

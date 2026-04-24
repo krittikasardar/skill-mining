@@ -1,0 +1,200 @@
+{
+  "username": "dlsys-course",
+  "profile": {
+    "login": "dlsys-course",
+    "name": null,
+    "bio": null,
+    "company": null,
+    "location": null,
+    "followers": 41,
+    "public_repos": 7,
+    "created_at": "2017-03-08T17:27:18+00:00"
+  },
+  "aggregate_signals": {
+    "top_languages": [
+      {
+        "language": "Python",
+        "bytes": 163819,
+        "pct": 38.7
+      },
+      {
+        "language": "Jupyter Notebook",
+        "bytes": 122275,
+        "pct": 28.9
+      },
+      {
+        "language": "C++",
+        "bytes": 102965,
+        "pct": 24.3
+      },
+      {
+        "language": "Ruby",
+        "bytes": 11717,
+        "pct": 2.8
+      },
+      {
+        "language": "HTML",
+        "bytes": 7677,
+        "pct": 1.8
+      },
+      {
+        "language": "Cuda",
+        "bytes": 7289,
+        "pct": 1.7
+      },
+      {
+        "language": "Makefile",
+        "bytes": 3298,
+        "pct": 0.8
+      },
+      {
+        "language": "C",
+        "bytes": 2244,
+        "pct": 0.5
+      },
+      {
+        "language": "CSS",
+        "bytes": 1585,
+        "pct": 0.4
+      },
+      {
+        "language": "Shell",
+        "bytes": 46,
+        "pct": 0.0
+      }
+    ],
+    "top_topics": [
+      "computation-graph",
+      "deep-learning",
+      "autodiff",
+      "tutorial",
+      "course",
+      "gpu-kernels",
+      "neural-nets",
+      "gpu-executor"
+    ],
+    "total_stars_received": 1038,
+    "total_forks_received": 305,
+    "total_repos_collected": 7,
+    "owned_repo_count": 6,
+    "forked_repo_count": 1,
+    "active_years": [
+      2017,
+      2018,
+      2019,
+      2022
+    ],
+    "first_active_year": 2017,
+    "last_active_year": 2022,
+    "activity_span_years": 5,
+    "recent_activity_summary": {
+      "repos_pushed_last_2_years": 0,
+      "repo_names": []
+    },
+    "historical_activity_summary": {
+      "repos_4_plus_years_old": 7,
+      "repo_names": [
+        "dlsys-course/assignment1-2018",
+        "dlsys-course/dlsys-course.github.io",
+        "dlsys-course/assignment2-2018",
+        "dlsys-course/assignment2-2017",
+        "dlsys-course/examples",
+        "dlsys-course/lab1",
+        "dlsys-course/tinyflow"
+      ]
+    }
+  },
+  "top_repos": [
+    {
+      "full_name": "dlsys-course/assignment1-2018",
+      "language": "Python",
+      "stars": 476,
+      "forks": 148,
+      "relevance_score": 0.7586,
+      "topics": [
+        "autodiff",
+        "computation-graph"
+      ]
+    },
+    {
+      "full_name": "dlsys-course/dlsys-course.github.io",
+      "language": "Jupyter Notebook",
+      "stars": 215,
+      "forks": 32,
+      "relevance_score": 0.7292,
+      "topics": [
+        "deep-learning",
+        "tutorial",
+        "course"
+      ]
+    },
+    {
+      "full_name": "dlsys-course/assignment2-2018",
+      "language": "Python",
+      "stars": 125,
+      "forks": 51,
+      "relevance_score": 0.7025,
+      "topics": []
+    },
+    {
+      "full_name": "dlsys-course/assignment2-2017",
+      "language": "Python",
+      "stars": 63,
+      "forks": 44,
+      "relevance_score": 0.6222,
+      "topics": [
+        "gpu-kernels",
+        "computation-graph",
+        "deep-learning",
+        "neural-nets",
+        "gpu-executor"
+      ]
+    },
+    {
+      "full_name": "dlsys-course/examples",
+      "language": "Cuda",
+      "stars": 22,
+      "forks": 5,
+      "relevance_score": 0.5231,
+      "topics": []
+    },
+    {
+      "full_name": "dlsys-course/lab1",
+      "language": "Jupyter Notebook",
+      "stars": 15,
+      "forks": 0,
+      "relevance_score": 0.4476,
+      "topics": []
+    },
+    {
+      "full_name": "dlsys-course/tinyflow",
+      "language": "C++",
+      "stars": 122,
+      "forks": 25,
+      "relevance_score": 0.4357,
+      "topics": []
+    }
+  ],
+  "collection_metadata": {
+    "username": "dlsys-course",
+    "collected_at": "2026-04-24T11:57:50.787825+00:00",
+    "elapsed_seconds": 15.5,
+    "total_repos": 7,
+    "total_evidence_items": 46,
+    "rate_limit_snapshot": {
+      "core": {
+        "limit": 5000,
+        "remaining": 4832,
+        "reset": "2026-04-24T12:08:37+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "reset": "2026-04-24T11:57:15+00:00"
+      },
+      "checked_at": "2026-04-24T11:57:50.776879+00:00"
+    },
+    "collector_version": "1.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained — none are discarded — to preserve historical evidence."
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "username": "ryanmcdermott",
+  "profile": {
+    "login": "ryanmcdermott",
+    "name": "Ryan McDermott",
+    "bio": "Occasional open source developer.",
+    "company": "@google ",
+    "location": "Bay Area",
+    "followers": 4501,
+    "public_repos": 51,
+    "created_at": "2013-07-29T16:38:31+00:00"
+  },
+  "aggregate_signals": {
+    "top_languages": [
+      {
+        "language": "JavaScript",
+        "bytes": 2744097,
+        "pct": 34.0
+      },
+      {
+        "language": "Vim Script",
+        "bytes": 2126011,
+        "pct": 26.3
+      },
+      {
+        "language": "C++",
+        "bytes": 1784383,
+        "pct": 22.1
+      },
+      {
+        "language": "Vim Snippet",
+        "bytes": 643052,
+        "pct": 8.0
+      },
+      {
+        "language": "TypeScript",
+        "bytes": 214409,
+        "pct": 2.7
+      },
+      {
+        "language": "Rust",
+        "bytes": 123989,
+        "pct": 1.5
+      },
+      {
+        "language": "HTML",
+        "bytes": 92445,
+        "pct": 1.1
+      },
+      {
+        "language": "Python",
+        "bytes": 73229,
+        "pct": 0.9
+      },
+      {
+        "language": "Ruby",
+        "bytes": 61556,
+        "pct": 0.8
+      },
+      {
+        "language": "SCSS",
+        "bytes": 44314,
+        "pct": 0.5
+      }
+    ],
+    "top_topics": [
+      "javascript",
+      "algorithms",
+      "python",
+      "docker",
+      "principles",
+      "composition",
+      "inheritance",
+      "clean-code",
+      "clean-architecture",
+      "best-practices",
+      "code-review",
+      "review-tips",
+      "readability",
+      "review-process",
+      "reviews",
+      "readable",
+      "reusable",
+      "refactoring",
+      "redux",
+      "react"
+    ],
+    "total_stars_received": 98100,
+    "total_forks_received": 13072,
+    "total_repos_collected": 50,
+    "owned_repo_count": 50,
+    "forked_repo_count": 0,
+    "active_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "first_active_year": 2013,
+    "last_active_year": 2026,
+    "activity_span_years": 13,
+    "recent_activity_summary": {
+      "repos_pushed_last_2_years": 8,
+      "repo_names": [
+        "ryanmcdermott/clean-code-javascript",
+        "ryanmcdermott/markus",
+        "ryanmcdermott/spress",
+        "ryanmcdermott/local-llm-examples",
+        "ryanmcdermott/tuner",
+        "ryanmcdermott/cic",
+        "ryanmcdermott/metronome",
+        "ryanmcdermott/pwgen"
+      ]
+    },
+    "historical_activity_summary": {
+      "repos_4_plus_years_old": 26,
+      "repo_names": [
+        "ryanmcdermott/react-native-login",
+        "ryanmcdermott/trump-speeches",
+        "ryanmcdermott/katas",
+        "ryanmcdermott/starmark",
+        "ryanmcdermott/algorithms",
+        "ryanmcdermott/js-fp-algorithms",
+        "ryanmcdermott/birdseed",
+        "ryanmcdermott/docker-flask",
+        "ryanmcdermott/trumpgen",
+        "ryanmcdermott/node-boilerplate"
+      ]
+    }
+  },
+  "top_repos": [
+    {
+      "full_name": "ryanmcdermott/clean-code-javascript",
+      "language": "JavaScript",
+      "stars": 94304,
+      "forks": 12470,
+      "relevance_score": 0.8836,
+      "topics": [
+        "javascript",
+        "principles",
+        "composition",
+        "inheritance",
+        "clean-code",
+        "clean-architecture",
+        "best-practices"
+      ]
+    },
+    {
+      "full_name": "ryanmcdermott/code-review-tips",
+      "language": "JavaScript",
+      "stars": 1524,
+      "forks": 185,
+      "relevance_score": 0.819,
+      "topics": [
+        "code-review",
+        "review-tips",
+        "readability",
+        "javascript",
+        "review-process",
+        "reviews"
+      ]
+    },
+    {
+      "full_name": "ryanmcdermott/3rs-of-software-architecture",
+      "language": "JavaScript",
+      "stars": 1111,
+      "forks": 133,
+      "relevance_score": 0.8185,
+      "topics": [
+        "readable",
+        "reusable",
+        "refactoring",
+        "javascript",
+        "redux",
+        "react",
+        "software-engineering",
+        "architecture"
+      ]
+    },
+    {
+      "full_name": "ryanmcdermott/react-native-login",
+      "language": "JavaScript",
+      "stars": 460,
+      "forks": 87,
+      "relevance_score": 0.7399,
+      "topics": [
+        "react-native",
+        "login",
+        "cookies"
+      ]
+    },
+    {
+      "full_name": "ryanmcdermott/trump-speeches",
+      "language": null,
+      "stars": 185,
+      "forks": 97,
+      "relevance_score": 0.7248,
+      "topics": []
+    },
+    {
+      "full_name": "ryanmcdermott/jekyll-latex",
+      "language": "SCSS",
+      "stars": 24,
+      "forks": 13,
+      "relevance_score": 0.601,
+      "topics": [
+        "jekyll",
+        "latex",
+        "jekyll-theme"
+      ]
+    },
+    {
+      "full_name": "ryanmcdermott/katas",
+      "language": "C++",
+      "stars": 46,
+      "forks": 14,
+      "relevance_score": 0.5926,
+      "topics": [
+        "kata",
+        "algorithms",
+        "data-structures",
+        "cpp",
+        "interview-questions",
+        "interview-practice",
+        "interview-preparation"
+      ]
+    },
+    {
+      "full_name": "ryanmcdermott/starmark",
+      "language": "JavaScript",
+      "stars": 71,
+      "forks": 5,
+      "relevance_score": 0.5777,
+      "topics": [
+        "bookmark",
+        "star",
+        "chrome-extension",
+        "github-stars"
+      ]
+    },
+    {
+      "full_name": "ryanmcdermott/algorithms",
+      "language": "Python",
+      "stars": 64,
+      "forks": 16,
+      "relevance_score": 0.5615,
+      "topics": [
+        "algorithms",
+        "python",
+        "djikstra",
+        "ford-fulkerson",
+        "tarjan",
+        "union-find",
+        "binary-tree"
+      ]
+    },
+    {
+      "full_name": "ryanmcdermott/js-fp-algorithms",
+      "language": "JavaScript",
+      "stars": 50,
+      "forks": 9,
+      "relevance_score": 0.559,
+      "topics": []
+    }
+  ],
+  "collection_metadata": {
+    "username": "ryanmcdermott",
+    "collected_at": "2026-04-24T12:26:20.837478+00:00",
+    "elapsed_seconds": 729.7,
+    "total_repos": 50,
+    "total_evidence_items": 386,
+    "rate_limit_snapshot": {
+      "core": {
+        "limit": 5000,
+        "remaining": 4894,
+        "reset": "2026-04-24T13:08:47+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "reset": "2026-04-24T12:25:45+00:00"
+      },
+      "checked_at": "2026-04-24T12:26:20.828737+00:00"
+    },
+    "collector_version": "1.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained — none are discarded — to preserve historical evidence."
+  }
+}

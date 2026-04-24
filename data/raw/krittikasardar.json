@@ -1,0 +1,1036 @@
+{
+  "schema_version": "1.0",
+  "profile": {
+    "login": "krittikasardar",
+    "name": "Krittika",
+    "bio": null,
+    "company": null,
+    "blog": "",
+    "location": null,
+    "email": null,
+    "twitter_username": null,
+    "followers": 0,
+    "following": 0,
+    "public_repos": 6,
+    "public_gists": 0,
+    "created_at": "2020-01-14T17:08:39+00:00",
+    "updated_at": "2026-04-07T08:09:07+00:00",
+    "avatar_url": "https://avatars.githubusercontent.com/u/59887119?v=4",
+    "html_url": "https://github.com/krittikasardar",
+    "type": "User",
+    "site_admin": false
+  },
+  "repositories": [
+    {
+      "repository_metadata": {
+        "name": "Sign-Language-Recognition-using-Deep-Learning",
+        "full_name": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "description": "A prototype capable of predicting and translating live sign language gestures into English using the LSTM neural networks, MediaPipe Holistic, OpenCV & Python.",
+        "html_url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "homepage": "",
+        "language": "Jupyter Notebook",
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "watchers_count": 0,
+        "open_issues_count": 0,
+        "size": 8306,
+        "default_branch": "main",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2022-07-03T16:12:22+00:00",
+        "updated_at": "2025-11-10T12:00:38+00:00",
+        "pushed_at": "2025-11-10T12:00:34+00:00",
+        "license": null,
+        "topics": []
+      },
+      "relevance_score": 0.4497,
+      "skill_evidence": {
+        "primary_language": "Jupyter Notebook",
+        "languages_used": [
+          "Jupyter Notebook"
+        ],
+        "language_breakdown": {
+          "Jupyter Notebook": {
+            "bytes": 1311484,
+            "pct": 100.0
+          }
+        },
+        "topics": [],
+        "readme_keywords": [
+          "api",
+          "deep learning",
+          "go",
+          "numpy",
+          "python",
+          "tensorflow",
+          "testing"
+        ],
+        "commit_count_sampled": 7,
+        "commit_years_covered": [
+          2022,
+          2025
+        ]
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0
+      },
+      "leadership_evidence": {
+        "signals": [
+          "Sustained contributions over 3+ years (2022–2025)"
+        ],
+        "commit_year_span": {
+          "from": 2022,
+          "to": 2025
+        }
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# Sign Language Recognition using Deep Learning and Computer Vision\n\nReal-time vision-based Sign Language Recognition system designed to assist individuals with hearing and speech impairments by translating hand gestures into readable text. This project aims to promote accessibility and inclusivity by bridging communication gaps.\n\n# Project Overview\n\nThe system recognizes six basic sign gestures:\n\n1. Hello\n\n2. How are you\n\n3. I’m sorry\n\n4. Thank you\n\n5. I love you\n\n6. Goodbye\n\nWe used deep learning techniques with Long Short-Term Memory (LSTM) networks and MediaPipe Holistic keypoint detection to achieve accurate gesture recognition in real-time.\n\n# Problem Statement\n\nIndividuals with hearing or speech impairments often rely on sign language, which is not universally understood. This project addresses the need for a reliable, real-time sign language recognition system that can interpret gestures and output readable text without requiring human interpreters.\n\n# Tools & Technologies\n\n- Python\n\n- OpenCV (cv2)\n\n- MediaPipe Holistic\n\n- TensorFlow & Keras\n\n- NumPy, Sci-kit Learn, Matplotlib\n\n# Methodology\n\n1. Keypoint Detection with MediaPipe Holistic\n\n- Extracted body, face, and hand landmarks (540+ points)\n\n2. Dataset Creation\n\n- Captured 30 videos per gesture (30 frames each)\n\n- Converted sequences into TensorFlow-compatible format\n\n3. Data Preprocessing & Labeling\n\n- Split into training and testing sets\n\n- One-hot encoding of gesture labels\n\n4. Model Architecture\n\n- 3 LSTM layers\n\n- 2 Dense layers with ReLU activation\n\n- Final Dense layer with Softmax activation\n\n- Trained using Adam optimizer & categorical crossentropy\n\n5. Model Evaluation\n\n- Achieved categorical accuracy of ~79% during training\n\n- Evaluated with Confusion Matrix and Accuracy Score\n\n6. Real-time Testing\n\n- Integrated OpenCV and MediaPipe for live gesture detection and text output\n\n# Contributors\n\n- Krittika Sardar\n\n- Anjali Sinha\n\n- Bobby Baidya\n\nSupervised by Dr. Soham Sarkar",
+        "commit_samples": [
+          {
+            "sha": "4f8b8d3877",
+            "message": "Add files via upload",
+            "date": "2022-07-03T16:16:45+00:00",
+            "additions": 2817,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning/commit/4f8b8d387742a972349f421062582887dc25051a"
+          },
+          {
+            "sha": "ba389e8690",
+            "message": "Create README.md",
+            "date": "2025-07-20T15:18:35+00:00",
+            "additions": 84,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning/commit/ba389e8690d5df883e418511fd61779d74e02af3"
+          },
+          {
+            "sha": "424044bc0e",
+            "message": "Update README.md",
+            "date": "2025-07-20T15:22:51+00:00",
+            "additions": 1,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning/commit/424044bc0e0be7271715fa4392cecf5c538bc7b0"
+          },
+          {
+            "sha": "2f1e9e24a1",
+            "message": "Update README.md",
+            "date": "2025-07-21T06:31:44+00:00",
+            "additions": 1,
+            "deletions": 1,
+            "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning/commit/2f1e9e24a16213dac06481d6b6655bcd38ed7ef3"
+          },
+          {
+            "sha": "9a4c304433",
+            "message": "Update README.md",
+            "date": "2025-07-21T14:51:58+00:00",
+            "additions": 10,
+            "deletions": 10,
+            "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning/commit/9a4c304433e45c7637b8c94cd61e30f7ab260d30"
+          },
+          {
+            "sha": "5de26e721b",
+            "message": "Update README.md",
+            "date": "2025-07-21T14:52:20+00:00",
+            "additions": 1,
+            "deletions": 1,
+            "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning/commit/5de26e721bc852ca9da663a6c85c37240305843f"
+          },
+          {
+            "sha": "2f02a761f2",
+            "message": "Add files via upload",
+            "date": "2025-11-10T12:00:31+00:00",
+            "additions": 0,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning/commit/2f02a761f2ff2d230522c5d14ae9c739a24cec72"
+          }
+        ],
+        "description": "A prototype capable of predicting and translating live sign language gestures into English using the LSTM neural networks, MediaPipe Holistic, OpenCV & Python."
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "full_name": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "description": "Sentiment analysis on the Amazon Fine Food Reviews dataset using traditional ML, LSTM, and transformer-based models. This project compares TF-IDF and Word2Vec vectorizations with various class balancing techniques to evaluate model performance on multi-class sentiment classification tasks.",
+        "html_url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "homepage": null,
+        "language": "Jupyter Notebook",
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "watchers_count": 0,
+        "open_issues_count": 0,
+        "size": 249,
+        "default_branch": "main",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2025-07-21T14:07:37+00:00",
+        "updated_at": "2025-07-21T21:11:05+00:00",
+        "pushed_at": "2025-07-21T21:11:01+00:00",
+        "license": null,
+        "topics": []
+      },
+      "relevance_score": 0.3662,
+      "skill_evidence": {
+        "primary_language": "Jupyter Notebook",
+        "languages_used": [
+          "Jupyter Notebook"
+        ],
+        "language_breakdown": {
+          "Jupyter Notebook": {
+            "bytes": 666139,
+            "pct": 100.0
+          }
+        },
+        "topics": [],
+        "readme_keywords": [
+          "deep learning",
+          "machine learning",
+          "rest",
+          "transformer"
+        ],
+        "commit_count_sampled": 10,
+        "commit_years_covered": [
+          2025
+        ]
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0
+      },
+      "leadership_evidence": {
+        "signals": [],
+        "commit_year_span": {
+          "from": 2025,
+          "to": 2025
+        }
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# Sentiment-Analysis-on-Amazon-Fine-Food-Reviews\n\nThe uploaded code includes model implementations and feature engineering workflows based on both TF-IDF and Word2Vec representations.\n\n# Project Overview\n\nThis project performs sentiment analysis on the Amazon Fine Food Reviews dataset using a combination of traditional machine learning, deep learning, and transformer-based models. The objective is to classify reviews as Positive, Neutral, or Negative, leveraging various NLP techniques and web mining methods to analyze large-scale consumer feedback.\n\n# Dataset\n\n- Source: [Kaggle - Amazon Fine Food Reviews](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews/data)\n\n- Size: ~568,000 reviews spanning over 10 years\n\n- Features used: Review Text, Summary, and Score\n\n# Sentiment Mapping:\n\n- Positive (Score > 3)\n\n- Neutral (Score = 3)\n\n- Negative (Score < 3)\n\n# Preprocessing Steps\n\n- Removed null values and duplicates\n\n- Cleaned HTML tags and punctuations\n\n- Stopwords filtered with negations preserved\n\n- Handled class imbalance using sampling techniques\n\n- Data split into 80:20 train-test sets\n\n# Feature Engineering\n\n- TF-IDF\n\n- Word2Vec embeddings\n\n# Models Implemented\n\n- Logistic Regression (baseline)\n\n- Naive Bayes\n\n- Random Forest\n\n- Support Vector Machines (SVM)\n\n- LSTM (deep learning)\n\n- Transformer Models: BERT, RoBERTa, DistilBERT\n\n# Key Findings\n\nDistilBERT delivered the best overall performance, especially on positive and neutral sentiments.\n\nTF-IDF worked best with traditional models, while LSTM and transformers benefitted from dense embeddings.\n\nClass balancing significantly impacted model performance.\n\n# Future Scope\n\n- Explore ensemble models\n\n- Advanced fine-tuning of transformer models\n\n- Experiment with sentiment lexicons\n\n# Contributors\n\n- Sushma Kulkarni\n\n- Krittika Sardar\n\n- Mansi Sawant\n\n- Nishit Suthar\n\n- Eljes Basha",
+        "commit_samples": [
+          {
+            "sha": "3cbe5e08a2",
+            "message": "Initial commit",
+            "date": "2025-07-21T14:07:38+00:00",
+            "additions": 2,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/3cbe5e08a2c0fa0c147cf05d1f963532a5e9d4b6"
+          },
+          {
+            "sha": "988cf0d4a8",
+            "message": "Update README.md",
+            "date": "2025-07-21T14:16:28+00:00",
+            "additions": 80,
+            "deletions": 1,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/988cf0d4a8900657d20faf1d311ffd9788145b18"
+          },
+          {
+            "sha": "aca000070c",
+            "message": "Add files via upload",
+            "date": "2025-07-21T14:28:30+00:00",
+            "additions": 10624,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/aca000070c56764e3a42ab2be1d7b63af5ed36a0"
+          },
+          {
+            "sha": "5decb854f7",
+            "message": "Update README.md",
+            "date": "2025-07-21T14:28:58+00:00",
+            "additions": 2,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/5decb854f7a41a28c92a9e46caaa0e0cc178d26c"
+          },
+          {
+            "sha": "aeb850d5a9",
+            "message": "Update README.md",
+            "date": "2025-07-21T14:49:20+00:00",
+            "additions": 3,
+            "deletions": 3,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/aeb850d5a96edd9a78f5147c902fd0cf337dca25"
+          },
+          {
+            "sha": "73ca2fc913",
+            "message": "Add files via upload",
+            "date": "2025-07-21T19:59:00+00:00",
+            "additions": 512,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/73ca2fc91383a4753e9dcf2026dec3c80b19d805"
+          },
+          {
+            "sha": "7d373632ef",
+            "message": "Update BERT_Model.ipynb",
+            "date": "2025-07-21T20:03:36+00:00",
+            "additions": 3,
+            "deletions": 2,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/7d373632efbc4643abeee90d53ae00942b0599a3"
+          },
+          {
+            "sha": "0f1661bc2f",
+            "message": "Update RoBERTa.ipynb",
+            "date": "2025-07-21T20:07:28+00:00",
+            "additions": 3,
+            "deletions": 1717,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/0f1661bc2f7347b4dacbef8398646f2a0a03c304"
+          },
+          {
+            "sha": "d67bd43ac7",
+            "message": "Update DistilBERT.ipynb",
+            "date": "2025-07-21T21:07:26+00:00",
+            "additions": 1,
+            "deletions": 1,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/d67bd43ac773f29666a63236d2fbfd82e3f9ad41"
+          },
+          {
+            "sha": "8ccbbb77de",
+            "message": "Delete BERT.ipynb",
+            "date": "2025-07-21T21:11:01+00:00",
+            "additions": 0,
+            "deletions": 859,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/8ccbbb77de65d4b6b1a4f895bf78362eb294f4c1"
+          }
+        ],
+        "description": "Sentiment analysis on the Amazon Fine Food Reviews dataset using traditional ML, LSTM, and transformer-based models. This project compares TF-IDF and Word2Vec vectorizations with various class balancing techniques to evaluate model performance on multi-class sentiment classification tasks."
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "Covid-19-Vaccine-Time-Analysis-",
+        "full_name": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "description": "Predicted the time by which the entire population of India will be vaccinated, primarily based on Data Analysis using Python.",
+        "html_url": "https://github.com/krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "homepage": null,
+        "language": "Jupyter Notebook",
+        "stargazers_count": 1,
+        "forks_count": 0,
+        "watchers_count": 1,
+        "open_issues_count": 0,
+        "size": 199,
+        "default_branch": "main",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2021-07-28T19:20:29+00:00",
+        "updated_at": "2025-07-21T06:32:27+00:00",
+        "pushed_at": "2021-07-28T19:22:50+00:00",
+        "license": null,
+        "topics": []
+      },
+      "relevance_score": 0.35,
+      "skill_evidence": {
+        "primary_language": "Jupyter Notebook",
+        "languages_used": [
+          "Jupyter Notebook"
+        ],
+        "language_breakdown": {
+          "Jupyter Notebook": {
+            "bytes": 452075,
+            "pct": 100.0
+          }
+        },
+        "topics": [],
+        "readme_keywords": [],
+        "commit_count_sampled": 1,
+        "commit_years_covered": [
+          2021
+        ]
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 1,
+        "forks_received": 0
+      },
+      "leadership_evidence": {
+        "signals": [],
+        "commit_year_span": {
+          "from": 2021,
+          "to": 2021
+        }
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "",
+        "commit_samples": [
+          {
+            "sha": "d761c41674",
+            "message": "Add files via upload",
+            "date": "2021-07-28T19:22:50+00:00",
+            "additions": 1984,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Covid-19-Vaccine-Time-Analysis-/commit/d761c41674a0eef1cc38d2c67ab57775c81d8a7e"
+          }
+        ],
+        "description": "Predicted the time by which the entire population of India will be vaccinated, primarily based on Data Analysis using Python."
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "git-practice",
+        "full_name": "krittikasardar/git-practice",
+        "description": null,
+        "html_url": "https://github.com/krittikasardar/git-practice",
+        "homepage": null,
+        "language": null,
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "watchers_count": 0,
+        "open_issues_count": 0,
+        "size": 1,
+        "default_branch": "main",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2026-02-24T14:23:57+00:00",
+        "updated_at": "2026-02-24T14:42:20+00:00",
+        "pushed_at": "2026-02-24T14:38:15+00:00",
+        "license": null,
+        "topics": []
+      },
+      "relevance_score": 0.3483,
+      "skill_evidence": {
+        "primary_language": null,
+        "languages_used": [],
+        "language_breakdown": {},
+        "topics": [],
+        "readme_keywords": [],
+        "commit_count_sampled": 4,
+        "commit_years_covered": [
+          2026
+        ]
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0
+      },
+      "leadership_evidence": {
+        "signals": [],
+        "commit_year_span": {
+          "from": 2026,
+          "to": 2026
+        }
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# Student Tracker Project\n\nThis project tracks students and their courses.\nThis project is for Git practice.",
+        "commit_samples": [
+          {
+            "sha": "4c8e3b57ec",
+            "message": "Initial commit with students list and README",
+            "date": "2026-02-24T13:59:54+00:00",
+            "additions": 5,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/git-practice/commit/4c8e3b57ecc47a452d142a7519f2faa69ce3ef8c"
+          },
+          {
+            "sha": "5a51414527",
+            "message": "Added Charlie to student list",
+            "date": "2026-02-24T14:02:34+00:00",
+            "additions": 2,
+            "deletions": 1,
+            "url": "https://github.com/krittikasardar/git-practice/commit/5a51414527a82aff691f09e9372fea12d292f647"
+          },
+          {
+            "sha": "3d64271fc3",
+            "message": "Removed accidental test line",
+            "date": "2026-02-24T14:21:24+00:00",
+            "additions": 2,
+            "deletions": 1,
+            "url": "https://github.com/krittikasardar/git-practice/commit/3d64271fc3c210b315f423161a6dc12d57a3a10d"
+          },
+          {
+            "sha": "bc877c5397",
+            "message": "Updated README",
+            "date": "2026-02-24T14:39:14+00:00",
+            "additions": 2,
+            "deletions": 1,
+            "url": "https://github.com/krittikasardar/git-practice/commit/bc877c5397c112b1ef66f1cddbc8c3a271bbfad0"
+          }
+        ],
+        "description": ""
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "git-practice-2",
+        "full_name": "krittikasardar/git-practice-2",
+        "description": null,
+        "html_url": "https://github.com/krittikasardar/git-practice-2",
+        "homepage": null,
+        "language": null,
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "watchers_count": 0,
+        "open_issues_count": 0,
+        "size": 0,
+        "default_branch": "main",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2026-02-24T14:40:27+00:00",
+        "updated_at": "2026-02-24T15:06:41+00:00",
+        "pushed_at": "2026-02-24T15:01:28+00:00",
+        "license": null,
+        "topics": []
+      },
+      "relevance_score": 0.3419,
+      "skill_evidence": {
+        "primary_language": null,
+        "languages_used": [],
+        "language_breakdown": {},
+        "topics": [],
+        "readme_keywords": [],
+        "commit_count_sampled": 2,
+        "commit_years_covered": [
+          2026
+        ]
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0
+      },
+      "leadership_evidence": {
+        "signals": [],
+        "commit_year_span": {
+          "from": 2026,
+          "to": 2026
+        }
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# git-practice-2\n\nThis repository is intended for practicing Git commands and workflows. Use this project to experiment with version control, branching, merging, and other Git features.\n\n## Getting Started\n\n1. **Clone the repository:**\n   ```sh\n   git clone <repository-url>\n   ```\n2. **Navigate to the project directory:**\n   ```sh\n   cd git-practice-2\n   ```\n3. **Start practicing Git commands!**\n\n## Common Git Commands\n\n- `git status` — Check the status of your working directory and staging area.\n- `git add <file>` — Stage changes for commit.\n- `git commit -m \"message\"` — Commit staged changes with a message.\n- `git branch` — List, create, or delete branches.\n- `git checkout <branch>` — Switch branches.\n- `git merge <branch>` — Merge a branch into your current branch.\n- `git pull` — Fetch and merge changes from the remote repository.\n- `git push` — Push your commits to the remote repository.\n\n## License\n\nThis project is for educational purposes only.\n\nThis repo is cloned and edited locally. Hey, this is Kritz. I'm learning Git.",
+        "commit_samples": [
+          {
+            "sha": "0f5cdc9c9b",
+            "message": "Added README file",
+            "date": "2026-02-24T14:51:02+00:00",
+            "additions": 32,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/git-practice-2/commit/0f5cdc9c9b8eddcc8c299d64aa8c6788db8b4ddc"
+          },
+          {
+            "sha": "e99dc0e4dd",
+            "message": "Updated README",
+            "date": "2026-02-24T15:02:28+00:00",
+            "additions": 1,
+            "deletions": 1,
+            "url": "https://github.com/krittikasardar/git-practice-2/commit/e99dc0e4ddb305f70ff02cdc469225d389bb9bb2"
+          }
+        ],
+        "description": ""
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "Handwritten-Digit-Recognition",
+        "full_name": "krittikasardar/Handwritten-Digit-Recognition",
+        "description": null,
+        "html_url": "https://github.com/krittikasardar/Handwritten-Digit-Recognition",
+        "homepage": null,
+        "language": "Jupyter Notebook",
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "watchers_count": 0,
+        "open_issues_count": 0,
+        "size": 57,
+        "default_branch": "main",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2021-09-02T05:59:58+00:00",
+        "updated_at": "2021-09-02T06:06:11+00:00",
+        "pushed_at": "2021-09-02T06:06:09+00:00",
+        "license": null,
+        "topics": []
+      },
+      "relevance_score": 0.3135,
+      "skill_evidence": {
+        "primary_language": "Jupyter Notebook",
+        "languages_used": [
+          "Jupyter Notebook"
+        ],
+        "language_breakdown": {
+          "Jupyter Notebook": {
+            "bytes": 127754,
+            "pct": 100.0
+          }
+        },
+        "topics": [],
+        "readme_keywords": [],
+        "commit_count_sampled": 1,
+        "commit_years_covered": [
+          2021
+        ]
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0
+      },
+      "leadership_evidence": {
+        "signals": [],
+        "commit_year_span": {
+          "from": 2021,
+          "to": 2021
+        }
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "",
+        "commit_samples": [
+          {
+            "sha": "56bf3b35e1",
+            "message": "Add files via upload",
+            "date": "2021-09-02T06:06:08+00:00",
+            "additions": 1509,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Handwritten-Digit-Recognition/commit/56bf3b35e1ce7a54e06ab4b30a68fd1efe0ba698"
+          }
+        ],
+        "description": ""
+      }
+    }
+  ],
+  "aggregate_signals": {
+    "top_languages": [
+      {
+        "language": "Jupyter Notebook",
+        "bytes": 2557452,
+        "pct": 100.0
+      }
+    ],
+    "top_topics": [],
+    "total_stars_received": 1,
+    "total_forks_received": 0,
+    "total_repos_collected": 6,
+    "owned_repo_count": 6,
+    "forked_repo_count": 0,
+    "active_years": [
+      2021,
+      2022,
+      2025,
+      2026
+    ],
+    "first_active_year": 2021,
+    "last_active_year": 2026,
+    "activity_span_years": 5,
+    "recent_activity_summary": {
+      "repos_pushed_last_2_years": 4,
+      "repo_names": [
+        "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "krittikasardar/git-practice",
+        "krittikasardar/git-practice-2"
+      ]
+    },
+    "historical_activity_summary": {
+      "repos_4_plus_years_old": 2,
+      "repo_names": [
+        "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "krittikasardar/Handwritten-Digit-Recognition"
+      ]
+    }
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "ev_0001",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "A prototype capable of predicting and translating live sign language gestures into English using the LSTM neural networks, MediaPipe Holistic, OpenCV & Python.",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "description",
+        "language": "Jupyter Notebook",
+        "stars": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0002",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "# Sign Language Recognition using Deep Learning and Computer Vision\n\nReal-time vision-based Sign Language Recognition system designed to assist individuals with hearing and speech impairments by translating hand gestures into readable text. This project aims to promote accessibility and inclusivity by bridging communication gaps.\n\n# Project Overview\n\nThe system recognizes six basic sign gestures:\n\n1. Hello\n\n2. How are you\n\n3. I’m sorry\n\n4. Thank you\n\n5. I love you\n\n6. Goodbye\n\nWe used deep learning techniques with Long Short-Term Memory (LSTM) networks and MediaPipe Holistic keypoint detection to achieve accurate gesture recognition in real-time.\n\n# Problem Statement\n\nIndividuals with hearing or speech impairments often rely on sign language, which is not universally understood. This project addresses the need for a reliable, real-time sign language recognition system that can interpret gestures and output readable text without requiring human interpreters.\n\n# Tools & Technologies\n\n- Python\n\n- OpenCV (cv2)\n\n- MediaPipe Holistic\n\n- TensorFlow & Keras\n\n- NumPy, Sci-kit Learn, Matplotlib\n\n# Methodology\n\n1. Keypoint Detection with MediaPipe Holistic\n\n- Extracted body, face, and hand landmarks (540+ points)\n\n2. Dataset Creation\n\n- Captured 30 videos per gesture (30 frames each)\n\n- Converted sequences into TensorFlow-compatible format\n\n3. Data Preprocessing & Labeling\n\n- Split into training and testing sets\n\n- One-hot encoding of gesture labels\n\n4. Model Architecture\n\n- 3 LSTM layers\n\n- 2 Dense layers with ReLU activation\n\n- Final Dense layer with Softmax activation\n\n- Trained using Adam optimizer & categorical crossentropy\n\n5. Model Evaluation\n\n- Achieved categorical accuracy of ~79% during training\n\n- Evaluated with Confusion Matrix and Accuracy Score\n\n6. Real-time Testing\n\n- Integrated OpenCV and MediaPipe for live gesture detection and text output\n\n# Contributors\n\n- Krittika Sardar\n\n- Anjali Sinha\n\n- Bobby Baidya\n\nSupervised by Dr. Soham Sarkar",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "readme_excerpt",
+        "topics": []
+      }
+    },
+    {
+      "evidence_id": "ev_0003",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Technologies/tools mentioned in README: api, deep learning, go, numpy, python, tensorflow, testing",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "readme_keywords"
+      }
+    },
+    {
+      "evidence_id": "ev_0004",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Languages used: Jupyter Notebook (100.0%)",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0005",
+      "type": "role",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "User is the owner of krittikasardar/Sign-Language-Recognition-using-Deep-Learning.",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0006",
+      "type": "leadership",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Sustained contributions over 3+ years (2022–2025)",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0007",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Commit (2022-07-03T16:16:45+00:00): Add files via upload",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "sha": "4f8b8d3877",
+        "date": "2022-07-03T16:16:45+00:00",
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0008",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Commit (2025-11-10T12:00:31+00:00): Add files via upload",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "sha": "2f02a761f2",
+        "date": "2025-11-10T12:00:31+00:00",
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0009",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Sentiment analysis on the Amazon Fine Food Reviews dataset using traditional ML, LSTM, and transformer-based models. This project compares TF-IDF and Word2Vec vectorizations with various class balancing techniques to evaluate model performance on multi-class sentiment classification tasks.",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "description",
+        "language": "Jupyter Notebook",
+        "stars": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0010",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "# Sentiment-Analysis-on-Amazon-Fine-Food-Reviews\n\nThe uploaded code includes model implementations and feature engineering workflows based on both TF-IDF and Word2Vec representations.\n\n# Project Overview\n\nThis project performs sentiment analysis on the Amazon Fine Food Reviews dataset using a combination of traditional machine learning, deep learning, and transformer-based models. The objective is to classify reviews as Positive, Neutral, or Negative, leveraging various NLP techniques and web mining methods to analyze large-scale consumer feedback.\n\n# Dataset\n\n- Source: [Kaggle - Amazon Fine Food Reviews](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews/data)\n\n- Size: ~568,000 reviews spanning over 10 years\n\n- Features used: Review Text, Summary, and Score\n\n# Sentiment Mapping:\n\n- Positive (Score > 3)\n\n- Neutral (Score = 3)\n\n- Negative (Score < 3)\n\n# Preprocessing Steps\n\n- Removed null values and duplicates\n\n- Cleaned HTML tags and punctuations\n\n- Stopwords filtered with negations preserved\n\n- Handled class imbalance using sampling techniques\n\n- Data split into 80:20 train-test sets\n\n# Feature Engineering\n\n- TF-IDF\n\n- Word2Vec embeddings\n\n# Models Implemented\n\n- Logistic Regression (baseline)\n\n- Naive Bayes\n\n- Random Forest\n\n- Support Vector Machines (SVM)\n\n- LSTM (deep learning)\n\n- Transformer Models: BERT, RoBERTa, DistilBERT\n\n# Key Findings\n\nDistilBERT delivered the best overall performance, especially on positive and neutral sentiments.\n\nTF-IDF worked best with traditional models, while LSTM and transformers benefitted from dense embeddings.\n\nClass balancing significantly impacted model performance.\n\n# Future Scope\n\n- Explore ensemble models\n\n- Advanced fine-tuning of transformer models\n\n- Experiment with sentiment lexicons\n\n# Contributors\n\n- Sushma Kulkarni\n\n- Krittika Sardar\n\n- Mansi Sawant\n\n- Nishit Suthar\n\n- Eljes Basha",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "readme_excerpt",
+        "topics": []
+      }
+    },
+    {
+      "evidence_id": "ev_0011",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Technologies/tools mentioned in README: deep learning, machine learning, rest, transformer",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "readme_keywords"
+      }
+    },
+    {
+      "evidence_id": "ev_0012",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Languages used: Jupyter Notebook (100.0%)",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0013",
+      "type": "role",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "User is the owner of krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews.",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0014",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Commit (2025-07-21T14:07:38+00:00): Initial commit",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "sha": "3cbe5e08a2",
+        "date": "2025-07-21T14:07:38+00:00",
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0015",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Commit (2025-07-21T21:11:01+00:00): Delete BERT.ipynb",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "sha": "8ccbbb77de",
+        "date": "2025-07-21T21:11:01+00:00",
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0016",
+      "type": "skill",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Predicted the time by which the entire population of India will be vaccinated, primarily based on Data Analysis using Python.",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "field": "description",
+        "language": "Jupyter Notebook",
+        "stars": 1
+      }
+    },
+    {
+      "evidence_id": "ev_0017",
+      "type": "skill",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Languages used: Jupyter Notebook (100.0%)",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0018",
+      "type": "role",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "User is the owner of krittikasardar/Covid-19-Vaccine-Time-Analysis-.",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "is_owner": true,
+        "stars": 1,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0019",
+      "type": "skill",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Commit (2021-07-28T19:22:50+00:00): Add files via upload",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "sha": "d761c41674",
+        "date": "2021-07-28T19:22:50+00:00",
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0020",
+      "type": "skill",
+      "source": "repo:krittikasardar/git-practice",
+      "content": "# Student Tracker Project\n\nThis project tracks students and their courses.\nThis project is for Git practice.",
+      "metadata": {
+        "repo": "krittikasardar/git-practice",
+        "field": "readme_excerpt",
+        "topics": []
+      }
+    },
+    {
+      "evidence_id": "ev_0021",
+      "type": "role",
+      "source": "repo:krittikasardar/git-practice",
+      "content": "User is the owner of krittikasardar/git-practice.",
+      "metadata": {
+        "repo": "krittikasardar/git-practice",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0022",
+      "type": "skill",
+      "source": "repo:krittikasardar/git-practice",
+      "content": "Commit (2026-02-24T13:59:54+00:00): Initial commit with students list and README",
+      "metadata": {
+        "repo": "krittikasardar/git-practice",
+        "sha": "4c8e3b57ec",
+        "date": "2026-02-24T13:59:54+00:00",
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0023",
+      "type": "skill",
+      "source": "repo:krittikasardar/git-practice",
+      "content": "Commit (2026-02-24T14:39:14+00:00): Updated README",
+      "metadata": {
+        "repo": "krittikasardar/git-practice",
+        "sha": "bc877c5397",
+        "date": "2026-02-24T14:39:14+00:00",
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0024",
+      "type": "skill",
+      "source": "repo:krittikasardar/git-practice-2",
+      "content": "# git-practice-2\n\nThis repository is intended for practicing Git commands and workflows. Use this project to experiment with version control, branching, merging, and other Git features.\n\n## Getting Started\n\n1. **Clone the repository:**\n   ```sh\n   git clone <repository-url>\n   ```\n2. **Navigate to the project directory:**\n   ```sh\n   cd git-practice-2\n   ```\n3. **Start practicing Git commands!**\n\n## Common Git Commands\n\n- `git status` — Check the status of your working directory and staging area.\n- `git add <file>` — Stage changes for commit.\n- `git commit -m \"message\"` — Commit staged changes with a message.\n- `git branch` — List, create, or delete branches.\n- `git checkout <branch>` — Switch branches.\n- `git merge <branch>` — Merge a branch into your current branch.\n- `git pull` — Fetch and merge changes from the remote repository.\n- `git push` — Push your commits to the remote repository.\n\n## License\n\nThis project is for educational purposes only.\n\nThis repo is cloned and edited locally. Hey, this is Kritz. I'm learning Git.",
+      "metadata": {
+        "repo": "krittikasardar/git-practice-2",
+        "field": "readme_excerpt",
+        "topics": []
+      }
+    },
+    {
+      "evidence_id": "ev_0025",
+      "type": "role",
+      "source": "repo:krittikasardar/git-practice-2",
+      "content": "User is the owner of krittikasardar/git-practice-2.",
+      "metadata": {
+        "repo": "krittikasardar/git-practice-2",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0026",
+      "type": "skill",
+      "source": "repo:krittikasardar/git-practice-2",
+      "content": "Commit (2026-02-24T14:51:02+00:00): Added README file",
+      "metadata": {
+        "repo": "krittikasardar/git-practice-2",
+        "sha": "0f5cdc9c9b",
+        "date": "2026-02-24T14:51:02+00:00",
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0027",
+      "type": "skill",
+      "source": "repo:krittikasardar/git-practice-2",
+      "content": "Commit (2026-02-24T15:02:28+00:00): Updated README",
+      "metadata": {
+        "repo": "krittikasardar/git-practice-2",
+        "sha": "e99dc0e4dd",
+        "date": "2026-02-24T15:02:28+00:00",
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0028",
+      "type": "skill",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "Languages used: Jupyter Notebook (100.0%)",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0029",
+      "type": "role",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "User is the owner of krittikasardar/Handwritten-Digit-Recognition.",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0030",
+      "type": "skill",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "Commit (2021-09-02T06:06:08+00:00): Add files via upload",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "sha": "56bf3b35e1",
+        "date": "2021-09-02T06:06:08+00:00",
+        "field": "commit_sample"
+      }
+    }
+  ],
+  "collection_metadata": {
+    "username": "krittikasardar",
+    "collected_at": "2026-04-24T09:14:57.404620+00:00",
+    "elapsed_seconds": 28.6,
+    "total_repos": 6,
+    "total_evidence_items": 30,
+    "rate_limit_snapshot": {
+      "core": {
+        "limit": 5000,
+        "remaining": 4983,
+        "reset": "2026-04-24T10:05:30+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "reset": "2026-04-24T09:14:22+00:00"
+      },
+      "checked_at": "2026-04-24T09:14:57.404620+00:00"
+    },
+    "collector_version": "1.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained — none are discarded — to preserve historical evidence."
+  }
+}

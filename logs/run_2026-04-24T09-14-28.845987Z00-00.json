@@ -1,0 +1,14 @@
+{
+  "run_id": "2026-04-24T09-14-28.845987Z00-00",
+  "started_at": "2026-04-24T09:14:28.845987+00:00",
+  "usernames": [
+    "krittikasardar"
+  ],
+  "results": [
+    {
+      "username": "krittikasardar",
+      "status": "success"
+    }
+  ],
+  "finished_at": "2026-04-24T09:14:57.452068+00:00"
+}
