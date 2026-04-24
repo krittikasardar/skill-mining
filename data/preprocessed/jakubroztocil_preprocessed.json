@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.1",
+  "username": "jakubroztocil",
+  "preprocessed_at": "2026-04-24T14:22:21.119050+00:00",
+  "source_file": "C:\\Users\\I764176\\Documents\\University\\Semester 3\\LLM and Agents\\skill-mining\\data\\raw\\jakubroztocil.json",
+  "historical_analysis": {
+    "commits_by_year": {},
+    "languages_by_year": {},
+    "activity_trend": "stable",
+    "peak_activity_year": null,
+    "tech_evolution": []
+  },
+  "chunks": [],
+  "stats": {
+    "original_evidence_count": 1,
+    "items_dropped": 1,
+    "chunks_produced": 0,
+    "avg_chunk_length_chars": 0
+  }
+}

@@ -1,0 +1,2544 @@
+{
+  "schema_version": "1.1",
+  "username": "nayafia",
+  "preprocessed_at": "2026-04-24T14:22:21.178759+00:00",
+  "source_file": "C:\\Users\\I764176\\Documents\\University\\Semester 3\\LLM and Agents\\skill-mining\\data\\raw\\nayafia.json",
+  "historical_analysis": {
+    "commits_by_year": {
+      "2012": 1,
+      "2016": 16,
+      "2018": 33,
+      "2019": 35,
+      "2020": 7,
+      "2021": 7,
+      "2022": 2,
+      "2023": 3,
+      "2024": 5,
+      "2025": 4
+    },
+    "languages_by_year": {
+      "2016": [
+        {
+          "language": "HTML",
+          "bytes": 5369687,
+          "pct": 65.5
+        },
+        {
+          "language": "C",
+          "bytes": 1015618,
+          "pct": 12.4
+        },
+        {
+          "language": "C++",
+          "bytes": 800121,
+          "pct": 9.8
+        },
+        {
+          "language": "PHP",
+          "bytes": 566376,
+          "pct": 6.9
+        },
+        {
+          "language": "JavaScript",
+          "bytes": 109445,
+          "pct": 1.3
+        }
+      ],
+      "2017": [
+        {
+          "language": "Ruby",
+          "bytes": 3217,
+          "pct": 100.0
+        }
+      ],
+      "2018": [
+        {
+          "language": "Ruby",
+          "bytes": 20692,
+          "pct": 97.9
+        },
+        {
+          "language": "Shell",
+          "bytes": 452,
+          "pct": 2.1
+        }
+      ],
+      "2021": [
+        {
+          "language": "TypeScript",
+          "bytes": 30450,
+          "pct": 89.2
+        },
+        {
+          "language": "SCSS",
+          "bytes": 3689,
+          "pct": 10.8
+        }
+      ]
+    },
+    "activity_trend": "declining",
+    "peak_activity_year": 2019,
+    "tech_evolution": [
+      {
+        "period": "early (2016–2016)",
+        "dominant_languages": [
+          "HTML",
+          "C",
+          "C++",
+          "PHP",
+          "JavaScript"
+        ]
+      },
+      {
+        "period": "recent (2021–2021)",
+        "dominant_languages": [
+          "TypeScript",
+          "SCSS"
+        ]
+      },
+      {
+        "new_languages": [
+          "TypeScript",
+          "SCSS"
+        ],
+        "dropped_languages": [
+          "HTML",
+          "C",
+          "C++",
+          "PHP",
+          "JavaScript"
+        ]
+      }
+    ]
+  },
+  "chunks": [
+    {
+      "chunk_id": "ev_0001_c00",
+      "evidence_id": "ev_0001",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "A handy guide to financial support for open source",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "field": "description",
+        "language": null,
+        "stars": 7654,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0002_c00",
+      "evidence_id": "ev_0002",
+      "chunk_index": 0,
+      "total_chunks": 5,
+      "type": "skill",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "# A handy guide to financial support for open source.\n*\"I do open source work, how do I find funding?\"*\n\nThis document aims to provide an exhaustive list of all the ways that people get paid for open source work. Hopefully, projects and contributors will find this helpful in figuring out the best options for them.\n\nThe list below is roughly ordered from small to large. Each funding category links to several real examples (using topical articles or pages wherever possible instead of just a project's homepage.)\n\nThe categories are not mutually exclusive. For example, a project might have a foundation but also use crowdfunding to raise money. Someone else might do consulting and also have a donation button. Etc.\n\n---",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "field": "readme_excerpt",
+        "topics": [
+          "money",
+          "sponsorships",
+          "funding",
+          "content",
+          "lists",
+          "documentation",
+          "community"
+        ],
+        "chunk_index": 0,
+        "total_chunks": 5
+      }
+    },
+    {
+      "chunk_id": "ev_0002_c01",
+      "evidence_id": "ev_0002",
+      "chunk_index": 1,
+      "total_chunks": 5,
+      "type": "skill",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "project might have a foundation but also use crowdfunding to raise money. Someone else might do consulting and also have a donation button. Etc.\n\n---\n\n# Table of Contents\n1. [Donation button](#donation-button)\n2. [Bounties](#bounties)\n3. [Sponsorware](#sponsorware)\n4. [Crowdfunding (one-time)](#crowdfunding-one-time)\n5. [Crowdfunding (recurring)](#crowdfunding-recurring)\n6. [Books and merchandise](#books-and-merchandise)\n7. [Advertising & sponsorships](#advertising--sponsorships)\n8. [Get hired by a company to work on project](#get-hired-by-a-company-to-work-on-project)\n9. [Start a project while currently employed](#start-a-project-while-currently-employed)\n10. [Grants](#grants)\n11. [Consulting](#consulting)\n12. [Paid support](#paid-support)\n13. [SaaS](#saas)\n14. [Copyleft + paid license](#copyleft--paid-license)\n15. [Open core](#open-core)\n16. [Foundations & consortiums](#foundations--consortiums)\n17. [Venture capital](#venture-capital)\n18. [Restricted license](#restricted-license)",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "field": "readme_excerpt",
+        "topics": [
+          "money",
+          "sponsorships",
+          "funding",
+          "content",
+          "lists",
+          "documentation",
+          "community"
+        ],
+        "chunk_index": 1,
+        "total_chunks": 5
+      }
+    },
+    {
+      "chunk_id": "ev_0002_c02",
+      "evidence_id": "ev_0002",
+      "chunk_index": 2,
+      "total_chunks": 5,
+      "type": "skill",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "core)\n16. [Foundations & consortiums](#foundations--consortiums)\n17. [Venture capital](#venture-capital)\n18. [Restricted license](#restricted-license)\n\nAPPENDIX: [Contributing to this guide](#contributing-to-this-guide) // [License & attribution](#license-and-attribution) \nTRANSLATIONS: [Traditional Chinese(繁體中文)](https://github.com/jserv/lemonade-stand) // [Simplified Chinese(簡體中文)](https://github.com/wizicer/FinancialSupportForOpenSource) // [Italian(italiano)](https://github.com/dakk/lemonade-stand) // [Japanese(日本語)](https://github.com/fumikito/lemonade-stand) // [Russian(русский)](https://github.com/saviorand/lemonade-stand_ru) // [Bulgarian(български)](https://github.com/BlueButterflies/HowToPaidFromOpenSource-/tree/main)\n\n**\"personal effort\" notes when a funding effort was led by an individual, not a project*\n\n## Donation button\n\n*Stick a donation button on your site. Stripe and PayPal are examples of services you can use to accept donations.*\n\n#### Pros\n\n* Few strings attached\n* Little work involved: \"set it and forget it\"\n\n#### Cons",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "field": "readme_excerpt",
+        "topics": [
+          "money",
+          "sponsorships",
+          "funding",
+          "content",
+          "lists",
+          "documentation",
+          "community"
+        ],
+        "chunk_index": 2,
+        "total_chunks": 5
+      }
+    },
+    {
+      "chunk_id": "ev_0002_c03",
+      "evidence_id": "ev_0002",
+      "chunk_index": 3,
+      "total_chunks": 5,
+      "type": "skill",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "re examples of services you can use to accept donations.*\n\n#### Pros\n\n* Few strings attached\n* Little work involved: \"set it and forget it\"\n\n#### Cons\n\n* Usually not much money unless you have dedicated fundraising efforts\n* Need an entity to accept donations, which may take a fee for doing so. Examples are Stripe and PayPal.\n* To make donations tax-free for the person/organization who is donating, may need a legally charitable entity (in the United States, a 501(c)(3) nonprofit entity) to accept donations. [Software Freedom Conservancy](https://sfconservancy.org) and [NumFOCUS](https://www.numfocus.org) are examples. Harder for individuals or international donations to manage\n* Sometimes not clear who “deserves” money in a project or how it gets distributed. An entity like [OpenCollective](http://opencollective.com) may help with this.\n\n#### Case Studies\n\n* [ChatSecure](https://chatsecure.org/blog/sustainable-open-source-starts-with-you/)\n* [Git](https://git-scm.com/sfc)\n* [Transmission](https://www.transmissionbt.com/)\n* [Twisted](https://twistedmatrix.com/trac/wiki/WhyDonate)\n\n## Bounties\n\n*Sometimes, projects or companies post bounties for open source work (ex. \"fix this bug and collect $100\"). There are several websites, listed below, that help facilitate the posting and collection of bounties.*\n\n#### Pros\n\n* Open to community participation\n* Money is tied to doing specific work (more like paying for service than donations)\n* Especially popular for security work",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "field": "readme_excerpt",
+        "topics": [
+          "money",
+          "sponsorships",
+          "funding",
+          "content",
+          "lists",
+          "documentation",
+          "community"
+        ],
+        "chunk_index": 3,
+        "total_chunks": 5
+      }
+    },
+    {
+      "chunk_id": "ev_0002_c04",
+      "evidence_id": "ev_0002",
+      "chunk_index": 4,
+      "total_chunks": 5,
+      "type": "skill",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "to community participation\n* Money is tied to doing specific work (more like paying for service than donations)\n* Especially popular for security work\n\n#### Cons\n\n* Can create perverse incentives in a project (low quality PRs, distracting priorities)\n* Conflicts can arise over whether work fulfills a bounty\n* Usually not much m … [truncated]",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "field": "readme_excerpt",
+        "topics": [
+          "money",
+          "sponsorships",
+          "funding",
+          "content",
+          "lists",
+          "documentation",
+          "community"
+        ],
+        "chunk_index": 4,
+        "total_chunks": 5
+      }
+    },
+    {
+      "chunk_id": "ev_0003_c00",
+      "evidence_id": "ev_0003",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "Technologies/tools mentioned in README: api, cli, clojure, django, docker, framework, go, library, mysql, open source, python, rails, react, redis, rest, ruby, rust, vue",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0004_c00",
+      "evidence_id": "ev_0004",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "Repository topics: money, sponsorships, funding, content, lists, documentation, community",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "field": "topics",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0005_c00",
+      "evidence_id": "ev_0005",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "User is the owner of nayafia/lemonade-stand.",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "is_owner": true,
+        "stars": 7654,
+        "forks": 357,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0006_c00",
+      "evidence_id": "ev_0006",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "Owner of repo with 7654 stars",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "stars": 7654,
+        "forks": 357,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0007_c00",
+      "evidence_id": "ev_0007",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "Repo forked 357 times by others",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "stars": 7654,
+        "forks": 357,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0008_c00",
+      "evidence_id": "ev_0008",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "Active issue tracker with 16 open issues",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "stars": 7654,
+        "forks": 357,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0009_c00",
+      "evidence_id": "ev_0009",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "Sustained contributions over 9+ years (2016–2025)",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "stars": 7654,
+        "forks": 357,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0010_c00",
+      "evidence_id": "ev_0010",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "Commit (2016-06-16T01:45:56+00:00): Initial commit",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "sha": "a60fb2070a",
+        "date": "2016-06-16T01:45:56+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0011_c00",
+      "evidence_id": "ev_0011",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/lemonade-stand",
+      "content": "Commit (2025-03-06T22:16:10+00:00): Merge pull request #145 from nikelborm/patch-1",
+      "metadata": {
+        "repo": "nayafia/lemonade-stand",
+        "sha": "7d046a89d1",
+        "date": "2025-03-06T22:16:10+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0012_c00",
+      "evidence_id": "ev_0012",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/microgrants",
+      "content": "A list of microgrant programs for your good ideas",
+      "metadata": {
+        "repo": "nayafia/microgrants",
+        "field": "description",
+        "language": null,
+        "stars": 1681,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0013_c00",
+      "evidence_id": "ev_0013",
+      "chunk_index": 0,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/microgrants",
+      "content": "# A list of microgrant programs for your good ideas.\n\nI started a program called [Helium Grants](https://heliumgrant.org), which provided $1K no-strings-attached grants to encourage people to do the things they want to do (now on hiatus). In the process, I came across a bunch of other microgrant programs, which are documented below. All amounts are listed in USD unless otherwise specified.\n\nIf you're interested in starting your own microgrant program, I've also created [a few templates](/templates), which you're welcome to use.\n\n## 1517 Medici Project\nhttps://www.1517fund.com/medici-project \n_$1K grants for high school, college students, and dropouts to launch projects to make humanity better, backed by 1517 Fund._\n\n## 5x5 Night\nhttp://5x5night.com/ \n_5x5 Night takes place once a month. The community votes on the ideas that will be presented at the event. The selected creators explain a $5,000 step that will move the idea forward, and will meet people who can help._\n\n## Arraig Grants (formerly Éire Ventures)\nhttps://arraig.com/micro-grants/ \n_$500 microgrants for individuals and entrepreneurs focused on international markets, revenue/profitability, and an exploratory approach._\n\n## ACX Grants\nhttps://www.astralcodexten.com/p/acx-grants-results-2024 \n_Grants program, organized by Scott Alexander, for \"good research and good projects with a minimum of paperwork.\" Runs irregularly._",
+      "metadata": {
+        "repo": "nayafia/microgrants",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0013_c01",
+      "evidence_id": "ev_0013",
+      "chunk_index": 1,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/microgrants",
+      "content": "nts-results-2024 \n_Grants program, organized by Scott Alexander, for \"good research and good projects with a minimum of paperwork.\" Runs irregularly._\n\n## Atomic Fellowship\nhttps://www.gradcapital.in/atomicfellow/ \n_$5,000 no-strings-attached grant for students who want to work on science & engineering projects, with an option of an additional $40k investment by gradCapital._\n\n## Awesome Foundation\nhttp://www.awesomefoundation.org/ \n_The Awesome Foundation is a global community advancing the interest of awesome in the universe, $1000 at a time. Each fully autonomous chapter supports awesome projects through micro-grants, usually given out monthly._\n\n## Bed-Stuy Create & Connect Fund\nhttps://laundromatproject.org/create-connect-fund/ \n_A community micro-grant fund launched by The Laundromat Project providing $1,000 grants to seed and support the creative ideas and civic actions of artists, cultural practitioners, community builders, organizers, and makers in Bedford-Stuyvesant, Brooklyn (New York City)._\n\n## Bellare Grants\nhttps://bellaregrants.netlify.app/ \n_Bellare Grants awards up to 1 lakh INR per year to Indian initiatives in education, healthcare, research, and open source projects (hardware and software) through financial contributions._\n\n## cache money grants\nhttps://cachemoney.xyz/grants/ \n_$5K grants, paid in crypto (BTC, ETH, SOL), for \"hackers and/or artists who want to tackle interesting new ideas in the crypto space.\"_",
+      "metadata": {
+        "repo": "nayafia/microgrants",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0013_c02",
+      "evidence_id": "ev_0013",
+      "chunk_index": 2,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/microgrants",
+      "content": ".xyz/grants/ \n_$5K grants, paid in crypto (BTC, ETH, SOL), for \"hackers and/or artists who want to tackle interesting new ideas in the crypto space.\"_\n\n## Cactus Capital\nhttps://cactuscapital.org/ \n_$50-100 microgrants for student builders at any stage. Run by Nayel and Arhan, two high schoolers from northern Virginia._\n\n## Clarity Health Fund\nhttps://www.clarityhealthfund.org/ \n_$1,000 USD microgrants for progress in psychedelics and drug policy. Clarity Health Fund’s primary mission is to bring psychedelics into the wellness system. Larger grants are also available._\n\n## Da Vinci Fellowship\nhttps://davincifellowship.com/ \n_An equity-free grant of €150,000 given to exceptional engineers, scientists, and builders who want to shape the future of technology in Europe._\n\n## Echoing Green Fellowship\nhttps://echoinggreen.org/fellowship/ \n_A two-year, full-time fellowship for social sector leaders who challenge the status quo. $80,000 for individuals, $90,000 for partnerships, in addition to a flexible benefit stipend._\n\n## Emergent Ventures\nhttps://www.mercatus.org/emergentventures \n_Emergent Ventures, a new fellowship and grant program from the Mercatus Center, seeks to support entrepreneurs and brilliant minds with highly scalable, “zero to one” ideas for meaningfully improving society._\n\n## Forge Grants\nhttps://www.forgegrant.com/ \n_The Forge Grant Initiative p … [truncated]",
+      "metadata": {
+        "repo": "nayafia/microgrants",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 2,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0014_c00",
+      "evidence_id": "ev_0014",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/microgrants",
+      "content": "Technologies/tools mentioned in README: api, go, open source, rest, scala",
+      "metadata": {
+        "repo": "nayafia/microgrants",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0015_c00",
+      "evidence_id": "ev_0015",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/microgrants",
+      "content": "User is the owner of nayafia/microgrants.",
+      "metadata": {
+        "repo": "nayafia/microgrants",
+        "is_owner": true,
+        "stars": 1681,
+        "forks": 84,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0016_c00",
+      "evidence_id": "ev_0016",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/microgrants",
+      "content": "Owner of repo with 1681 stars",
+      "metadata": {
+        "repo": "nayafia/microgrants",
+        "stars": 1681,
+        "forks": 84,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0017_c00",
+      "evidence_id": "ev_0017",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/microgrants",
+      "content": "Repo forked 84 times by others",
+      "metadata": {
+        "repo": "nayafia/microgrants",
+        "stars": 1681,
+        "forks": 84,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0018_c00",
+      "evidence_id": "ev_0018",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/microgrants",
+      "content": "Sustained contributions over 7+ years (2018–2025)",
+      "metadata": {
+        "repo": "nayafia/microgrants",
+        "stars": 1681,
+        "forks": 84,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0019_c00",
+      "evidence_id": "ev_0019",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/microgrants",
+      "content": "Commit (2018-05-17T16:41:52+00:00): update readme",
+      "metadata": {
+        "repo": "nayafia/microgrants",
+        "sha": "c93bfb6b96",
+        "date": "2018-05-17T16:41:52+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0020_c00",
+      "evidence_id": "ev_0020",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/microgrants",
+      "content": "Commit (2025-07-14T16:21:35+00:00): Merge pull request #100 from rbnyng/patch-1",
+      "metadata": {
+        "repo": "nayafia/microgrants",
+        "sha": "5a16dc7e2f",
+        "date": "2025-07-14T16:21:35+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0021_c00",
+      "evidence_id": "ev_0021",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/contributing-template",
+      "content": "Template for writing your own contributing guide",
+      "metadata": {
+        "repo": "nayafia/contributing-template",
+        "field": "description",
+        "language": null,
+        "stars": 735,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0022_c00",
+      "evidence_id": "ev_0022",
+      "chunk_index": 0,
+      "total_chunks": 5,
+      "type": "skill",
+      "source": "repo:nayafia/contributing-template",
+      "content": "# Contributing Guides: A Template\n\nA template for writing your own contributing guide. Contributing guides are helpful documents that communicate how people can contribute to your open source project.\n\nThis template is meant to be a checklist to make sure you haven’t missed anything, rather than offering guidance on philosophy or approach. Your final guidelines may differ depending on your project and needs.\n\nI made this template to share what I learned after reviewing 40 open source projects of all sizes and their contributing guides (or lack thereof). Thanks to all the examples used in this template:",
+      "metadata": {
+        "repo": "nayafia/contributing-template",
+        "field": "readme_excerpt",
+        "topics": [
+          "template",
+          "checklist",
+          "content",
+          "community",
+          "open-source",
+          "documentation"
+        ],
+        "chunk_index": 0,
+        "total_chunks": 5
+      }
+    },
+    {
+      "chunk_id": "ev_0022_c01",
+      "evidence_id": "ev_0022",
+      "chunk_index": 1,
+      "total_chunks": 5,
+      "type": "skill",
+      "source": "repo:nayafia/contributing-template",
+      "content": "[Active Admin](https://github.com/activeadmin/activeadmin/blob/master/CONTRIBUTING.md), [Read The Docs](http://read-the-docs.readthedocs.org/en/latest/contribute.html), [Mustache.js](https://github.com/janl/mustache.js/#contributing), [Hoodie](https://github.com/hoodiehq/hoodie/blob/master/CONTRIBUTING.md), [Elasticsearch](https://github.com/elastic/elasticsearch/blob/master/CONTRIBUTING.md), [Devise](https://github.com/plataformatec/devise/blob/master/CONTRIBUTING.md), [Geocoder](https://github.com/alexreisner/geocoder#contributing), [Flask](https://github.com/pallets/flask/blob/master/CONTRIBUTING.rst), [Cucumber-ruby](https://github.com/cucumber/cucumber-ruby/blob/master/CONTRIBUTING.md), [Cookiecutter](https://github.com/audreyr/cookiecutter/blob/master/CONTRIBUTING.rst), [Celery](https://github.com/celery/celery/blob/master/CONTRIBUTING.rst), [Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md), [Django](https://github.com/django/django/blob/master/CONTRIBUTING.rst), [React](https://github.com/facebook/react/blob/master/CONTRIBUTING.md), [Require.js](https://requirejs.org/docs/contributing.html), [Node.js](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md), [Ember.js](https://github.com/emberjs/ember.js/blob/master/CONTRIBUTING.md), [Chef](https://github.com/chef/chef/blob/master/CONTRIBUTING.md), [Puppet](https://github.com/puppetlabs/puppet/blob/master/CONTRIBUTING.md), [Travis CI](https://github.com/travis-ci/travis-ci/blob/master/CONTRIBUTING.md)",
+      "metadata": {
+        "repo": "nayafia/contributing-template",
+        "field": "readme_excerpt",
+        "topics": [
+          "template",
+          "checklist",
+          "content",
+          "community",
+          "open-source",
+          "documentation"
+        ],
+        "chunk_index": 1,
+        "total_chunks": 5
+      }
+    },
+    {
+      "chunk_id": "ev_0022_c02",
+      "evidence_id": "ev_0022",
+      "chunk_index": 2,
+      "total_chunks": 5,
+      "type": "skill",
+      "source": "repo:nayafia/contributing-template",
+      "content": "et](https://github.com/puppetlabs/puppet/blob/master/CONTRIBUTING.md), [Travis CI](https://github.com/travis-ci/travis-ci/blob/master/CONTRIBUTING.md), [Express](https://github.com/expressjs/express/blob/master/Contributing.md), [Meteor](https://github.com/meteor/meteor/blob/devel/CONTRIBUTING.md), [Angular](https://github.com/angular/angular/blob/master/CONTRIBUTING.md), [StandardIssueLabels](https://github.com/wagenet/StandardIssueLabels#standardissuelabels)",
+      "metadata": {
+        "repo": "nayafia/contributing-template",
+        "field": "readme_excerpt",
+        "topics": [
+          "template",
+          "checklist",
+          "content",
+          "community",
+          "open-source",
+          "documentation"
+        ],
+        "chunk_index": 2,
+        "total_chunks": 5
+      }
+    },
+    {
+      "chunk_id": "ev_0022_c03",
+      "evidence_id": "ev_0022",
+      "chunk_index": 3,
+      "total_chunks": 5,
+      "type": "skill",
+      "source": "repo:nayafia/contributing-template",
+      "content": "Special thanks also to @mikeal and his post [\"Healthy Open Source\"](https://medium.com/the-javascript-collection/healthy-open-source-967fa8be7951) about Node.js's contribution policies for inspiring this project.\n\n# How to get started\nTo use this template, create CONTRIBUTING.md in the top level of your project, copy the template, and fill it out with your information.\n\nWhen you’re done, make sure people see your shiny new contributing guide:\n* **Link back to your contributing guide in your Readme.** Create a section called “Contributing” and link to CONTRIBUTING.md: *“Thanks for your interest in contributing! There are many ways to contribute to this project. Get started here (link).”*\n* **If you have a website for your project,** add a section called “Contributing” and link to your contributing guide. Or copy-paste your guide into the website and link to them in your CONTRIBUTING.md file.",
+      "metadata": {
+        "repo": "nayafia/contributing-template",
+        "field": "readme_excerpt",
+        "topics": [
+          "template",
+          "checklist",
+          "content",
+          "community",
+          "open-source",
+          "documentation"
+        ],
+        "chunk_index": 3,
+        "total_chunks": 5
+      }
+    },
+    {
+      "chunk_id": "ev_0022_c04",
+      "evidence_id": "ev_0022",
+      "chunk_index": 4,
+      "total_chunks": 5,
+      "type": "skill",
+      "source": "repo:nayafia/contributing-template",
+      "content": "on called “Contributing” and link to your contributing guide. Or copy-paste your guide into the website and link to them in your CONTRIBUTING.md file.\n\nFinally, a couple of tips to help you write:\n* **A friendly, welcoming voice will go a long way in making people feel excited to contribute to your project.** Don’t forget to explain terms or concepts that might be confusing to a newcomer.\n* **Use this as an opportunity to lay the ground rules that will make you happy.** The purpose of writing a guide is to make your life easier. It’s okay to say “XYZ pull requests are not accepted” or “I am busy, expect 1-2 weeks to review and merge your PR”. Clarifying your needs up front will make it much faster to review future contributions.\n* **Be concise.** Adding too much detail might actually make people less likely t … [truncated]",
+      "metadata": {
+        "repo": "nayafia/contributing-template",
+        "field": "readme_excerpt",
+        "topics": [
+          "template",
+          "checklist",
+          "content",
+          "community",
+          "open-source",
+          "documentation"
+        ],
+        "chunk_index": 4,
+        "total_chunks": 5
+      }
+    },
+    {
+      "chunk_id": "ev_0023_c00",
+      "evidence_id": "ev_0023",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/contributing-template",
+      "content": "Technologies/tools mentioned in README: angular, django, elasticsearch, express, flask, go, java, javascript, open source, react, rest, ruby",
+      "metadata": {
+        "repo": "nayafia/contributing-template",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0024_c00",
+      "evidence_id": "ev_0024",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/contributing-template",
+      "content": "Repository topics: template, checklist, content, community, open-source, documentation",
+      "metadata": {
+        "repo": "nayafia/contributing-template",
+        "field": "topics",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0025_c00",
+      "evidence_id": "ev_0025",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/contributing-template",
+      "content": "User is the owner of nayafia/contributing-template.",
+      "metadata": {
+        "repo": "nayafia/contributing-template",
+        "is_owner": true,
+        "stars": 735,
+        "forks": 280,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0026_c00",
+      "evidence_id": "ev_0026",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/contributing-template",
+      "content": "Owner of repo with 735 stars",
+      "metadata": {
+        "repo": "nayafia/contributing-template",
+        "stars": 735,
+        "forks": 280,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0027_c00",
+      "evidence_id": "ev_0027",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/contributing-template",
+      "content": "Repo forked 280 times by others",
+      "metadata": {
+        "repo": "nayafia/contributing-template",
+        "stars": 735,
+        "forks": 280,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0028_c00",
+      "evidence_id": "ev_0028",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/contributing-template",
+      "content": "Sustained contributions over 4+ years (2016–2020)",
+      "metadata": {
+        "repo": "nayafia/contributing-template",
+        "stars": 735,
+        "forks": 280,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0029_c00",
+      "evidence_id": "ev_0029",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/contributing-template",
+      "content": "Commit (2016-04-22T15:14:51+00:00): Initial commit",
+      "metadata": {
+        "repo": "nayafia/contributing-template",
+        "sha": "d19629f16b",
+        "date": "2016-04-22T15:14:51+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0030_c00",
+      "evidence_id": "ev_0030",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/contributing-template",
+      "content": "Commit (2020-01-06T19:59:28+00:00): Merge pull request #16 from valerybriz/add_spanish",
+      "metadata": {
+        "repo": "nayafia/contributing-template",
+        "sha": "ab3044b0b5",
+        "date": "2020-01-06T19:59:28+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0031_c00",
+      "evidence_id": "ev_0031",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/awesome-maintainers",
+      "content": "Talks, blog posts, and interviews about the experience of being an open source maintainer",
+      "metadata": {
+        "repo": "nayafia/awesome-maintainers",
+        "field": "description",
+        "language": null,
+        "stars": 1161,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0032_c00",
+      "evidence_id": "ev_0032",
+      "chunk_index": 0,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:nayafia/awesome-maintainers",
+      "content": "> Talks, blog posts, and interviews about the experience of being an open source maintainer",
+      "metadata": {
+        "repo": "nayafia/awesome-maintainers",
+        "field": "readme_excerpt",
+        "topics": [
+          "awesome",
+          "awesome-list"
+        ],
+        "chunk_index": 0,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0032_c01",
+      "evidence_id": "ev_0032",
+      "chunk_index": 1,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:nayafia/awesome-maintainers",
+      "content": "* [@alyssais](https://github.com/alyssais), [Homebrew](https://github.com/Homebrew/brew)\n * \"Why I helped maintain Homebrew\" ([video](https://vimeo.com/276832570))\n* [@amjith](https://github.com/amjith), [pgcli](https://github.com/dbcli/pgcli)\n * \"Maintainer Stories: Amjith Ramanujam\" ([video](https://www.youtube.com/watch?v=paS09pRV8bY))\n* [@antirez](https://github.com/antirez), [Redis](https://github.com/antirez/redis)\n * \"The struggles of an open source maintainer\" ([post](http://antirez.com/news/129))\n* [@ariya](https://github.com/ariya), [PhantomJS](https://github.com/ariya/phantomjs)\n * \"Maintainer Stories: Ariya Hidayat\" ([interview](https://github.com/open-source/stories/ariya))\n* [@ashfurrow](https://github.com/ashfurrow), [Moya](https://github.com/moya/moya)\n * \"Building Open Source Communities\" ([slides](https://speakerdeck.com/ashfurrow/building-open-source-communities))\n* [@bbatsov](https://github.com/bbatsov), [Rubocop](https://github.com/rubocop-hq/rubocop)\n * \"Interview with Bozhidar Batsov: The Creator’s Thoughts on RuboCop and the Ruby Style Guide\" ([post](https://blog.sideci.com/interview-with-bozhidar-batsov-99b049b6fd6a))\n* [@boneskull](https://github.com/boneskull), [Mocha](https://github.com/mochajs/mocha)\n * \"Maintaining a Popular Project and Managing Burnout\" ([interview](https://changelog.com/rfc/15))\n* [@brettcannon](https://github.com/brettcannon), [Python](https://github.com/python)\n * \"The give and take of open source\" ([video](https://www.youtub",
+      "metadata": {
+        "repo": "nayafia/awesome-maintainers",
+        "field": "readme_excerpt",
+        "topics": [
+          "awesome",
+          "awesome-list"
+        ],
+        "chunk_index": 1,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0032_c02",
+      "evidence_id": "ev_0032",
+      "chunk_index": 2,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:nayafia/awesome-maintainers",
+      "content": " [@brettcannon](https://github.com/brettcannon), [Python](https://github.com/python)\n * \"The give and take of open source\" ([video](https://www.youtube.com/watch?v=y19s6vPpGXA))\n * \"Maintainer Stories: Brett Cannon\" ([interview](https://github.com/open-source/stories/brettcannon))\n * \"Setting expectations for open source participation\" ([post](https://snarky.ca/setting-expectations-for-open-source-participation/))\n * \"Why I took October off from OSS volunteering\" ([post](https://snarky.ca/why-i-took-october-off-from-oss-volunteering/))\n* [@brianc](https://github.com/brianc), [node-postgres](https://github.com/brianc/node-postgres)\n * \"Creating and maintaining node-postgres solo\" ([interview](https://sourcesort.com/interview/brian-carlson-on-creating-and-maintaing-node-pg-solo))\n* [@BurntSushi](https://github.com/BurntSushi), [Rust libraries](https://github.com/BurntSushi?tab=repositories)\n * \"My FOSS Story\" ([post](https://blog.burntsushi.net/foss/))\n* [@ceejbot](https://github.com/ceejbot), [Entropic](https://github.com/entropic-dev/entropic), [npm](https://github.com/npm/cli)\n * \"The economics of open source\" ([video](https://www.youtube.com/watch?v=MO8hZlgK5zc), [post](https://github.com/ceejbot/economics-of-package-management/blob/master/essay.md))\n* [@colcarroll](https://github.com/ColCarroll), [PyMC3](https://github.com/pymc-devs/pymc3)\n * \"Two Years of Open Source\" ([slides/post](https://colcarroll.github.io/open_source_pa/))\n* [@ctb](https://github.com/ctb) & [@mr-c](",
+      "metadata": {
+        "repo": "nayafia/awesome-maintainers",
+        "field": "readme_excerpt",
+        "topics": [
+          "awesome",
+          "awesome-list"
+        ],
+        "chunk_index": 2,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0032_c03",
+      "evidence_id": "ev_0032",
+      "chunk_index": 3,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:nayafia/awesome-maintainers",
+      "content": "mc-devs/pymc3)\n * \"Two Years of Open Source\" ([slides/post](https://colcarroll.github.io/open_source_pa/))\n* [@ctb](https://github.com/ctb) & [@mr-c](https://github.com/mr-c), [khmer](https://github.com/dib-lab/khmer)\n * \"Channeling Community Contributions to Scientific Software: A Sprint Experience\" ([paper](https://doi.org/10.5334/jors.96))\n * \"Walking the Talk: Adopting and Adapting Sustainable Scientific Software Development processes in a Small Biology Lab\" ([paper](http://dx.doi.org/10.5334/jors.35))\n* [@danielbachhuber](https://github.com/danielbachhuber), [wp-cli](https://github.com/wp-cli/wp-cli)\n * \"Experiments and the Economics of Open Source\" ([interview](https://changelog.com/rfc/17))\n * \"My condolences, you're now the maintainer of a popular open source project\" ([video](https://www.youtube.com/watch?v=ll_lmDZUD4o), [post](https://danielbachhuber.com/2016/06/26/my-condolences-youre-now-the-maintainer-of-a-popular-open-source-project/))\n* [@danvet](https://github.com/danvet), [Linux drm-intel](https://cgit.freedesktop.org/drm-intel)\n * \"Maintainers Don't Scale\" ([video](ht … [truncated]",
+      "metadata": {
+        "repo": "nayafia/awesome-maintainers",
+        "field": "readme_excerpt",
+        "topics": [
+          "awesome",
+          "awesome-list"
+        ],
+        "chunk_index": 3,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0033_c00",
+      "evidence_id": "ev_0033",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/awesome-maintainers",
+      "content": "Technologies/tools mentioned in README: ansible, aws, cli, clojure, cloud, django, go, kubernetes, open source, python, rails, react, redis, ruby, rust, vue",
+      "metadata": {
+        "repo": "nayafia/awesome-maintainers",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0034_c00",
+      "evidence_id": "ev_0034",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/awesome-maintainers",
+      "content": "Repository topics: awesome, awesome-list",
+      "metadata": {
+        "repo": "nayafia/awesome-maintainers",
+        "field": "topics",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0035_c00",
+      "evidence_id": "ev_0035",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/awesome-maintainers",
+      "content": "User is the owner of nayafia/awesome-maintainers.",
+      "metadata": {
+        "repo": "nayafia/awesome-maintainers",
+        "is_owner": true,
+        "stars": 1161,
+        "forks": 61,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0036_c00",
+      "evidence_id": "ev_0036",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/awesome-maintainers",
+      "content": "Owner of repo with 1161 stars",
+      "metadata": {
+        "repo": "nayafia/awesome-maintainers",
+        "stars": 1161,
+        "forks": 61,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0037_c00",
+      "evidence_id": "ev_0037",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/awesome-maintainers",
+      "content": "Repo forked 61 times by others",
+      "metadata": {
+        "repo": "nayafia/awesome-maintainers",
+        "stars": 1161,
+        "forks": 61,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0038_c00",
+      "evidence_id": "ev_0038",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/awesome-maintainers",
+      "content": "Sustained contributions over 2+ years (2018–2020)",
+      "metadata": {
+        "repo": "nayafia/awesome-maintainers",
+        "stars": 1161,
+        "forks": 61,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0039_c00",
+      "evidence_id": "ev_0039",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/awesome-maintainers",
+      "content": "Commit (2018-06-21T02:02:46+00:00): update wording",
+      "metadata": {
+        "repo": "nayafia/awesome-maintainers",
+        "sha": "e196d8dac3",
+        "date": "2018-06-21T02:02:46+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0040_c00",
+      "evidence_id": "ev_0040",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/awesome-maintainers",
+      "content": "Commit (2020-01-21T22:50:39+00:00): Merge pull request #57 from pgbovine/master",
+      "metadata": {
+        "repo": "nayafia/awesome-maintainers",
+        "sha": "df4bd599ec",
+        "date": "2020-01-21T22:50:39+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0041_c00",
+      "evidence_id": "ev_0041",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/proposals-analysis",
+      "content": "Funding proposal data for Zcash, Monero, Dash",
+      "metadata": {
+        "repo": "nayafia/proposals-analysis",
+        "field": "description",
+        "language": null,
+        "stars": 13,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0042_c00",
+      "evidence_id": "ev_0042",
+      "chunk_index": 0,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:nayafia/proposals-analysis",
+      "content": "# Decentralized funding? An analysis of three programs\n\nData that goes with [this post](https://nadiaeghbal.com/grant-programs), an analysis of community grant programs for three open source projects (Zcash, Monero, Dash).\n\nEach folder has a .csv file and readme with notes on methodology and a key.\n\nI coded proposal *type* and *type2* into the following categories. They're not perfect, but they are mine:\n\n* *application*: Any downstream project\n* *community*: Any activity intended to strengthen existing users of the project\n* *conference*: Conference travel (not sponsoring a conference, that goes into *marketing*)\n* *core*: Upstream work required to keep the project running (i.e. maintenance work)\n* *design*: Any design work (UX, UI improvements, graphic design, etc)\n* *documentation*: Improving project documentation\n* *feature*: Building a new feature for the core project\n* *governance*: Proposals about project governance, determined by voting (Dash only)\n* *marketing*: Any activity intended to bring new users into the project or build awareness\n* *research*: Research intended to answer questions related to the project\n* *security*: Any activity explicitly focused on improving security of the code\n* *translation*: Translation into a foreign language\n\nFeedback or questions can be directed to [@nayafia](https://twitter.com/nayafia)\n\n# Contributing",
+      "metadata": {
+        "repo": "nayafia/proposals-analysis",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0042_c01",
+      "evidence_id": "ev_0042",
+      "chunk_index": 1,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:nayafia/proposals-analysis",
+      "content": "* *translation*: Translation into a foreign language\n\nFeedback or questions can be directed to [@nayafia](https://twitter.com/nayafia)\n\n# Contributing\n\nData collected July 2018 (see individual readmes for more info). I'll update when Zcash's Q018Q2 awards are announced, but otherwise don't plan to update or change this data set. If you'd like to add more data however, or if you spot any errors, feel free to open a pull request.\n\n# License and attribution\n\nThis data is available under the [Creative Commons CC0 1.0 License](https://creativecommons.org/publicdomain/zero/1.0/), meaning you are free to use it for any purpose, commercial or non-commercial, without any attribution back to me (public domain). If you do use it, I'd love to hear about it! (Find me here: [@nayafia](https://twitter.com/nayafia)) But you are in no way required to do so.",
+      "metadata": {
+        "repo": "nayafia/proposals-analysis",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0043_c00",
+      "evidence_id": "ev_0043",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/proposals-analysis",
+      "content": "Technologies/tools mentioned in README: go, open source",
+      "metadata": {
+        "repo": "nayafia/proposals-analysis",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0044_c00",
+      "evidence_id": "ev_0044",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/proposals-analysis",
+      "content": "User is the owner of nayafia/proposals-analysis.",
+      "metadata": {
+        "repo": "nayafia/proposals-analysis",
+        "is_owner": true,
+        "stars": 13,
+        "forks": 1,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0045_c00",
+      "evidence_id": "ev_0045",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/proposals-analysis",
+      "content": "Owner of repo with 13 stars",
+      "metadata": {
+        "repo": "nayafia/proposals-analysis",
+        "stars": 13,
+        "forks": 1,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0046_c00",
+      "evidence_id": "ev_0046",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/proposals-analysis",
+      "content": "Commit (2018-08-15T00:14:42+00:00): add everything",
+      "metadata": {
+        "repo": "nayafia/proposals-analysis",
+        "sha": "da49d49da2",
+        "date": "2018-08-15T00:14:42+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0047_c00",
+      "evidence_id": "ev_0047",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/proposals-analysis",
+      "content": "Commit (2018-08-15T17:05:36+00:00): add link",
+      "metadata": {
+        "repo": "nayafia/proposals-analysis",
+        "sha": "ab00cd88c6",
+        "date": "2018-08-15T17:05:36+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0048_c00",
+      "evidence_id": "ev_0048",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/user-support",
+      "content": "User support data for the top 100 GitHub projects by issue volume",
+      "metadata": {
+        "repo": "nayafia/user-support",
+        "field": "description",
+        "language": null,
+        "stars": 15,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0049_c00",
+      "evidence_id": "ev_0049",
+      "chunk_index": 0,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/user-support",
+      "content": "# User Support System Analysis\n\nData that goes with [\"Understanding user support systems in open source\"](https://nadiaeghbal.com/user-support), an analysis of user support systems in open source.\n\nI used BigQuery’s [GitHub data set](https://cloud.google.com/bigquery/public-data/github) to pull a list of top open source projects (public + OSS license detected) on GitHub, by most issues opened in the most recent year (8/29/17-8/29/18). Of these, I removed a bunch of noisy data to end up with a “top 100” list.\n\nSome criteria for how I cleaned up the data:\n* Only looked at projects with >2 contributors\n* Only looked at software projects (not content)\n* Only looked at English-speaking projects, so I could understand them for the analysis\n* Archived repositories were removed\n* Mirrors of other issue trackers were removed\n* Junk repositories and personal projects were removed\n\nAfter getting a top 100 list, I went through each project and collected data about their support systems. This information was collected and recorded between September 5th-10th, 2018.",
+      "metadata": {
+        "repo": "nayafia/user-support",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0049_c01",
+      "evidence_id": "ev_0049",
+      "chunk_index": 1,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/user-support",
+      "content": "ent through each project and collected data about their support systems. This information was collected and recorded between September 5th-10th, 2018.\n\nSome information on criteria and caveats:\n* I only included a channel if the project officially named it as a *support* channel. Ex. A project might have a mailing list, but if it's used for general chatter, I didn't count it.\n* Dedicated security channels (like HackerOne, or an email address) weren't included, as they're a specialized form of support\n* An absolute count of support channels doesn't reflect the relative use and popularity of those channels. Ex. A project might list Stack Overflow and Gitter as channels, but hardly ever use the latter. I still counted both.\n* `async_count` includes `gh_issues`\n* `mailing_list` includes mailing list groups (like Google Groups and groups.io)\n\nSpecial thanks to [Raúl Kripalani](https://github.com/raulk) for the BigQuery help.\n\nFeedback or questions can be directed to [@nayafia](https://twitter.com/nayafia)\n\n# Contributing\n\nI don't plan to update or change this data set. If you'd like to add more data however, or if you spot any errors, feel free to open a [pull request](link).\n\n# License and attribution",
+      "metadata": {
+        "repo": "nayafia/user-support",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0049_c02",
+      "evidence_id": "ev_0049",
+      "chunk_index": 2,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/user-support",
+      "content": "this data set. If you'd like to add more data however, or if you spot any errors, feel free to open a [pull request](link).\n\n# License and attribution\n\nThis data is available under the [Creative Commons CC0 1.0 License](https://creativecommons.org/publicdomain/zero/1.0/), meaning you are free to use it for any purpose, commercial or non-commercial, without any attribution back to me (public domain). If you do use it, I'd love to hear about it! (Find me here: [@nayafia](https://twitter.com/nayafia)) But you are in no way required to do so.",
+      "metadata": {
+        "repo": "nayafia/user-support",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 2,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0050_c00",
+      "evidence_id": "ev_0050",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/user-support",
+      "content": "Technologies/tools mentioned in README: cloud, go, open source",
+      "metadata": {
+        "repo": "nayafia/user-support",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0051_c00",
+      "evidence_id": "ev_0051",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/user-support",
+      "content": "User is the owner of nayafia/user-support.",
+      "metadata": {
+        "repo": "nayafia/user-support",
+        "is_owner": true,
+        "stars": 15,
+        "forks": 1,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0052_c00",
+      "evidence_id": "ev_0052",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/user-support",
+      "content": "Owner of repo with 15 stars",
+      "metadata": {
+        "repo": "nayafia/user-support",
+        "stars": 15,
+        "forks": 1,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0053_c00",
+      "evidence_id": "ev_0053",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/user-support",
+      "content": "Commit (2018-09-27T15:20:41+00:00): add everything",
+      "metadata": {
+        "repo": "nayafia/user-support",
+        "sha": "1d988581b6",
+        "date": "2018-09-27T15:20:41+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0054_c00",
+      "evidence_id": "ev_0054",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/user-support",
+      "content": "Commit (2018-09-27T15:22:45+00:00): update link",
+      "metadata": {
+        "repo": "nayafia/user-support",
+        "sha": "81f54ebb51",
+        "date": "2018-09-27T15:22:45+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0055_c00",
+      "evidence_id": "ev_0055",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/nayafia",
+      "content": "I spent a bunch of time writing about open source developers:\n* [Working in Public: The Making and Maintenance of Open Source Software](https://www.amazon.com/dp/0578675862/) (Stripe Press): How modern open source works and drawing parallels to the creator economy\n* [Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure](https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/): Open source code as a form of public infrastructure that requires maintenance\n* Some of the repos you'll see here ([lemonade-stand](https://github.com/nayafia/lemonade-stand), [awesome-maintainers](https://github.com/nayafia/awesome-maintainers), [contributing-template](https://github.com/nayafia/contributing-template), [opensource.guide](https://github.com/github/opensource.guide))\n* [More stuff](https://nadia.xyz/oss), if you're into it",
+      "metadata": {
+        "repo": "nayafia/nayafia",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0056_c00",
+      "evidence_id": "ev_0056",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/nayafia",
+      "content": "Technologies/tools mentioned in README: open source",
+      "metadata": {
+        "repo": "nayafia/nayafia",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0057_c00",
+      "evidence_id": "ev_0057",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/nayafia",
+      "content": "User is the owner of nayafia/nayafia.",
+      "metadata": {
+        "repo": "nayafia/nayafia",
+        "is_owner": true,
+        "stars": 7,
+        "forks": 1,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0058_c00",
+      "evidence_id": "ev_0058",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "leadership",
+      "source": "repo:nayafia/nayafia",
+      "content": "Sustained contributions over 3+ years (2020–2023)",
+      "metadata": {
+        "repo": "nayafia/nayafia",
+        "stars": 7,
+        "forks": 1,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0059_c00",
+      "evidence_id": "ev_0059",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/nayafia",
+      "content": "Commit (2020-09-02T18:51:39+00:00): Initial commit",
+      "metadata": {
+        "repo": "nayafia/nayafia",
+        "sha": "27f6137e12",
+        "date": "2020-09-02T18:51:39+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0060_c00",
+      "evidence_id": "ev_0060",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/nayafia",
+      "content": "Commit (2023-05-08T14:09:16+00:00): whoops dropped the url",
+      "metadata": {
+        "repo": "nayafia/nayafia",
+        "sha": "1e0e124140",
+        "date": "2023-05-08T14:09:16+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0061_c00",
+      "evidence_id": "ev_0061",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/archive-test",
+      "content": "User is the owner of nayafia/archive-test.",
+      "metadata": {
+        "repo": "nayafia/archive-test",
+        "is_owner": true,
+        "stars": 2,
+        "forks": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0062_c00",
+      "evidence_id": "ev_0062",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/awesome",
+      "content": ":sunglasses: Curated list of awesome lists",
+      "metadata": {
+        "repo": "nayafia/awesome",
+        "field": "description",
+        "language": null,
+        "stars": 16,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0063_c00",
+      "evidence_id": "ev_0063",
+      "chunk_index": 0,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/awesome",
+      "content": "✨ Prelaunching the Awesome Weekly newsletter! ✨\n Vote it up on Product Hunt\n\n-->\n\nWhat is an awesome list?&nbsp;&nbsp;&nbsp;\n\tContribution guide&nbsp;&nbsp;&nbsp;\n\tCreating a list&nbsp;&nbsp;&nbsp;\n\tTwitter&nbsp;&nbsp;&nbsp;\n\tStickers & t-shirts\n\n🐦\n\tWe now have a Twitter account: @awesome__re\n\t\n\tFollow for updates on new lists, community news, and other awesome stuff.\n\nSupport my work with the Awesome project and open source in general\n\n-->\n\n🌈Convert videos to high-quality GIFs with this free & open source Mac app I made\n\nJust type awesome.re to go here. Check out my blog and follow me on Twitter.\n\n## Contents\n\n- [Platforms](#platforms)\n- [Programming Languages](#programming-languages)\n- [Front-End Development](#front-end-development)\n- [Back-End Development](#back-end-development)\n- [Computer Science](#computer-science)\n- [Big Data](#big-data)\n- [Theory](#theory)\n- [Books](#books)\n- [Editors](#editors)\n- [Gaming](#gaming)\n- [Development Environment](#development-environment)\n- [Entertainment](#entertainment)\n- [Databases](#databases)\n- [Media](#media)\n- [Learn](#learn)\n- [Security](#security)\n- [Content Management Systems](#content-management-systems)\n- [Hardware](#hardware)\n- [Business](#business)\n- [Work](#work)\n- [Networking](#networking)\n- [Decentralized Systems](#decentralized-systems)\n- [Miscellaneous](#miscellaneous)\n\n## Platforms",
+      "metadata": {
+        "repo": "nayafia/awesome",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0063_c01",
+      "evidence_id": "ev_0063",
+      "chunk_index": 1,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/awesome",
+      "content": "- [Node.js](https://github.com/sindresorhus/awesome-nodejs) - JavaScript runtime built on Chrome's V8 JavaScript engine. - [Frontend Development](https://github.com/dypsilon/frontend-dev-bookmarks)\n- [iOS](https://github.com/vsouza/awesome-ios) - Mobile operating system for Apple phones and tablets. - [Android](https://github.com/JStumpp/awesome-android)\n- [IoT & Hybrid Apps](https://github.com/weblancaster/awesome-IoT-hybrid)\n- [Electron](https://github.com/sindresorhus/awesome-electron) - Cross-platform native desktop apps using JavaScript/HTML/CSS. - [Cordova](https://github.com/busterc/awesome-cordova) - JavaScript API for hybrid apps. - [React Native](https://github.com/jondot/awesome-react-native)\n- [Xamarin](https://github.com/benoitjadinon/awesome-xamarin) - Mobile app development IDE, testing, and distribution. - [Linux](https://github.com/aleksandar-todorovic/awesome-linux)\n\t- [Containers](https://github.com/Friz-zy/awesome-linux-containers)\n- [macOS](https://github.com/iCHAIT/awesome-macOS)\n\t- [Command-Line](https://github.com/herrbischoff/awesome-osx-command-line)\n\t- [Screensavers](https://github.com/aharris88/awesome-macos-screensavers)\n- [watchOS](https://github.com/yenchenlin/awesome-watchos) - Operating system for the Apple Watch.",
+      "metadata": {
+        "repo": "nayafia/awesome",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0063_c02",
+      "evidence_id": "ev_0063",
+      "chunk_index": 2,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/awesome",
+      "content": "- [JVM](https://github.com/deephacks/awesome-jvm)\n- [Salesforce](https://github.com/mailtoharshit/awesome-salesforce)\n- [Amazon Web Services](https://github.com/donnemartin/awesome-aws)\n- [Windows](https://github.com/Awesome-Windows/Awesome)\n- [IPFS](https://github.com/ipfs/awesome-ipfs) - P2P hypermedia protocol. - [Fuse](https://github.com/vi … [truncated]",
+      "metadata": {
+        "repo": "nayafia/awesome",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 2,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0064_c00",
+      "evidence_id": "ev_0064",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/awesome",
+      "content": "Technologies/tools mentioned in README: angular, api, aws, c++, cli, clojure, cloud, deep learning, django, docker, elixir, express, flask, framework, go, graphql, haskell, java, javascript, kotlin, kubernetes, library, machine learning, microservices, mongodb, mysql, neural, next.js, open source, php, postgresql, python, rails, react, rest, ruby, rust, scala, serverless, spring, swift, tensorflow, terraform, testing, vue",
+      "metadata": {
+        "repo": "nayafia/awesome",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0065_c00",
+      "evidence_id": "ev_0065",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/awesome",
+      "content": "User forked nayafia/awesome from sindresorhus/awesome, indicating contributor role.",
+      "metadata": {
+        "repo": "nayafia/awesome",
+        "is_owner": false,
+        "forked_from": "sindresorhus/awesome",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0066_c00",
+      "evidence_id": "ev_0066",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/Nemea-Framework",
+      "content": "Nemea framework is the heart of the Nemea system. It contains implementation of common communication interfaces, UniRec data format and useful datastructures and algorithms.",
+      "metadata": {
+        "repo": "nayafia/Nemea-Framework",
+        "field": "description",
+        "language": "HTML",
+        "stars": 2,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0067_c00",
+      "evidence_id": "ev_0067",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/Nemea-Framework",
+      "content": "Nemea Framework\n===============\n\nThis repository contains base libraries for a [Nemea system](https://github.com/CESNET/Nemea).\nThe Nemea system is a modular system that consists of \nindependent modules for network traffic analysis and anomaly\ndetection.\n\nThe framework consists of:\n * [libtrap](./libtrap) -- communication interface for messages transfer between Nemea modules\n * [UniRec](./unirec) -- flexible and efficient data format of flow-records\n * [common](./common) -- usefull common functions and data structures\n * [python](./python) -- python wrapper for libtrap and UniRec that allows development of nemea modules in python\n * [pycommon](./pycommon) -- python common modules and methods, there is currently a support of alerts creation in the [IDEA](https://idea.cesnet.cz/en/index) format that can be stored into MongoDB or sent to the [Warden](https://wardenw.cesnet.cz/) incident sharing system\n\nInstallation\n============\n\nThis repository is usually used as a git submodule of https://github.com/CESNET/Nemea\nHowever, it can be installed independently using:\n\n```\n./bootstrap.sh\n./configure\nmake\nsudo make install\n```\n\nFor information about configuration options see:\n```\n./configure --help\n```\n\nPython parts must be installed separately when needed.\nIt can be done using:\n\n```\ncd python; sudo python setup.py install\n```\nand\n```\ncd pycommon; sudo python setup.py install\n```\n\nProject status:\n===============",
+      "metadata": {
+        "repo": "nayafia/Nemea-Framework",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0068_c00",
+      "evidence_id": "ev_0068",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/Nemea-Framework",
+      "content": "Technologies/tools mentioned in README: framework, go, mongodb, python",
+      "metadata": {
+        "repo": "nayafia/Nemea-Framework",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0069_c00",
+      "evidence_id": "ev_0069",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/Nemea-Framework",
+      "content": "Languages used: HTML (78.3%), C (14.4%), JavaScript (1.5%), M4 (1.3%), CSS (1.3%), C++ (1.2%), Shell (0.8%), Python (0.6%), Objective-C (0.4%), Makefile (0.2%)",
+      "metadata": {
+        "repo": "nayafia/Nemea-Framework",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0070_c00",
+      "evidence_id": "ev_0070",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/Nemea-Framework",
+      "content": "User forked nayafia/Nemea-Framework from CESNET/Nemea-Framework, indicating contributor role.",
+      "metadata": {
+        "repo": "nayafia/Nemea-Framework",
+        "is_owner": false,
+        "forked_from": "CESNET/Nemea-Framework",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0071_c00",
+      "evidence_id": "ev_0071",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/open-funding",
+      "content": "A guide for researching ways of funding full time open source projects.",
+      "metadata": {
+        "repo": "nayafia/open-funding",
+        "field": "description",
+        "language": null,
+        "stars": 15,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0072_c00",
+      "evidence_id": "ev_0072",
+      "chunk_index": 0,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:nayafia/open-funding",
+      "content": "## Background\n\nMore individuals, organizations and companies are starting to realize the potential of open source. An important question is obviously how projects can be funded to enable individuals to subsist and work on open source full time. This document aims to be an open guide to grant funding of open source projects.\n\n## A list of funding opportunities\n\n### Horizon 2020\n\nhttp://ec.europa.eu/programmes/horizon2020/en/what-horizon-2020\n\nHorizon 2020 is the biggest EU Research and Innovation programme ever with nearly €80 billion of funding available over between 2014 and 2020. You need a consortium to apply. See Holger Krekels talk at 32c3 (link below) for a more detailed description.\n\n### InnovationsFonden\n\nhttp://innovationsfonden.dk/da/faq-innobooster\n\nTODO short description\n\n### InternetFonden\n\nhttps://www.internetfonden.se/om/\n\nInternetFonden is a Swedish fund run by *Internetstiftelsen i Sverige* or IIS, which administer the Swedish `.se` TLD. Parts of the earnings from selling .se domains goes to various projects that benefit the development of internet in Sweden and one of them is InternetFonden. Since 2004 the fund has financed [323 projects](https://www.internetfonden.se/projekt/) for a total of 65M SEK (7.7M USD/7.1M EUR/5.2M GBP). Applicants can be companies, organizations or private people as long as they have a Swedish organization number or social security number.\n\n## A list of funded projects\n\n### DAT\n\nhttp://dat-data.com/\n\nTODO short description",
+      "metadata": {
+        "repo": "nayafia/open-funding",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0072_c01",
+      "evidence_id": "ev_0072",
+      "chunk_index": 1,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:nayafia/open-funding",
+      "content": "hey have a Swedish organization number or social security number.\n\n## A list of funded projects\n\n### DAT\n\nhttp://dat-data.com/\n\nTODO short description\n\n### OPENCARE\n\nhttp://edgeryders.eu/en/opencare/welcome-to-opencare\n\nOPENCARE is a project trying to figure out ways of combining modern science and technology with communities. It got funded 1.6M EUR by Horizon 2020. You can read their proposal [here](http://edgeryders.eu/sites/default/files/OpenCare%20%E2%80%93%20final.pdf).\n\n### GHOST\n\nhttps://ghost.org/about/\n\nGhost is an open source blogging platform. The project is run and organized by The Ghost Foundation, which is a non-profit organization. Ghost is completely free to use if you host it yourself. You can pay for it if you need help with hosting your blog. This is what funds further development and The Ghost Foundation calls this *Sustainable Open Source*.\n\n## A list of rejected projects\n\n## Also see\n\n- [Holger Krekel at 32c3 - Hacking EU funding for a decentralizing FOSS project](https://media.ccc.de/v/32c3-7300-hacking_eu_funding_for_a_decentralizing_foss_project#video&t=790)\n* [Paying the Piper](https://github.com/pybee/paying-the-piper)\n\n## License\n\nAll content submitted to this project is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.",
+      "metadata": {
+        "repo": "nayafia/open-funding",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0073_c00",
+      "evidence_id": "ev_0073",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/open-funding",
+      "content": "Technologies/tools mentioned in README: go, open source",
+      "metadata": {
+        "repo": "nayafia/open-funding",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0074_c00",
+      "evidence_id": "ev_0074",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/open-funding",
+      "content": "User forked nayafia/open-funding from ralphtheninja/open-funding, indicating contributor role.",
+      "metadata": {
+        "repo": "nayafia/open-funding",
+        "is_owner": false,
+        "forked_from": "ralphtheninja/open-funding",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0075_c00",
+      "evidence_id": "ev_0075",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/guestlist",
+      "content": "Engineering guest list for Night Mix (21+ Event)",
+      "metadata": {
+        "repo": "nayafia/guestlist",
+        "field": "description",
+        "language": null,
+        "stars": 2,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0076_c00",
+      "evidence_id": "ev_0076",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/guestlist",
+      "content": "Confirm your spot in the Nightmix party\n=========\n\nThe Nightmix party is free for engineers, but how do you prove you are an engineer?\n\nSimple, just add yourself to the engineering guest list, which happens to be this github repository.\n\nInstructions\n==========\n\n1) Create a file in the `guests/` directory with the name `First_Last`, where First is your first name and Last is your last name.\n\n2) The file should be 2 lines long, with the following format:\n\n Name: Your Name\n Company: Your employer\n\n3) Submit a pull request to github with your commit. Once your pull request is approved, your spot is confirmed.\n\n4) Remember: you must *also* register with Eventbrite with the same github username which actually performed the commit.",
+      "metadata": {
+        "repo": "nayafia/guestlist",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0077_c00",
+      "evidence_id": "ev_0077",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/guestlist",
+      "content": "User forked nayafia/guestlist from nightmix/guestlist, indicating contributor role.",
+      "metadata": {
+        "repo": "nayafia/guestlist",
+        "is_owner": false,
+        "forked_from": "nightmix/guestlist",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0078_c00",
+      "evidence_id": "ev_0078",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/guestlist",
+      "content": "Commit (2012-08-25T16:26:10+00:00): adding to guestlist",
+      "metadata": {
+        "repo": "nayafia/guestlist",
+        "sha": "235494239f",
+        "date": "2012-08-25T16:26:10+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0079_c00",
+      "evidence_id": "ev_0079",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/OpenCollective",
+      "content": "Organizing the Internet Generation",
+      "metadata": {
+        "repo": "nayafia/OpenCollective",
+        "field": "description",
+        "language": null,
+        "stars": 8,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0080_c00",
+      "evidence_id": "ev_0080",
+      "chunk_index": 0,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/OpenCollective",
+      "content": "![logo](https://opencollective.com/public/images/opencollectivelogo.svg)\nThis repo gives a high level overview of the OpenCollective project. This is where we will discuss broad topics such as general documentation, FAQ, new features and how to contribute to the project.\n\n## What is OpenCollective?\n\nOpenCollective is a platform where communities can collect and disburse money transparently to sustain themselves and develop their activities.\n\n## Why OpenCollective?\n\nSo far, the Internet has been really good at helping people do great things together. From open source projects, to meetups, all the way to movements such as #BlackLivesMatter and #OccupyWallStreet. Yet, once there is money involved, there is still no good solution. As a result, those communities tend to avoid dealing with money or just have one sponsor at a time to cover immediate expenses.\n\nWe want to change that. We want to enable communities to have economic power so that they can sustain themselves and have a larger impact in the world.\n\n## How does it work?\n\nWe are providing tools to legal entities all around the world to host open collectives under their umbrella. Those host organizations are the heroes that empower people in their local community to create associations without friction. They act as a bridge between the analog paper based API of their local government and the digital API of the 21st century.",
+      "metadata": {
+        "repo": "nayafia/OpenCollective",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0080_c01",
+      "evidence_id": "ev_0080",
+      "chunk_index": 1,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/OpenCollective",
+      "content": "ociations without friction. They act as a bridge between the analog paper based API of their local government and the digital API of the 21st century.\n\nThe goal of OpenCollective is to create a [New Form of Association for the Internet Generation](https://medium.com/open-collective/a-new-form-of-association-for-the-internet-generation-part-1-6d6c4f5dd27f#.fgb60dorq).\n\n## Why Open Source?\n\nRegulations are different all over the world. Governements are local operating systems with their own set of (paper based) APIs. We need to build a browser that will offer a new global and unique interface on top of which we can start developing new communities that won't have to worry about the complexity of the underlying operating system (aka administration).\n\nTo achieve that, we will have to adapt the software to comply with local regulations. While the concept of umbrella organization is a universal concept, the way bookkeeping and tax reporting should be performed varies between countries. Payment processing is also another area that needs to be adapted locally to make sure that most people –online and offline– can contribute to a collective.\n\n**Why not using the Blockchain?**",
+      "metadata": {
+        "repo": "nayafia/OpenCollective",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0080_c02",
+      "evidence_id": "ev_0080",
+      "chunk_index": 2,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/OpenCollective",
+      "content": "that needs to be adapted locally to make sure that most people –online and offline– can contribute to a collective.\n\n**Why not using the Blockchain?**\n\nWe would definitely love to explore how we can use the blockchain to achieve this goal. But we don't want to wait for self-driving cars to be ubiquitous before starting building Uber/Lyft. We believe that we can already go a long way by using existing technologies and services (Stripe, PayPal, etc.) that are already well established.\n\n## Examples of open collectives already on the platform\n\n- [MochaJS](https://opencollective.com/MochaJS), [Yeoman](https://opencollective.com/yeoman), [Apex](https://opencollective.com/apex), and [many more open source projects](https://docs.google.com/spreadsheets/d/1o-_igyEpPdfYGBRbdQ3WvbFohXWhWiKY7rI5QwxhMK8/edit?ts=571a7863#gid=0)\n- [Women Who Code](https://opencollective.com/wwcode), [RailsGirls Atlanta](https://opencollective.com/RailsGirlsAtl), [Consciousness Hacking](https://opencollective.com/ConsciousnessHackingSF)\n\n## Documentation\n\n- [User Guide](https://github.com/OpenCollective/OpenCollective/wiki/User-Guide)\n- [Product definition](https://github.com/OpenCollective/OpenCollective/wiki/Product)\n- [Developer Documentation](https://github.com/OpenCollective/OpenCollective/wiki/Developer-Documentation)\n\n## How to contribute?\n- Take a look at [Github issues … [truncated]",
+      "metadata": {
+        "repo": "nayafia/OpenCollective",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 2,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0081_c00",
+      "evidence_id": "ev_0081",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/OpenCollective",
+      "content": "Technologies/tools mentioned in README: api, go, open source, rails",
+      "metadata": {
+        "repo": "nayafia/OpenCollective",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0082_c00",
+      "evidence_id": "ev_0082",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/OpenCollective",
+      "content": "User forked nayafia/OpenCollective from opencollective/opencollective, indicating contributor role.",
+      "metadata": {
+        "repo": "nayafia/OpenCollective",
+        "is_owner": false,
+        "forked_from": "opencollective/opencollective",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0083_c00",
+      "evidence_id": "ev_0083",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/leveldb",
+      "content": "LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to string values.",
+      "metadata": {
+        "repo": "nayafia/leveldb",
+        "field": "description",
+        "language": "C++",
+        "stars": 3,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0084_c00",
+      "evidence_id": "ev_0084",
+      "chunk_index": 0,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/leveldb",
+      "content": "**LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to string values.**\n\nAuthors: Sanjay Ghemawat (sanjay@google.com) and Jeff Dean (jeff@google.com)\n\n# Features\n * Keys and values are arbitrary byte arrays.\n * Data is stored sorted by key.\n * Callers can provide a custom comparison function to override the sort order.\n * The basic operations are `Put(key,value)`, `Get(key)`, `Delete(key)`.\n * Multiple changes can be made in one atomic batch.\n * Users can create a transient snapshot to get a consistent view of data.\n * Forward and backward iteration is supported over the data.\n * Data is automatically compressed using the [Snappy compression library](http://google.github.io/snappy/).\n * External activity (file system operations etc.) is relayed through a virtual interface so users can customize the operating system interactions.\n\n# Documentation\n [LevelDB library documentation](https://rawgit.com/google/leveldb/master/doc/index.html) is online and bundled with the source code.\n\n# Limitations\n * This is not a SQL database. It does not have a relational data model, it does not support SQL queries, and it has no support for indexes.\n * Only a single process (possibly multi-threaded) can access a particular database at a time.\n * There is no client-server support builtin to the library. An application that needs such support will have to wrap their own server around the library.",
+      "metadata": {
+        "repo": "nayafia/leveldb",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0084_c01",
+      "evidence_id": "ev_0084",
+      "chunk_index": 1,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/leveldb",
+      "content": "here is no client-server support builtin to the library. An application that needs such support will have to wrap their own server around the library.\n\n# Contributing to the leveldb Project\nThe leveldb project welcomes contributions. leveldb's primary goal is to be\na reliable and fast key/value store. Changes that are in line with the\nfeatures/limitations outlined above, and meet the requirements below,\nwill be considered.\n\nContribution requirements:\n\n1. **POSIX only**. We _generally_ will only accept changes that are both\n compiled, and tested on a POSIX platform - usually Linux. Very small\n changes will sometimes be accepted, but consider that more of an\n exception than the rule.\n\n2. **Stable API**. We strive very hard to maintain a stable API. Changes that\n require changes for projects using leveldb _might_ be rejected without\n sufficient benefit to the project.\n\n3. **Tests**: All changes must be accompanied by a new (or changed) test, or\n a sufficient explanation as to why a new (or changed) test is not required.\n\n## Submitting a Pull Request\nBefore any pull request will be accepted the author must first sign a\nContributor License Agreement (CLA) at https://cla.developers.google.com/.",
+      "metadata": {
+        "repo": "nayafia/leveldb",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0084_c02",
+      "evidence_id": "ev_0084",
+      "chunk_index": 2,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/leveldb",
+      "content": "quest\nBefore any pull request will be accepted the author must first sign a\nContributor License Agreement (CLA) at https://cla.developers.google.com/.\n\nIn order to keep the commit timeline linear\n[squash](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Squashing-Commits)\nyour changes down to a single commit and [rebase](https://git-scm.com/docs/git-rebase)\non google/leveldb/master. This keeps the commit timeline linear and more easily sync'ed\nwith the internal repository at Google. More information at GitHub's\n[About Git rebase](https://help.github.com/articles/about-git-rebase/) page.\n\n# Performance\n\nHere is a performance report (with explanations) from the run of the\nincluded db_bench program. The results are somewhat noisy, but should\nbe enough to get a ballpark performance estimate.\n\n## Setup\n\nWe use a database with a million entries. Each entry has a 16 byte\nkey, and a 100 byte value. Values used by the benchmark compress to\nabout half their original size.\n\nLevelDB: version 1.1\n Date: Sun May 1 12:11:26 2011\n CPU: 4 x Intel(R) Core(TM)2 Quad CPU Q6600 @ 2.40GHz\n CPUCache: 4096 KB\n Keys: 16 bytes each\n Values: 100 bytes each (50 bytes after compression)\n Entries: 1000000\n Raw Size: 110.6 MB (estimated)\n File Size: 62.9 MB (estimated)\n\n## Write performance\n\nThe \"fill\" benchmarks create a brand new database, in either\nsequential, or random order. The \"fillsync\" benchmark flushes data\nfro … [truncated]",
+      "metadata": {
+        "repo": "nayafia/leveldb",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 2,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0085_c00",
+      "evidence_id": "ev_0085",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/leveldb",
+      "content": "Technologies/tools mentioned in README: api, cli, go, library",
+      "metadata": {
+        "repo": "nayafia/leveldb",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0086_c00",
+      "evidence_id": "ev_0086",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/leveldb",
+      "content": "Languages used: C++ (93.8%), C (3.2%), Makefile (2.0%), Shell (1.0%)",
+      "metadata": {
+        "repo": "nayafia/leveldb",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0087_c00",
+      "evidence_id": "ev_0087",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/leveldb",
+      "content": "User forked nayafia/leveldb from google/leveldb, indicating contributor role.",
+      "metadata": {
+        "repo": "nayafia/leveldb",
+        "is_owner": false,
+        "forked_from": "google/leveldb",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0088_c00",
+      "evidence_id": "ev_0088",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/explore",
+      "content": "Community-curated topic pages on GitHub",
+      "metadata": {
+        "repo": "nayafia/explore",
+        "field": "description",
+        "language": "Ruby",
+        "stars": 2,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0089_c00",
+      "evidence_id": "ev_0089",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/explore",
+      "content": "# GitHub Explore\n\nTopic pages, curated by the community.\n\n[Topics](https://help.github.com/articles/about-topics/) help you explore repositories in a particular subject area, learn more about a subject area, and find projects to contribute to.\n\nIf you want to suggest edits to an existing topic page, or curate a new topic page, read our [contributing guide](CONTRIBUTING.md) to get started. You can [review a list of popular topics that need more context](topics-todo.md) to get an idea of where to start.\n\n## Running tests\n\nThere are some lint tests in place to ensure each topic is formatted in the way we expect. Travis\nCI will run the tests automatically. If you want to run the tests yourself locally, you will need\nRuby and Bundler installed.\n\nYou can run the tests using:\n\n```bash\nscript/cibuild\n```\n\n## Licenses\n\nContent is released under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) which gives you permission to use content for almost any purpose (but does not grant you any trademark permissions). See [notices](notices.md) for complete details, including attribution guidelines, contribution terms, and software and third-party licenses and permissions.",
+      "metadata": {
+        "repo": "nayafia/explore",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0090_c00",
+      "evidence_id": "ev_0090",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/explore",
+      "content": "Technologies/tools mentioned in README: ruby",
+      "metadata": {
+        "repo": "nayafia/explore",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0091_c00",
+      "evidence_id": "ev_0091",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/explore",
+      "content": "Languages used: Ruby (97.9%), Shell (2.1%)",
+      "metadata": {
+        "repo": "nayafia/explore",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0092_c00",
+      "evidence_id": "ev_0092",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/explore",
+      "content": "User forked nayafia/explore from github/explore, indicating contributor role.",
+      "metadata": {
+        "repo": "nayafia/explore",
+        "is_owner": false,
+        "forked_from": "github/explore",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0093_c00",
+      "evidence_id": "ev_0093",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/php-graph-sdk",
+      "content": "The Facebook SDK for PHP provides a native interface to the Graph API and Facebook Login. https://developers.facebook.com/docs/php",
+      "metadata": {
+        "repo": "nayafia/php-graph-sdk",
+        "field": "description",
+        "language": "PHP",
+        "stars": 2,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0094_c00",
+      "evidence_id": "ev_0094",
+      "chunk_index": 0,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/php-graph-sdk",
+      "content": "# Facebook SDK for PHP (v6)\n\n## NOTICE: This branch is under active development. For the stable release please use the [5.4 branch](https://github.com/facebook/php-graph-sdk/tree/5.4).\n\nThis repository contains the open source PHP SDK that allows you to access the Facebook Platform from your PHP app.\n\n## Installation\n\nThe Facebook PHP SDK can be installed with [Composer](https://getcomposer.org/). Run this command:\n\n```sh\ncomposer require facebook/graph-sdk\n```\n\n## Usage\n\n> **Note:** This version of the Facebook SDK for PHP requires PHP 5.6 or greater.\n\nSimple GET example of a user's profile.\n\n```php\n$fb = new \\Facebook\\Facebook([\n 'app_id' => '{app-id}',\n 'app_secret' => '{app-secret}',\n 'default_graph_version' => 'v2.8',\n //'default_access_token' => '{access-token}', // optional\n]);\n\n// Use one of the helper classes to get a Facebook\\Authentication\\AccessToken entity.\n// $helper = $fb->getRedirectLoginHelper();\n// $helper = $fb->getJavaScriptHelper();\n// $helper = $fb->getCanvasHelper();\n// $helper = $fb->getPageTabHelper();",
+      "metadata": {
+        "repo": "nayafia/php-graph-sdk",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0094_c01",
+      "evidence_id": "ev_0094",
+      "chunk_index": 1,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/php-graph-sdk",
+      "content": "r = $fb->getRedirectLoginHelper();\n// $helper = $fb->getJavaScriptHelper();\n// $helper = $fb->getCanvasHelper();\n// $helper = $fb->getPageTabHelper();\n\ntry {\n // Get the \\Facebook\\GraphNodes\\GraphUser object for the current user.\n // If you provided a 'default_access_token', the '{access-token}' is optional.\n $response = $fb->get('/me', '{access-token}');\n} catch(\\Facebook\\Exceptions\\FacebookResponseException $e) {\n // When Graph returns an error\n echo 'Graph returned an error: ' . $e->getMessage();\n exit;\n} catch(\\Facebook\\Exceptions\\FacebookSDKException $e) {\n // When validation fails or other local issues\n echo 'Facebook SDK returned an error: ' . $e->getMessage();\n exit;\n}\n\n$me = $response->getGraphUser();\necho 'Logged in as ' . $me->getName();\n```\n\nComplete documentation, installation instructions, and examples are available [here](docs/).\n\n## Tests\n\n1. [Composer](https://getcomposer.org/) is a prerequisite for running the tests. Install composer globally, then run `composer install` to install required files.\n2. Create a test app on [Facebook Developers](https://developers.facebook.com), then create `tests/FacebookTestCredentials.php` from `tests/FacebookTestCredentials.php.dist` and edit it to add your credentials.\n3. The tests can be executed by running this command from the root directory:\n\n```bash\n$ ./vendor/bin/phpunit\n```",
+      "metadata": {
+        "repo": "nayafia/php-graph-sdk",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0094_c02",
+      "evidence_id": "ev_0094",
+      "chunk_index": 2,
+      "total_chunks": 3,
+      "type": "skill",
+      "source": "repo:nayafia/php-graph-sdk",
+      "content": "and edit it to add your credentials.\n3. The tests can be executed by running this command from the root directory:\n\n```bash\n$ ./vendor/bin/phpunit\n```\n\nBy default the tests will send live HTTP requests to the Graph API. If you are without an internet connection you can skip these tests by excluding the `integration` group.\n\n```bash\n$ ./vendor/bin/phpunit --exclude-group integration\n```\n\n## Contributing\n\nFor us to accept contributions you will have to first have signed the [Contributor License Agreement](https://developers.facebook.com/opensource/cla). Please see [CONTRIBUTING](https://github.com/facebook/php-graph-sdk/blob/master/CONTRIBUTING.md) for details.\n\n## License\n\nPlease see the [license file](https://github.com/facebook/php-graph-sdk/blob/master/LICENSE) for more information.",
+      "metadata": {
+        "repo": "nayafia/php-graph-sdk",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 2,
+        "total_chunks": 3
+      }
+    },
+    {
+      "chunk_id": "ev_0095_c00",
+      "evidence_id": "ev_0095",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/php-graph-sdk",
+      "content": "Technologies/tools mentioned in README: api, java, javascript, open source, php, sdk",
+      "metadata": {
+        "repo": "nayafia/php-graph-sdk",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0096_c00",
+      "evidence_id": "ev_0096",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/php-graph-sdk",
+      "content": "Languages used: PHP (100.0%)",
+      "metadata": {
+        "repo": "nayafia/php-graph-sdk",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0097_c00",
+      "evidence_id": "ev_0097",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/php-graph-sdk",
+      "content": "User forked nayafia/php-graph-sdk from facebookarchive/php-graph-sdk, indicating contributor role.",
+      "metadata": {
+        "repo": "nayafia/php-graph-sdk",
+        "is_owner": false,
+        "forked_from": "facebookarchive/php-graph-sdk",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0098_c00",
+      "evidence_id": "ev_0098",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/cohorts",
+      "content": "Cohort Builder by Keen IO",
+      "metadata": {
+        "repo": "nayafia/cohorts",
+        "field": "description",
+        "language": "JavaScript",
+        "stars": 2,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0099_c00",
+      "evidence_id": "ev_0099",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/cohorts",
+      "content": "Cohort Builder\n==============\n\nCohort Builder, powered by the Keen IO Analysis and Dataviz SDKs\n\n![](https://raw.githubusercontent.com/keen/cohorts/master/docs/preview.png?token=AALA1mYWCYerp6rKA9Ydq9yF_hX1xB3Kks5YB9sMwA%3D%3D)\n\n## Example usage\n\n```html\n\n \n \n \n \n\n \n \n \n\n \n \n\n \n \n \n\n \n \n \n var keenClient = new Keen({\n projectId: 'YOUR_PROJECT_ID',\n readKey: 'YOUR_READ_KEY'\n });\n\n var cohortChart = new Keen.Dataviz()\n .el('#cohort-chart')\n .height(100)\n .type('line');\n\n var cohortTable = new Keen.Dataviz()\n .el('#cohort-table')\n .library('cohort-builder')\n .type('matrix');\n\n var dateMatrix = Keen.CohortBuilder.generateDateMatrix('weeks', 5);\n var queryMatrix = Keen.CohortBuilder.generateCohortQueryMatrix(dateMatrix, function(cohort){\n return new Keen.Query('funnel', {\n steps: [\n {\n event_collection: 'first_launch',\n actor_property: 'dpid',\n filters: [\n { property_name: 'make', operator: 'eq', property_value: 'Apple' }\n ],\n timeframe: cohort.created_at\n },\n {\n event_collection: 'application_opened',\n actor_property: 'dpid',\n filters: [\n { property_name: 'make', operator: 'eq', property_value: 'Apple' }\n ],\n timeframe: cohort.current_interval\n }\n ]\n });\n });\n\n // Start first chart spinner\n cohortChart.prepare();\n Keen.CohortBuilder.fetchCohortDatasets(keenClient, queryMatrix, function(dataset) {\n cohortChart\n .data(dataset)\n .height(280)\n .render();\n\n cohortTable\n .data(dataset)\n .render();\n });\n \n\n```",
+      "metadata": {
+        "repo": "nayafia/cohorts",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0100_c00",
+      "evidence_id": "ev_0100",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/cohorts",
+      "content": "Technologies/tools mentioned in README: cli, cloud, library, sdk",
+      "metadata": {
+        "repo": "nayafia/cohorts",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0101_c00",
+      "evidence_id": "ev_0101",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/cohorts",
+      "content": "Languages used: JavaScript (91.4%), CSS (8.6%)",
+      "metadata": {
+        "repo": "nayafia/cohorts",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0102_c00",
+      "evidence_id": "ev_0102",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/cohorts",
+      "content": "User forked nayafia/cohorts from keen/cohorts, indicating contributor role.",
+      "metadata": {
+        "repo": "nayafia/cohorts",
+        "is_owner": false,
+        "forked_from": "keen/cohorts",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0103_c00",
+      "evidence_id": "ev_0103",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/website",
+      "content": "Loot Project website",
+      "metadata": {
+        "repo": "nayafia/website",
+        "field": "description",
+        "language": "TypeScript",
+        "stars": 1,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0104_c00",
+      "evidence_id": "ev_0104",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/website",
+      "content": "# Loot\n\nCommunity-operated [website](https://www.lootproject.com/) for the Loot project.\n\n## Contribute\n\n- Update FAQ in `/pages/faq.tsx`\n- Update Resources in `/utils/lists.ts`\n\n## Run locally\n\n```bash\n# Install dependencies\nyarn\n\n# Run\nyarn dev\n```",
+      "metadata": {
+        "repo": "nayafia/website",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0105_c00",
+      "evidence_id": "ev_0105",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/website",
+      "content": "Languages used: TypeScript (89.2%), SCSS (10.8%)",
+      "metadata": {
+        "repo": "nayafia/website",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0106_c00",
+      "evidence_id": "ev_0106",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/website",
+      "content": "User forked nayafia/website from lootproject/website, indicating contributor role.",
+      "metadata": {
+        "repo": "nayafia/website",
+        "is_owner": false,
+        "forked_from": "lootproject/website",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0107_c00",
+      "evidence_id": "ev_0107",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/website",
+      "content": "Commit (2021-09-05T17:26:18+00:00): Update lists.ts",
+      "metadata": {
+        "repo": "nayafia/website",
+        "sha": "ddf9b7dfda",
+        "date": "2021-09-05T17:26:18+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0108_c00",
+      "evidence_id": "ev_0108",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/website",
+      "content": "Commit (2021-09-05T17:28:59+00:00): Merge pull request #1 from nayafia/nayafia-patch-1",
+      "metadata": {
+        "repo": "nayafia/website",
+        "sha": "e03ac833ca",
+        "date": "2021-09-05T17:28:59+00:00",
+        "field": "commit_sample",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0109_c00",
+      "evidence_id": "ev_0109",
+      "chunk_index": 0,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:nayafia/mailmerge",
+      "content": "# Mailmerge\n\nA bare-bones mailmerge script.\n\n## How it works\n\nThe mailmerge combines a CSV file of email addresses and associated data, with a TEXT file containing\nthe subject and body of an email.\n\nIt uses the headers of the CSV file to replace placeholders in the email template.\n\nTake a look at test.csv (the data) and test.txt (the email template) for an example.\n\n**Required fields**\n\nThe CSV file must have a header named `email`, which contains the email addresses used to dispatch\nthe emails.\n\n## Setup\n\nInstall the dependencies using bundler.\n\n```\nbundle install\n```\n\nCreate a .env file, and define the SMTP settings:\n\n```\ncp env.example .env\n# edit .env\n```\n\nThat can be whatever SMTP settings you have. Sendgrid, Mailgun, Gmail, etc.\n\nIf you want to send email from your Gmail account, you can set up an application-specific password, in\nhttps://security.google.com/settings/security/apppasswords\n\n```\nSMTP_LOGIN=\nSMTP_PASSWORD=\nSMTP_PORT=587\nSMTP_SERVER=smtp.gmail.net\n```\n\n## Sending Emails\n\nSend emails with the following command:\n\n```\nCSV=foo.csv TEMPLATE=bar.txt ./mailmerge\n```\n\nIf you don't pass the CSV and TEMPLATE arguments, then the script will use the defaults:\n\n```\nCSV=test.csv\nTEMPLATE=test.txt\n```\n\nSet `PREVIEW=1` to view a preview of the emails without actually sending them.\n\n```\nPREVIEW=1 CSV=foo.csv TEMPLATE=bar.txt ./mailmerge\n```\n\n### Email Template\n\nThe first line of the template file is used for the subject line.",
+      "metadata": {
+        "repo": "nayafia/mailmerge",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0109_c01",
+      "evidence_id": "ev_0109",
+      "chunk_index": 1,
+      "total_chunks": 2,
+      "type": "skill",
+      "source": "repo:nayafia/mailmerge",
+      "content": "em.\n\n```\nPREVIEW=1 CSV=foo.csv TEMPLATE=bar.txt ./mailmerge\n```\n\n### Email Template\n\nThe first line of the template file is used for the subject line.\n\nThe rest of the file is used as the body of the email.\n\nEach header can be referenced in the email template using the header name,\nenclosed in double curly-braces (e.g. `{{username}}`).\n\nSee `test.txt` for an example.",
+      "metadata": {
+        "repo": "nayafia/mailmerge",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 2
+      }
+    },
+    {
+      "chunk_id": "ev_0110_c00",
+      "evidence_id": "ev_0110",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/mailmerge",
+      "content": "Technologies/tools mentioned in README: go, rest",
+      "metadata": {
+        "repo": "nayafia/mailmerge",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0111_c00",
+      "evidence_id": "ev_0111",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/mailmerge",
+      "content": "Languages used: Ruby (100.0%)",
+      "metadata": {
+        "repo": "nayafia/mailmerge",
+        "field": "language_breakdown",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0112_c00",
+      "evidence_id": "ev_0112",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/mailmerge",
+      "content": "User forked nayafia/mailmerge from bkeepers/mailmerge, indicating contributor role.",
+      "metadata": {
+        "repo": "nayafia/mailmerge",
+        "is_owner": false,
+        "forked_from": "bkeepers/mailmerge",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0113_c00",
+      "evidence_id": "ev_0113",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/neuromodulation_modalities",
+      "content": "Every way to change your mind",
+      "metadata": {
+        "repo": "nayafia/neuromodulation_modalities",
+        "field": "description",
+        "language": null,
+        "stars": 0,
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0114_c00",
+      "evidence_id": "ev_0114",
+      "chunk_index": 0,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:nayafia/neuromodulation_modalities",
+      "content": "# Big List of Neuromodulation Modalities\nEvery way to change your mind.\n\nPlease make an [issue](https://github.com/mwcvitkovic/neuromodulation_modalities/issues) if something's missing!\n\n### Table of Contents\n - [Cognitive](#cognitive) (requiring conscious engagement)\n - [Peripheral](#peripheral) (entering the brain via nerves from outside the skull)\n - [Biologic](#biologic)\n - [Chemical](#chemical) (small molecules)\n - [Subatomic](#subatomic)\n - [Electromagnetic](#electromagnetic)\n - [Mechanical](#mechanical)\n - [Combination](#combination)\n\n## Cognitive\n- meditation\n - concentrative\n - focusing on a specific sensation or thought, like the breath\n - metta\n - gratitude practices\n - open monitoring\n- psychotherapy\n - cognitive behavioral therapy\n- neurofeedback\n- hypnosis\n- brain training\n - [Akili Interactive targeting ADHD](https://www.akiliinteractive.com/)\n - [action video games to reduce depression](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5816361/)\n- conditioning\n - disulfiram\n- social engagement\n - friendships\n - romance\n - group activities (games, sports, dance)\n\n## Peripheral",
+      "metadata": {
+        "repo": "nayafia/neuromodulation_modalities",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 0,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0114_c01",
+      "evidence_id": "ev_0114",
+      "chunk_index": 1,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:nayafia/neuromodulation_modalities",
+      "content": "cles/PMC5816361/)\n- conditioning\n - disulfiram\n- social engagement\n - friendships\n - romance\n - group activities (games, sports, dance)\n\n## Peripheral\n\n- activities\n - walking\n - exercise\n - eating\n - breathing techniques\n - sauna\n- sensory stimuation\n - music\n - binaural beats\n - auditory entrainment, e.g. [Elemind](https://www.youtube.com/watch?v=zItt6lg2gUA&t=160s)\n - audiovisual entrainment, e.g. [Cognito](https://www.cell.com/neuron/fulltext/S0896-6273(19)30346-0) (currently in Breakthrough Designation Phase 3 for Alzheimer's)\n - [vibrotactile stimulation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5624565/)\n- sensory deprivation\n- peripheral nerve stimulation\n - vagus nerve stimulation (FDA-approved for depression, epilepsy)\n - trigeminal nerve stimulation\n - auricular nerve stimulation\n - percutaneous nerve field stimulation\n - cochlear implants\n - auditory brainstem implant (technically not peripheral, but right on the border)\n - retinal implants\n - science.xyz\n\n## Biologic\nThese are currently uncommon due to the difficulty of getting biologics across the blood-brain barrier, but there are many in the pipeline.\nInteresting targets include [FAAH-OUT and rs324420](https://pmc.ncbi.nlm.nih.gov/articles/PMC6676009/) for potential pain insensitivity and [short-sleeper genes](https://en.wikipedia.org/wiki/Familial_natural_short_sleep).",
+      "metadata": {
+        "repo": "nayafia/neuromodulation_modalities",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 1,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0114_c02",
+      "evidence_id": "ev_0114",
+      "chunk_index": 2,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:nayafia/neuromodulation_modalities",
+      "content": ".nih.gov/articles/PMC6676009/) for potential pain insensitivity and [short-sleeper genes](https://en.wikipedia.org/wiki/Familial_natural_short_sleep).\n\n- antibodies\n - [CGRP antagonists for migraine](https://www.uspharmacist.com/article/an-overview-of-new-biologics-for-migraine-prophylaxis) exist but act on peripheral nerves\n - endogenous antibodies\n - anti-ganglioside antibodies\n - anti-glutamate receptor antibodies\n - voltage-gated potassium channels antibodies\n- proteins and peptides\n - [Peptides for stroke](https://www.sciencedirect.com/science/article/abs/pii/S1474442212702259). Guess that's one way around the BBB...\n - [Peptides for Alzheimer's](https://pubmed.ncbi.nlm.nih.gov/28951091/). Unknown how they cross the BBB.\n- nucleic acids\n - [in-vivo AAV gene therapy to increase BDNF](https://ucsdnews.ucsd.edu/pressrelease/first-in-human-clinical-trial-to-assess-gene-therapy-for-alzheimers-disease)\n - [antisense oligonucleotides](https://en.wikipedia.org/wiki/Nusinersen)\n- live cells\n - cell therapy for [depression](https://pubmed.ncbi.nlm.nih.gov/30108315/) and potentially [other things](https://onlinelibrary.wiley.com/doi/full/10.1111/cns.13247)\n - [ex-vivo modified autologous fibroblasts to produce nerve growth factor](https://pubmed.ncbi.nlm.nih.gov/15852017/)",
+      "metadata": {
+        "repo": "nayafia/neuromodulation_modalities",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 2,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0114_c03",
+      "evidence_id": "ev_0114",
+      "chunk_index": 3,
+      "total_chunks": 4,
+      "type": "skill",
+      "source": "repo:nayafia/neuromodulation_modalities",
+      "content": "com/doi/full/10.1111/cns.13247)\n - [ex-vivo modified autologous fibroblasts to produce nerve growth factor](https://pubmed.ncbi.nlm.nih.gov/15852017/)\n\n## Chemical\nThere are too many chemicals to list, so instead here are the key mechanisms and effects by which we categorize chemicals, followed by some examples.\n#### Mechanisms of action of psychoactive substances\nThis is a mostly comprehensive list. Most chemicals act by multiple mechanisms.\n - receptor modulation\n - agonism (activates a receptor on a cell)\n - It's actually more complicated due to [biased agonism](https://en.w … [truncated]",
+      "metadata": {
+        "repo": "nayafia/neuromodulation_modalities",
+        "field": "readme_excerpt",
+        "topics": [],
+        "chunk_index": 3,
+        "total_chunks": 4
+      }
+    },
+    {
+      "chunk_id": "ev_0115_c00",
+      "evidence_id": "ev_0115",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "skill",
+      "source": "repo:nayafia/neuromodulation_modalities",
+      "content": "Technologies/tools mentioned in README: api, cli, go, library, llm, neural, rest",
+      "metadata": {
+        "repo": "nayafia/neuromodulation_modalities",
+        "field": "readme_keywords",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    },
+    {
+      "chunk_id": "ev_0116_c00",
+      "evidence_id": "ev_0116",
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "type": "role",
+      "source": "repo:nayafia/neuromodulation_modalities",
+      "content": "User forked nayafia/neuromodulation_modalities from mwcvitkovic/neuromodulation_modalities, indicating contributor role.",
+      "metadata": {
+        "repo": "nayafia/neuromodulation_modalities",
+        "is_owner": false,
+        "forked_from": "mwcvitkovic/neuromodulation_modalities",
+        "chunk_index": 0,
+        "total_chunks": 1
+      }
+    }
+  ],
+  "stats": {
+    "original_evidence_count": 116,
+    "items_dropped": 0,
+    "chunks_produced": 145,
+    "avg_chunk_length_chars": 400
+  }
+}
