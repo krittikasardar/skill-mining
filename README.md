@@ -48,6 +48,9 @@ pip install -r requirements.txt
 ```bash
 cp .env.example .env
 # Edit .env and set GITHUB_TOKEN=ghp_your_token_here
+
+Never commit your `.env` file. Copy `.env.example` to `.env` and fill in your own GitHub Personal Access Token. The `.env` file is listed in `.gitignore` and will not be pushed to GitHub.
+Generate one at: https://github.com/settings/tokens
 ```
 
 A **classic personal access token** with **public repo read** scope is
@@ -166,7 +169,7 @@ ENABLE_CACHE=true python main.py collect --file usernames.txt
 ## Design notes
 
 ### Historical coverage
-- All repositories (up to `MAX_REPOS_PER_USER`) are retained — none are discarded.
+- All repositories (up to `MAX_REPOS_PER_USER`) are retained - none are discarded.
 - Commit samples are spread across the full repository lifetime, not just recent commits.
 - An `age_bonus` scoring component boosts repos created >3 years ago to surface historical work.
 - `aggregate_signals.historical_activity_summary` lists repos that are ≥4 years old.
