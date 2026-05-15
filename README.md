@@ -16,30 +16,13 @@ skill_mining/
 ├── collectors/
 │   ├── profile_collector.py          # Profile metadata, profile README, pinned repos, orgs
 │   └── repo_collector.py             # Repositories, languages, commits, PRs/issues, tooling
-├── transformers_local/
-│   └── schema_builder.py             # Builds final raw JSON schema and evidence index
-├── preprocessor/
-│   ├── cleaner.py                    # Cleans evidence text and preserves metadata
-│   ├── chunker.py                    # Chunks evidence for embedding/RAG
-│   ├── historical.py                 # Yearly/monthly activity and tech evolution analysis
-│   └── pipeline.py                   # Preprocessing orchestration
-├── utils/
-│   └── helpers.py                    # Shared utility functions
-├── data/
-│   ├── raw/                          # <username>_raw_v2.json
-│   ├── processed/                    # <username>_processed_v2.json
-│   └── preprocessed/                 # Optional file-based preprocessing output
-├── logs/                             # Runtime logs
-├── usernames.txt                     # Optional list of GitHub usernames
-│   ├── profile_collector.py         # User profile metadata
-│   └── repo_collector.py            # Repositories, commits, READMEs, scoring
 ├── data/
 │   ├── agents/                      # AI agent pipeline for profile analysis
 │   │   ├── agents.py                # LangChain agents (skill, role, summarizer)
 │   │   ├── pipeline.py              # LangGraph orchestration
 │   │   └── tools.py                 # GitHub API utilities
-│   ├── raw/                         # <username>.json (full evidence document)
-│   ├── processed/                   # <username>_summary.json, master_summary.csv
+│   ├── raw/                         # <username>_raw_v2.json (full evidence document)
+│   ├── processed/                   # <username>_processed_v2.json
 │   └── preprocessed/                # <username>_preprocessed.json (RAG-ready chunks)
 ├── transformers_local/
 │   └── schema_builder.py            # Assembles final JSON schema
