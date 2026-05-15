@@ -1,0 +1,117 @@
+{
+  "schema_version": "2.0",
+  "profile": {
+    "login": "jakubroztocil",
+    "name": "⚠️ New username",
+    "bio": "⚠️ 👉 @jkbrzt ",
+    "company": null,
+    "blog": "",
+    "location": null,
+    "email": null,
+    "twitter_username": null,
+    "followers": 12,
+    "following": 1,
+    "public_repos": 0,
+    "public_gists": 0,
+    "created_at": "2015-07-03T01:15:03+00:00",
+    "updated_at": "2023-08-23T14:31:17+00:00",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13158795?v=4",
+    "html_url": "https://github.com/jakubroztocil",
+    "type": "User",
+    "site_admin": false,
+    "hireable": null,
+    "years_on_github": 10,
+    "followers_to_following_ratio": 12.0,
+    "profile_readme": "",
+    "profile_readme_content": "",
+    "pinned_repositories": [],
+    "organisations": [],
+    "organisations_member_of": [],
+    "is_sponsored": false,
+    "sponsoring_count": 0
+  },
+  "repositories": [],
+  "aggregate_signals": {
+    "monthly_commit_heatmap": {},
+    "recent_6_month_commit_count": 0,
+    "total_commits_all_repos": 0,
+    "total_lines_added_all_repos": 0,
+    "total_lines_deleted_all_repos": 0,
+    "total_prs_opened": 0,
+    "total_prs_merged": 0,
+    "total_issues_opened": 0,
+    "total_issues_closed": 0,
+    "external_contributions_count": 0,
+    "longest_contribution_streak_months": 0,
+    "most_active_year": null,
+    "inactive_periods": [],
+    "collection_completeness_pct": null,
+    "weekday_vs_weekend_ratio": {
+      "weekday_commits_sampled": 0,
+      "weekend_commits_sampled": 0,
+      "weekday_vs_weekend_ratio": null,
+      "interpretation": "No weekend commits in sample; ratio unavailable."
+    },
+    "most_active_month_of_year": null,
+    "repo_creation_cadence": {
+      "repos_created_by_year": {},
+      "first_repo_year": null,
+      "latest_repo_year": null,
+      "active_creation_years": 0,
+      "avg_repos_created_per_year": 0.0
+    }
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "ev_0001",
+      "type": "profile",
+      "source": "profile:jakubroztocil",
+      "content": "⚠️ 👉 @jkbrzt ",
+      "metadata": {
+        "field": "bio",
+        "login": "jakubroztocil"
+      }
+    }
+  ],
+  "collection_metadata": {
+    "username": "jakubroztocil",
+    "collected_at": "2026-05-14T21:22:06.863351+00:00",
+    "elapsed_seconds": 5.5,
+    "total_repos": 0,
+    "total_evidence_items": 1,
+    "evidence_types": [
+      "profile"
+    ],
+    "rate_limit_snapshot": {},
+    "collector_version": "2.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained to preserve historical evidence. Evidence index includes profile, skill, role, leadership, commit, and contribution entries for stronger RAG grounding.",
+    "raw_output_file": "jakubroztocil_raw_v2.json",
+    "processed_output_file": "jakubroztocil_processed_v2.json",
+    "main_version": "2.0",
+    "pipeline_notes": "v2 includes richer commit depth, collaboration signals, tooling detection, profile README/pinned repositories, and monthly historical activity analysis."
+  },
+  "historical_analysis": {
+    "commits_by_year": {},
+    "languages_by_year": {},
+    "activity_trend": "stable",
+    "peak_activity_year": null,
+    "tech_evolution": [],
+    "monthly_commit_heatmap": {},
+    "weekday_vs_weekend_ratio": {
+      "weekday_commits_sampled": 0,
+      "weekend_commits_sampled": 0,
+      "weekday_vs_weekend_ratio": null,
+      "interpretation": "No weekend commits in sample; ratio unavailable."
+    },
+    "most_active_month_of_year": null,
+    "inactive_periods": [],
+    "recent_6_month_commit_count": 0,
+    "repo_creation_cadence": {
+      "repos_created_by_year": {},
+      "first_repo_year": null,
+      "latest_repo_year": null,
+      "active_creation_years": 0,
+      "avg_repos_created_per_year": 0.0
+    }
+  }
+}

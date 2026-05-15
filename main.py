@@ -1,333 +1,216 @@
 """
-main.py:
+main.py (v2)
+------------
+Entry point for the GitHub skill-mining data collection pipeline.
 
-CLI entry point for the Skill Mining GitHub data collector.
+For each username in usernames.txt (or CLI args), this script:
+  1. Collects profile metadata              -> collectors/profile_collector.py
+  2. Collects repository evidence           -> collectors/repo_collector.py
+  3. Builds the evidence-preserving schema  -> schema_builder.py
+  4. Adds historical/month-level analysis   -> preprocessor/historical.py
+  5. Writes data/raw/<user>_raw_v2.json
+  6. Runs the preprocessing pipeline         -> preprocessor/pipeline.py
+  7. Writes data/processed/<user>_processed_v2.json
 
-Usage examples:
-
-# Single username
-python main.py collect --username torvalds
-
-# Multiple usernames from a file
-python main.py collect --file usernames.txt
-
-# With caching enabled (avoids repeated API calls)
-ENABLE_CACHE=true python main.py collect --username antirez
-
-# Inspect remaining API rate limit
-python main.py rate-limit
-
-# Generate markdown summaries after collection
-python main.py collect --username gvanrossum --markdown
+Usage
+-----
+    python main.py
+    python main.py hnarayanan nayafia
 """
 
-import csv
-import json
-import time
-from pathlib import Path
-from typing import Optional
+from __future__ import annotations
 
-import typer
-from rich.console import Console
-from rich.table import Table
+import json
+import sys
+import time
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+from github import Github
 
 import config
-from github_client import build_client, log_rate_limit
+from github_client import build_client, wait_for_rate_limit
 from collectors.profile_collector import collect_profile
 from collectors.repo_collector import collect_all_repos
-from transformers_local.schema_builder import build_schema
-from utils.helpers import get_logger, utcnow_iso
+from preprocessor.historical import build_historical_analysis
+from preprocessor.pipeline import transform as preprocess_v2
+from utils.helpers import get_logger
 
-app = typer.Typer(help="Skill Mining – GitHub profile data collector")
-console = Console()
-logger = get_logger("main")
+# The project has used different folder names in earlier versions.
+# Keep this import flexible so main.py works whether schema_builder.py lives in
+# transformers_local/, transformers/, or the project root.
+try:
+    from transformers_local.schema_builder import build_schema
+except ImportError:  # pragma: no cover - fallback for older repo layouts
+    try:
+        from transformers.schema_builder import build_schema
+    except ImportError:  # pragma: no cover - fallback for flat layout
+        from schema_builder import build_schema
+
+logger = get_logger(__name__)
+
+BASE_DIR = Path(__file__).resolve().parent
+RAW_DIR = Path(getattr(config, "RAW_DIR", BASE_DIR / "data" / "raw"))
+PROC_DIR = Path(getattr(config, "PROCESSED_DIR", BASE_DIR / "data" / "processed"))
+RAW_DIR.mkdir(parents=True, exist_ok=True)
+PROC_DIR.mkdir(parents=True, exist_ok=True)
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Helpers
-# ─────────────────────────────────────────────────────────────────────────────
-
-def _load_usernames_from_file(path: str) -> list[str]:
+def run_for_user(client: Github, username: str) -> dict[str, Path]:
     """
-    Load usernames from a .txt, .csv, or .json file.
-    - .txt : one username per line
-    - .csv : first column is the username
-    - .json: list of strings, or list of dicts with a 'login' key
+    Run the full v2 collection + preprocessing pipeline for one GitHub user.
+
+    Returns
+    -------
+    dict with paths to the written raw and processed JSON files.
     """
-    p = Path(path)
-    if not p.exists():
-        typer.echo(f"ERROR: File not found: {path}", err=True)
-        raise typer.Exit(1)
+    start = time.time()
+    logger.info("=" * 70)
+    logger.info("Starting v2 collection for: %s", username)
 
-    suffix = p.suffix.lower()
-    if suffix == ".txt":
-        return [ln.strip() for ln in p.read_text().splitlines() if ln.strip()]
-    elif suffix == ".csv":
-        with p.open() as f:
-            reader = csv.reader(f)
-            return [row[0].strip() for row in reader if row and row[0].strip()]
-    elif suffix == ".json":
-        data = json.loads(p.read_text())
-        if isinstance(data, list):
-            return [
-                (item["login"] if isinstance(item, dict) else str(item)).strip()
-                for item in data
-            ]
-        raise ValueError("JSON file must contain a list")
-    else:
-        raise ValueError(f"Unsupported file type: {suffix}")
-
-
-def _save_raw(username: str, doc: dict) -> Path:
-    out = config.RAW_DIR / f"{username}.json"
-    out.write_text(json.dumps(doc, indent=2, ensure_ascii=False), encoding="utf-8")
-    return out
-
-
-def _save_summary(username: str, doc: dict) -> Path:
-    """Save a lightweight summary JSON (no raw text, no commit samples)."""
-    agg = doc.get("aggregate_signals", {})
-    summary = {
-        "username": username,
-        "profile": {k: v for k, v in doc["profile"].items()
-                    if k in ("login", "name", "bio", "location", "company",
-                             "followers", "public_repos", "created_at")},
-        "aggregate_signals": agg,
-        "top_repos": [
-            {
-                "full_name": r["repository_metadata"]["full_name"],
-                "language": r["repository_metadata"]["language"],
-                "stars": r["repository_metadata"]["stargazers_count"],
-                "forks": r["repository_metadata"]["forks_count"],
-                "relevance_score": r["relevance_score"],
-                "topics": r["repository_metadata"]["topics"],
-            }
-            for r in doc["repositories"][:10]
-        ],
-        "collection_metadata": doc.get("collection_metadata", {}),
-    }
-    out = config.PROCESSED_DIR / f"{username}_summary.json"
-    out.write_text(json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8")
-    return out
-
-
-def _save_markdown_summary(username: str, doc: dict) -> Path:
-    """Generate a human-readable Markdown report for manual inspection."""
-    profile = doc.get("profile", {})
-    agg = doc.get("aggregate_signals", {})
-    top_repos = doc.get("repositories", [])[:5]
-
-    lines = [
-        f"# GitHub Profile: {profile.get('name') or username}",
-        f"**Login:** {profile.get('login')}  ",
-        f"**Bio:** {profile.get('bio') or 'N/A'}  ",
-        f"**Location:** {profile.get('location') or 'N/A'}  ",
-        f"**Followers:** {profile.get('followers')}  ",
-        f"**Public Repos:** {profile.get('public_repos')}  ",
-        "",
-        "## Aggregate Signals",
-        f"- **Active years:** {agg.get('first_active_year')} – {agg.get('last_active_year')}",
-        f"- **Total stars received:** {agg.get('total_stars_received')}",
-        f"- **Owned repos:** {agg.get('owned_repo_count')}",
-        f"- **Top languages:** {', '.join(l['language'] for l in agg.get('top_languages', [])[:5])}",
-        f"- **Top topics:** {', '.join(agg.get('top_topics', [])[:8])}",
-        "",
-        "## Top Repositories (by relevance score)",
-    ]
-
-    for repo in top_repos:
-        meta = repo["repository_metadata"]
-        lines += [
-            f"### {meta['full_name']}",
-            f"- **Score:** {repo['relevance_score']}",
-            f"- **Stars:** {meta['stargazers_count']} | **Forks:** {meta['forks_count']}",
-            f"- **Language:** {meta['language']}",
-            f"- **Topics:** {', '.join(meta.get('topics', []))}",
-            f"- **Description:** {meta.get('description') or 'N/A'}",
-            "",
-        ]
-
-    md = "\n".join(lines)
-    out = config.PROCESSED_DIR / f"{username}_summary.md"
-    out.write_text(md, encoding="utf-8")
-    return out
-
-
-def _save_master_csv(all_summaries: list[dict]) -> Path:
-    """Save a master CSV across all processed users."""
-    out = config.PROCESSED_DIR / "master_summary.csv"
-    if not all_summaries:
-        return out
-
-    fieldnames = [
-        "username", "name", "location", "followers", "public_repos",
-        "first_active_year", "last_active_year", "activity_span_years",
-        "total_stars_received", "owned_repo_count", "forked_repo_count",
-        "top_languages", "top_topics", "total_repos_collected",
-    ]
-    with out.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
-        writer.writeheader()
-        for s in all_summaries:
-            prof = s.get("profile", {})
-            agg = s.get("aggregate_signals", {})
-            writer.writerow({
-                "username": s.get("username"),
-                "name": prof.get("name"),
-                "location": prof.get("location"),
-                "followers": prof.get("followers"),
-                "public_repos": prof.get("public_repos"),
-                "first_active_year": agg.get("first_active_year"),
-                "last_active_year": agg.get("last_active_year"),
-                "activity_span_years": agg.get("activity_span_years"),
-                "total_stars_received": agg.get("total_stars_received"),
-                "owned_repo_count": agg.get("owned_repo_count"),
-                "forked_repo_count": agg.get("forked_repo_count"),
-                "top_languages": "|".join(
-                    l["language"] for l in agg.get("top_languages", [])[:5]
-                ),
-                "top_topics": "|".join(agg.get("top_topics", [])[:5]),
-                "total_repos_collected": agg.get("total_repos_collected"),
-            })
-    return out
-
-
-def _save_run_metadata(run_meta: dict) -> Path:
-    out = config.LOGS_DIR / f"run_{run_meta['run_id']}.json"
-    out.write_text(json.dumps(run_meta, indent=2, ensure_ascii=False))
-    return out
-
-
-# ─────────────────────────────────────────────────────────────────────────────
-# Process a single username
-# ─────────────────────────────────────────────────────────────────────────────
-
-def _process_username(client, username: str, markdown: bool) -> dict:
-    """Collect, build schema, save files. Returns summary dict."""
-    console.print(f"\n[bold cyan]▶ Processing:[/bold cyan] {username}")
-    t0 = time.time()
-
+    # 1. Profile-level evidence
     profile = collect_profile(client, username)
-    repositories = collect_all_repos(client, username)
-    rl_info = log_rate_limit(client)
-    elapsed = round(time.time() - t0, 1)
 
-    doc = build_schema(username, profile, repositories, rl_info, elapsed)
-
-    raw_path = _save_raw(username, doc)
-    summary_path = _save_summary(username, doc)
-
-    console.print(f"  [green]✓[/green] Raw JSON  → {raw_path}")
-    console.print(f"  [green]✓[/green] Summary   → {summary_path}")
-
-    if markdown:
-        md_path = _save_markdown_summary(username, doc)
-        console.print(f"  [green]✓[/green] Markdown  → {md_path}")
-
-    agg = doc.get("aggregate_signals", {})
-    console.print(
-        f"  Repos: {agg.get('total_repos_collected')} | "
-        f"Stars: {agg.get('total_stars_received')} | "
-        f"Evidence items: {doc['collection_metadata']['total_evidence_items']} | "
-        f"Elapsed: {elapsed}s"
-    )
-    return doc
-
-
-# ─────────────────────────────────────────────────────────────────────────────
-# CLI commands
-# ─────────────────────────────────────────────────────────────────────────────
-
-@app.command()
-def collect(
-    username: Optional[str] = typer.Option(None, "--username", "-u", help="Single GitHub username"),
-    file: Optional[str] = typer.Option(None, "--file", "-f", help="Path to .txt/.csv/.json username list"),
-    markdown: bool = typer.Option(False, "--markdown", "-m", help="Also generate Markdown summaries"),
-):
-    """Collect GitHub profile data and save structured JSON evidence."""
-    if not username and not file:
-        typer.echo("ERROR: Provide --username or --file.", err=True)
-        raise typer.Exit(1)
-
-    usernames: list[str] = []
-    if username:
-        usernames.append(username)
-    if file:
-        usernames.extend(_load_usernames_from_file(file))
-    usernames = list(dict.fromkeys(usernames))  # deduplicate, preserve order
-
-    run_id = utcnow_iso().replace(":", "-").replace("+", "Z")
-    run_meta = {
-        "run_id": run_id,
-        "started_at": utcnow_iso(),
-        "usernames": usernames,
-        "results": [],
-    }
-
-    client = build_client()
-    all_summaries = []
-
-    for uname in usernames:
-        try:
-            doc = _process_username(client, uname, markdown)
-            all_summaries.append({"username": uname, **doc})
-            run_meta["results"].append({"username": uname, "status": "success"})
-        except Exception as exc:
-            logger.error("Failed to process %s: %s", uname, exc)
-            console.print(f"  [red]✗[/red] {uname}: {exc}")
-            run_meta["results"].append({"username": uname, "status": "error", "error": str(exc)})
-
-    # Master CSV
-    csv_path = _save_master_csv(all_summaries)
-    console.print(f"\n[bold green]Master CSV → {csv_path}[/bold green]")
-
-    # Run metadata log
-    run_meta["finished_at"] = utcnow_iso()
-    log_path = _save_run_metadata(run_meta)
-    console.print(f"[bold green]Run log    → {log_path}[/bold green]")
-
-
-@app.command()
-def preprocess(
-    username: Optional[str] = typer.Option(None, "--username", "-u", help="Preprocess a single user's raw JSON"),
-    all_users: bool = typer.Option(False, "--all", "-a", help="Preprocess all raw JSON files in data/raw/"),
-    chunk_size: int = typer.Option(1500, "--chunk-size", help="Max characters per chunk (default 1500)"),
-):
-    """Clean, chunk, and run historical analysis on collected raw JSON data."""
-    from preprocessor.pipeline import preprocess as _preprocess, preprocess_all, PREPROCESSED_DIR
-
-    if not username and not all_users:
-        typer.echo("ERROR: Provide --username or --all.", err=True)
-        raise typer.Exit(1)
-
-    if all_users:
-        console.print(f"[bold cyan]Preprocessing all users in {config.RAW_DIR}[/bold cyan]")
-        results = preprocess_all(chunk_max_chars=chunk_size)
-        console.print(f"\n[bold green]OK Preprocessed {len(results)} users -> {PREPROCESSED_DIR}[/bold green]")
+    # 2. Repository-level evidence
+    # Updated repo_collector.py returns:
+    #   repositories, extra_aggregate_signals
+    # This fallback keeps main.py compatible with older collectors that returned
+    # only repositories.
+    wait_for_rate_limit(client, buffer=50)
+    repo_result = collect_all_repos(client, username)
+    if isinstance(repo_result, tuple) and len(repo_result) == 2:
+        repositories, extra_aggregate_signals = repo_result
     else:
-        raw_path = config.RAW_DIR / f"{username}.json"
-        if not raw_path.exists():
-            typer.echo(f"ERROR: No raw JSON for '{username}' at {raw_path}", err=True)
-            raise typer.Exit(1)
-        doc = _preprocess(raw_path, chunk_max_chars=chunk_size)
-        stats = doc["stats"]
-        hist = doc["historical_analysis"]
-        console.print(f"\n[bold green]OK Preprocessed: {username}[/bold green]")
-        console.print(
-            f"  Evidence items : {stats['original_evidence_count']} -> "
-            f"{stats['chunks_produced']} chunks ({stats['items_dropped']} dropped)"
+        repositories = repo_result
+        extra_aggregate_signals = {}
+
+    elapsed = round(time.time() - start, 1)
+
+    # 3. Build canonical schema using the updated schema_builder.py
+    raw_doc = build_schema(
+        username=username,
+        profile=profile,
+        repositories=repositories,
+        rate_limit_info=_rate_limit_snapshot(client),
+        elapsed_seconds=elapsed,
+        extra_aggregate_signals=extra_aggregate_signals,
+    )
+
+    # 4. Add historical/month-level analysis from updated historical.py
+    historical_analysis = build_historical_analysis(repositories)
+    raw_doc["historical_analysis"] = historical_analysis
+
+    # Optional: expose the most useful historical fields inside aggregate_signals
+    # too, so downstream agents can retrieve them without checking another block.
+    aggregate = raw_doc.setdefault("aggregate_signals", {})
+    for key in (
+        "weekday_vs_weekend_ratio",
+        "most_active_month_of_year",
+        "repo_creation_cadence",
+    ):
+        aggregate.setdefault(key, historical_analysis.get(key))
+
+    # 5. Keep metadata explicit for v2 output files
+    raw_doc["schema_version"] = "2.0"
+    raw_doc.setdefault("collection_metadata", {})
+    raw_doc["collection_metadata"].update({
+        "username": username,
+        "elapsed_seconds": elapsed,
+        "total_repos": len(repositories),
+        "raw_output_file": f"{username}_raw_v2.json",
+        "processed_output_file": f"{username}_processed_v2.json",
+        "main_version": "2.0",
+        "pipeline_notes": (
+            "v2 includes richer commit depth, collaboration signals, tooling "
+            "detection, profile README/pinned repositories, and monthly "
+            "historical activity analysis."
+        ),
+    })
+
+    # 6. Write raw_v2 JSON
+    raw_path = RAW_DIR / f"{username}_raw_v2.json"
+    _write_json(raw_path, raw_doc)
+    logger.info(
+        "Saved raw_v2 -> %s (%d repos, %d evidence items, %.1fs)",
+        raw_path,
+        len(repositories),
+        len(raw_doc.get("evidence_index", [])),
+        elapsed,
+    )
+
+    # 7. Run preprocessing pipeline and write processed_v2 JSON
+    processed_doc = preprocess_v2(raw_doc)
+    processed_path = PROC_DIR / f"{username}_processed_v2.json"
+    _write_json(processed_path, processed_doc)
+    logger.info("Saved processed_v2 -> %s", processed_path)
+
+    return {"raw": raw_path, "processed": processed_path}
+
+
+def _write_json(path: Path, payload: dict[str, Any]) -> None:
+    """Write JSON with UTF-8 encoding and stable formatting."""
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+
+
+def _rate_limit_snapshot(client: Github) -> dict:
+    """Return a compact GitHub API rate-limit snapshot."""
+    try:
+        rl = client.get_rate_limit()
+        checked_at = datetime.now(timezone.utc).isoformat()
+        return {
+            "core": {
+                "limit": rl.core.limit,
+                "remaining": rl.core.remaining,
+                "reset": rl.core.reset.isoformat(),
+            },
+            "search": {
+                "limit": rl.search.limit,
+                "remaining": rl.search.remaining,
+                "reset": rl.search.reset.isoformat(),
+            },
+            "checked_at": checked_at,
+        }
+    except Exception as exc:
+        logger.warning("Could not read GitHub rate limit snapshot: %s", exc)
+        return {}
+
+
+def _load_usernames() -> list[str]:
+    """Load usernames from usernames.txt if no CLI usernames are supplied."""
+    path = BASE_DIR / "usernames.txt"
+    if path.exists():
+        return [u.strip() for u in path.read_text(encoding="utf-8").splitlines() if u.strip()]
+    return []
+
+
+def main() -> None:
+    usernames = sys.argv[1:] or _load_usernames()
+    if not usernames:
+        logger.error("No usernames supplied and usernames.txt is empty or missing.")
+        sys.exit(1)
+
+    if not getattr(config, "GITHUB_TOKEN", ""):
+        logger.warning(
+            "GITHUB_TOKEN is empty. Unauthenticated GitHub API calls may hit rate limits quickly."
         )
-        console.print(f"  Avg chunk size : {stats['avg_chunk_length_chars']} chars")
-        console.print(f"  Activity trend : {hist['activity_trend']}")
-        if hist.get("peak_activity_year"):
-            console.print(f"  Peak year      : {hist['peak_activity_year']}")
-        for ev in hist.get("tech_evolution", []):
-            if "period" in ev:
-                console.print(
-                    f"  Tech ({ev['period']}): {', '.join(ev['dominant_languages'])}"
-                )
 
+    client = build_client(config.GITHUB_TOKEN)
 
+    failed: list[str] = []
+    for username in usernames:
+        try:
+            run_for_user(client, username)
+        except Exception as exc:
+            failed.append(username)
+            logger.error("Pipeline failed for %s: %s", username, exc, exc_info=True)
+
+    if failed:
+        logger.error("Completed with failures for: %s", ", ".join(failed))
+        sys.exit(1)
+
+    logger.info("All done.")
 @app.command()
 def analyze(
     username: str = typer.Option(..., "--username", "-u", help="GitHub username to analyze with AI agents"),
@@ -391,4 +274,4 @@ def analyze(
 
 
 if __name__ == "__main__":
-    app()
+    main()

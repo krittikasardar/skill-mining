@@ -1,0 +1,2270 @@
+{
+  "schema_version": "2.0",
+  "profile": {
+    "login": "krittikasardar",
+    "name": "Krittika",
+    "bio": null,
+    "company": null,
+    "blog": "",
+    "location": null,
+    "email": null,
+    "twitter_username": null,
+    "followers": 0,
+    "following": 0,
+    "public_repos": 6,
+    "public_gists": 0,
+    "created_at": "2020-01-14T17:08:39+00:00",
+    "updated_at": "2026-04-27T12:57:20+00:00",
+    "avatar_url": "https://avatars.githubusercontent.com/u/59887119?v=4",
+    "html_url": "https://github.com/krittikasardar",
+    "type": "User",
+    "site_admin": false,
+    "hireable": null,
+    "years_on_github": 6,
+    "followers_to_following_ratio": null,
+    "profile_readme": "",
+    "profile_readme_content": "",
+    "pinned_repositories": [
+      {
+        "name": "Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "full_name": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "description": "Sentiment analysis on the Amazon Fine Food Reviews dataset using traditional ML, LSTM, and transformer-based models. This project compares TF-IDF and Word2Vec vectorizations with various class balancing techniques to evaluate model performance on multi-class sentiment classification tasks.",
+        "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "stars": 0,
+        "forks": 0,
+        "language": "Jupyter Notebook",
+        "is_fork": false,
+        "pushed_at": "2025-07-21T21:11:01Z"
+      },
+      {
+        "name": "Sign-Language-Recognition-using-Deep-Learning",
+        "full_name": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "description": "A prototype capable of predicting and translating live sign language gestures into English using the LSTM neural networks, MediaPipe Holistic, OpenCV & Python.",
+        "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "stars": 0,
+        "forks": 0,
+        "language": "Jupyter Notebook",
+        "is_fork": false,
+        "pushed_at": "2025-11-10T12:00:34Z"
+      }
+    ],
+    "organisations": [],
+    "organisations_member_of": [],
+    "is_sponsored": false,
+    "sponsoring_count": 0
+  },
+  "repositories": [
+    {
+      "repository_metadata": {
+        "name": "Covid-19-Vaccine-Time-Analysis-",
+        "full_name": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "description": "Predicted the time by which the entire population of India will be vaccinated, primarily based on Data Analysis using Python.",
+        "html_url": "https://github.com/krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "homepage": null,
+        "language": "Jupyter Notebook",
+        "stargazers_count": 1,
+        "forks_count": 0,
+        "watchers_count": 1,
+        "open_issues_count": 0,
+        "size": 200,
+        "default_branch": "main",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2021-07-28T19:20:29+00:00",
+        "updated_at": "2026-04-26T09:17:01+00:00",
+        "pushed_at": "2026-04-26T09:16:57+00:00",
+        "license": null,
+        "topics": [],
+        "has_ci_cd": false,
+        "has_tests": false,
+        "has_contributing_guide": false,
+        "has_code_of_conduct": false,
+        "dependency_count": 0,
+        "releases_count": 0,
+        "latest_release_tag": null,
+        "latest_release_date": null,
+        "contributor_count": 1
+      },
+      "relevance_score": 0.4694,
+      "skill_evidence": {
+        "primary_language": "Jupyter Notebook",
+        "languages_used": [
+          "Jupyter Notebook"
+        ],
+        "language_breakdown": {
+          "Jupyter Notebook": {
+            "bytes": 452075,
+            "pct": 100.0
+          }
+        },
+        "topics": [],
+        "readme_keywords": [
+          "python",
+          "rag"
+        ],
+        "commit_count_sampled": 2,
+        "commit_years_covered": [
+          2021,
+          2026
+        ],
+        "total_commit_count": 2,
+        "total_commits_to_repo": 2,
+        "commit_frequency_per_year": {
+          "2021": 1,
+          "2026": 1
+        },
+        "avg_commits_per_active_month": 1.0,
+        "last_commit_date": "2026-04-26T09:16:57+00:00",
+        "commit_message_quality_score": 7.5,
+        "contribution_gap_months": 56,
+        "total_lines_added": 2008,
+        "total_lines_deleted": 0,
+        "commit_size_distribution": {
+          "small": 0,
+          "medium": 1,
+          "large": 1
+        },
+        "frameworks_detected": [],
+        "devops_tools_detected": [],
+        "testing_frameworks_detected": [],
+        "ci_platforms_detected": [],
+        "cloud_platforms_detected": [],
+        "db_technologies_detected": [],
+        "api_patterns_detected": [],
+        "documentation_quality_score": 2
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 1,
+        "forks_received": 0,
+        "issues_opened_count": 0,
+        "closed_issues_count": 0,
+        "pr_open_count": 0,
+        "pr_closed_count": 0,
+        "pr_merged_count": 0,
+        "pr_merge_rate_pct": null,
+        "avg_issue_close_time_days": null,
+        "contributor_count": 1
+      },
+      "leadership_evidence": {
+        "signals": [
+          "Sustained contributions over 5+ years (2021–2026)"
+        ],
+        "commit_year_span": {
+          "from": 2021,
+          "to": 2026
+        }
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# COVID-19 Vaccine Time Analysis\n\nThis project analyzes COVID-19 vaccination progress in India and predicts the approximate time required to vaccinate the entire population. The analysis is performed using Python in a Jupyter Notebook, with a focus on time-series analysis, data preprocessing, visualization, and vaccination trend estimation.\n\n## Project Overview\n\nDuring the COVID-19 pandemic, vaccination progress became an important public health indicator. This project uses available vaccination data to study how vaccination numbers changed over time and estimate when India could reach full vaccination coverage based on observed trends.\n\n## Objective\n\nThe main objectives of this project are:\n\n- Analyze COVID-19 vaccination trends in India\n- Understand the growth pattern of vaccine administration over time\n- Perform time-series based prediction\n- Estimate the time required to vaccinate the entire Indian population\n- Visualize vaccination progress using Python libraries\n\n## Repository Contents\n\n```text\nCovid-19-Vaccine-Time-Analysis-\n│\n└── IndiaCovidVaccine_TimeSeriesPrediction.ipynb",
+        "commit_samples": [
+          {
+            "sha": "d761c41674",
+            "message": "Add files via upload",
+            "date": "2021-07-28T19:22:50+00:00",
+            "additions": 1984,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Covid-19-Vaccine-Time-Analysis-/commit/d761c41674a0eef1cc38d2c67ab57775c81d8a7e"
+          },
+          {
+            "sha": "d6fc324073",
+            "message": "Initialize README with project details",
+            "date": "2026-04-26T09:16:57+00:00",
+            "additions": 24,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Covid-19-Vaccine-Time-Analysis-/commit/d6fc3240730dbd8bfa2372cfc7622a528e44d3c6"
+          }
+        ],
+        "description": "Predicted the time by which the entire population of India will be vaccinated, primarily based on Data Analysis using Python.",
+        "_monthly_commit_counts": {
+          "2021-07": 1,
+          "2026-04": 1
+        }
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "Sign-Language-Recognition-using-Deep-Learning",
+        "full_name": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "description": "A prototype capable of predicting and translating live sign language gestures into English using the LSTM neural networks, MediaPipe Holistic, OpenCV & Python.",
+        "html_url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "homepage": "",
+        "language": "Jupyter Notebook",
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "watchers_count": 0,
+        "open_issues_count": 0,
+        "size": 8306,
+        "default_branch": "main",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2022-07-03T16:12:22+00:00",
+        "updated_at": "2025-11-10T12:00:38+00:00",
+        "pushed_at": "2025-11-10T12:00:34+00:00",
+        "license": null,
+        "topics": [],
+        "has_ci_cd": false,
+        "has_tests": false,
+        "has_contributing_guide": false,
+        "has_code_of_conduct": false,
+        "dependency_count": 0,
+        "releases_count": 0,
+        "latest_release_tag": null,
+        "latest_release_date": null,
+        "contributor_count": 1
+      },
+      "relevance_score": 0.4477,
+      "skill_evidence": {
+        "primary_language": "Jupyter Notebook",
+        "languages_used": [
+          "Jupyter Notebook"
+        ],
+        "language_breakdown": {
+          "Jupyter Notebook": {
+            "bytes": 1311484,
+            "pct": 100.0
+          }
+        },
+        "topics": [],
+        "readme_keywords": [
+          "api",
+          "deep learning",
+          "go",
+          "numpy",
+          "python",
+          "tensorflow",
+          "testing"
+        ],
+        "commit_count_sampled": 7,
+        "commit_years_covered": [
+          2022,
+          2025
+        ],
+        "total_commit_count": 7,
+        "total_commits_to_repo": 7,
+        "commit_frequency_per_year": {
+          "2022": 1,
+          "2025": 6
+        },
+        "avg_commits_per_active_month": 2.33,
+        "last_commit_date": "2025-11-10T12:00:31+00:00",
+        "commit_message_quality_score": 5.43,
+        "contribution_gap_months": 35,
+        "total_lines_added": 2914,
+        "total_lines_deleted": 12,
+        "commit_size_distribution": {
+          "small": 4,
+          "medium": 2,
+          "large": 1
+        },
+        "frameworks_detected": [],
+        "devops_tools_detected": [],
+        "testing_frameworks_detected": [],
+        "ci_platforms_detected": [],
+        "cloud_platforms_detected": [],
+        "db_technologies_detected": [],
+        "api_patterns_detected": [],
+        "documentation_quality_score": 2
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0,
+        "issues_opened_count": 0,
+        "closed_issues_count": 0,
+        "pr_open_count": 0,
+        "pr_closed_count": 0,
+        "pr_merged_count": 0,
+        "pr_merge_rate_pct": null,
+        "avg_issue_close_time_days": null,
+        "contributor_count": 1
+      },
+      "leadership_evidence": {
+        "signals": [
+          "Sustained contributions over 3+ years (2022–2025)"
+        ],
+        "commit_year_span": {
+          "from": 2022,
+          "to": 2025
+        }
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# Sign Language Recognition using Deep Learning and Computer Vision\n\nReal-time vision-based Sign Language Recognition system designed to assist individuals with hearing and speech impairments by translating hand gestures into readable text. This project aims to promote accessibility and inclusivity by bridging communication gaps.\n\n# Project Overview\n\nThe system recognizes six basic sign gestures:\n\n1. Hello\n\n2. How are you\n\n3. I’m sorry\n\n4. Thank you\n\n5. I love you\n\n6. Goodbye\n\nWe used deep learning techniques with Long Short-Term Memory (LSTM) networks and MediaPipe Holistic keypoint detection to achieve accurate gesture recognition in real-time.\n\n# Problem Statement\n\nIndividuals with hearing or speech impairments often rely on sign language, which is not universally understood. This project addresses the need for a reliable, real-time sign language recognition system that can interpret gestures and output readable text without requiring human interpreters.\n\n# Tools & Technologies\n\n- Python\n\n- OpenCV (cv2)\n\n- MediaPipe Holistic\n\n- TensorFlow & Keras\n\n- NumPy, Sci-kit Learn, Matplotlib\n\n# Methodology\n\n1. Keypoint Detection with MediaPipe Holistic\n\n- Extracted body, face, and hand landmarks (540+ points)\n\n2. Dataset Creation\n\n- Captured 30 videos per gesture (30 frames each)\n\n- Converted sequences into TensorFlow-compatible format\n\n3. Data Preprocessing & Labeling\n\n- Split into training and testing sets\n\n- One-hot encoding of gesture labels\n\n4. Model Architecture\n\n- 3 LSTM layers\n\n- 2 Dense layers with ReLU activation\n\n- Final Dense layer with Softmax activation\n\n- Trained using Adam optimizer & categorical crossentropy\n\n5. Model Evaluation\n\n- Achieved categorical accuracy of ~79% during training\n\n- Evaluated with Confusion Matrix and Accuracy Score\n\n6. Real-time Testing\n\n- Integrated OpenCV and MediaPipe for live gesture detection and text output\n\n# Contributors\n\n- Krittika Sardar\n\n- Anjali Sinha\n\n- Bobby Baidya\n\nSupervised by Dr. Soham Sarkar",
+        "commit_samples": [
+          {
+            "sha": "4f8b8d3877",
+            "message": "Add files via upload",
+            "date": "2022-07-03T16:16:45+00:00",
+            "additions": 2817,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning/commit/4f8b8d387742a972349f421062582887dc25051a"
+          },
+          {
+            "sha": "ba389e8690",
+            "message": "Create README.md",
+            "date": "2025-07-20T15:18:35+00:00",
+            "additions": 84,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning/commit/ba389e8690d5df883e418511fd61779d74e02af3"
+          },
+          {
+            "sha": "424044bc0e",
+            "message": "Update README.md",
+            "date": "2025-07-20T15:22:51+00:00",
+            "additions": 1,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning/commit/424044bc0e0be7271715fa4392cecf5c538bc7b0"
+          },
+          {
+            "sha": "2f1e9e24a1",
+            "message": "Update README.md",
+            "date": "2025-07-21T06:31:44+00:00",
+            "additions": 1,
+            "deletions": 1,
+            "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning/commit/2f1e9e24a16213dac06481d6b6655bcd38ed7ef3"
+          },
+          {
+            "sha": "9a4c304433",
+            "message": "Update README.md",
+            "date": "2025-07-21T14:51:58+00:00",
+            "additions": 10,
+            "deletions": 10,
+            "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning/commit/9a4c304433e45c7637b8c94cd61e30f7ab260d30"
+          },
+          {
+            "sha": "5de26e721b",
+            "message": "Update README.md",
+            "date": "2025-07-21T14:52:20+00:00",
+            "additions": 1,
+            "deletions": 1,
+            "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning/commit/5de26e721bc852ca9da663a6c85c37240305843f"
+          },
+          {
+            "sha": "2f02a761f2",
+            "message": "Add files via upload",
+            "date": "2025-11-10T12:00:31+00:00",
+            "additions": 0,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sign-Language-Recognition-using-Deep-Learning/commit/2f02a761f2ff2d230522c5d14ae9c739a24cec72"
+          }
+        ],
+        "description": "A prototype capable of predicting and translating live sign language gestures into English using the LSTM neural networks, MediaPipe Holistic, OpenCV & Python.",
+        "_monthly_commit_counts": {
+          "2022-07": 1,
+          "2025-07": 5,
+          "2025-11": 1
+        }
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "Handwritten-Digit-Recognition",
+        "full_name": "krittikasardar/Handwritten-Digit-Recognition",
+        "description": "Deep learning project that recognizes handwritten digits from image data using Python, TensorFlow/Keras, and neural networks.",
+        "html_url": "https://github.com/krittikasardar/Handwritten-Digit-Recognition",
+        "homepage": "",
+        "language": "Jupyter Notebook",
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "watchers_count": 0,
+        "open_issues_count": 0,
+        "size": 61,
+        "default_branch": "main",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2021-09-02T05:59:58+00:00",
+        "updated_at": "2026-04-26T09:23:21+00:00",
+        "pushed_at": "2026-04-26T09:21:30+00:00",
+        "license": null,
+        "topics": [],
+        "has_ci_cd": false,
+        "has_tests": false,
+        "has_contributing_guide": false,
+        "has_code_of_conduct": false,
+        "dependency_count": 0,
+        "releases_count": 0,
+        "latest_release_tag": null,
+        "latest_release_date": null,
+        "contributor_count": 1
+      },
+      "relevance_score": 0.4325,
+      "skill_evidence": {
+        "primary_language": "Jupyter Notebook",
+        "languages_used": [
+          "Jupyter Notebook"
+        ],
+        "language_breakdown": {
+          "Jupyter Notebook": {
+            "bytes": 127754,
+            "pct": 100.0
+          }
+        },
+        "topics": [],
+        "readme_keywords": [
+          "deep learning",
+          "go",
+          "machine learning",
+          "neural",
+          "numpy",
+          "pandas",
+          "python",
+          "tensorflow",
+          "testing"
+        ],
+        "commit_count_sampled": 3,
+        "commit_years_covered": [
+          2021,
+          2026
+        ],
+        "total_commit_count": 3,
+        "total_commits_to_repo": 3,
+        "commit_frequency_per_year": {
+          "2021": 1,
+          "2026": 2
+        },
+        "avg_commits_per_active_month": 1.5,
+        "last_commit_date": "2026-04-26T09:21:29+00:00",
+        "commit_message_quality_score": 6.67,
+        "contribution_gap_months": 54,
+        "total_lines_added": 1568,
+        "total_lines_deleted": 2,
+        "commit_size_distribution": {
+          "small": 1,
+          "medium": 1,
+          "large": 1
+        },
+        "frameworks_detected": [],
+        "devops_tools_detected": [],
+        "testing_frameworks_detected": [],
+        "ci_platforms_detected": [],
+        "cloud_platforms_detected": [],
+        "db_technologies_detected": [],
+        "api_patterns_detected": [],
+        "documentation_quality_score": 2
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0,
+        "issues_opened_count": 0,
+        "closed_issues_count": 0,
+        "pr_open_count": 0,
+        "pr_closed_count": 0,
+        "pr_merged_count": 0,
+        "pr_merge_rate_pct": null,
+        "avg_issue_close_time_days": null,
+        "contributor_count": 1
+      },
+      "leadership_evidence": {
+        "signals": [
+          "Sustained contributions over 5+ years (2021–2026)"
+        ],
+        "commit_year_span": {
+          "from": 2021,
+          "to": 2026
+        }
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# Handwritten Digit Recognition\n\nThis project implements a deep learning model to recognize handwritten digits from image data. The model is trained on digit images and learns to classify each image into one of the digits from **0 to 9**.\n\n## Project Overview\n\nHandwritten digit recognition is a classic computer vision problem where the goal is to teach a machine to identify handwritten numbers. This project demonstrates how image data can be preprocessed, trained using a neural network, and evaluated for digit classification.\n\nThe project is useful for understanding the basics of:\n\n- Image classification\n- Deep learning\n- Neural networks\n- Computer vision\n- Model training and evaluation\n\n## Objective\n\nThe main objectives of this project are:\n\n- Load and preprocess handwritten digit image data\n- Build a neural network model for digit classification\n- Train the model to recognize digits from 0 to 9\n- Evaluate the model performance using accuracy and loss\n- Test the model on unseen digit images\n\n## Dataset\n\nThis project is based on handwritten digit image data, commonly represented using the MNIST dataset format. MNIST contains grayscale images of handwritten digits from 0 to 9 and is widely used for training and testing machine learning models. :contentReference[oaicite:0]{index=0}\n\n## Technologies Used\n\n- Python\n- Jupyter Notebook\n- NumPy\n- Pandas\n- Matplotlib\n- TensorFlow / Keras\n- Deep Learning\n- Artificial Neural Networks\n\n## Key Features\n\n- Image preprocessing and normalization\n- Neural network model creation\n- Model training and validation\n- Accuracy and loss visualization\n- Handwritten digit prediction\n- Beginner-friendly deep learning implementation\n\n## Repository Structure\n\n```text\nHandwritten-Digit-Recognition\n│\n├── handwritten_digit_recognition.ipynb\n└── README.md",
+        "commit_samples": [
+          {
+            "sha": "56bf3b35e1",
+            "message": "Add files via upload",
+            "date": "2021-09-02T06:06:08+00:00",
+            "additions": 1509,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Handwritten-Digit-Recognition/commit/56bf3b35e1ce7a54e06ab4b30a68fd1efe0ba698"
+          },
+          {
+            "sha": "faf0b34de1",
+            "message": "Add README for Handwritten Digit Recognition project",
+            "date": "2026-04-26T09:19:31+00:00",
+            "additions": 58,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Handwritten-Digit-Recognition/commit/faf0b34de162872633fd56989ed99dbccf57a140"
+          },
+          {
+            "sha": "505dc949ad",
+            "message": "Update README.md",
+            "date": "2026-04-26T09:21:29+00:00",
+            "additions": 1,
+            "deletions": 2,
+            "url": "https://github.com/krittikasardar/Handwritten-Digit-Recognition/commit/505dc949ad7b6b0718dfe9710032e3621365b5ef"
+          }
+        ],
+        "description": "Deep learning project that recognizes handwritten digits from image data using Python, TensorFlow/Keras, and neural networks.",
+        "_monthly_commit_counts": {
+          "2021-09": 1,
+          "2026-04": 2
+        }
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "skill-mining",
+        "full_name": "krittikasardar/skill-mining",
+        "description": "Skill Mining using Public Data is a GitHub-based RAG and multi-agent pipeline that collects public developer profile evidence, retrieves relevant repository signals, and uses LLaMA 3 via Groq to infer technical skills, project roles, and leadership indicators.",
+        "html_url": "https://github.com/krittikasardar/skill-mining",
+        "homepage": "",
+        "language": "Python",
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "watchers_count": 0,
+        "open_issues_count": 0,
+        "size": 1882,
+        "default_branch": "main",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2026-04-24T13:08:46+00:00",
+        "updated_at": "2026-05-11T19:36:36+00:00",
+        "pushed_at": "2026-05-11T19:36:32+00:00",
+        "license": null,
+        "topics": [],
+        "has_ci_cd": false,
+        "has_tests": false,
+        "has_contributing_guide": false,
+        "has_code_of_conduct": false,
+        "dependency_count": 8,
+        "releases_count": 0,
+        "latest_release_tag": null,
+        "latest_release_date": null,
+        "contributor_count": 3
+      },
+      "relevance_score": 0.4194,
+      "skill_evidence": {
+        "primary_language": "Python",
+        "languages_used": [
+          "Python"
+        ],
+        "language_breakdown": {
+          "Python": {
+            "bytes": 81868,
+            "pct": 100.0
+          }
+        },
+        "topics": [],
+        "readme_keywords": [
+          "api",
+          "c++",
+          "cli",
+          "go",
+          "langchain",
+          "llm",
+          "python",
+          "rag",
+          "transformer"
+        ],
+        "commit_count_sampled": 7,
+        "commit_years_covered": [
+          2026
+        ],
+        "total_commit_count": 7,
+        "total_commits_to_repo": 7,
+        "commit_frequency_per_year": {
+          "2026": 7
+        },
+        "avg_commits_per_active_month": 7.0,
+        "last_commit_date": "2026-04-24T15:55:01+00:00",
+        "commit_message_quality_score": 7.57,
+        "contribution_gap_months": 0,
+        "total_lines_added": 165706,
+        "total_lines_deleted": 22,
+        "commit_size_distribution": {
+          "small": 4,
+          "medium": 0,
+          "large": 3
+        },
+        "frameworks_detected": [
+          "huggingface"
+        ],
+        "devops_tools_detected": [],
+        "testing_frameworks_detected": [],
+        "ci_platforms_detected": [],
+        "cloud_platforms_detected": [],
+        "db_technologies_detected": [],
+        "api_patterns_detected": [],
+        "documentation_quality_score": 4
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0,
+        "issues_opened_count": 0,
+        "closed_issues_count": 1,
+        "pr_open_count": 0,
+        "pr_closed_count": 1,
+        "pr_merged_count": 1,
+        "pr_merge_rate_pct": 100.0,
+        "avg_issue_close_time_days": null,
+        "contributor_count": 3
+      },
+      "leadership_evidence": {
+        "signals": [],
+        "commit_year_span": {
+          "from": 2026,
+          "to": 2026
+        }
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# Skill Mining – GitHub Profile Data Collector & Preprocessor\n\nA Python pipeline that collects public GitHub profile data, cleans and chunks\nit into RAG-ready evidence, and produces structured JSON output for downstream\nskill/role/leadership inference by LLM agents.\n\n---\n\n## Project structure\n\n```\nskill_mining/\n├── config.py                        # All configuration (reads from .env)\n├── github_client.py                 # Authenticated client, retry, rate-limit helpers\n├── main.py                          # CLI entry point (typer)\n├── collectors/\n│   ├── profile_collector.py         # User profile metadata\n│   └── repo_collector.py            # Repositories, commits, READMEs, scoring\n├── data/\n│   ├── agents/                      # AI agent pipeline for profile analysis\n│   │   ├── agents.py                # LangChain agents (skill, role, summarizer)\n│   │   ├── pipeline.py              # LangGraph orchestration\n│   │   └── tools.py                 # GitHub API utilities\n│   ├── raw/                         # <username>.json (full evidence document)\n│   ├── processed/                   # <username>_summary.json, master_summary.csv\n│   └── preprocessed/                # <username>_preprocessed.json (RAG-ready chunks)\n├── transformers_local/\n│   └── schema_builder.py            # Assembles final JSON schema\n├── preprocessor/\n│   ├── cleaner.py                   # Fix encoding, strip noise, drop empty items\n│   ├── chunker.py                   # Split long evidence into ≤1500-char chunks\n│   ├── historical.py                # Temporal analysis (commits/languages by year)\n│   └── pipeline.py                  # Orchestrates clean → chunk → historical analysis\n├── utils/\n│   └── helpers.py                   # Shared utility functions\n├── logs/                            # run_<timestamp>.json\n├── usernames.txt                    # 10 individual GitHub profiles for experiments\n├── requirements.txt\n├── .env.example\n└── README.md\n```\n\n---\n\n## Setup\n\n### 1. Clone / create the project\n\n```bash\ncd skill_mining\npython -m venv .venv\nsource .venv/bin/activate      # Windows: .venv\\Scripts\\activate\npip install -r requirements.txt\n```\n\n### 2. Configure your API keys\n\n```bash\ncp .env.example .env\n# Edit .env and set:\n# GITHUB_TOKEN=ghp_your_github_token_here\n# GROQ_API_KEY=your_groq_api_key_here\n\nNever commit your `.env` file. Copy `.env.example` to `.env` and fill in your own API keys. The `.env` file is listed in `.gitignore` and will not be pushed to GitHub.\n```\n\n#### GitHub Token\nGenerate a **classic personal access token** with **public repo read** scope at: https://github.com/settings/tokens\n\n#### Groq API Key\nGet your API key for AI agent analysis at: https://console.groq.com/keys\n\n### 3. Verify setup\n\n```bash\npython main.py rate-limit\n```\n\n---\n\n## Usage\n\n### Collect a single profile\n\n```bash\npython main.py collect --username torvalds\n```\n\n### Collect multiple profiles from a file\n\n```bash\npython main.py collect --file usernames.txt\n```\n\n### Also generate Markdown summaries for manual inspection\n\n```bash\npython main.py collect --file usernames.txt --markdown\n```\n\n### Enable disk caching (avoids re-fetching during development)\n\n```bash\nENABLE_CACHE=true python main.py collect --file usernames.txt\n```\n\n---\n\n## Preprocessing\n\nAfter collection, run the preprocessor to clean, chunk, and analyse the raw data.\nThis produces the `data/preprocessed/` files consumed by the retrieval (ChromaDB) step.\n\n### Preprocess a single user\n\n```bash\npython main.py preprocess --username karpathy\n```\n\n### Preprocess all collected users at once\n\n```bash\npython main.py preprocess --all\n```\n\n### Adjust chunk size (default 1500 characters)\n\n```bash\npython main.py preprocess --all --chunk-size 1000\n```\n\nThe preprocessor runs three steps internally:\n\n| Step | Module | What it does |\n|------|--------|--------------|\n| Clean | `preprocessor/cleaner.py` | Fixes encoding corruption, strips HTML and badge lines, drops items < 20 chars |\n| Chunk | `preprocessor/chunker.py … [truncated]",
+        "commit_samples": [
+          {
+            "sha": "2e4c39668e",
+            "message": "Initial commit: skill mining GitHub collector",
+            "date": "2026-04-24T13:13:11+00:00",
+            "additions": 92212,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/skill-mining/commit/2e4c39668ec708c7667480752b33cf426b0fb0a0"
+          },
+          {
+            "sha": "2f6dd4e2d4",
+            "message": "Update README with .env file instructions",
+            "date": "2026-04-24T13:16:22+00:00",
+            "additions": 4,
+            "deletions": 1,
+            "url": "https://github.com/krittikasardar/skill-mining/commit/2f6dd4e2d4822546b48983dc579c9a6ea295eeec"
+          },
+          {
+            "sha": "b4491a030c",
+            "message": "Add new GitHub usernames to usernames.txt",
+            "date": "2026-04-24T13:23:43+00:00",
+            "additions": 4,
+            "deletions": 1,
+            "url": "https://github.com/krittikasardar/skill-mining/commit/b4491a030c862ba85a072b870f9d40c289efac67"
+          },
+          {
+            "sha": "07edb55c9c",
+            "message": "Add commits and repos configuration to .env.example",
+            "date": "2026-04-24T13:25:23+00:00",
+            "additions": 3,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/skill-mining/commit/07edb55c9c6b88cbba4837d92b37200d70384f47"
+          },
+          {
+            "sha": "03164b7a6d",
+            "message": "Annotate non-individual profiles in usernames.txt",
+            "date": "2026-04-24T15:29:15+00:00",
+            "additions": 4,
+            "deletions": 2,
+            "url": "https://github.com/krittikasardar/skill-mining/commit/03164b7a6d5cb4205c73ffea48375d1d02f8a0da"
+          },
+          {
+            "sha": "7e3abb5f58",
+            "message": "Collected github profiles of chiphuyen and justmarkham",
+            "date": "2026-04-24T15:50:27+00:00",
+            "additions": 16005,
+            "deletions": 15,
+            "url": "https://github.com/krittikasardar/skill-mining/commit/7e3abb5f58767d797236ffe593825f6aa40179df"
+          },
+          {
+            "sha": "bccdf117c1",
+            "message": "Merge remote changes and add collected data",
+            "date": "2026-04-24T15:55:01+00:00",
+            "additions": 57474,
+            "deletions": 3,
+            "url": "https://github.com/krittikasardar/skill-mining/commit/bccdf117c1c72def8b5d0bdb3bb9a841189500a3"
+          }
+        ],
+        "description": "Skill Mining using Public Data is a GitHub-based RAG and multi-agent pipeline that collects public developer profile evidence, retrieves relevant repository signals, and uses LLaMA 3 via Groq to infer technical skills, project roles, and leadership indicators.",
+        "_monthly_commit_counts": {
+          "2026-04": 7
+        }
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "structured-information-benchmark",
+        "full_name": "krittikasardar/structured-information-benchmark",
+        "description": "Benchmark pipeline for evaluating how well LLMs handle structured information tasks compared with SQL-based ground truth using IMDb data.",
+        "html_url": "https://github.com/krittikasardar/structured-information-benchmark",
+        "homepage": "",
+        "language": "Python",
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "watchers_count": 0,
+        "open_issues_count": 0,
+        "size": 325,
+        "default_branch": "main",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2026-04-26T11:27:10+00:00",
+        "updated_at": "2026-04-26T11:37:21+00:00",
+        "pushed_at": "2026-04-26T11:28:35+00:00",
+        "license": null,
+        "topics": [],
+        "has_ci_cd": false,
+        "has_tests": false,
+        "has_contributing_guide": false,
+        "has_code_of_conduct": false,
+        "dependency_count": 14,
+        "releases_count": 0,
+        "latest_release_tag": null,
+        "latest_release_date": null,
+        "contributor_count": 1
+      },
+      "relevance_score": 0.4009,
+      "skill_evidence": {
+        "primary_language": "Python",
+        "languages_used": [
+          "Python"
+        ],
+        "language_breakdown": {
+          "Python": {
+            "bytes": 27931,
+            "pct": 100.0
+          }
+        },
+        "topics": [],
+        "readme_keywords": [
+          "api",
+          "go",
+          "llm",
+          "python",
+          "rag",
+          "sqlite"
+        ],
+        "commit_count_sampled": 1,
+        "commit_years_covered": [
+          2026
+        ],
+        "total_commit_count": 1,
+        "total_commits_to_repo": 1,
+        "commit_frequency_per_year": {
+          "2026": 1
+        },
+        "avg_commits_per_active_month": 1.0,
+        "last_commit_date": "2026-04-26T11:27:40+00:00",
+        "commit_message_quality_score": 8.0,
+        "contribution_gap_months": 0,
+        "total_lines_added": 3200,
+        "total_lines_deleted": 0,
+        "commit_size_distribution": {
+          "small": 0,
+          "medium": 0,
+          "large": 1
+        },
+        "frameworks_detected": [],
+        "devops_tools_detected": [],
+        "testing_frameworks_detected": [],
+        "ci_platforms_detected": [],
+        "cloud_platforms_detected": [],
+        "db_technologies_detected": [
+          "sqlite"
+        ],
+        "api_patterns_detected": [],
+        "documentation_quality_score": 3
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0,
+        "issues_opened_count": 0,
+        "closed_issues_count": 0,
+        "pr_open_count": 0,
+        "pr_closed_count": 0,
+        "pr_merged_count": 0,
+        "pr_merge_rate_pct": null,
+        "avg_issue_close_time_days": null,
+        "contributor_count": 1
+      },
+      "leadership_evidence": {
+        "signals": [],
+        "commit_year_span": {
+          "from": 2026,
+          "to": 2026
+        }
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# Benchmark for Structured Information Processing in Large Language Models\n\n> University of Mannheim - Team Project FSS 2026  \n> School of Business Informatics and Mathematics  \n> Supervisor: Dr. Sven Hertling\n\n## Project Overview\n\nThis project builds a **benchmark pipeline** to evaluate how well Large Language Models (LLMs) handle structured information tasks — compared to using SQL queries on a real relational database.\n\nThe core hypothesis: tasks that are **hard for LLMs alone** (aggregations, multi-hop queries, large data) become **easy and reliable** when an LLM is combined with a structured database (Text2SQL approach).\n\n## Pipeline Flow\n\n```\nRaw IMDb Data\n     │\n     ▼\nCleaned IMDb Subset  ──────────────────────────────────────┐\n     │                                                       │\n     ▼                                                       │\nSynthetic Data                                   Unstructured Wikipedia Data\n     │                                                       │\n     ▼                                                       │\nSQLite Database ◄──────────────────────────────────────────┘\n     │\n     ├──► Benchmark Tasks (natural language questions)\n     │         │\n     │         ├──► SQL Ground Truth Answers\n     │         │\n     │         └──► LLM Prompts  ──► LLM Output\n     │\n     ▼\nEvaluation Table (SQL answer vs LLM answer)\n```\n\n## Folder Structure\n\n```\nstructured-information-benchmark/\n│\n├── data/\n│   ├── raw/                          # Original datasets (large raw files not pushed)\n│   ├── processed/                    # Cleaned IMDb subset files\n│   ├── synthetic/                    # Synthetic benchmark data from preparation/team\n│   ├── unstructured/                 # Wikipedia text, HTML, screenshots, other formats\n│   │   ├── wikipedia_text/\n│   │   └── wikipedia_html/\n│   └── benchmark_tasks/              # Task definitions with SQL links\n│\n├── database/                         # Local SQLite files (not pushed)\n├── sql/\n│   └── ground_truth_queries/         # SQL files used for factual answer generation\n├── prompts/\n│   └── task_prompts/                 # Reusable prompts for experiments\n├── results/\n│   ├── sql_ground_truth/             # SQL output answer keys\n│   ├── llm_outputs/\n│   │   └── gpt_5_3/                  # Model-specific LLM responses\n│   └── evaluation/                   # Comparison tables and metrics\n├── notebooks/                        # Exploratory notebooks\n├── src/                              # Python pipeline scripts\n│   ├── data_preparation.py\n│   ├── synthetic_data_preparation.py\n│   ├── create_database.py\n│   ├── generate_sql_groundtruth.py\n│   ├── run_llm_experiments.py\n│   └── evaluate_results.py\n├── docs/                             # Team docs and workflow notes\n├── config.yaml                       # Central configuration file\n├── main.py                           # Pipeline entry point\n├── requirements.txt                  # Python dependencies\n├── .env.example                      # API key placeholders (never real keys)\n└── .gitignore\n```\n\n## Quickstart\n\n### 1. Clone the repository\n```bash\ngit clone https://github.com/<your-org>/structured-information-benchmark.git\ncd structured-information-benchmark\n```\n\n### 2. Create a virtual environment\n```bash\npython -m venv venv\n\n# Windows (Git Bash)\nsource venv/Scripts/activate\n\n# macOS / Linux\nsource venv/bin/activate\n```\n\n### 3. Install dependencies\n```bash\npip install -r requirements.txt\n```\n\n### 4. Set up environment variables\n```bash\ncp .env.example .env\n# Edit .env and fill in your API keys\n```\n\n### 5. Download IMDb data\nVisit https://datasets.imdbws.com/ and download:\n- `title.basics.tsv.gz`\n- `title.ratings.tsv.gz`\n- `name.basics.tsv.gz`\n- `title.crew.tsv.gz`\n- `title.principals.tsv.gz`\n\nPlace the extracted `.tsv` files in `data/raw/`.\n\n### 6. Run the full pipeline\n```bash\npython main.py\n```\n\nOr run individual steps:\n```bash\npython src/data_preparation.py\npython src/create_database.py\npython src/ge … [truncated]",
+        "commit_samples": [
+          {
+            "sha": "729c185ab8",
+            "message": "Add IMDb benchmark v1 project files",
+            "date": "2026-04-26T11:27:40+00:00",
+            "additions": 3200,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/structured-information-benchmark/commit/729c185ab84dc090828d9c2033c9db19444c1d2e"
+          }
+        ],
+        "description": "Benchmark pipeline for evaluating how well LLMs handle structured information tasks compared with SQL-based ground truth using IMDb data.",
+        "_monthly_commit_counts": {
+          "2026-04": 1
+        }
+      }
+    },
+    {
+      "repository_metadata": {
+        "name": "Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "full_name": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "description": "Sentiment analysis on the Amazon Fine Food Reviews dataset using traditional ML, LSTM, and transformer-based models. This project compares TF-IDF and Word2Vec vectorizations with various class balancing techniques to evaluate model performance on multi-class sentiment classification tasks.",
+        "html_url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "homepage": null,
+        "language": "Jupyter Notebook",
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "watchers_count": 0,
+        "open_issues_count": 0,
+        "size": 249,
+        "default_branch": "main",
+        "fork": false,
+        "archived": false,
+        "visibility": "public",
+        "created_at": "2025-07-21T14:07:37+00:00",
+        "updated_at": "2025-07-21T21:11:05+00:00",
+        "pushed_at": "2025-07-21T21:11:01+00:00",
+        "license": null,
+        "topics": [],
+        "has_ci_cd": false,
+        "has_tests": false,
+        "has_contributing_guide": false,
+        "has_code_of_conduct": false,
+        "dependency_count": 0,
+        "releases_count": 0,
+        "latest_release_tag": null,
+        "latest_release_date": null,
+        "contributor_count": 1
+      },
+      "relevance_score": 0.364,
+      "skill_evidence": {
+        "primary_language": "Jupyter Notebook",
+        "languages_used": [
+          "Jupyter Notebook"
+        ],
+        "language_breakdown": {
+          "Jupyter Notebook": {
+            "bytes": 666139,
+            "pct": 100.0
+          }
+        },
+        "topics": [],
+        "readme_keywords": [
+          "deep learning",
+          "fine-tuning",
+          "machine learning",
+          "rag",
+          "rest",
+          "transformer"
+        ],
+        "commit_count_sampled": 10,
+        "commit_years_covered": [
+          2025
+        ],
+        "total_commit_count": 10,
+        "total_commits_to_repo": 10,
+        "commit_frequency_per_year": {
+          "2025": 10
+        },
+        "avg_commits_per_active_month": 10.0,
+        "last_commit_date": "2025-07-21T21:11:01+00:00",
+        "commit_message_quality_score": 5.6,
+        "contribution_gap_months": 0,
+        "total_lines_added": 11230,
+        "total_lines_deleted": 2583,
+        "commit_size_distribution": {
+          "small": 5,
+          "medium": 1,
+          "large": 4
+        },
+        "frameworks_detected": [
+          "huggingface"
+        ],
+        "devops_tools_detected": [],
+        "testing_frameworks_detected": [],
+        "ci_platforms_detected": [],
+        "cloud_platforms_detected": [
+          "aws"
+        ],
+        "db_technologies_detected": [],
+        "api_patterns_detected": [],
+        "documentation_quality_score": 2
+      },
+      "role_evidence": {
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0,
+        "issues_opened_count": 0,
+        "closed_issues_count": 0,
+        "pr_open_count": 0,
+        "pr_closed_count": 0,
+        "pr_merged_count": 0,
+        "pr_merge_rate_pct": null,
+        "avg_issue_close_time_days": null,
+        "contributor_count": 1
+      },
+      "leadership_evidence": {
+        "signals": [],
+        "commit_year_span": {
+          "from": 2025,
+          "to": 2025
+        }
+      },
+      "raw_text_evidence": {
+        "readme_excerpt": "# Sentiment-Analysis-on-Amazon-Fine-Food-Reviews\n\nThe uploaded code includes model implementations and feature engineering workflows based on both TF-IDF and Word2Vec representations.\n\n# Project Overview\n\nThis project performs sentiment analysis on the Amazon Fine Food Reviews dataset using a combination of traditional machine learning, deep learning, and transformer-based models. The objective is to classify reviews as Positive, Neutral, or Negative, leveraging various NLP techniques and web mining methods to analyze large-scale consumer feedback.\n\n# Dataset\n\n- Source: [Kaggle - Amazon Fine Food Reviews](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews/data)\n\n- Size: ~568,000 reviews spanning over 10 years\n\n- Features used: Review Text, Summary, and Score\n\n# Sentiment Mapping:\n\n- Positive (Score > 3)\n\n- Neutral (Score = 3)\n\n- Negative (Score < 3)\n\n# Preprocessing Steps\n\n- Removed null values and duplicates\n\n- Cleaned HTML tags and punctuations\n\n- Stopwords filtered with negations preserved\n\n- Handled class imbalance using sampling techniques\n\n- Data split into 80:20 train-test sets\n\n# Feature Engineering\n\n- TF-IDF\n\n- Word2Vec embeddings\n\n# Models Implemented\n\n- Logistic Regression (baseline)\n\n- Naive Bayes\n\n- Random Forest\n\n- Support Vector Machines (SVM)\n\n- LSTM (deep learning)\n\n- Transformer Models: BERT, RoBERTa, DistilBERT\n\n# Key Findings\n\nDistilBERT delivered the best overall performance, especially on positive and neutral sentiments.\n\nTF-IDF worked best with traditional models, while LSTM and transformers benefitted from dense embeddings.\n\nClass balancing significantly impacted model performance.\n\n# Future Scope\n\n- Explore ensemble models\n\n- Advanced fine-tuning of transformer models\n\n- Experiment with sentiment lexicons\n\n# Contributors\n\n- Sushma Kulkarni\n\n- Krittika Sardar\n\n- Mansi Sawant\n\n- Nishit Suthar\n\n- Eljes Basha",
+        "commit_samples": [
+          {
+            "sha": "3cbe5e08a2",
+            "message": "Initial commit",
+            "date": "2025-07-21T14:07:38+00:00",
+            "additions": 2,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/3cbe5e08a2c0fa0c147cf05d1f963532a5e9d4b6"
+          },
+          {
+            "sha": "988cf0d4a8",
+            "message": "Update README.md",
+            "date": "2025-07-21T14:16:28+00:00",
+            "additions": 80,
+            "deletions": 1,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/988cf0d4a8900657d20faf1d311ffd9788145b18"
+          },
+          {
+            "sha": "aca000070c",
+            "message": "Add files via upload",
+            "date": "2025-07-21T14:28:30+00:00",
+            "additions": 10624,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/aca000070c56764e3a42ab2be1d7b63af5ed36a0"
+          },
+          {
+            "sha": "5decb854f7",
+            "message": "Update README.md",
+            "date": "2025-07-21T14:28:58+00:00",
+            "additions": 2,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/5decb854f7a41a28c92a9e46caaa0e0cc178d26c"
+          },
+          {
+            "sha": "aeb850d5a9",
+            "message": "Update README.md",
+            "date": "2025-07-21T14:49:20+00:00",
+            "additions": 3,
+            "deletions": 3,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/aeb850d5a96edd9a78f5147c902fd0cf337dca25"
+          },
+          {
+            "sha": "73ca2fc913",
+            "message": "Add files via upload",
+            "date": "2025-07-21T19:59:00+00:00",
+            "additions": 512,
+            "deletions": 0,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/73ca2fc91383a4753e9dcf2026dec3c80b19d805"
+          },
+          {
+            "sha": "7d373632ef",
+            "message": "Update BERT_Model.ipynb",
+            "date": "2025-07-21T20:03:36+00:00",
+            "additions": 3,
+            "deletions": 2,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/7d373632efbc4643abeee90d53ae00942b0599a3"
+          },
+          {
+            "sha": "0f1661bc2f",
+            "message": "Update RoBERTa.ipynb",
+            "date": "2025-07-21T20:07:28+00:00",
+            "additions": 3,
+            "deletions": 1717,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/0f1661bc2f7347b4dacbef8398646f2a0a03c304"
+          },
+          {
+            "sha": "d67bd43ac7",
+            "message": "Update DistilBERT.ipynb",
+            "date": "2025-07-21T21:07:26+00:00",
+            "additions": 1,
+            "deletions": 1,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/d67bd43ac773f29666a63236d2fbfd82e3f9ad41"
+          },
+          {
+            "sha": "8ccbbb77de",
+            "message": "Delete BERT.ipynb",
+            "date": "2025-07-21T21:11:01+00:00",
+            "additions": 0,
+            "deletions": 859,
+            "url": "https://github.com/krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews/commit/8ccbbb77de65d4b6b1a4f895bf78362eb294f4c1"
+          }
+        ],
+        "description": "Sentiment analysis on the Amazon Fine Food Reviews dataset using traditional ML, LSTM, and transformer-based models. This project compares TF-IDF and Word2Vec vectorizations with various class balancing techniques to evaluate model performance on multi-class sentiment classification tasks.",
+        "_monthly_commit_counts": {
+          "2025-07": 10
+        }
+      }
+    }
+  ],
+  "aggregate_signals": {
+    "top_languages": [
+      {
+        "language": "Jupyter Notebook",
+        "bytes": 2557452,
+        "pct": 95.9
+      },
+      {
+        "language": "Python",
+        "bytes": 109799,
+        "pct": 4.1
+      }
+    ],
+    "top_topics": [],
+    "total_stars_received": 1,
+    "total_forks_received": 0,
+    "total_repos_collected": 6,
+    "owned_repo_count": 6,
+    "forked_repo_count": 0,
+    "active_years": [
+      2021,
+      2022,
+      2025,
+      2026
+    ],
+    "first_active_year": 2021,
+    "last_active_year": 2026,
+    "activity_span_years": 5,
+    "recent_activity_summary": {
+      "repos_pushed_last_2_years": 6,
+      "repo_names": [
+        "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "krittikasardar/Handwritten-Digit-Recognition",
+        "krittikasardar/skill-mining",
+        "krittikasardar/structured-information-benchmark",
+        "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews"
+      ]
+    },
+    "historical_activity_summary": {
+      "repos_4_plus_years_old": 0,
+      "repo_names": []
+    },
+    "total_commits_all_time": 30,
+    "commit_frequency_all_years": {
+      "2021": 2,
+      "2022": 1,
+      "2025": 16,
+      "2026": 11
+    },
+    "monthly_commit_heatmap": {
+      "2021-07": 1,
+      "2021-09": 1,
+      "2022-07": 1,
+      "2025-07": 15,
+      "2025-11": 1,
+      "2026-04": 11
+    },
+    "recent_6_month_commit_count": 12,
+    "most_recent_commit_date": "2026-04-26T11:27:40+00:00",
+    "avg_commits_per_active_month": 3.8,
+    "avg_commit_message_quality_score": 6.79,
+    "max_contribution_gap_months": 56,
+    "avg_contribution_gap_months": 24.17,
+    "repo_creation_cadence": {
+      "2021": 2,
+      "2022": 1,
+      "2026": 2,
+      "2025": 1
+    },
+    "total_prs_opened": 0,
+    "total_prs_closed": 1,
+    "total_prs_merged": 1,
+    "pr_merge_rate_pct": 100.0,
+    "total_issues_opened": 0,
+    "total_issues_closed": 1,
+    "avg_issue_close_time_days": null,
+    "external_repo_contributions": 0,
+    "repos_with_ci_cd": 0,
+    "repos_with_tests": 0,
+    "repos_with_contributing_guide": 0,
+    "repos_with_code_of_conduct": 0,
+    "repos_with_releases": 0,
+    "total_dependencies_detected": 22,
+    "total_contributors_across_repos": 8,
+    "top_frameworks_detected": [
+      {
+        "name": "huggingface",
+        "count": 2
+      }
+    ],
+    "top_devops_tools_detected": [],
+    "top_testing_frameworks_detected": [],
+    "top_ci_platforms_detected": [],
+    "top_cloud_platforms_detected": [
+      {
+        "name": "aws",
+        "count": 1
+      }
+    ],
+    "top_database_technologies_detected": [
+      {
+        "name": "sqlite",
+        "count": 1
+      }
+    ],
+    "top_api_patterns_detected": [],
+    "total_commits_all_repos": 30,
+    "total_lines_added_all_repos": 186626,
+    "total_lines_deleted_all_repos": 2619,
+    "external_contributions_count": 0,
+    "longest_contribution_streak_months": 1,
+    "most_active_year": 2025,
+    "inactive_periods": [
+      {
+        "from": "2021-09",
+        "to": "2022-07",
+        "gap_months": 9
+      },
+      {
+        "from": "2022-07",
+        "to": "2025-07",
+        "gap_months": 35
+      },
+      {
+        "from": "2025-07",
+        "to": "2025-11",
+        "gap_months": 3
+      },
+      {
+        "from": "2025-11",
+        "to": "2026-04",
+        "gap_months": 4
+      }
+    ],
+    "collection_completeness_pct": 100.0,
+    "weekday_vs_weekend_ratio": {
+      "weekday_commits_sampled": 23,
+      "weekend_commits_sampled": 7,
+      "weekday_vs_weekend_ratio": 3.29,
+      "interpretation": "Ratio = weekday commits divided by weekend commits."
+    },
+    "most_active_month_of_year": {
+      "month": 7,
+      "month_name": "July",
+      "commit_count": 17
+    }
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "ev_0001",
+      "type": "profile",
+      "source": "profile:krittikasardar",
+      "content": "Pinned repositories: Sentiment-Analysis-on-Amazon-Fine-Food-Reviews, Sign-Language-Recognition-using-Deep-Learning",
+      "metadata": {
+        "field": "pinned_repositories",
+        "login": "krittikasardar"
+      }
+    },
+    {
+      "evidence_id": "ev_0002",
+      "type": "skill",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Predicted the time by which the entire population of India will be vaccinated, primarily based on Data Analysis using Python.",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "field": "description",
+        "language": "Jupyter Notebook",
+        "stars": 1
+      }
+    },
+    {
+      "evidence_id": "ev_0003",
+      "type": "skill",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "# COVID-19 Vaccine Time Analysis\n\nThis project analyzes COVID-19 vaccination progress in India and predicts the approximate time required to vaccinate the entire population. The analysis is performed using Python in a Jupyter Notebook, with a focus on time-series analysis, data preprocessing, visualization, and vaccination trend estimation.\n\n## Project Overview\n\nDuring the COVID-19 pandemic, vaccination progress became an important public health indicator. This project uses available vaccination data to study how vaccination numbers changed over time and estimate when India could reach full vaccination coverage based on observed trends.\n\n## Objective\n\nThe main objectives of this project are:\n\n- Analyze COVID-19 vaccination trends in India\n- Understand the growth pattern of vaccine administration over time\n- Perform time-series based prediction\n- Estimate the time required to vaccinate the entire Indian population\n- Visualize vaccination progress using Python libraries\n\n## Repository Contents\n\n```text\nCovid-19-Vaccine-Time-Analysis-\n│\n└── IndiaCovidVaccine_TimeSeriesPrediction.ipynb",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "field": "readme_excerpt",
+        "topics": []
+      }
+    },
+    {
+      "evidence_id": "ev_0004",
+      "type": "skill",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Technologies/tools mentioned in README: python, rag",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "field": "readme_keywords"
+      }
+    },
+    {
+      "evidence_id": "ev_0005",
+      "type": "skill",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Languages used: Jupyter Notebook (100.0%)",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0006",
+      "type": "skill",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Documentation quality score: 2/10.",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "field": "documentation_quality_score"
+      }
+    },
+    {
+      "evidence_id": "ev_0007",
+      "type": "role",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "User is the owner of krittikasardar/Covid-19-Vaccine-Time-Analysis-.",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "is_owner": true,
+        "stars": 1,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0008",
+      "type": "contribution",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Collaboration and maintainer signals for krittikasardar/Covid-19-Vaccine-Time-Analysis-: open PRs: 0, merged PRs: 0, open issues: 0, closed issues: 0, contributors: 1.",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "field": "collaboration_summary",
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 1,
+        "forks_received": 0,
+        "issues_opened_count": 0,
+        "closed_issues_count": 0,
+        "pr_open_count": 0,
+        "pr_closed_count": 0,
+        "pr_merged_count": 0,
+        "pr_merge_rate_pct": null,
+        "avg_issue_close_time_days": null,
+        "contributor_count": 1
+      }
+    },
+    {
+      "evidence_id": "ev_0009",
+      "type": "leadership",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Sustained contributions over 5+ years (2021–2026)",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "stars": 1,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0010",
+      "type": "commit",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Commit activity summary for krittikasardar/Covid-19-Vaccine-Time-Analysis-: total commits: 2, last commit: 2026-04-26T09:16:57+00:00, avg commits per active month: 1.0, max contribution gap: 56 months, commit message quality score: 7.5/10.",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "field": "commit_activity_summary",
+        "total_commits_to_repo": 2,
+        "commit_frequency_per_year": {
+          "2021": 1,
+          "2026": 1
+        },
+        "commit_size_distribution": {
+          "small": 0,
+          "medium": 1,
+          "large": 1
+        },
+        "total_lines_added": 2008,
+        "total_lines_deleted": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0011",
+      "type": "commit",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Commit (2021-07-28T19:22:50+00:00): Add files via upload",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "sha": "d761c41674",
+        "date": "2021-07-28T19:22:50+00:00",
+        "additions": 1984,
+        "deletions": 0,
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0012",
+      "type": "commit",
+      "source": "repo:krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+      "content": "Commit (2026-04-26T09:16:57+00:00): Initialize README with project details",
+      "metadata": {
+        "repo": "krittikasardar/Covid-19-Vaccine-Time-Analysis-",
+        "sha": "d6fc324073",
+        "date": "2026-04-26T09:16:57+00:00",
+        "additions": 24,
+        "deletions": 0,
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0013",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "A prototype capable of predicting and translating live sign language gestures into English using the LSTM neural networks, MediaPipe Holistic, OpenCV & Python.",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "description",
+        "language": "Jupyter Notebook",
+        "stars": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0014",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "# Sign Language Recognition using Deep Learning and Computer Vision\n\nReal-time vision-based Sign Language Recognition system designed to assist individuals with hearing and speech impairments by translating hand gestures into readable text. This project aims to promote accessibility and inclusivity by bridging communication gaps.\n\n# Project Overview\n\nThe system recognizes six basic sign gestures:\n\n1. Hello\n\n2. How are you\n\n3. I’m sorry\n\n4. Thank you\n\n5. I love you\n\n6. Goodbye\n\nWe used deep learning techniques with Long Short-Term Memory (LSTM) networks and MediaPipe Holistic keypoint detection to achieve accurate gesture recognition in real-time.\n\n# Problem Statement\n\nIndividuals with hearing or speech impairments often rely on sign language, which is not universally understood. This project addresses the need for a reliable, real-time sign language recognition system that can interpret gestures and output readable text without requiring human interpreters.\n\n# Tools & Technologies\n\n- Python\n\n- OpenCV (cv2)\n\n- MediaPipe Holistic\n\n- TensorFlow & Keras\n\n- NumPy, Sci-kit Learn, Matplotlib\n\n# Methodology\n\n1. Keypoint Detection with MediaPipe Holistic\n\n- Extracted body, face, and hand landmarks (540+ points)\n\n2. Dataset Creation\n\n- Captured 30 videos per gesture (30 frames each)\n\n- Converted sequences into TensorFlow-compatible format\n\n3. Data Preprocessing & Labeling\n\n- Split into training and testing sets\n\n- One-hot encoding of gesture labels\n\n4. Model Architecture\n\n- 3 LSTM layers\n\n- 2 Dense layers with ReLU activation\n\n- Final Dense layer with Softmax activation\n\n- Trained using Adam optimizer & categorical crossentropy\n\n5. Model Evaluation\n\n- Achieved categorical accuracy of ~79% during training\n\n- Evaluated with Confusion Matrix and Accuracy Score\n\n6. Real-time Testing\n\n- Integrated OpenCV and MediaPipe for live gesture detection and text output\n\n# Contributors\n\n- Krittika Sardar\n\n- Anjali Sinha\n\n- Bobby Baidya\n\nSupervised by Dr. Soham Sarkar",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "readme_excerpt",
+        "topics": []
+      }
+    },
+    {
+      "evidence_id": "ev_0015",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Technologies/tools mentioned in README: api, deep learning, go, numpy, python, tensorflow, testing",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "readme_keywords"
+      }
+    },
+    {
+      "evidence_id": "ev_0016",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Languages used: Jupyter Notebook (100.0%)",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0017",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Documentation quality score: 2/10.",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "documentation_quality_score"
+      }
+    },
+    {
+      "evidence_id": "ev_0018",
+      "type": "role",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "User is the owner of krittikasardar/Sign-Language-Recognition-using-Deep-Learning.",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0019",
+      "type": "contribution",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Collaboration and maintainer signals for krittikasardar/Sign-Language-Recognition-using-Deep-Learning: open PRs: 0, merged PRs: 0, open issues: 0, closed issues: 0, contributors: 1.",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "collaboration_summary",
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0,
+        "issues_opened_count": 0,
+        "closed_issues_count": 0,
+        "pr_open_count": 0,
+        "pr_closed_count": 0,
+        "pr_merged_count": 0,
+        "pr_merge_rate_pct": null,
+        "avg_issue_close_time_days": null,
+        "contributor_count": 1
+      }
+    },
+    {
+      "evidence_id": "ev_0020",
+      "type": "leadership",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Sustained contributions over 3+ years (2022–2025)",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0021",
+      "type": "commit",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Commit activity summary for krittikasardar/Sign-Language-Recognition-using-Deep-Learning: total commits: 7, last commit: 2025-11-10T12:00:31+00:00, avg commits per active month: 2.33, max contribution gap: 35 months, commit message quality score: 5.43/10.",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "field": "commit_activity_summary",
+        "total_commits_to_repo": 7,
+        "commit_frequency_per_year": {
+          "2022": 1,
+          "2025": 6
+        },
+        "commit_size_distribution": {
+          "small": 4,
+          "medium": 2,
+          "large": 1
+        },
+        "total_lines_added": 2914,
+        "total_lines_deleted": 12
+      }
+    },
+    {
+      "evidence_id": "ev_0022",
+      "type": "commit",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Commit (2022-07-03T16:16:45+00:00): Add files via upload",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "sha": "4f8b8d3877",
+        "date": "2022-07-03T16:16:45+00:00",
+        "additions": 2817,
+        "deletions": 0,
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0023",
+      "type": "commit",
+      "source": "repo:krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+      "content": "Commit (2025-11-10T12:00:31+00:00): Add files via upload",
+      "metadata": {
+        "repo": "krittikasardar/Sign-Language-Recognition-using-Deep-Learning",
+        "sha": "2f02a761f2",
+        "date": "2025-11-10T12:00:31+00:00",
+        "additions": 0,
+        "deletions": 0,
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0024",
+      "type": "skill",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "Deep learning project that recognizes handwritten digits from image data using Python, TensorFlow/Keras, and neural networks.",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "field": "description",
+        "language": "Jupyter Notebook",
+        "stars": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0025",
+      "type": "skill",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "# Handwritten Digit Recognition\n\nThis project implements a deep learning model to recognize handwritten digits from image data. The model is trained on digit images and learns to classify each image into one of the digits from **0 to 9**.\n\n## Project Overview\n\nHandwritten digit recognition is a classic computer vision problem where the goal is to teach a machine to identify handwritten numbers. This project demonstrates how image data can be preprocessed, trained using a neural network, and evaluated for digit classification.\n\nThe project is useful for understanding the basics of:\n\n- Image classification\n- Deep learning\n- Neural networks\n- Computer vision\n- Model training and evaluation\n\n## Objective\n\nThe main objectives of this project are:\n\n- Load and preprocess handwritten digit image data\n- Build a neural network model for digit classification\n- Train the model to recognize digits from 0 to 9\n- Evaluate the model performance using accuracy and loss\n- Test the model on unseen digit images\n\n## Dataset\n\nThis project is based on handwritten digit image data, commonly represented using the MNIST dataset format. MNIST contains grayscale images of handwritten digits from 0 to 9 and is widely used for training and testing machine learning models. :contentReference[oaicite:0]{index=0}\n\n## Technologies Used\n\n- Python\n- Jupyter Notebook\n- NumPy\n- Pandas\n- Matplotlib\n- TensorFlow / Keras\n- Deep Learning\n- Artificial Neural Networks\n\n## Key Features\n\n- Image preprocessing and normalization\n- Neural network model creation\n- Model training and validation\n- Accuracy and loss visualization\n- Handwritten digit prediction\n- Beginner-friendly deep learning implementation\n\n## Repository Structure\n\n```text\nHandwritten-Digit-Recognition\n│\n├── handwritten_digit_recognition.ipynb\n└── README.md",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "field": "readme_excerpt",
+        "topics": []
+      }
+    },
+    {
+      "evidence_id": "ev_0026",
+      "type": "skill",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "Technologies/tools mentioned in README: deep learning, go, machine learning, neural, numpy, pandas, python, tensorflow, testing",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "field": "readme_keywords"
+      }
+    },
+    {
+      "evidence_id": "ev_0027",
+      "type": "skill",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "Languages used: Jupyter Notebook (100.0%)",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0028",
+      "type": "skill",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "Documentation quality score: 2/10.",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "field": "documentation_quality_score"
+      }
+    },
+    {
+      "evidence_id": "ev_0029",
+      "type": "role",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "User is the owner of krittikasardar/Handwritten-Digit-Recognition.",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0030",
+      "type": "contribution",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "Collaboration and maintainer signals for krittikasardar/Handwritten-Digit-Recognition: open PRs: 0, merged PRs: 0, open issues: 0, closed issues: 0, contributors: 1.",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "field": "collaboration_summary",
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0,
+        "issues_opened_count": 0,
+        "closed_issues_count": 0,
+        "pr_open_count": 0,
+        "pr_closed_count": 0,
+        "pr_merged_count": 0,
+        "pr_merge_rate_pct": null,
+        "avg_issue_close_time_days": null,
+        "contributor_count": 1
+      }
+    },
+    {
+      "evidence_id": "ev_0031",
+      "type": "leadership",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "Sustained contributions over 5+ years (2021–2026)",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0032",
+      "type": "commit",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "Commit activity summary for krittikasardar/Handwritten-Digit-Recognition: total commits: 3, last commit: 2026-04-26T09:21:29+00:00, avg commits per active month: 1.5, max contribution gap: 54 months, commit message quality score: 6.67/10.",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "field": "commit_activity_summary",
+        "total_commits_to_repo": 3,
+        "commit_frequency_per_year": {
+          "2021": 1,
+          "2026": 2
+        },
+        "commit_size_distribution": {
+          "small": 1,
+          "medium": 1,
+          "large": 1
+        },
+        "total_lines_added": 1568,
+        "total_lines_deleted": 2
+      }
+    },
+    {
+      "evidence_id": "ev_0033",
+      "type": "commit",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "Commit (2021-09-02T06:06:08+00:00): Add files via upload",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "sha": "56bf3b35e1",
+        "date": "2021-09-02T06:06:08+00:00",
+        "additions": 1509,
+        "deletions": 0,
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0034",
+      "type": "commit",
+      "source": "repo:krittikasardar/Handwritten-Digit-Recognition",
+      "content": "Commit (2026-04-26T09:21:29+00:00): Update README.md",
+      "metadata": {
+        "repo": "krittikasardar/Handwritten-Digit-Recognition",
+        "sha": "505dc949ad",
+        "date": "2026-04-26T09:21:29+00:00",
+        "additions": 1,
+        "deletions": 2,
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0035",
+      "type": "skill",
+      "source": "repo:krittikasardar/skill-mining",
+      "content": "Skill Mining using Public Data is a GitHub-based RAG and multi-agent pipeline that collects public developer profile evidence, retrieves relevant repository signals, and uses LLaMA 3 via Groq to infer technical skills, project roles, and leadership indicators.",
+      "metadata": {
+        "repo": "krittikasardar/skill-mining",
+        "field": "description",
+        "language": "Python",
+        "stars": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0036",
+      "type": "skill",
+      "source": "repo:krittikasardar/skill-mining",
+      "content": "# Skill Mining – GitHub Profile Data Collector & Preprocessor\n\nA Python pipeline that collects public GitHub profile data, cleans and chunks\nit into RAG-ready evidence, and produces structured JSON output for downstream\nskill/role/leadership inference by LLM agents.\n\n---\n\n## Project structure\n\n```\nskill_mining/\n├── config.py                        # All configuration (reads from .env)\n├── github_client.py                 # Authenticated client, retry, rate-limit helpers\n├── main.py                          # CLI entry point (typer)\n├── collectors/\n│   ├── profile_collector.py         # User profile metadata\n│   └── repo_collector.py            # Repositories, commits, READMEs, scoring\n├── data/\n│   ├── agents/                      # AI agent pipeline for profile analysis\n│   │   ├── agents.py                # LangChain agents (skill, role, summarizer)\n│   │   ├── pipeline.py              # LangGraph orchestration\n│   │   └── tools.py                 # GitHub API utilities\n│   ├── raw/                         # <username>.json (full evidence document)\n│   ├── processed/                   # <username>_summary.json, master_summary.csv\n│   └── preprocessed/                # <username>_preprocessed.json (RAG-ready chunks)\n├── transformers_local/\n│   └── schema_builder.py            # Assembles final JSON schema\n├── preprocessor/\n│   ├── cleaner.py                   # Fix encoding, strip noise, drop empty items\n│   ├── chunker.py                   # Split long evidence into ≤1500-char chunks\n│   ├── historical.py                # Temporal analysis (commits/languages by year)\n│   └── pipeline.py                  # Orchestrates clean → chunk → historical analysis\n├── utils/\n│   └── helpers.py                   # Shared utility functions\n├── logs/                            # run_<timestamp>.json\n├── usernames.txt                    # 10 individual GitHub profiles for experiments\n├── requirements.txt\n├── .env.example\n└── README.md\n```\n\n---\n\n## Setup\n\n### 1. Clone / create the project\n\n```bash\ncd skill_mining\npython -m venv .venv\nsource .venv/bin/activate      # Windows: .venv\\Scripts\\activate\npip install -r requirements.txt\n```\n\n### 2. Configure your API keys\n\n```bash\ncp .env.example .env\n# Edit .env and set:\n# GITHUB_TOKEN=ghp_your_github_token_here\n# GROQ_API_KEY=your_groq_api_key_here\n\nNever commit your `.env` file. Copy `.env.example` to `.env` and fill in your own API keys. The `.env` file is listed in `.gitignore` and will not be pushed to GitHub.\n```\n\n#### GitHub Token\nGenerate a **classic personal access token** with **public repo read** scope at: https://github.com/settings/tokens\n\n#### Groq API Key\nGet your API key for AI agent analysis at: https://console.groq.com/keys\n\n### 3. Verify setup\n\n```bash\npython main.py rate-limit\n```\n\n---\n\n## Usage\n\n### Collect a single profile\n\n```bash\npython main.py collect --username torvalds\n```\n\n### Collect multiple profiles from a file\n\n```bash\npython main.py collect --file usernames.txt\n```\n\n### Also generate Markdown summaries for manual inspection\n\n```bash\npython main.py collect --file usernames.txt --markdown\n```\n\n### Enable disk caching (avoids re-fetching during development)\n\n```bash\nENABLE_CACHE=true python main.py collect --file usernames.txt\n```\n\n---\n\n## Preprocessing\n\nAfter collection, run the preprocessor to clean, chunk, and analyse the raw data.\nThis produces the `data/preprocessed/` files consumed by the retrieval (ChromaDB) step.\n\n### Preprocess a single user\n\n```bash\npython main.py preprocess --username karpathy\n```\n\n### Preprocess all collected users at once\n\n```bash\npython main.py preprocess --all\n```\n\n### Adjust chunk size (default 1500 characters)\n\n```bash\npython main.py preprocess --all --chunk-size 1000\n```\n\nThe preprocessor runs three steps internally:\n\n| Step | Module | What it does |\n|------|--------|--------------|\n| Clean | `preprocessor/cleaner.py` | Fixes encoding corruption, strips HTML and badge lines, drops items < 20 chars |\n| Chunk | `preprocessor/chunker.py … [truncated]",
+      "metadata": {
+        "repo": "krittikasardar/skill-mining",
+        "field": "readme_excerpt",
+        "topics": []
+      }
+    },
+    {
+      "evidence_id": "ev_0037",
+      "type": "skill",
+      "source": "repo:krittikasardar/skill-mining",
+      "content": "Technologies/tools mentioned in README: api, c++, cli, go, langchain, llm, python, rag, transformer",
+      "metadata": {
+        "repo": "krittikasardar/skill-mining",
+        "field": "readme_keywords"
+      }
+    },
+    {
+      "evidence_id": "ev_0038",
+      "type": "skill",
+      "source": "repo:krittikasardar/skill-mining",
+      "content": "Languages used: Python (100.0%)",
+      "metadata": {
+        "repo": "krittikasardar/skill-mining",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0039",
+      "type": "skill",
+      "source": "repo:krittikasardar/skill-mining",
+      "content": "Frameworks detected: huggingface.",
+      "metadata": {
+        "repo": "krittikasardar/skill-mining",
+        "field": "frameworks_detected",
+        "values": [
+          "huggingface"
+        ]
+      }
+    },
+    {
+      "evidence_id": "ev_0040",
+      "type": "skill",
+      "source": "repo:krittikasardar/skill-mining",
+      "content": "Documentation quality score: 4/10.",
+      "metadata": {
+        "repo": "krittikasardar/skill-mining",
+        "field": "documentation_quality_score"
+      }
+    },
+    {
+      "evidence_id": "ev_0041",
+      "type": "role",
+      "source": "repo:krittikasardar/skill-mining",
+      "content": "Engineering maturity signals for krittikasardar/skill-mining: 8 dependencies detected.",
+      "metadata": {
+        "repo": "krittikasardar/skill-mining",
+        "field": "engineering_maturity",
+        "has_ci_cd": false,
+        "has_tests": false,
+        "releases_count": 0,
+        "dependency_count": 8
+      }
+    },
+    {
+      "evidence_id": "ev_0042",
+      "type": "role",
+      "source": "repo:krittikasardar/skill-mining",
+      "content": "User is the owner of krittikasardar/skill-mining.",
+      "metadata": {
+        "repo": "krittikasardar/skill-mining",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0043",
+      "type": "contribution",
+      "source": "repo:krittikasardar/skill-mining",
+      "content": "Collaboration and maintainer signals for krittikasardar/skill-mining: open PRs: 0, merged PRs: 1, PR merge rate: 100.0%, open issues: 0, closed issues: 1, contributors: 3.",
+      "metadata": {
+        "repo": "krittikasardar/skill-mining",
+        "field": "collaboration_summary",
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0,
+        "issues_opened_count": 0,
+        "closed_issues_count": 1,
+        "pr_open_count": 0,
+        "pr_closed_count": 1,
+        "pr_merged_count": 1,
+        "pr_merge_rate_pct": 100.0,
+        "avg_issue_close_time_days": null,
+        "contributor_count": 3
+      }
+    },
+    {
+      "evidence_id": "ev_0044",
+      "type": "commit",
+      "source": "repo:krittikasardar/skill-mining",
+      "content": "Commit activity summary for krittikasardar/skill-mining: total commits: 7, last commit: 2026-04-24T15:55:01+00:00, avg commits per active month: 7.0, max contribution gap: 0 months, commit message quality score: 7.57/10.",
+      "metadata": {
+        "repo": "krittikasardar/skill-mining",
+        "field": "commit_activity_summary",
+        "total_commits_to_repo": 7,
+        "commit_frequency_per_year": {
+          "2026": 7
+        },
+        "commit_size_distribution": {
+          "small": 4,
+          "medium": 0,
+          "large": 3
+        },
+        "total_lines_added": 165706,
+        "total_lines_deleted": 22
+      }
+    },
+    {
+      "evidence_id": "ev_0045",
+      "type": "commit",
+      "source": "repo:krittikasardar/skill-mining",
+      "content": "Commit (2026-04-24T13:13:11+00:00): Initial commit: skill mining GitHub collector",
+      "metadata": {
+        "repo": "krittikasardar/skill-mining",
+        "sha": "2e4c39668e",
+        "date": "2026-04-24T13:13:11+00:00",
+        "additions": 92212,
+        "deletions": 0,
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0046",
+      "type": "commit",
+      "source": "repo:krittikasardar/skill-mining",
+      "content": "Commit (2026-04-24T15:55:01+00:00): Merge remote changes and add collected data",
+      "metadata": {
+        "repo": "krittikasardar/skill-mining",
+        "sha": "bccdf117c1",
+        "date": "2026-04-24T15:55:01+00:00",
+        "additions": 57474,
+        "deletions": 3,
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0047",
+      "type": "skill",
+      "source": "repo:krittikasardar/structured-information-benchmark",
+      "content": "Benchmark pipeline for evaluating how well LLMs handle structured information tasks compared with SQL-based ground truth using IMDb data.",
+      "metadata": {
+        "repo": "krittikasardar/structured-information-benchmark",
+        "field": "description",
+        "language": "Python",
+        "stars": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0048",
+      "type": "skill",
+      "source": "repo:krittikasardar/structured-information-benchmark",
+      "content": "# Benchmark for Structured Information Processing in Large Language Models\n\n> University of Mannheim - Team Project FSS 2026  \n> School of Business Informatics and Mathematics  \n> Supervisor: Dr. Sven Hertling\n\n## Project Overview\n\nThis project builds a **benchmark pipeline** to evaluate how well Large Language Models (LLMs) handle structured information tasks — compared to using SQL queries on a real relational database.\n\nThe core hypothesis: tasks that are **hard for LLMs alone** (aggregations, multi-hop queries, large data) become **easy and reliable** when an LLM is combined with a structured database (Text2SQL approach).\n\n## Pipeline Flow\n\n```\nRaw IMDb Data\n     │\n     ▼\nCleaned IMDb Subset  ──────────────────────────────────────┐\n     │                                                       │\n     ▼                                                       │\nSynthetic Data                                   Unstructured Wikipedia Data\n     │                                                       │\n     ▼                                                       │\nSQLite Database ◄──────────────────────────────────────────┘\n     │\n     ├──► Benchmark Tasks (natural language questions)\n     │         │\n     │         ├──► SQL Ground Truth Answers\n     │         │\n     │         └──► LLM Prompts  ──► LLM Output\n     │\n     ▼\nEvaluation Table (SQL answer vs LLM answer)\n```\n\n## Folder Structure\n\n```\nstructured-information-benchmark/\n│\n├── data/\n│   ├── raw/                          # Original datasets (large raw files not pushed)\n│   ├── processed/                    # Cleaned IMDb subset files\n│   ├── synthetic/                    # Synthetic benchmark data from preparation/team\n│   ├── unstructured/                 # Wikipedia text, HTML, screenshots, other formats\n│   │   ├── wikipedia_text/\n│   │   └── wikipedia_html/\n│   └── benchmark_tasks/              # Task definitions with SQL links\n│\n├── database/                         # Local SQLite files (not pushed)\n├── sql/\n│   └── ground_truth_queries/         # SQL files used for factual answer generation\n├── prompts/\n│   └── task_prompts/                 # Reusable prompts for experiments\n├── results/\n│   ├── sql_ground_truth/             # SQL output answer keys\n│   ├── llm_outputs/\n│   │   └── gpt_5_3/                  # Model-specific LLM responses\n│   └── evaluation/                   # Comparison tables and metrics\n├── notebooks/                        # Exploratory notebooks\n├── src/                              # Python pipeline scripts\n│   ├── data_preparation.py\n│   ├── synthetic_data_preparation.py\n│   ├── create_database.py\n│   ├── generate_sql_groundtruth.py\n│   ├── run_llm_experiments.py\n│   └── evaluate_results.py\n├── docs/                             # Team docs and workflow notes\n├── config.yaml                       # Central configuration file\n├── main.py                           # Pipeline entry point\n├── requirements.txt                  # Python dependencies\n├── .env.example                      # API key placeholders (never real keys)\n└── .gitignore\n```\n\n## Quickstart\n\n### 1. Clone the repository\n```bash\ngit clone https://github.com/<your-org>/structured-information-benchmark.git\ncd structured-information-benchmark\n```\n\n### 2. Create a virtual environment\n```bash\npython -m venv venv\n\n# Windows (Git Bash)\nsource venv/Scripts/activate\n\n# macOS / Linux\nsource venv/bin/activate\n```\n\n### 3. Install dependencies\n```bash\npip install -r requirements.txt\n```\n\n### 4. Set up environment variables\n```bash\ncp .env.example .env\n# Edit .env and fill in your API keys\n```\n\n### 5. Download IMDb data\nVisit https://datasets.imdbws.com/ and download:\n- `title.basics.tsv.gz`\n- `title.ratings.tsv.gz`\n- `name.basics.tsv.gz`\n- `title.crew.tsv.gz`\n- `title.principals.tsv.gz`\n\nPlace the extracted `.tsv` files in `data/raw/`.\n\n### 6. Run the full pipeline\n```bash\npython main.py\n```\n\nOr run individual steps:\n```bash\npython src/data_preparation.py\npython src/create_database.py\npython src/ge … [truncated]",
+      "metadata": {
+        "repo": "krittikasardar/structured-information-benchmark",
+        "field": "readme_excerpt",
+        "topics": []
+      }
+    },
+    {
+      "evidence_id": "ev_0049",
+      "type": "skill",
+      "source": "repo:krittikasardar/structured-information-benchmark",
+      "content": "Technologies/tools mentioned in README: api, go, llm, python, rag, sqlite",
+      "metadata": {
+        "repo": "krittikasardar/structured-information-benchmark",
+        "field": "readme_keywords"
+      }
+    },
+    {
+      "evidence_id": "ev_0050",
+      "type": "skill",
+      "source": "repo:krittikasardar/structured-information-benchmark",
+      "content": "Languages used: Python (100.0%)",
+      "metadata": {
+        "repo": "krittikasardar/structured-information-benchmark",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0051",
+      "type": "skill",
+      "source": "repo:krittikasardar/structured-information-benchmark",
+      "content": "Database technologies detected: sqlite.",
+      "metadata": {
+        "repo": "krittikasardar/structured-information-benchmark",
+        "field": "db_technologies_detected",
+        "values": [
+          "sqlite"
+        ]
+      }
+    },
+    {
+      "evidence_id": "ev_0052",
+      "type": "skill",
+      "source": "repo:krittikasardar/structured-information-benchmark",
+      "content": "Documentation quality score: 3/10.",
+      "metadata": {
+        "repo": "krittikasardar/structured-information-benchmark",
+        "field": "documentation_quality_score"
+      }
+    },
+    {
+      "evidence_id": "ev_0053",
+      "type": "role",
+      "source": "repo:krittikasardar/structured-information-benchmark",
+      "content": "Engineering maturity signals for krittikasardar/structured-information-benchmark: 14 dependencies detected.",
+      "metadata": {
+        "repo": "krittikasardar/structured-information-benchmark",
+        "field": "engineering_maturity",
+        "has_ci_cd": false,
+        "has_tests": false,
+        "releases_count": 0,
+        "dependency_count": 14
+      }
+    },
+    {
+      "evidence_id": "ev_0054",
+      "type": "role",
+      "source": "repo:krittikasardar/structured-information-benchmark",
+      "content": "User is the owner of krittikasardar/structured-information-benchmark.",
+      "metadata": {
+        "repo": "krittikasardar/structured-information-benchmark",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0055",
+      "type": "contribution",
+      "source": "repo:krittikasardar/structured-information-benchmark",
+      "content": "Collaboration and maintainer signals for krittikasardar/structured-information-benchmark: open PRs: 0, merged PRs: 0, open issues: 0, closed issues: 0, contributors: 1.",
+      "metadata": {
+        "repo": "krittikasardar/structured-information-benchmark",
+        "field": "collaboration_summary",
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0,
+        "issues_opened_count": 0,
+        "closed_issues_count": 0,
+        "pr_open_count": 0,
+        "pr_closed_count": 0,
+        "pr_merged_count": 0,
+        "pr_merge_rate_pct": null,
+        "avg_issue_close_time_days": null,
+        "contributor_count": 1
+      }
+    },
+    {
+      "evidence_id": "ev_0056",
+      "type": "commit",
+      "source": "repo:krittikasardar/structured-information-benchmark",
+      "content": "Commit activity summary for krittikasardar/structured-information-benchmark: total commits: 1, last commit: 2026-04-26T11:27:40+00:00, avg commits per active month: 1.0, max contribution gap: 0 months, commit message quality score: 8.0/10.",
+      "metadata": {
+        "repo": "krittikasardar/structured-information-benchmark",
+        "field": "commit_activity_summary",
+        "total_commits_to_repo": 1,
+        "commit_frequency_per_year": {
+          "2026": 1
+        },
+        "commit_size_distribution": {
+          "small": 0,
+          "medium": 0,
+          "large": 1
+        },
+        "total_lines_added": 3200,
+        "total_lines_deleted": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0057",
+      "type": "commit",
+      "source": "repo:krittikasardar/structured-information-benchmark",
+      "content": "Commit (2026-04-26T11:27:40+00:00): Add IMDb benchmark v1 project files",
+      "metadata": {
+        "repo": "krittikasardar/structured-information-benchmark",
+        "sha": "729c185ab8",
+        "date": "2026-04-26T11:27:40+00:00",
+        "additions": 3200,
+        "deletions": 0,
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0058",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Sentiment analysis on the Amazon Fine Food Reviews dataset using traditional ML, LSTM, and transformer-based models. This project compares TF-IDF and Word2Vec vectorizations with various class balancing techniques to evaluate model performance on multi-class sentiment classification tasks.",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "description",
+        "language": "Jupyter Notebook",
+        "stars": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0059",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "# Sentiment-Analysis-on-Amazon-Fine-Food-Reviews\n\nThe uploaded code includes model implementations and feature engineering workflows based on both TF-IDF and Word2Vec representations.\n\n# Project Overview\n\nThis project performs sentiment analysis on the Amazon Fine Food Reviews dataset using a combination of traditional machine learning, deep learning, and transformer-based models. The objective is to classify reviews as Positive, Neutral, or Negative, leveraging various NLP techniques and web mining methods to analyze large-scale consumer feedback.\n\n# Dataset\n\n- Source: [Kaggle - Amazon Fine Food Reviews](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews/data)\n\n- Size: ~568,000 reviews spanning over 10 years\n\n- Features used: Review Text, Summary, and Score\n\n# Sentiment Mapping:\n\n- Positive (Score > 3)\n\n- Neutral (Score = 3)\n\n- Negative (Score < 3)\n\n# Preprocessing Steps\n\n- Removed null values and duplicates\n\n- Cleaned HTML tags and punctuations\n\n- Stopwords filtered with negations preserved\n\n- Handled class imbalance using sampling techniques\n\n- Data split into 80:20 train-test sets\n\n# Feature Engineering\n\n- TF-IDF\n\n- Word2Vec embeddings\n\n# Models Implemented\n\n- Logistic Regression (baseline)\n\n- Naive Bayes\n\n- Random Forest\n\n- Support Vector Machines (SVM)\n\n- LSTM (deep learning)\n\n- Transformer Models: BERT, RoBERTa, DistilBERT\n\n# Key Findings\n\nDistilBERT delivered the best overall performance, especially on positive and neutral sentiments.\n\nTF-IDF worked best with traditional models, while LSTM and transformers benefitted from dense embeddings.\n\nClass balancing significantly impacted model performance.\n\n# Future Scope\n\n- Explore ensemble models\n\n- Advanced fine-tuning of transformer models\n\n- Experiment with sentiment lexicons\n\n# Contributors\n\n- Sushma Kulkarni\n\n- Krittika Sardar\n\n- Mansi Sawant\n\n- Nishit Suthar\n\n- Eljes Basha",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "readme_excerpt",
+        "topics": []
+      }
+    },
+    {
+      "evidence_id": "ev_0060",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Technologies/tools mentioned in README: deep learning, fine-tuning, machine learning, rag, rest, transformer",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "readme_keywords"
+      }
+    },
+    {
+      "evidence_id": "ev_0061",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Languages used: Jupyter Notebook (100.0%)",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "language_breakdown"
+      }
+    },
+    {
+      "evidence_id": "ev_0062",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Frameworks detected: huggingface.",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "frameworks_detected",
+        "values": [
+          "huggingface"
+        ]
+      }
+    },
+    {
+      "evidence_id": "ev_0063",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Cloud platforms detected: aws.",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "cloud_platforms_detected",
+        "values": [
+          "aws"
+        ]
+      }
+    },
+    {
+      "evidence_id": "ev_0064",
+      "type": "skill",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Documentation quality score: 2/10.",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "documentation_quality_score"
+      }
+    },
+    {
+      "evidence_id": "ev_0065",
+      "type": "role",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "User is the owner of krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews.",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "is_owner": true,
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "evidence_id": "ev_0066",
+      "type": "contribution",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Collaboration and maintainer signals for krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews: open PRs: 0, merged PRs: 0, open issues: 0, closed issues: 0, contributors: 1.",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "collaboration_summary",
+        "is_owner": true,
+        "is_fork": false,
+        "forked_from": null,
+        "has_wiki": true,
+        "has_issues": true,
+        "has_projects": true,
+        "has_pages": false,
+        "stars_received": 0,
+        "forks_received": 0,
+        "issues_opened_count": 0,
+        "closed_issues_count": 0,
+        "pr_open_count": 0,
+        "pr_closed_count": 0,
+        "pr_merged_count": 0,
+        "pr_merge_rate_pct": null,
+        "avg_issue_close_time_days": null,
+        "contributor_count": 1
+      }
+    },
+    {
+      "evidence_id": "ev_0067",
+      "type": "commit",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Commit activity summary for krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews: total commits: 10, last commit: 2025-07-21T21:11:01+00:00, avg commits per active month: 10.0, max contribution gap: 0 months, commit message quality score: 5.6/10.",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "field": "commit_activity_summary",
+        "total_commits_to_repo": 10,
+        "commit_frequency_per_year": {
+          "2025": 10
+        },
+        "commit_size_distribution": {
+          "small": 5,
+          "medium": 1,
+          "large": 4
+        },
+        "total_lines_added": 11230,
+        "total_lines_deleted": 2583
+      }
+    },
+    {
+      "evidence_id": "ev_0068",
+      "type": "commit",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Commit (2025-07-21T14:07:38+00:00): Initial commit",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "sha": "3cbe5e08a2",
+        "date": "2025-07-21T14:07:38+00:00",
+        "additions": 2,
+        "deletions": 0,
+        "field": "commit_sample"
+      }
+    },
+    {
+      "evidence_id": "ev_0069",
+      "type": "commit",
+      "source": "repo:krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+      "content": "Commit (2025-07-21T21:11:01+00:00): Delete BERT.ipynb",
+      "metadata": {
+        "repo": "krittikasardar/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews",
+        "sha": "8ccbbb77de",
+        "date": "2025-07-21T21:11:01+00:00",
+        "additions": 0,
+        "deletions": 859,
+        "field": "commit_sample"
+      }
+    }
+  ],
+  "collection_metadata": {
+    "username": "krittikasardar",
+    "collected_at": "2026-05-14T18:06:46.402690+00:00",
+    "elapsed_seconds": 94.4,
+    "total_repos": 6,
+    "total_evidence_items": 69,
+    "evidence_types": [
+      "commit",
+      "contribution",
+      "leadership",
+      "profile",
+      "role",
+      "skill"
+    ],
+    "rate_limit_snapshot": {},
+    "collector_version": "2.0",
+    "notes": "Repositories are sorted by relevance_score (descending). All public repos are retained to preserve historical evidence. Evidence index includes profile, skill, role, leadership, commit, and contribution entries for stronger RAG grounding.",
+    "raw_output_file": "krittikasardar_raw_v2.json",
+    "processed_output_file": "krittikasardar_processed_v2.json",
+    "main_version": "2.0",
+    "pipeline_notes": "v2 includes richer commit depth, collaboration signals, tooling detection, profile README/pinned repositories, and monthly historical activity analysis."
+  },
+  "historical_analysis": {
+    "commits_by_year": {
+      "2021": 2,
+      "2022": 1,
+      "2025": 16,
+      "2026": 11
+    },
+    "languages_by_year": {
+      "2025": [
+        {
+          "language": "Jupyter Notebook",
+          "bytes": 1977623,
+          "pct": 100.0
+        }
+      ],
+      "2026": [
+        {
+          "language": "Jupyter Notebook",
+          "bytes": 579829,
+          "pct": 84.1
+        },
+        {
+          "language": "Python",
+          "bytes": 109799,
+          "pct": 15.9
+        }
+      ]
+    },
+    "activity_trend": "growing",
+    "peak_activity_year": 2025,
+    "tech_evolution": [
+      {
+        "period": "early (2025–2025)",
+        "dominant_languages": [
+          "Jupyter Notebook"
+        ]
+      },
+      {
+        "period": "recent (2026–2026)",
+        "dominant_languages": [
+          "Jupyter Notebook",
+          "Python"
+        ]
+      },
+      {
+        "new_languages": [
+          "Python"
+        ],
+        "dropped_languages": []
+      }
+    ],
+    "monthly_commit_heatmap": {
+      "2021-07": 1,
+      "2021-09": 1,
+      "2022-07": 1,
+      "2025-07": 15,
+      "2025-11": 1,
+      "2026-04": 11
+    },
+    "weekday_vs_weekend_ratio": {
+      "weekday_commits_sampled": 23,
+      "weekend_commits_sampled": 7,
+      "weekday_vs_weekend_ratio": 3.29,
+      "interpretation": "Ratio = weekday commits divided by weekend commits."
+    },
+    "most_active_month_of_year": {
+      "month": 7,
+      "month_name": "July",
+      "commit_count": 17
+    },
+    "inactive_periods": [
+      {
+        "from": "2021-10",
+        "to": "2022-06",
+        "gap_months": 9,
+        "previous_active_month": "2021-09",
+        "next_active_month": "2022-07"
+      },
+      {
+        "from": "2022-08",
+        "to": "2025-06",
+        "gap_months": 35,
+        "previous_active_month": "2022-07",
+        "next_active_month": "2025-07"
+      },
+      {
+        "from": "2025-12",
+        "to": "2026-03",
+        "gap_months": 4,
+        "previous_active_month": "2025-11",
+        "next_active_month": "2026-04"
+      }
+    ],
+    "recent_6_month_commit_count": 12,
+    "repo_creation_cadence": {
+      "repos_created_by_year": {
+        "2021": 2,
+        "2022": 1,
+        "2025": 1,
+        "2026": 2
+      },
+      "first_repo_year": 2021,
+      "latest_repo_year": 2026,
+      "active_creation_years": 6,
+      "avg_repos_created_per_year": 1.0
+    }
+  }
+}

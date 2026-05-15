@@ -1,23 +1,23 @@
 """
 preprocessor/chunker.py
 -----------------------
-Splits long evidence items into overlapping text chunks suitable for embedding
-with text-embedding-ada-002 (8191 token limit, ~4 chars/token).
+Splits evidence items into RAG-friendly chunks while preserving traceability.
 
-Target chunk size is 1500 chars (~375 tokens), giving plenty of headroom while
-keeping each chunk semantically focused.
-
-Split strategy (applied in priority order):
-  1. Content ≤ max_chars  → single chunk, no splitting
-  2. Split on paragraph boundaries (\\n\\n)
-  3. Paragraphs still > max_chars → split on sentence boundaries
-  4. Hard split as last resort
-
-Each output chunk carries the original evidence_id, type, source, and metadata,
-plus chunk_index and total_chunks for traceability by downstream retrieval.
+v2 updates
+----------
+- Keeps metadata for newer evidence types such as commit and contribution.
+- Avoids unnecessary splitting for short structured signals.
+- Adds type-aware chunk sizes so README/profile evidence can be longer while
+  commit/contribution evidence stays compact.
+- Adds defensive handling for missing evidence_id/content.
+- Adds richer metadata fields useful for retrieval and grounding.
 """
 
+from __future__ import annotations
+
 import re
+from typing import Any
+
 from utils.helpers import get_logger
 
 logger = get_logger(__name__)
@@ -25,14 +25,66 @@ logger = get_logger(__name__)
 DEFAULT_MAX_CHARS = 1500
 DEFAULT_OVERLAP = 150
 
+# Some evidence types should not be over-split because they are already concise.
+TYPE_MAX_CHARS: dict[str, int] = {
+    "profile": 1800,
+    "skill": 1500,
+    "role": 1200,
+    "leadership": 1200,
+    "commit": 900,
+    "contribution": 1000,
+}
+
+SUPPORTED_EVIDENCE_TYPES = {
+    "profile",
+    "skill",
+    "role",
+    "leadership",
+    "commit",
+    "contribution",
+}
+
 
 def _split_paragraphs(text: str) -> list[str]:
+    """Split text into paragraphs while dropping empty sections."""
     return [p.strip() for p in re.split(r"\n\n+", text) if p.strip()]
 
 
 def _split_sentences(text: str) -> list[str]:
+    """Split text into sentence-like units."""
     parts = re.split(r"(?<=[.!?])\s+", text)
     return [p.strip() for p in parts if p.strip()]
+
+
+def _safe_content(value: Any) -> str:
+    """Convert content to a safe string for chunking."""
+    if value is None:
+        return ""
+    if isinstance(value, str):
+        return value
+    return str(value)
+
+
+def _normalise_overlap(max_chars: int, overlap: int) -> int:
+    """
+    Keep overlap safe. If overlap is too large, hard splitting can loop badly.
+    """
+    if max_chars <= 0:
+        raise ValueError("max_chars must be greater than 0")
+    if overlap < 0:
+        return 0
+    return min(overlap, max_chars // 3)
+
+
+def _chunk_max_for_item(item: dict, default_max_chars: int) -> int:
+    """
+    Pick a chunk size based on evidence type.
+
+    README/profile evidence can be a bit larger.
+    Commit/contribution evidence is kept compact and usually remains one chunk.
+    """
+    ev_type = item.get("type")
+    return TYPE_MAX_CHARS.get(ev_type, default_max_chars)
 
 
 def chunk_text(
@@ -41,9 +93,22 @@ def chunk_text(
     overlap: int = DEFAULT_OVERLAP,
 ) -> list[str]:
     """
-    Split text into overlapping chunks no longer than max_chars.
-    Returns a list of strings (always at least one element).
+    Split text into chunks no longer than max_chars.
+
+    Strategy:
+      1. Keep short text as one chunk.
+      2. Split by paragraphs.
+      3. Split oversized paragraphs by sentence.
+      4. Hard split as fallback.
+
+    Returns a list of strings. Empty input returns [].
     """
+    text = _safe_content(text).strip()
+    if not text:
+        return []
+
+    overlap = _normalise_overlap(max_chars, overlap)
+
     if len(text) <= max_chars:
         return [text]
 
@@ -52,94 +117,160 @@ def chunk_text(
     current = ""
 
     for para in paragraphs:
+        # Oversized paragraph: flush current buffer, then split this paragraph.
         if len(para) > max_chars:
             if current:
                 chunks.append(current.strip())
                 current = ""
-            # Break oversized paragraph by sentences
+
             sentences = _split_sentences(para)
             sent_buf = ""
+
             for sent in sentences:
-                if len(sent_buf) + len(sent) + 1 > max_chars:
+                if len(sent) > max_chars:
                     if sent_buf:
                         chunks.append(sent_buf.strip())
-                    # Hard-split sentences that are themselves too long
-                    if len(sent) > max_chars:
-                        for i in range(0, len(sent), max_chars - overlap):
-                            chunks.append(sent[i : i + max_chars])
                         sent_buf = ""
-                    else:
-                        sent_buf = sent
+
+                    step = max(1, max_chars - overlap)
+                    for i in range(0, len(sent), step):
+                        hard_chunk = sent[i : i + max_chars].strip()
+                        if hard_chunk:
+                            chunks.append(hard_chunk)
+                    continue
+
+                candidate = (sent_buf + " " + sent).strip() if sent_buf else sent
+                if len(candidate) > max_chars:
+                    if sent_buf:
+                        chunks.append(sent_buf.strip())
+
+                    tail = sent_buf[-overlap:].strip() if overlap and sent_buf else ""
+                    sent_buf = (tail + " " + sent).strip() if tail else sent
                 else:
-                    sent_buf = (sent_buf + " " + sent).strip() if sent_buf else sent
+                    sent_buf = candidate
+
             if sent_buf:
                 chunks.append(sent_buf.strip())
             continue
 
-        if len(current) + len(para) + 2 > max_chars:
+        candidate = (current + "\n\n" + para).strip() if current else para
+        if len(candidate) > max_chars:
             if current:
                 chunks.append(current.strip())
-            # Carry the tail of the previous chunk for overlap continuity
+
             tail = current[-overlap:].strip() if overlap and current else ""
             current = (tail + "\n\n" + para).strip() if tail else para
         else:
-            current = (current + "\n\n" + para).strip() if current else para
+            current = candidate
 
     if current:
         chunks.append(current.strip())
 
-    return chunks if chunks else [text[:max_chars]]
+    return chunks
 
 
 def chunk_evidence_item(
     item: dict,
     max_chars: int = DEFAULT_MAX_CHARS,
+    overlap: int = DEFAULT_OVERLAP,
 ) -> list[dict]:
     """
-    Produce one or more chunk dicts from a single evidence item.
-    Short items become a single chunk; long items are split with overlap.
+    Produce one or more chunk dictionaries from a single evidence item.
+
+    Each chunk preserves:
+      - evidence_id
+      - evidence type
+      - source
+      - original metadata
+      - chunk index and total chunk count
     """
-    content = item.get("content", "")
-    parts = chunk_text(content, max_chars=max_chars)
+    evidence_id = item.get("evidence_id") or "ev_unknown"
+    ev_type = item.get("type") or "unknown"
+    source = item.get("source") or "unknown"
+    metadata = dict(item.get("metadata") or {})
+
+    content = _safe_content(item.get("content", "")).strip()
+    if not content:
+        return []
+
+    effective_max_chars = _chunk_max_for_item(item, max_chars)
+
+    # Unknown evidence types are still kept, but marked for debugging.
+    if ev_type not in SUPPORTED_EVIDENCE_TYPES:
+        metadata["unknown_evidence_type"] = ev_type
+
+    parts = chunk_text(
+        content,
+        max_chars=effective_max_chars,
+        overlap=overlap,
+    )
+
     total = len(parts)
-    chunks = []
+    chunks: list[dict] = []
+
     for i, part in enumerate(parts):
-        chunks.append({
-            "chunk_id": f"{item['evidence_id']}_c{i:02d}",
-            "evidence_id": item["evidence_id"],
+        chunk_metadata = {
+            **metadata,
             "chunk_index": i,
             "total_chunks": total,
-            "type": item.get("type"),
-            "source": item.get("source"),
+            "source_evidence_type": ev_type,
+            "source_evidence_id": evidence_id,
+        }
+
+        # Helpful retrieval flags for the new v2 data gap fields.
+        if ev_type in {"commit", "contribution"}:
+            chunk_metadata["retrieval_hint"] = "github_contribution_signal"
+        elif ev_type == "skill":
+            chunk_metadata["retrieval_hint"] = "github_skill_signal"
+        elif ev_type == "profile":
+            chunk_metadata["retrieval_hint"] = "github_profile_signal"
+
+        chunks.append({
+            "chunk_id": f"{evidence_id}_c{i:02d}",
+            "evidence_id": evidence_id,
+            "chunk_index": i,
+            "total_chunks": total,
+            "type": ev_type,
+            "source": source,
             "content": part,
-            "metadata": {
-                **item.get("metadata", {}),
-                "chunk_index": i,
-                "total_chunks": total,
-            },
+            "metadata": chunk_metadata,
         })
+
     return chunks
 
 
 def chunk_evidence_index(
     evidence_index: list[dict],
     max_chars: int = DEFAULT_MAX_CHARS,
+    overlap: int = DEFAULT_OVERLAP,
 ) -> list[dict]:
     """
     Process the full evidence index, expanding each item into one or more chunks.
-    Returns the flat list of all chunks ready for embedding.
+
+    Returns a flat list of chunks ready for embedding.
     """
     all_chunks: list[dict] = []
     multi_chunk_count = 0
+    skipped_count = 0
+
     for item in evidence_index:
-        chunks = chunk_evidence_item(item, max_chars=max_chars)
+        chunks = chunk_evidence_item(
+            item,
+            max_chars=max_chars,
+            overlap=overlap,
+        )
+        if not chunks:
+            skipped_count += 1
+            continue
         if len(chunks) > 1:
             multi_chunk_count += 1
         all_chunks.extend(chunks)
+
     logger.info(
-        "Chunked %d evidence items → %d chunks (%d items were split)",
+        "Chunked %d evidence items → %d chunks (%d items split, %d skipped)",
         len(evidence_index),
         len(all_chunks),
         multi_chunk_count,
+        skipped_count,
     )
     return all_chunks

@@ -1,32 +1,25 @@
 """
-preprocessor/pipeline.py
-------------------------
-Orchestrates the full preprocessing pipeline for a single user's raw JSON.
+preprocessor/pipeline.py (v2)
+-----------------------------
+Orchestrates preprocessing for the Skill Mining pipeline.
 
-Steps:
-  1. Load raw JSON from data/raw/{username}.json
-  2. Clean evidence items  (fix encoding, strip noise, drop empties)
-  3. Chunk long items into RAG-sized segments
-  4. Build historical analysis from repository commit/language data
-  5. Write output to data/preprocessed/{username}_preprocessed.json
+This module supports two entry points:
+  1. transform(raw_doc)  -> used by main.py after collection
+  2. preprocess(raw_path) -> used when preprocessing an existing raw JSON file
 
-Output schema (schema_version 1.1):
-  {
-    "schema_version": "1.1",
-    "username": "...",
-    "preprocessed_at": "...",
-    "source_file": "...",
-    "historical_analysis": { commits_by_year, languages_by_year, activity_trend,
-                              peak_activity_year, tech_evolution },
-    "chunks": [ { chunk_id, evidence_id, chunk_index, total_chunks,
-                  type, source, content, metadata }, ... ],
-    "stats": { original_evidence_count, items_dropped,
-               chunks_produced, avg_chunk_length_chars }
-  }
+v2 keeps the richer data-gap fields introduced in the collectors:
+  - profile README / pinned repositories / organisations
+  - richer aggregate_signals
+  - month-level historical_analysis
+  - commit and contribution evidence types
+  - collaboration and tooling evidence
 """
+
+from __future__ import annotations
 
 import json
 from pathlib import Path
+from typing import Any
 
 import config
 from utils.helpers import get_logger, utcnow_iso
@@ -36,75 +29,146 @@ from preprocessor.historical import build_historical_analysis
 
 logger = get_logger(__name__)
 
-PREPROCESSED_DIR = config.DATA_DIR / "preprocessed"
+PREPROCESSED_DIR = Path(getattr(config, "DATA_DIR", Path("data"))) / "preprocessed"
 PREPROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
-DEFAULT_CHUNK_MAX_CHARS = 1500
+DEFAULT_CHUNK_MAX_CHARS = int(getattr(config, "CHUNK_MAX_CHARS", 1500))
 
+
+# ---------------------------------------------------------------------------
+# Public API used by main.py
+# ---------------------------------------------------------------------------
+
+def transform(
+    raw_doc: dict[str, Any],
+    chunk_max_chars: int = DEFAULT_CHUNK_MAX_CHARS,
+) -> dict[str, Any]:
+    """
+    Transform an in-memory raw v2 document into a processed document.
+
+    This is the function used by the updated main.py:
+        processed_doc = transform(raw_doc)
+
+    It preserves the important raw sections while also producing cleaned/chunked
+    RAG-ready evidence.
+    """
+    username = _get_username(raw_doc)
+    evidence_index = raw_doc.get("evidence_index", []) or []
+    repositories = raw_doc.get("repositories", []) or []
+
+    original_count = len(evidence_index)
+
+    # 1. Clean evidence items
+    cleaned, dropped = filter_and_clean(evidence_index)
+
+    # 2. Chunk evidence items for retrieval
+    chunks = chunk_evidence_index(cleaned, max_chars=chunk_max_chars)
+
+    # 3. Historical analysis
+    # Prefer an already-computed block from main.py/schema, but recompute if absent.
+    historical = raw_doc.get("historical_analysis")
+    if not historical:
+        historical = build_historical_analysis(repositories)
+
+    # 4. Preserve aggregate signals and enrich them with selected historical fields
+    aggregate_signals = dict(raw_doc.get("aggregate_signals", {}) or {})
+    _merge_historical_into_aggregate(aggregate_signals, historical)
+
+    # 5. Output stats
+    avg_len = (
+        round(sum(len(str(c.get("content", ""))) for c in chunks) / len(chunks))
+        if chunks else 0
+    )
+
+    evidence_type_counts: dict[str, int] = {}
+    for item in cleaned:
+        ev_type = item.get("type", "unknown")
+        evidence_type_counts[ev_type] = evidence_type_counts.get(ev_type, 0) + 1
+
+    doc = {
+        "schema_version": "2.0",
+        "username": username,
+        "preprocessed_at": utcnow_iso(),
+        "source_schema_version": raw_doc.get("schema_version"),
+
+        # Keep high-value non-chunked context for downstream agents.
+        "profile": raw_doc.get("profile", {}),
+        "aggregate_signals": aggregate_signals,
+        "historical_analysis": historical,
+
+        # Keep lightweight repository metadata/evidence summary.
+        # Full repositories are preserved too because the project is still small
+        # and evidence-grounded agents may need exact repo-level fields.
+        "repositories": repositories,
+
+        # Cleaned + chunked retrieval data.
+        "evidence_index": cleaned,
+        "chunks": chunks,
+
+        "stats": {
+            "original_evidence_count": original_count,
+            "cleaned_evidence_count": len(cleaned),
+            "items_dropped": dropped,
+            "chunks_produced": len(chunks),
+            "avg_chunk_length_chars": avg_len,
+            "evidence_type_counts": evidence_type_counts,
+            "repo_count": len(repositories),
+        },
+        "collection_metadata": raw_doc.get("collection_metadata", {}),
+        "preprocessing_metadata": {
+            "chunk_max_chars": chunk_max_chars,
+            "pipeline_version": "2.0",
+            "notes": (
+                "Processed output preserves v2 data-gap fields such as commit depth, "
+                "collaboration signals, monthly activity patterns, tooling detection, "
+                "profile README, pinned repositories, and richer evidence types."
+            ),
+        },
+    }
+
+    return doc
+
+
+# ---------------------------------------------------------------------------
+# File-based API retained for older workflows
+# ---------------------------------------------------------------------------
 
 def preprocess(
     raw_path: Path,
     output_dir: Path = PREPROCESSED_DIR,
     chunk_max_chars: int = DEFAULT_CHUNK_MAX_CHARS,
-) -> dict:
+) -> dict[str, Any]:
     """
-    Run the full preprocessing pipeline on one raw JSON file.
+    Run preprocessing on one raw JSON file and write a preprocessed JSON file.
 
     Parameters
     ----------
-    raw_path        : path to data/raw/{username}.json
-    output_dir      : directory to write the preprocessed output file
-    chunk_max_chars : maximum characters per output chunk
-
-    Returns
-    -------
-    The preprocessed document dict (also written to disk).
+    raw_path:
+        Path to a raw JSON file.
+    output_dir:
+        Directory where the preprocessed output should be written.
+    chunk_max_chars:
+        Maximum characters per output chunk.
     """
+    raw_path = Path(raw_path)
     logger.info("Preprocessing: %s", raw_path)
-    raw = json.loads(raw_path.read_text(encoding="utf-8", errors="replace"))
-    username = (
-        raw.get("collection_metadata", {}).get("username") or raw_path.stem
-    )
-    evidence_index = raw.get("evidence_index", [])
-    repositories = raw.get("repositories", [])
 
-    original_count = len(evidence_index)
+    raw_doc = json.loads(raw_path.read_text(encoding="utf-8", errors="replace"))
+    doc = transform(raw_doc, chunk_max_chars=chunk_max_chars)
+    doc["source_file"] = str(raw_path)
 
-    # Step 1: Clean
-    cleaned, dropped = filter_and_clean(evidence_index)
-
-    # Step 2: Chunk
-    chunks = chunk_evidence_index(cleaned, max_chars=chunk_max_chars)
-
-    # Step 3: Historical analysis
-    historical = build_historical_analysis(repositories)
-
-    # Step 4: Assemble output
-    avg_len = (
-        round(sum(len(c["content"]) for c in chunks) / len(chunks))
-        if chunks
-        else 0
-    )
-    doc = {
-        "schema_version": "1.1",
-        "username": username,
-        "preprocessed_at": utcnow_iso(),
-        "source_file": str(raw_path),
-        "historical_analysis": historical,
-        "chunks": chunks,
-        "stats": {
-            "original_evidence_count": original_count,
-            "items_dropped": dropped,
-            "chunks_produced": len(chunks),
-            "avg_chunk_length_chars": avg_len,
-        },
-    }
-
+    username = doc.get("username") or raw_path.stem
     output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Keep older filename pattern for file-based preprocessing.
     out_path = output_dir / f"{username}_preprocessed.json"
     out_path.write_text(json.dumps(doc, indent=2, ensure_ascii=False), encoding="utf-8")
+
     logger.info(
-        "Wrote %d chunks (%d dropped) → %s", len(chunks), dropped, out_path
+        "Wrote %d chunks (%d dropped) -> %s",
+        doc.get("stats", {}).get("chunks_produced", 0),
+        doc.get("stats", {}).get("items_dropped", 0),
+        out_path,
     )
     return doc
 
@@ -113,17 +177,63 @@ def preprocess_all(
     raw_dir: Path = config.RAW_DIR,
     output_dir: Path = PREPROCESSED_DIR,
     chunk_max_chars: int = DEFAULT_CHUNK_MAX_CHARS,
-) -> list[dict]:
+) -> list[dict[str, Any]]:
     """
     Preprocess every non-empty .json file found in raw_dir.
-    Returns a list of output dicts (one per successfully processed file).
+    Returns one processed document per successfully processed file.
     """
+    raw_dir = Path(raw_dir)
     files = sorted(f for f in raw_dir.glob("*.json") if f.stat().st_size > 0)
-    results = []
+
+    results: list[dict[str, Any]] = []
     for f in files:
         try:
-            doc = preprocess(f, output_dir=output_dir, chunk_max_chars=chunk_max_chars)
-            results.append(doc)
+            results.append(preprocess(f, output_dir=output_dir, chunk_max_chars=chunk_max_chars))
         except Exception as exc:
-            logger.error("Failed to preprocess %s: %s", f.name, exc)
+            logger.error("Failed to preprocess %s: %s", f.name, exc, exc_info=True)
     return results
+
+
+# ---------------------------------------------------------------------------
+# Helpers
+# ---------------------------------------------------------------------------
+
+def _get_username(raw_doc: dict[str, Any]) -> str:
+    """Resolve username from collection metadata or profile."""
+    return (
+        raw_doc.get("collection_metadata", {}).get("username")
+        or raw_doc.get("profile", {}).get("login")
+        or raw_doc.get("username")
+        or "unknown"
+    )
+
+
+def _merge_historical_into_aggregate(
+    aggregate_signals: dict[str, Any],
+    historical: dict[str, Any],
+) -> None:
+    """
+    Copy selected historical-analysis values into aggregate_signals.
+
+    This helps downstream agents retrieve the most important temporal features
+    without having to inspect a separate block.
+    """
+    if not historical:
+        return
+
+    keys_to_copy = [
+        "commits_by_year",
+        "monthly_commit_heatmap",
+        "weekday_vs_weekend_ratio",
+        "most_active_month_of_year",
+        "inactive_periods",
+        "recent_6_month_commit_count",
+        "repo_creation_cadence",
+        "activity_trend",
+        "peak_activity_year",
+        "tech_evolution",
+    ]
+
+    for key in keys_to_copy:
+        if key in historical and key not in aggregate_signals:
+            aggregate_signals[key] = historical[key]
